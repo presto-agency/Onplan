@@ -1,7 +1,17 @@
 window.addEventListener('DOMContentLoaded', function () {
-
+    burgerAnimation();
 })
 
+const burgerAnimation = () => {
+    const burger = document.querySelector('.header__burger');
+    const menu = document.querySelector('.header__navigation');
+    // const body = document.querySelector('body');
+    burger.onclick = () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+        // body.classList.toggle('body-lock');
+    }
+}
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {
 //         if (el.querySelector('img')) {
