@@ -205,9 +205,10 @@
         &__navigation{
             position: absolute;
             top: -998px;
+            left: 0;
             z-index: 998;
             max-width: 100%;
-            padding: 32px 0 0 0;
+            padding: 32px 20px 0 20px;
             transition: .25s ease-in-out;
             background: $whitecolor;
             height: 100%;

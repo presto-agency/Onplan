@@ -78,7 +78,7 @@ body {
 body {
   line-height: 1;
   font-size: 14px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -87,7 +87,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish";
 }
 
 input::-ms-clear {
@@ -150,6 +150,48 @@ h6 {
 .page {
   position: relative;
   z-index: 2;
+}
+
+.body-lock {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 178px;
+  width: 100%;
+  height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 32px;
+}
+
+.button.button-light {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.button svg {
+  position: absolute;
+  top: 17px;
+  right: 29px;
+  width: 18px;
+  height: 12px;
+  fill: #fff;
+}
+
+.button span {
+  padding: 0 29px 0 0;
 }
 
 .header {
@@ -326,6 +368,168 @@ h6 {
       transform: rotate(-135deg);
 }
 
+.footer {
+  background-color: #232F42;
+  color: #fff;
+}
+
+.footer__container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.footer__top-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0 88px 0;
+}
+
+.footer__top-content:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #EDF0F2;
+  opacity: 0.1;
+}
+
+.footer__bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 750px;
+  margin: 3px -15px 0 0;
+}
+
+.nav-column h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.nav-column a {
+  color: #EDF0F2;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.nav-column li {
+  margin: 0 0 16px 0;
+}
+
+.nav-column li:last-child {
+  margin: 0;
+}
+
+.nav-column ul {
+  margin: 0 0 32px 0;
+}
+
+.nav-column__block {
+  margin: 0 15px 0 0;
+}
+
+.logo-column {
+  max-width: 380px;
+  margin: 0 80px 0 0;
+}
+
+.logo-column__logo {
+  display: block;
+  width: 142px;
+  height: 30px;
+}
+
+.logo-column__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.logo-column__description {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  margin: 21px 0 52px 0;
+}
+
+.bottom-content {
+  padding: 40px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.bottom-content__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 308px;
+  width: 100%;
+}
+
+.bottom-content__middle-side {
+  opacity: 0.5;
+  padding: 0 242px 0 0;
+}
+
+.bottom-content__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 67px;
+  width: 100%;
+}
+
+.bottom-content__social {
+  fill: #fff;
+}
+
+.bottom-content__social.facebook {
+  height: 18px;
+  width: 9px;
+}
+
+.bottom-content__social.instagram {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 1439px) {
   .header__navigation {
     padding: 0 20px;
@@ -390,9 +594,10 @@ h6 {
   .header__navigation {
     position: absolute;
     top: -998px;
+    left: 0;
     z-index: 998;
     max-width: 100%;
-    padding: 32px 0 0 0;
+    padding: 32px 20px 0 20px;
     -webkit-transition: 0.25s ease-in-out;
     -o-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;

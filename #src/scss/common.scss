@@ -22,6 +22,39 @@
     z-index: 2;
 }
 
+.body-lock{
+	position: relative;
+	overflow-y: hidden;
+}
+
+.button{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 178px;
+	width: 100%;
+	height: 48px;
+	font-weight: 800;
+	font-size: 16px;
+	border-radius: 32px;
+	&.button-light{
+		color: $whitecolor;
+		border: 2px solid $whitecolor;
+	}
+	svg{
+		position: absolute;
+		top: 17px;
+		right: 29px;
+		width: 18px;
+		height: 12px;
+		fill: $whitecolor;
+	}
+	span{
+		padding: 0 29px 0 0;
+	}
+}
+
 // .ibg{
 // 	background-repeat: no-repeat;
 // 	background-size: cover;
