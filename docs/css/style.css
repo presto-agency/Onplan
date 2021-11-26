@@ -593,7 +593,7 @@ h6 {
 
   .header__navigation {
     position: absolute;
-    top: -998px;
+    top: -1012px;
     left: 0;
     z-index: 998;
     max-width: 100%;
@@ -640,6 +640,101 @@ h6 {
 
   .header__navigation.active {
     top: 71px;
+  }
+
+  .footer__container {
+    padding: 0 20px;
+  }
+
+  .footer .logo-column {
+    margin: 0 50px 0 0;
+  }
+
+  .footer .nav-column {
+    display: inline-block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    margin: 0;
+  }
+
+  .footer .bottom-content__middle-side {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top-content {
+    padding: 80px 0 0 0;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .logo-column {
+    margin: 0 0 64px 0;
+  }
+
+  .footer .bottom-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .footer .bottom-content__left-side {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 15px;
+  }
+
+  .footer .bottom-content__middle-side {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 15px;
+  }
+
+  .footer .bottom-content__right-side {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 15px;
+  }
+
+  .footer .nav-column {
+    margin: 0 0 32px 0;
+  }
+
+  .footer .nav-column__block {
+    margin: 0;
+  }
+}
+
+@media (max-width: 735px) {
+  .footer .bottom-content {
+    padding: 24px 0 40px 0;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer .bottom-content__left-side {
+    margin: 24px 0 12px 0;
+  }
+
+  .footer .bottom-content__middle-side {
+    margin: 0;
+  }
+
+  .footer .bottom-content__right-side {
+    margin: 0;
   }
 }
 
