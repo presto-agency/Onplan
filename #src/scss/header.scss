@@ -204,7 +204,7 @@
         }
         &__navigation{
             position: absolute;
-            top: -1012px;
+            top: -100vh;
             left: 0;
             z-index: 998;
             max-width: 100%;
@@ -215,6 +215,7 @@
             min-height: calc(100vh - 70px);
             max-height: 100%;
             overflow: auto;
+            border-top: 1px solid $greycolor;
             ul{
                 flex-direction: column;
                 li{
@@ -238,7 +239,7 @@
                 }
             }
             &.active{
-                top: 71px;
+                top: 70px;
             }
         }
     }
