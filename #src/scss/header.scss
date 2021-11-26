@@ -83,6 +83,7 @@
             background: $whitecolor;
         }
     }
+
     &__burger{
         display: none;
         position: relative;
@@ -218,6 +219,7 @@
             border-top: 1px solid $greycolor;
             ul{
                 flex-direction: column;
+                padding: 0 0 150px 0;
                 li{
                     margin: 0;
                     font-size: 24px;

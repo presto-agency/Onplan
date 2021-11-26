@@ -6,10 +6,12 @@ const burgerAnimation = () => {
     const burger = document.querySelector('.header__burger');
     const menu = document.querySelector('.header__navigation');
     const body = document.querySelector('body');
+    const mobBtns = document.querySelector('.mobile-menu-btns');
     burger.onclick = () => {
         burger.classList.toggle('active');
         menu.classList.toggle('active');
         body.classList.toggle('body-lock');
+        mobBtns.classList.toggle('active');
     }
 }
 // const bg = () => {

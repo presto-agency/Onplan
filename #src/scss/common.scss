@@ -42,16 +42,59 @@
 		color: $whitecolor;
 		border: 2px solid $whitecolor;
 	}
-	svg{
-		position: absolute;
-		top: 17px;
-		right: 29px;
-		width: 18px;
-		height: 12px;
-		fill: $whitecolor;
+	&.arrow-svg{
+		svg{
+			position: absolute;
+			top: 17px;
+			right: 29px;
+			width: 18px;
+			height: 12px;
+			fill: $whitecolor;
+		}
+		span{
+			padding: 0 29px 0 0;
+		}
 	}
-	span{
-		padding: 0 29px 0 0;
+}
+
+.mobile-menu-btns{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    padding: 12px 0;
+    z-index: 1001;
+    bottom: -100%;
+    left: 50%;
+    width: 100%;
+	border-top: 1px solid $greycolor;
+    transform: translateX(-50%);
+    background-color: $whitecolor;
+	transition: .25s ease-in-out;
+	@media(max-width:1023px){
+		display: flex;
+	}
+    &__btn{
+        width: 100%;
+        max-width:159px ;
+        height: 48px;
+        border-radius: 32px;
+        font-size: 16px;
+        font-weight: 800;
+		margin: 0 8px;
+        &.sign{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #EDF0F2;
+            color: $textcolor;
+        }
+        &.book{
+            background-color: $textcolor;
+            color: $whitecolor;
+        }
+    }
+	&.active{
+		bottom: 0;
 	}
 }
 
