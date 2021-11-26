@@ -35,8 +35,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 750px;
-        margin: 3px -15px 0 0;
+        max-width: 735px;
+        margin: 3px -10px 0 -10px;
         h3{
             font-size: 14px;
             font-weight: 700;
@@ -61,13 +61,14 @@
             margin: 0 0 32px 0;
         }
     &__block{
-        margin: 0 15px 0 0;
+        margin: 0 10px;
+        width: calc((100% - 8 * 10px) / 4);
     }
 }
 
 .logo-column {
     max-width: 380px;
-    margin: 0 80px 0 0;
+    margin: 0 50px 0 0;
     &__logo {
         display: block;
         width: 142px;
@@ -129,17 +130,14 @@
         &__container{
             padding: 0 20px;
         }
-        .logo-column{
-            margin: 0 50px 0 0;
-        }
-        .nav-column{
-            display: inline-block;
-            column-count: 2;
-            margin: 0;
-        }
         .bottom-content{
             &__middle-side{
                 padding: 0;
+            }
+        }
+        .nav-column{
+            &__block{
+                width: calc((100% - 4 * 10px) / 2);
             }
         }
     }
@@ -173,9 +171,6 @@
         }
         .nav-column{
             margin: 0 0 32px 0;
-            &__block{
-                margin: 0;
-            }
         }
     }
 }
