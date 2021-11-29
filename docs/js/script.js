@@ -8,10 +8,13 @@ const burgerAnimation = () => {
     const body = document.querySelector('body');
     const mobBtns = document.querySelector('.mobile-menu-btns');
     burger.onclick = () => {
-        burger.classList.toggle('active');
-        menu.classList.toggle('active');
-        body.classList.toggle('body-lock');
-        mobBtns.classList.toggle('active');
+        addClass(burger, 'active')
+        addClass(menu, 'active')
+        addClass(body, 'body-lock')
+        addClass(mobBtns, 'active')
+    }
+    function addClass(obj, classname) {
+        obj.classList.toggle(classname)
     }
 }
 // const bg = () => {

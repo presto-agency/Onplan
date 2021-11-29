@@ -1,0 +1,15 @@
+.h1{
+    h1{
+        font-size: 60px;
+        font-weight: 900;
+        @media(max-width: 735px){
+            font-size: 50px;
+        }
+    }
+}
+.h5{
+    h3{
+        font-size: 32px;
+        font-weight: 900;
+    }
+}
