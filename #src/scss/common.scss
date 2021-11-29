@@ -42,6 +42,10 @@
 		color: $whitecolor;
 		border: 2px solid $whitecolor;
 	}
+	&.button-dark{
+		color: $whitecolor;
+		background-color: $textcolor;
+	}
 	&.arrow-svg{
 		svg{
 			position: absolute;

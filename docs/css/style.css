@@ -181,6 +181,11 @@ h6 {
   border: 2px solid #fff;
 }
 
+.button.button-dark {
+  color: #fff;
+  background-color: #232F42;
+}
+
 .button.arrow-svg svg {
   position: absolute;
   top: 17px;
@@ -590,6 +595,12 @@ h6 {
   font-weight: 900;
 }
 
+.h2 h2 {
+  font-size: 54px;
+  line-height: 56px;
+  font-weight: 800;
+}
+
 .h5 h3 {
   font-size: 32px;
   font-weight: 900;
@@ -615,6 +626,7 @@ h6 {
   width: 100%;
   height: 100%;
   max-height: 597px;
+  margin: 40px 0 0 0;
 }
 
 .integration .quickbooks__bg img {
@@ -768,6 +780,159 @@ h6 {
   text-align: center;
 }
 
+.integration .solution {
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%), -o-linear-gradient(298.45deg, #A8DAFE 17.57%, #66C4CC 100%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%), linear-gradient(151.55deg, #A8DAFE 17.57%, #66C4CC 100%);
+}
+
+.integration .solution__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0 75px 0;
+}
+
+.integration .solution__bg {
+  position: absolute;
+  top: 123px;
+  left: 230px;
+}
+
+.integration .solution__left-side {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  margin: 0 0 0 40px;
+}
+
+.integration .solution__description {
+  margin: 0 0 54px 0;
+}
+
+.integration .solution__description h2 {
+  color: #fff;
+  margin: 48px 0 16px 0;
+}
+
+.integration .solution__description p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.integration .solution__button {
+  height: 62px;
+  max-width: 248px;
+  font-size: 18px;
+}
+
+.integration .solution__right-side {
+  position: relative;
+  z-index: 2;
+}
+
+.integration .solution__img {
+  width: 611px;
+  height: 436px;
+}
+
+.integration .solution__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.integration .benefits__content {
+  padding: 120px 0;
+}
+
+.integration .benefits__top-content {
+  margin: 0 0 64px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.integration .benefits__top-content h2 {
+  margin: 0 0 24px 0;
+}
+
+.integration .benefits__top-content p {
+  max-width: 680px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.integration .benefits__bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.integration .benefits__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  padding: 50px 15px 15px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc((100% - 80px) / 4);
+  height: 100%;
+  min-height: 238px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 16px;
+}
+
+.integration .benefits__card p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 800;
+  max-width: 188px;
+  text-align: center;
+}
+
+.integration .benefits__img {
+  width: 58px;
+  height: 58px;
+  margin: 0 0 24px 0;
+}
+
+.integration .benefits__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (max-width: 1439px) {
   .header__navigation {
     padding: 0 20px;
@@ -784,6 +949,19 @@ h6 {
   .header__connect a {
     white-space: nowrap;
     margin: 0 10px 0 0;
+  }
+
+  .integration .quickbooks__bg {
+    margin: 0;
+  }
+
+  .integration .solution__left-side {
+    margin: 0;
+    min-width: 500px;
+  }
+
+  .integration .solution__img {
+    width: 100%;
   }
 }
 
@@ -899,6 +1077,37 @@ h6 {
   .footer .nav-column__block {
     width: calc((100% - 40px) / 2);
   }
+
+  .integration .solution__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+  }
+
+  .integration .solution__bg {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .integration .solution__left-side {
+    width: 100%;
+    max-width: 500px;
+    min-width: inherit;
+  }
+
+  .integration .benefits__card {
+    width: calc((100% - 40px) / 2);
+  }
 }
 
 @media (max-width: 767px) {
@@ -975,6 +1184,10 @@ h6 {
     font-size: 50px;
   }
 
+  .h2 h2 {
+    font-size: 40px;
+  }
+
   .integration .quickbooks {
     padding: 50px 0 60px 0;
   }
@@ -990,11 +1203,44 @@ h6 {
   .integration .quickbooks .content__bottom-text {
     margin: 40px auto 0 auto;
   }
+
+  .integration .solution__content {
+    padding: 50px 0;
+  }
+
+  .integration .benefits__content {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .integration .benefits__bottom-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .integration .benefits__card {
+    width: calc(100% - 20px);
+    max-width: 295px;
+  }
 }
 
 @media (max-width: 424px) {
   .header__logo img {
     width: 140px;
     height: 26px;
+  }
+
+  .integration .solution__img {
+    display: none;
+  }
+
+  .integration .solution__description h2 {
+    margin: 0 0 16px 0;
+  }
+
+  .integration .solution__button {
+    margin: 0 auto;
   }
 }
