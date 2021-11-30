@@ -1,10 +1,10 @@
 .integration {
     position: relative;
     background-color: #F8F9FC;
-    
+    padding: 100px 0;
     .quickbooks {
         position: relative;
-        padding: 100px 0 120px 0;
+        padding: 0 0 120px 0;
         &__bg{
             position: absolute;
             top: 0;
@@ -414,6 +414,52 @@
     }
 }
 
+.best {
+    position: relative;
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 152px 0;
+        h2{
+            text-align: center;
+            font-size: 70px;
+            font-weight: 900;
+            margin: 0 0 30px 0;
+        }
+        p{
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 600;
+        }
+    }
+
+    &__box-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 538px;
+        width: 492px;
+    }
+
+    &__box-1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 542px;
+        width: 473px;
+    }
+
+    &__button{
+        margin: 64px 0 0 0;
+        max-width: 248px;
+        height: 62px;
+    }
+}
+
 
 }
 @media(max-width: 1439px){
@@ -482,12 +528,40 @@
                 justify-content: center;
             }
         }
+        .best{
+            &__content{
+                padding: 219px 0 153px 0;
+                h2{
+                    margin: 0 0 10px 0;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            &__button{
+                margin: 45px 0 0 0;
+            }
+            &__box-1{
+                width: 215px;
+                height: 240px;
+                top: 441px;
+            }
+            &__box-2{
+                top: -51px;
+                width: 217px;
+                height: 262px;
+            }
+            &__button{
+                max-width: 224px;
+            }
+        }
     }
 }
 @media(max-width: 735px){
     .integration{
+        padding: 50px 0;
         .quickbooks{
-            padding: 50px 0 60px 0;
+            padding: 0 0 60px 0;
             &__bg{
                 display: none;
             }
@@ -549,6 +623,16 @@
                         top: 35px;
                         left: 15px;
                     }
+                }
+            }
+        }
+        .best{
+            &__content{
+                h2{
+                    font-size: 46px;
+                }
+                p{
+                    font-size: 20px;
                 }
             }
         }
