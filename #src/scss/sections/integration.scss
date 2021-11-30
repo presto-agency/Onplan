@@ -1,6 +1,6 @@
 .integration {
     position: relative;
-    background-color: $greycolor;
+    background-color: #F8F9FC;
     
     .quickbooks {
         position: relative;
@@ -191,7 +191,7 @@
 		}
 }
 
-.benefits {
+    .benefits {
     &__content {
         padding: 120px 0;
     }
@@ -216,7 +216,7 @@
 
     &__bottom-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: -10px;
         flex-wrap: wrap;
     }
@@ -228,6 +228,7 @@
         padding: 50px 15px 15px 15px;
         align-items: center;
         width: calc((100% - (10px * 8)) / 4);
+        max-width: 295px;
         height: 100%;
         min-height: 238px;
         border: 1px solid rgba(255, 255, 255, 0.8);
@@ -255,6 +256,160 @@
     }
 
 }
+
+    .clients {
+    padding: 0 0 80px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    &__left-side {
+        h2{
+            margin: 119px 0 0 0;
+        }
+    }
+
+    &__button {
+        margin: 40px 0 0 0;
+        max-width: 250px;
+    }
+
+    &__right-side{
+        position: relative;
+        max-width: 660px;
+        &:before{
+            content: '';
+            position: absolute;
+            right: -40px;
+            bottom: 12px;
+            width: 420px;
+            height: 476px;
+            background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
+            backdrop-filter: blur(43.0769px);
+            border-radius: 24px;
+        }
+    }
+
+    &__swiper {
+        width: 100%;
+    }
+
+    .swiper {
+        position: relative;
+        box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+        border-radius: 24px;
+        backdrop-filter: blur(52px);
+        &__wrapper {
+        }
+    
+        &__slide {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            position: relative;
+            box-sizing: border-box;
+            border-radius: 24px;
+            padding: 104px 52px 52px;
+            p{
+                line-height: 32px;
+                font-size: 20px;
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                top: 52px;
+                left: 52px;
+                background-image: url(../img/Integration/commas.svg);
+                background-repeat: no-repeat;
+                background-size: 24px 24px;
+                background-size: contain;
+                background-position: center;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    
+        &__person {
+            display: flex;
+            margin: 40px 0 0 0;
+        }
+    
+        &__img {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+        }
+    
+        &__info {
+            margin: 0 0 0 16px;
+            p{
+                margin: 10px 0 0 0;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        &__pagination {
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 39px 0 0 24px;
+            .swiper-pagination-bullet{
+                background: #E6E9F5;
+                opacity: 1;
+                margin: 5px 20px 5px 0;
+            }
+            .swiper-pagination-bullet-active{
+                background: $purplecolor;
+            }
+        }
+
+        &__prev {
+            left: inherit;
+            right: 104px;
+            &:after{
+                font-size: 0;
+            }
+        }
+    
+        &__next {
+            right:  52px;
+            transform: rotate(180deg);
+            &:after{
+                font-size: 0;
+            }
+        }
+        .slider-arrow{
+            position: absolute;
+            top: inherit;
+            bottom: 52px;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid rgba(230, 233, 245, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms ease-in-out;
+            svg{
+                width: 7px;
+                height: 9px;
+                transition: 300ms ease-in-out;
+                fill: $purplecolor;
+            }
+            &:hover{
+                background-color: $purplecolor;
+                svg{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
 
 }
 @media(max-width: 1439px){
@@ -325,12 +480,8 @@
 @media(max-width: 567px){
     .integration{
         .benefits{
-            &__bottom-content{
-                justify-content: center;
-            }
             &__card{
                 width: calc((100% - (10px * 2)));
-                max-width: 295px;
             }
         }
     }

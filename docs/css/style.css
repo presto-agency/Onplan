@@ -598,7 +598,7 @@ h6 {
 .h2 h2 {
   font-size: 54px;
   line-height: 56px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .h5 h3 {
@@ -606,9 +606,15 @@ h6 {
   font-weight: 900;
 }
 
+.h8 h3 {
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .integration {
   position: relative;
-  background-color: #EDF0F2;
+  background-color: #F8F9FC;
 }
 
 .integration .quickbooks {
@@ -881,9 +887,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -903,6 +909,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   width: calc((100% - 80px) / 4);
+  max-width: 295px;
   height: 100%;
   min-height: 238px;
   border: 1px solid rgba(255, 255, 255, 0.8);
@@ -931,6 +938,199 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.integration .clients {
+  padding: 0 0 80px 0;
+}
+
+.integration .clients__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+}
+
+.integration .clients__left-side h2 {
+  margin: 119px 0 0 0;
+}
+
+.integration .clients__button {
+  margin: 40px 0 0 0;
+  max-width: 250px;
+}
+
+.integration .clients__right-side {
+  position: relative;
+  max-width: 660px;
+}
+
+.integration .clients__right-side:before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  bottom: 12px;
+  width: 420px;
+  height: 476px;
+  background: -o-linear-gradient(332.79deg, #84DBDB 16.4%, #6E7AFF 129.13%), -o-linear-gradient(324.4deg, #E3BAC8 0%, #B88FD9 181.6%);
+  background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
+  -webkit-backdrop-filter: blur(43.0769px);
+          backdrop-filter: blur(43.0769px);
+  border-radius: 24px;
+}
+
+.integration .clients__swiper {
+  width: 100%;
+}
+
+.integration .clients .swiper {
+  position: relative;
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 24px;
+  -webkit-backdrop-filter: blur(52px);
+          backdrop-filter: blur(52px);
+}
+
+.integration .clients .swiper__slide {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 24px;
+  padding: 104px 52px 52px;
+}
+
+.integration .clients .swiper__slide p {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.integration .clients .swiper__slide:before {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: 52px;
+  background-image: url(../img/Integration/commas.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.integration .clients .swiper__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0 0;
+}
+
+.integration .clients .swiper__img {
+  width: 56px;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.integration .clients .swiper__info {
+  margin: 0 0 0 16px;
+}
+
+.integration .clients .swiper__info p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.integration .clients .swiper__pagination {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 39px 0 0 24px;
+}
+
+.integration .clients .swiper__pagination .swiper-pagination-bullet {
+  background: #E6E9F5;
+  opacity: 1;
+  margin: 5px 20px 5px 0;
+}
+
+.integration .clients .swiper__pagination .swiper-pagination-bullet-active {
+  background: #707EFF;
+}
+
+.integration .clients .swiper__prev {
+  left: inherit;
+  right: 104px;
+}
+
+.integration .clients .swiper__prev:after {
+  font-size: 0;
+}
+
+.integration .clients .swiper__next {
+  right: 52px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.integration .clients .swiper__next:after {
+  font-size: 0;
+}
+
+.integration .clients .swiper .slider-arrow {
+  position: absolute;
+  top: inherit;
+  bottom: 52px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(230, 233, 245, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.integration .clients .swiper .slider-arrow svg {
+  width: 7px;
+  height: 9px;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  fill: #707EFF;
+}
+
+.integration .clients .swiper .slider-arrow:hover {
+  background-color: #707EFF;
+}
+
+.integration .clients .swiper .slider-arrow:hover svg {
+  fill: #fff;
 }
 
 @media (max-width: 1439px) {
@@ -1214,15 +1414,8 @@ h6 {
 }
 
 @media (max-width: 567px) {
-  .integration .benefits__bottom-content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .integration .benefits__card {
     width: calc(100% - 20px);
-    max-width: 295px;
   }
 }
 
