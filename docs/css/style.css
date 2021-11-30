@@ -955,7 +955,7 @@ h6 {
 }
 
 .integration .clients__left-side h2 {
-  margin: 119px 0 0 0;
+  margin: 119px 20px 0 0;
 }
 
 .integration .clients__button {
@@ -963,8 +963,13 @@ h6 {
   max-width: 250px;
 }
 
+.integration .clients__button.button-bottom-clients {
+  display: none;
+}
+
 .integration .clients__right-side {
   position: relative;
+  width: 100%;
   max-width: 660px;
 }
 
@@ -973,17 +978,15 @@ h6 {
   position: absolute;
   right: -40px;
   bottom: 12px;
-  width: 420px;
-  height: 476px;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  max-height: 476px;
   background: -o-linear-gradient(332.79deg, #84DBDB 16.4%, #6E7AFF 129.13%), -o-linear-gradient(324.4deg, #E3BAC8 0%, #B88FD9 181.6%);
   background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
   -webkit-backdrop-filter: blur(43.0769px);
           backdrop-filter: blur(43.0769px);
   border-radius: 24px;
-}
-
-.integration .clients__swiper {
-  width: 100%;
 }
 
 .integration .clients .swiper {
@@ -993,6 +996,8 @@ h6 {
   border-radius: 24px;
   -webkit-backdrop-filter: blur(52px);
           backdrop-filter: blur(52px);
+  width: 100%;
+  max-width: 660px;
 }
 
 .integration .clients .swiper__slide {
@@ -1003,6 +1008,8 @@ h6 {
           box-sizing: border-box;
   border-radius: 24px;
   padding: 104px 52px 52px;
+  width: 100%;
+  max-width: 660px;
 }
 
 .integration .clients .swiper__slide p {
@@ -1308,6 +1315,44 @@ h6 {
   .integration .benefits__card {
     width: calc((100% - 40px) / 2);
   }
+
+  .integration .clients__content {
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .integration .clients__left-side h2 {
+    margin: 0 0 40px 0;
+  }
+
+  .integration .clients__right-side:before {
+    display: none;
+  }
+
+  .integration .clients__button.button-top-clients {
+    display: none;
+  }
+
+  .integration .clients__button.button-bottom-clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .integration .clients .swiper-pagination {
+    margin: 39px 0 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1417,6 +1462,10 @@ h6 {
   .integration .benefits__card {
     width: calc(100% - 20px);
   }
+
+  .integration .clients .swiper .slider-arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 424px) {
@@ -1435,5 +1484,14 @@ h6 {
 
   .integration .solution__button {
     margin: 0 auto;
+  }
+
+  .integration .clients .swiper__slide {
+    padding: 80px 15px 15px;
+  }
+
+  .integration .clients .swiper__slide:before {
+    top: 35px;
+    left: 15px;
   }
 }

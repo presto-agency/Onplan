@@ -267,33 +267,35 @@
 
     &__left-side {
         h2{
-            margin: 119px 0 0 0;
+            margin: 119px 20px 0 0;
         }
     }
 
     &__button {
         margin: 40px 0 0 0;
         max-width: 250px;
+        &.button-bottom-clients{
+            display: none;
+        }
     }
 
     &__right-side{
         position: relative;
+        width: 100%;
         max-width: 660px;
         &:before{
             content: '';
             position: absolute;
             right: -40px;
             bottom: 12px;
-            width: 420px;
-            height: 476px;
+            width: 100%;
+            height: 100%;
+            max-width: 420px;
+            max-height: 476px;
             background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
             backdrop-filter: blur(43.0769px);
             border-radius: 24px;
         }
-    }
-
-    &__swiper {
-        width: 100%;
     }
 
     .swiper {
@@ -301,8 +303,8 @@
         box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
         border-radius: 24px;
         backdrop-filter: blur(52px);
-        &__wrapper {
-        }
+        width: 100%;
+        max-width: 660px;
     
         &__slide {
             background: rgba(255, 255, 255, 0.9);
@@ -311,6 +313,8 @@
             box-sizing: border-box;
             border-radius: 24px;
             padding: 104px 52px 52px;
+            width: 100%;
+            max-width: 660px;
             p{
                 line-height: 32px;
                 font-size: 20px;
@@ -449,6 +453,35 @@
                 width: calc((100% - (10px * 4)) / 2);
             }
         }
+        .clients{
+            &__content{
+                justify-content: inherit;
+                align-items: center;
+                flex-direction: column;
+            }
+            &__left-side{
+                h2{
+                    margin: 0 0 40px 0;
+                }
+            }
+            &__right-side{
+                &:before{
+                    display: none;
+                }
+            }
+            &__button{
+                &.button-top-clients{
+                    display: none;
+                }
+                &.button-bottom-clients{
+                    display: flex;
+                }
+            }
+            .swiper-pagination{
+                margin: 39px 0 0 0;
+                justify-content: center;
+            }
+        }
     }
 }
 @media(max-width: 735px){
@@ -484,6 +517,13 @@
                 width: calc((100% - (10px * 2)));
             }
         }
+        .clients{
+            .swiper{
+                .slider-arrow{
+                    display: none;
+                }
+            }
+        }
     }
 }
 @media(max-width: 424px){
@@ -499,6 +539,17 @@
             }
             &__button{
                 margin: 0 auto;
+            }
+        }
+        .clients{
+            .swiper{
+                &__slide{
+                    padding: 80px 15px 15px;
+                    &:before{
+                        top: 35px;
+                        left: 15px;
+                    }
+                }
             }
         }
     }
