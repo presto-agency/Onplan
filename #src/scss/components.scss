@@ -16,6 +16,10 @@
 	&.button-dark{
 		color: $whitecolor;
 		background-color: $textcolor;
+        transition: 300ms;
+        &:hover{
+            background: #354051;
+        }
 	}
 	&.arrow-svg{
 		svg{

@@ -110,6 +110,7 @@
                 margin: 8px;
                 color: #606A80;
                 transition: 300ms;
+                cursor: pointer;
                 &.active-case{
                     background-color: #232F42;
                     color: #fff;
@@ -143,11 +144,13 @@
                 height: 9px;
             }
         }
+
         .sort{
             display: flex;
             align-items: center;
             position: relative;
             padding: 0 24px 0 0;
+            cursor: pointer;
             &:before{
                 content: '';
                 position: absolute;
@@ -222,6 +225,7 @@
                     }
             }
         }
+
         .card {
                 width: calc((100% - (32px * 6)) / 3);
                 margin:32px;

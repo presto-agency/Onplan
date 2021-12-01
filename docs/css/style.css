@@ -263,6 +263,14 @@ h6 {
   border-radius: 32px;
   border: 2px solid #232F42;
   background: #fff;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.header__strong-text.button-header:hover {
+  background: #232F42;
+  color: #fff;
 }
 
 .header__burger {
@@ -539,6 +547,13 @@ h6 {
 .button.button-dark {
   color: #fff;
   background-color: #232F42;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.button.button-dark:hover {
+  background: #354051;
 }
 
 .button.arrow-svg svg {
@@ -1344,6 +1359,7 @@ h6 {
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+  cursor: pointer;
 }
 
 .all-cases .catalog__cases li.active-case {
@@ -1392,6 +1408,7 @@ h6 {
           align-items: center;
   position: relative;
   padding: 0 24px 0 0;
+  cursor: pointer;
 }
 
 .all-cases .catalog .sort:before {
