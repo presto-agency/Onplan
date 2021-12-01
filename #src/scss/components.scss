@@ -101,6 +101,7 @@
         ul{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         li{
             padding: 0 10px 0 0;
@@ -182,6 +183,7 @@
                     h3{
                         padding: 37px 0 0 0;
                         position: relative;
+                        text-align: center;
                         &:before{
                             content: '';
                             position: absolute;

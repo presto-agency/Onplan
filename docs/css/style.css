@@ -133,6 +133,7 @@ h6 {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  background-color: #F8F9FC;
 }
 
 .container {
@@ -644,6 +645,8 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .quickbooks__bread-crumbs li {
@@ -752,6 +755,7 @@ h6 {
 .quickbooks .content__bottom-text h3 {
   padding: 37px 0 0 0;
   position: relative;
+  text-align: center;
 }
 
 .quickbooks .content__bottom-text h3:before {
@@ -778,7 +782,6 @@ h6 {
 
 .integration {
   position: relative;
-  background-color: #F8F9FC;
   padding: 100px 0;
 }
 
@@ -1219,6 +1222,92 @@ h6 {
   height: 62px;
 }
 
+.all-cases {
+  padding: 100px 0;
+}
+
+.all-cases .quickbooks {
+  position: relative;
+  padding: 0 0 80px 0;
+}
+
+.all-cases .quickbooks:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 226px;
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
+}
+
+.all-cases .quickbooks__bg {
+  margin: 0;
+  top: -60px;
+}
+
+.all-cases .quickbooks__button {
+  margin: 64px 0 0 0;
+  height: 62px;
+  max-width: 248px;
+}
+
+.all-cases .quickbooks .content {
+  margin: 37px 0 0 0;
+}
+
+.all-cases .quickbooks .content__bottom-text {
+  margin: 120px auto 0 auto;
+  max-width: 100%;
+}
+
+.all-cases .quickbooks .content__bottom-text h3 {
+  padding: 0;
+}
+
+.all-cases .quickbooks .content__bottom-text h3:before {
+  display: none;
+}
+
+.all-cases .quickbooks .content__bottom-text ul {
+  width: 100%;
+  max-width: 977px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 33px -15px -15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-cases .quickbooks .content__bottom-text li {
+  width: calc((100% - 180px) / 6);
+  height: 28px;
+  margin: 15px;
+}
+
+.all-cases .quickbooks .content__bottom-text li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.all-cases .quickbooks .content__bottom-text li a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.all-cases .quickbooks .content__description p {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1439px) {
   .header__navigation {
     padding: 0 20px;
@@ -1573,6 +1662,19 @@ h6 {
   .integration .benefits__content {
     padding: 50px 0;
   }
+
+  .all-cases .quickbooks .content__bottom-text li {
+    width: calc((100% - 90px) / 3);
+  }
+
+  .all-cases .quickbooks .content__bottom-text li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media (max-width: 567px) {
@@ -1618,5 +1720,9 @@ h6 {
 
   .integration .best__content p {
     font-size: 20px;
+  }
+
+  .all-cases .quickbooks .content__bottom-text li {
+    width: calc((100% - 60px) / 2);
   }
 }
