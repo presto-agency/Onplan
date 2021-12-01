@@ -147,6 +147,13 @@
             position: absolute;
             top: 123px;
             left: 230px;
+            width: 562px;
+            height: 489px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
 
 		&__left-side {
@@ -414,8 +421,10 @@
     }
 }
 
-.best {
+    .best {
     position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
     &__content {
         position: relative;
         z-index: 2;
@@ -439,18 +448,28 @@
 
     &__box-2 {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 36px;
+        left: -55px;
         height: 538px;
         width: 492px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     &__box-1 {
         position: absolute;
-        top: 0;
-        right: 0;
-        height: 542px;
-        width: 473px;
+        top: 80px;
+        right: -107px;
+        height: 479px;
+        width: 542px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 
     &__button{
@@ -542,12 +561,14 @@
                 margin: 45px 0 0 0;
             }
             &__box-1{
-                width: 215px;
-                height: 240px;
-                top: 441px;
+                width: 238px;
+                height: 249px;
+                top: 456px;
+                right: -52px;
             }
             &__box-2{
-                top: -51px;
+                top: -29px;
+                left: -25px;
                 width: 217px;
                 height: 262px;
             }
