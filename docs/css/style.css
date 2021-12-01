@@ -147,11 +147,6 @@ h6 {
   padding: 84px 0 0 0;
 }
 
-.page {
-  position: relative;
-  z-index: 2;
-}
-
 .body-lock {
   position: relative;
   overflow-y: hidden;
