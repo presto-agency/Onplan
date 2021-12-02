@@ -406,6 +406,13 @@ h6 {
   line-height: 23px;
   font-weight: 400;
   opacity: 0.8;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.nav-column a:hover {
+  opacity: 0.5;
 }
 
 .nav-column li {
@@ -491,33 +498,57 @@ h6 {
 .bottom-content__social.facebook {
   height: 18px;
   width: 9px;
+  opacity: 1;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.bottom-content__social.facebook:hover {
+  opacity: 0.5;
 }
 
 .bottom-content__social.instagram {
   width: 18px;
   height: 18px;
+  opacity: 1;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.bottom-content__social.instagram:hover {
+  opacity: 0.5;
 }
 
 .h1 h1 {
   font-size: 60px;
   font-weight: 900;
+  color: #232F42;
 }
 
 .h2 h2 {
+  color: #232F42;
   font-size: 54px;
   line-height: 56px;
   font-weight: 900;
 }
 
 .h5 h3 {
+  color: #232F42;
   font-size: 32px;
   font-weight: 900;
 }
 
 .h8 h3 {
+  color: #232F42;
   line-height: 25px;
   font-size: 20px;
   font-weight: 800;
+}
+
+.par p {
+  color: #606A80;
 }
 
 .button {
@@ -553,7 +584,7 @@ h6 {
 }
 
 .button.button-dark:hover {
-  background: #354051;
+  background: #606A80;
 }
 
 .button.arrow-svg svg {
@@ -563,10 +594,17 @@ h6 {
   width: 18px;
   height: 12px;
   fill: #fff;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .button.arrow-svg span {
   padding: 0 29px 0 0;
+}
+
+.button.arrow-svg:hover svg {
+  right: 19px;
 }
 
 .mobile-menu-btns {
@@ -1022,6 +1060,7 @@ h6 {
   font-weight: 800;
   max-width: 188px;
   text-align: center;
+  color: #232F42;
 }
 
 .integration .benefits__img {
@@ -1278,6 +1317,7 @@ h6 {
 }
 
 .all-cases .quickbooks .content__bottom-text h3 {
+  color: #606A80;
   padding: 0;
 }
 
@@ -1467,6 +1507,9 @@ h6 {
 
 .all-cases .catalog .sort .sort-select__current {
   display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #232F42;
 }
 
 .all-cases .catalog .sort .sort-select__list {
@@ -1663,8 +1706,18 @@ h6 {
     background-size: 12px 7px;
   }
 
-  .header__navigation.active {
+  .header.active .header__navigation {
     top: 70px;
+  }
+
+  .header.active .header__connect {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .header.active .header__connect a {
+    display: none;
   }
 
   .footer__container {

@@ -2,6 +2,7 @@
     h1{
         font-size: 60px;
         font-weight: 900;
+        color: $textcolor;
         @media(max-width: 735px){
             font-size: 50px;
         }
@@ -9,6 +10,7 @@
 }
 .h2{
     h2{
+        color: $textcolor;
         font-size: 54px;
         line-height: 56px;
         font-weight: 900;
@@ -19,14 +21,22 @@
 }
 .h5{
     h3{
+        color: $textcolor;
         font-size: 32px;
         font-weight: 900;
     }
 }
 .h8{
     h3{
+        color: $textcolor;
         line-height: 25px;
         font-size: 20px;
         font-weight: 800;
+    }
+}
+
+.par{
+    p{
+        color: $darkgreycolor;
     }
 }

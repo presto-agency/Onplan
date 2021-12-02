@@ -245,8 +245,18 @@
                     }
                 }
             }
-            &.active{
-                top: 70px;
+        }
+        &.active{
+            .header{
+                &__navigation{
+                    top: 70px;
+                }
+                &__connect{
+                    justify-content: flex-end;
+                    a{
+                        display: none;
+                    }
+                }
             }
         }
     }

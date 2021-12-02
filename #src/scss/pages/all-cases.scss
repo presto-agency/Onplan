@@ -27,6 +27,7 @@
                         margin: 120px auto 0 auto;
                         max-width: 100%;
                         h3{
+                            color:$darkgreycolor;
                             padding: 0;
                             &:before{
                                 display: none;
@@ -198,6 +199,9 @@
                 }
                     &__current {
                         display: block;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $textcolor;
                     }
             
                     &__list {

@@ -50,6 +50,10 @@
             line-height: 23px;
             font-weight: 400;
             opacity: 0.8;
+            transition: 300ms;
+            &:hover{
+                opacity: 0.5;
+            }
         }
         li{
             margin: 0 0 16px 0;
@@ -117,10 +121,20 @@
         &.facebook{
             height: 18px;
             width: 9px;
+            opacity: 1;
+            transition: 300ms;
+            &:hover{
+                opacity: 0.5;
+            }
         }
         &.instagram{
             width: 18px;
             height: 18px;
+            opacity: 1;
+            transition: 300ms;
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
 }
