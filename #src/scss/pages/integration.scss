@@ -3,7 +3,7 @@
     padding: 100px 0;
 
     .solution {
-        background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%), linear-gradient(151.55deg, #A8DAFE 17.57%, #66C4CC 100%);
+        background: $greengradient;
 		&__content {
             position: relative;
             display: flex;
@@ -167,7 +167,7 @@
             height: 100%;
             max-width: 420px;
             max-height: 476px;
-            background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
+            background: $blue-greengradient;
             backdrop-filter: blur(43.0769px);
             border-radius: 24px;
         }
@@ -237,7 +237,7 @@
             flex-wrap: wrap;
             margin: 39px 0 0 24px;
             .swiper-pagination-bullet{
-                background: #E6E9F5;
+                background: $greycolor;
                 opacity: 1;
                 margin: 5px 20px 5px 0;
             }
@@ -282,7 +282,7 @@
             &:hover{
                 background-color: $purplecolor;
                 svg{
-                    fill: #fff;
+                    fill: $whitecolor;
                 }
             }
         }

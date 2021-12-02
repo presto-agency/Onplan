@@ -875,8 +875,8 @@ h6 {
 }
 
 .integration .solution {
-  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%), -o-linear-gradient(298.45deg, #A8DAFE 17.57%, #66C4CC 100%);
-  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%), linear-gradient(151.55deg, #A8DAFE 17.57%, #66C4CC 100%);
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
 }
 
 .integration .solution__content {
@@ -1169,7 +1169,7 @@ h6 {
 }
 
 .integration .clients .swiper__pagination .swiper-pagination-bullet {
-  background: #E6E9F5;
+  background: #EDF0F2;
   opacity: 1;
   margin: 5px 20px 5px 0;
 }
@@ -1436,7 +1436,7 @@ h6 {
 
 .all-cases .catalog .sort .sort-select {
   position: relative;
-  background-color: #FBFCFD;
+  background-color: #fff;
   height: 40px;
   width: 100%;
   min-width: 240px;
