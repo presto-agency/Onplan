@@ -1663,7 +1663,7 @@ h6 {
   max-width: 400px;
 }
 
-.case-studies .quickbooks .content .case-studies__img {
+.case-studies .quickbooks .content .studies__img {
   position: relative;
   max-width: 470px;
   width: 100%;
@@ -1676,8 +1676,9 @@ h6 {
           box-sizing: content-box;
 }
 
-.case-studies .quickbooks .content .case-studies__img img {
+.case-studies .quickbooks .content .studies__img img {
   position: relative;
+  border-radius: 40px;
   z-index: 2;
   width: 100%;
   height: 100%;
@@ -1685,7 +1686,7 @@ h6 {
      object-fit: cover;
 }
 
-.case-studies .quickbooks .content .case-studies__img:after {
+.case-studies .quickbooks .content .studies__img:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1734,6 +1735,28 @@ h6 {
   .all-cases .catalog .card {
     margin: 16px;
     width: calc((100% - 96px) / 3);
+  }
+
+  .case-studies .quickbooks {
+    padding: 0 0 70px 0;
+  }
+
+  .case-studies .quickbooks:before {
+    top: 119px;
+    left: 16px;
+  }
+
+  .case-studies .quickbooks:after {
+    width: 317px;
+  }
+
+  .case-studies .quickbooks .content .studies {
+    margin: 0 20px 0 0;
+  }
+
+  .case-studies .quickbooks .content .studies__img {
+    width: 342px;
+    max-height: 531px;
   }
 }
 
@@ -1973,6 +1996,56 @@ h6 {
     width: calc((100% - 64px) / 2);
     max-width: 370px;
   }
+
+  .case-studies .quickbooks {
+    padding: 0;
+  }
+
+  .case-studies .quickbooks:before {
+    display: none;
+  }
+
+  .case-studies .quickbooks:after {
+    top: inherit;
+    bottom: 0;
+    height: 352px;
+    width: 100%;
+  }
+
+  .case-studies .quickbooks .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+
+  .case-studies .quickbooks .content__top-text {
+    margin: 60px 0 0 0;
+  }
+
+  .case-studies .quickbooks .content .studies {
+    margin: 0;
+  }
+
+  .case-studies .quickbooks .content .studies__img {
+    width: 100%;
+    max-width: 335px;
+    max-height: 456px;
+    padding: 0;
+    margin: 4px 0 0 0;
+    top: 52px;
+  }
+
+  .case-studies .quickbooks .content .studies__img:after {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2186,5 +2259,26 @@ h6 {
 
   .all-cases .catalog .card p {
     font-size: 16px;
+  }
+
+  .case-studies .quickbooks__bread-crumbs {
+    font-size: 14px;
+  }
+
+  .case-studies .quickbooks .content__description h1 {
+    margin: 24px 0 16px 0;
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .case-studies .quickbooks .content__description p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .case-studies .quickbooks .content__button {
+    height: 52px;
+    max-width: 187px;
+    margin: 52px 0 0 0;
   }
 }
