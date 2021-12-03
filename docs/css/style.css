@@ -338,6 +338,8 @@ h6 {
 .footer {
   background-color: #232F42;
   color: #fff;
+  position: relative;
+  z-index: 1000;
 }
 
 .footer__container {

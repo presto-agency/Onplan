@@ -1,6 +1,8 @@
 .footer {
     background-color: $textcolor;
     color: $whitecolor;
+    position: relative;
+    z-index: 1000;
     &__container {
         max-width: 1240px;
         margin: 0 auto;
