@@ -2,70 +2,6 @@
     position: relative;
     padding: 100px 0;
 
-    .solution {
-        background: $greengradient;
-		&__content {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            padding: 100px 0 75px 0;
-		}
-
-        &__bg{
-            position: absolute;
-            top: 123px;
-            left: 230px;
-            width: 562px;
-            height: 489px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-        }
-
-		&__left-side {
-            position: relative;
-            z-index: 2;
-            width: 500px;
-            margin: 0 0 0 40px;
-		}
-
-		&__description {
-            margin: 0 0 54px 0;
-            h2{
-                color: $whitecolor;
-                margin: 48px 0 16px 0;
-            }
-            p{
-                color: $whitecolor;
-                font-size: 22px;
-                line-height: 33px;
-            }
-		}
-
-		&__button {
-            height: 62px;
-            max-width: 248px;
-            font-size: 18px;
-		}
-
-		&__right-side {
-            position: relative;
-            z-index: 2;
-		}
-
-		&__img {
-            width: 611px;
-            height: 436px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-		}
-}
-
     .benefits {
     &__content {
         padding: 120px 0;
@@ -291,38 +227,9 @@
 }
 
 }
-@media(max-width: 1439px){
-    .integration{
-        .solution{
-            &__left-side{
-                margin: 0;
-                min-width: 500px;
-            }
-            &__img{
-                width: 100%;
-            }
-        }
-    }
-}
+
 @media(max-width: 1023px){
     .integration{
-        .solution{
-            &__content{
-                flex-direction: column;
-                align-items: center;
-                justify-content: inherit;
-            }
-            &__bg{
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            &__left-side{
-                width: 100%;
-                max-width: 500px;
-                min-width: inherit;
-            }
-        }
         .benefits{
             &__card{
                 width: calc((100% - (10px * 4)) / 2);
@@ -362,11 +269,6 @@
 @media(max-width: 735px){
     .integration{
         padding: 50px 0;
-        .solution{
-            &__content{
-                padding: 50px 0;
-            }
-        }
         .benefits{
             &__content{
                 padding: 50px 0;
@@ -392,19 +294,6 @@
 }
 @media(max-width: 424px){
     .integration{
-        .solution{
-            &__img{
-                display: none;
-            }
-            &__description{
-                h2{
-                    margin: 0 0 16px 0;
-                }
-            }
-            &__button{
-                margin: 0 auto;
-            }
-        }
         .clients{
             .swiper{
                 &__slide{
