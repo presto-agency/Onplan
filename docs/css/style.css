@@ -1810,52 +1810,20 @@ h6 {
 }
 
 .case-studies .models .table {
-  margin: 64px 0 0 0;
-  -webkit-box-shadow: 0px 24px 40px rgba(36, 46, 66, 0.05);
-          box-shadow: 0px 24px 40px rgba(36, 46, 66, 0.05);
-  border-radius: 32px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.case-studies .models .table__column {
-  max-width: 506px;
   width: 100%;
+}
+
+.case-studies .models .table__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.case-studies .models .table__row h3 {
   position: relative;
-}
-
-.case-studies .models .table__column:first-child {
-  padding: 64px 0 64px 64px;
-  border-right: 1px solid #EDF0F2;
-}
-
-.case-studies .models .table__column:first-child ul li {
-  padding: 20px 52px 20px 0;
-}
-
-.case-studies .models .table__column:last-child {
-  padding: 64px 64px 64px 0;
-}
-
-.case-studies .models .table__column:last-child ul li {
-  padding: 20px 0 20px 52px;
-}
-
-.case-studies .models .table__column:last-child h3 {
-  margin: 0 0 0 52px;
-}
-
-.case-studies .models .table__column h3 {
   padding: 32px 0 0 0;
-  position: relative;
 }
 
-.case-studies .models .table__column h3:before {
+.case-studies .models .table__row h3:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1865,39 +1833,11 @@ h6 {
   border-radius: 8px;
 }
 
-.case-studies .models .table__column ul {
-  color: #606A80;
-  margin: 32px 0 0 0;
-}
-
-.case-studies .models .table__column ul li {
-  padding: 0 0 0 23px;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  border-bottom: 1px solid #EDF0F2;
-}
-
-.case-studies .models .table__column ul li:last-child {
-  border-bottom: inherit;
-}
-
-.case-studies .models .table__column ul li p {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 400;
-  margin: 20px 0 0 0;
-}
-
-.case-studies .models .table__column ul li p:first-child {
-  margin: 0;
-}
-
-.case-studies .models .table__column.purple h3:before {
+.case-studies .models .table__row h3.purple:before {
   background: #707EFF;
 }
 
-.case-studies .models .table__column.green h3:before {
+.case-studies .models .table__row h3.green:before {
   background: #47CCAB;
 }
 
@@ -1905,6 +1845,12 @@ h6 {
   background: -o-linear-gradient(317.38deg, #9CA2E6 0%, #7E5CE6 100%), -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
   background: linear-gradient(132.62deg, #9CA2E6 0%, #7E5CE6 100%), linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
   padding: 120px 0;
+}
+
+.case-studies .comments h2 {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 40px 0;
 }
 
 .case-studies .comments__content {

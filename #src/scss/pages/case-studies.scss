@@ -1,5 +1,5 @@
 .case-studies{
-    .quickbooks {
+.quickbooks {
         padding: 0 0 40px 0;
         position: relative;
         max-width: 1440px;
@@ -109,8 +109,8 @@
                 }
             }
         }
-    }
-    .about {
+}
+.about {
         padding: 120px 0 55px 0;
         background: $light-blue-gradien;
 		&__content {
@@ -167,7 +167,7 @@
             }
         }
 }
-    .models {
+.models {
 margin: 96px 0 120px 0;
     &__content {
         display: flex;
@@ -184,52 +184,14 @@ margin: 96px 0 120px 0;
             margin: 0 auto;
         }
     }
-    // .table{
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    //     grid-template-rows: minmax(100px,1fr);
-    //     &__column{
-    //         ul{
-    //             display: grid;
-    //             grid-template-columns: 1fr;
-    //             grid-auto-rows: 1fr;
-    //         }
-    //     }
-    // }
-    .table {
-        margin: 64px 0 0 0;
-        box-shadow: 0px 24px 40px rgba(36, 46, 66, 0.05);
-        border-radius: 32px;
-        background: $whitecolor;
-        display: flex;
-        justify-content: space-between;
-        &__column {
-            max-width: 506px;
-            width: 100%;
-            position: relative;
-            &:first-child{
-                padding: 64px 0 64px 64px;
-                border-right: 1px solid $greycolor;
-                ul{
-                    li{
-                        padding: 20px 52px 20px 0;
-                    }
-                }
-            }
-            &:last-child{
-                padding: 64px 64px 64px 0;
-                ul{
-                    li{
-                        padding: 20px 0 20px 52px;
-                    }
-                }
-                h3{
-                    margin: 0 0 0 52px;
-                }
-            }
+    .table{
+        width: 100%;
+        &__row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             h3{
-                padding: 32px 0 0 0;
                 position: relative;
+                padding: 32px 0 0 0;
                 &:before{
                     content: '';
                     position: absolute;
@@ -239,39 +201,12 @@ margin: 96px 0 120px 0;
                     height: 6px;
                     border-radius: 8px;
                 }
-            }
-            ul{
-                color: $darkgreycolor;
-                margin: 32px 0 0 0;
-                li{
-                    padding: 0 0 0 23px;
-                    font-size: 18px;
-                    line-height: 27px;
-                    font-weight: 400;
-                    border-bottom: 1px solid $greycolor;
-                    &:last-child{
-                        border-bottom: inherit;
-                    }
-                    p{
-                        font-size: 18px;
-                        line-height: 27px;
-                        font-weight: 400;
-                        margin: 20px 0 0 0;
-                        &:first-child{
-                            margin: 0;
-                        }
-                    }
-                }
-            }
-            &.purple{
-                h3{
+                &.purple{
                     &:before{
                         background: $purplecolor;
                     }
                 }
-            }
-            &.green{
-                h3{
+                &.green{
                     &:before{
                         background: $greencolor;
                     }
@@ -279,11 +214,15 @@ margin: 96px 0 120px 0;
             }
         }
     }
-
 }
 .comments {
     background: $purplegradient;
     padding: 120px 0;
+    h2{
+        text-align: center;
+        color: $whitecolor;
+        margin: 0 0 40px 0;
+    }
     &__content {
         max-width: 1120px;
         margin: 0 auto;
