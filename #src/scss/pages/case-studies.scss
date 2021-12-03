@@ -297,6 +297,7 @@ margin: 96px 0 120px 0;
     &__left-side {
         max-width: 100%;
         width: 100%;
+        margin: 0 20px 0 0;
     }
 
     &__img {
@@ -310,6 +311,9 @@ margin: 96px 0 120px 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        &.mobile{
+            display: none;
         }
     }
 
@@ -380,6 +384,14 @@ margin: 96px 0 120px 0;
             padding: 0 0 0 24px;
             box-sizing: content-box;
         }
+        &.mobile{
+            display: none;
+            justify-content: center;
+            margin: 40px 0 0 0;
+        }
+        &.desktop{
+            padding: 15px 0 0 0;
+        }
     }
 }
     @media(max-width: 1439px){
@@ -400,6 +412,11 @@ margin: 96px 0 120px 0;
                         max-height: 531px;
                     }
                 }
+            }
+        }
+        .comments{
+            &__right-side{
+                margin: 0;
             }
         }
     }
@@ -439,6 +456,24 @@ margin: 96px 0 120px 0;
                 }
             }
         }
+        .comments{
+            &__img{
+                width: 286px;
+                height: 286px;
+            }
+            &__bottom{
+                flex-direction: column;
+            }
+            &__company{
+                margin: 20px 0 0 0;
+                &.desktop{
+                    padding: 0;
+                }
+            }
+            &__bottom{
+                align-items: flex-end;
+            }
+        }
     }
     @media(max-width: 767px){
         .about{
@@ -452,6 +487,38 @@ margin: 96px 0 120px 0;
             }
             &__bg{
                 display: none;
+            }
+        }
+        .comments{
+            &__left-side{
+                display: none;
+            }
+            &__wrapper{
+                display: flex;
+            }
+            &__img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 12px 0 0;
+                &.mobile{
+                    display: block;
+                }
+            }
+            &__company{
+                &.desktop{
+                    display: none;
+                }
+                &.mobile{
+                    display: flex;
+                }
+            }
+            &__content{
+                padding: 40px 32px 40px;
+            }
+            &__bottom{
+                margin: 24px 0 0 0;
+                align-items: flex-start;
             }
         }
     }
@@ -478,6 +545,9 @@ margin: 96px 0 120px 0;
                     margin: 52px 0 0 0;
                 }
             }
+        }
+        .comments{
+            padding: 80px 0;
         }
     }
 }

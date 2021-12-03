@@ -1924,6 +1924,7 @@ h6 {
 .case-studies .comments__left-side {
   max-width: 100%;
   width: 100%;
+  margin: 0 20px 0 0;
 }
 
 .case-studies .comments__img {
@@ -1940,6 +1941,10 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.case-studies .comments__img.mobile {
+  display: none;
 }
 
 .case-studies .comments__right-side {
@@ -2027,6 +2032,18 @@ h6 {
           box-sizing: content-box;
 }
 
+.case-studies .comments__company.mobile {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.case-studies .comments__company.desktop {
+  padding: 15px 0 0 0;
+}
+
 @media (max-width: 1439px) {
   .header__navigation {
     padding: 0 20px;
@@ -2087,6 +2104,10 @@ h6 {
   .case-studies .quickbooks .content .studies__img {
     width: 342px;
     max-height: 531px;
+  }
+
+  .case-studies .comments__right-side {
+    margin: 0;
   }
 }
 
@@ -2376,6 +2397,32 @@ h6 {
   .case-studies .quickbooks .content .studies__img:after {
     display: none;
   }
+
+  .case-studies .comments__img {
+    width: 286px;
+    height: 286px;
+  }
+
+  .case-studies .comments__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .case-studies .comments__company {
+    margin: 20px 0 0 0;
+  }
+
+  .case-studies .comments__company.desktop {
+    padding: 0;
+  }
+
+  .case-studies .comments__bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2468,6 +2515,48 @@ h6 {
 
   .case-studies .about__bg {
     display: none;
+  }
+
+  .case-studies .comments__left-side {
+    display: none;
+  }
+
+  .case-studies .comments__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .case-studies .comments__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+  }
+
+  .case-studies .comments__img.mobile {
+    display: block;
+  }
+
+  .case-studies .comments__company.desktop {
+    display: none;
+  }
+
+  .case-studies .comments__company.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .case-studies .comments__content {
+    padding: 40px 32px 40px;
+  }
+
+  .case-studies .comments__bottom {
+    margin: 24px 0 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -2627,5 +2716,9 @@ h6 {
     height: 52px;
     max-width: 187px;
     margin: 52px 0 0 0;
+  }
+
+  .case-studies .comments {
+    padding: 80px 0;
   }
 }
