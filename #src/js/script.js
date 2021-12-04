@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
     swiperComments();
     select();
-    // columnWidth();
 })
 
 const burgerAnimation = () => {
@@ -105,18 +104,6 @@ const select = () => {
         }))
     }
 };
-
-// const columnWidth = () => {
-//     function getHeight() {
-//         let objectPurple = document.querySelectorAll('.purple>ul>li');
-//         let objectGreen = document.querySelectorAll('.green>ul>li');
-//         const array = '';
-//         for (const el of objectPurple) {
-
-//         }
-//     }
-//     getHeight();
-// }
 
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {

@@ -1812,20 +1812,43 @@ h6 {
 }
 
 .case-studies .models .table {
+  position: relative;
   width: 100%;
+  padding: 64px;
+  background: #fff;
+  border: 1px solid #EDF0F2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 24px 40px rgba(36, 46, 66, 0.05);
+          box-shadow: 0px 24px 40px rgba(36, 46, 66, 0.05);
+  border-radius: 32px;
+  margin: 64px 0 0 0;
 }
 
-.case-studies .models .table__row {
+.case-studies .models .table:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  width: 1px;
+  background-color: #EDF0F2;
+}
+
+.case-studies .models .table__title {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.case-studies .models .table__row h3 {
+.case-studies .models .table__title h3 {
   position: relative;
   padding: 32px 0 0 0;
 }
 
-.case-studies .models .table__row h3:before {
+.case-studies .models .table__title h3:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1835,12 +1858,66 @@ h6 {
   border-radius: 8px;
 }
 
-.case-studies .models .table__row h3.purple:before {
+.case-studies .models .table__title h3.purple:before {
   background: #707EFF;
 }
 
-.case-studies .models .table__row h3.green:before {
+.case-studies .models .table__title h3.green {
+  margin: 0 0 0 52px;
+}
+
+.case-studies .models .table__title h3.green:before {
   background: #47CCAB;
+}
+
+.case-studies .models .table__row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid #EDF0F2;
+}
+
+.case-studies .models .table__row:last-child {
+  border-bottom: none;
+}
+
+.case-studies .models .table__content {
+  padding: 20px 0 47px 0;
+}
+
+.case-studies .models .table__content:last-child {
+  padding: 20px 0 47px 52px;
+}
+
+.case-studies .models .table__content h3 {
+  display: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  color: #232F42;
+  padding: 13px 0 14px 0;
+  border-bottom: 1px solid #EDF0F2;
+}
+
+.case-studies .models .table__content p {
+  padding: 0 0 0 34px;
+  max-width: 504px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+  position: relative;
+}
+
+.case-studies .models .table__content p span {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 100%;
+  color: #36B5EB;
+  height: 18px;
+  width: 11px;
 }
 
 .case-studies .comments {
