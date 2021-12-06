@@ -1,4 +1,8 @@
 .case-studies{
+    padding: 0 0 100px 0;
+    @media(max-width:735px){
+        padding: 0 0 50px 0;
+    }
 .quickbooks {
         padding: 0 0 40px 0;
         position: relative;

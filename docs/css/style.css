@@ -1583,6 +1583,10 @@ h6 {
   margin: 8px 0 0 0;
 }
 
+.case-studies {
+  padding: 0 0 100px 0;
+}
+
 .case-studies .quickbooks {
   padding: 0 0 40px 0;
   position: relative;
@@ -2773,6 +2777,10 @@ h6 {
     padding: 50px 0;
   }
 
+  .all-cases {
+    padding: 50px 0;
+  }
+
   .all-cases .quickbooks .content__bottom-text li {
     width: calc((100% - 90px) / 3);
   }
@@ -2784,6 +2792,10 @@ h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+
+  .case-studies {
+    padding: 0 0 50px 0;
   }
 }
 
