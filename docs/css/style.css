@@ -2642,8 +2642,19 @@ h6 {
             align-items: flex-start;
   }
 
+  .case-studies .models__content h2,
+  .case-studies .models__content p {
+    padding: 0 15px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+
   .case-studies .models__content p {
     text-align: left;
+  }
+
+  .case-studies .models__container {
+    padding: 0;
   }
 
   .case-studies .models .table {

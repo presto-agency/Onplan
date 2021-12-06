@@ -577,9 +577,16 @@
             margin: 64px 0 52px 0;
             &__content{
                 align-items: flex-start;
+                h2, p{
+                    padding: 0 15px;
+                    box-sizing: content-box;
+                }
                 p{
                     text-align: left;
                 }
+            }
+            &__container{
+                padding: 0;
             }
             .table{
                 padding: 0;
