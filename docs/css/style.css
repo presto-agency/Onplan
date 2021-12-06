@@ -167,6 +167,7 @@ h6 {
 }
 
 .header__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,11 +178,17 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1360px;
-  min-height: 84px;
-  margin: 0 auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 18px auto 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+.header__logo {
+  margin: 0 0 23px 0;
 }
 
 .header__logo img {
@@ -210,29 +217,56 @@ h6 {
 
 .header__navigation ul li {
   position: relative;
-  padding: 0 16px 0 0;
+  padding: 0 16px 32px 0;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   white-space: nowrap;
+  color: #606A80;
 }
 
-.header__navigation ul li a {
-  color: #232F42;
-  opacity: 0.9;
-}
-
-.header__navigation ul li a:before {
+.header__navigation ul li svg {
   content: "";
   position: absolute;
   top: 5px;
   right: 0;
   width: 10px;
   height: 6px;
-  background-image: url(../img/arrow.svg);
-  background-size: 10px 6px;
-  background-position: center;
-  background-repeat: no-repeat;
+  fill: #606A80;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  border-radius: 32px;
+}
+
+.header__navigation ul li.no-arrow svg {
+  display: none;
+}
+
+.header__navigation ul li.no-arrow:hover:before {
+  display: none;
+}
+
+.header__navigation ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  border-radius: 32px;
+  background: #707EFF;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.header__navigation ul li a {
+  color: #232F42;
+  opacity: 0.9;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .header__connect {
@@ -247,6 +281,7 @@ h6 {
           align-items: center;
   max-width: 255px;
   width: 100%;
+  margin: 0 0 16px 0;
 }
 
 .header__strong-text {
@@ -333,6 +368,133 @@ h6 {
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
       transform: rotate(-135deg);
+}
+
+.header .submenu {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  z-index: 996;
+  top: 82px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  white-space: normal;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  border-top: 1px solid #EDF0F2;
+  border-bottom: 1px solid #EDF0F2;
+  padding: 28px 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header .submenu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header .submenu__title-side {
+  width: 100%;
+  max-width: 256px;
+  padding: 0 38px 0 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header .submenu__title-side h3 {
+  margin: 16px 0 0 0;
+}
+
+.header .submenu__title-side p {
+  margin: 17px 0 0 0;
+  max-width: 260px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606A80;
+}
+
+.header .submenu__content-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.header .submenu__content-side li {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  width: 33.3333333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: normal;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin: 0;
+}
+
+.header .submenu__content-side li div {
+  width: 32px;
+  height: 32px;
+}
+
+.header .submenu__content-side li div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header .submenu__content-side li h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 120%;
+  color: #606A80;
+  margin: 16px 0 0 0;
+}
+
+.header .submenu__content-side li p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  opacity: 0.8;
+  color: #606A80;
+  margin: 6px 0 0 0;
+}
+
+.header .submenu__content-side li:before {
+  display: none;
+}
+
+.header .submenu__content-side li:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 245, 250, 0.4)), to(rgba(242, 245, 250, 0.4)));
+  background: -o-linear-gradient(bottom, rgba(242, 245, 250, 0.4), rgba(242, 245, 250, 0.4));
+  background: linear-gradient(0deg, rgba(242, 245, 250, 0.4), rgba(242, 245, 250, 0.4));
+  border: 1px solid #EDF0F2;
+}
+
+.header .submenu__content-side li:hover:before {
+  display: none;
 }
 
 .footer {
@@ -2113,6 +2275,26 @@ h6 {
   padding: 15px 0 0 0;
 }
 
+@media (min-width: 1024px) {
+  .header__navigation ul li:hover:before {
+    width: 100%;
+  }
+
+  .header__navigation ul li:hover a {
+    color: #707EFF;
+  }
+
+  .header__navigation ul li:hover svg {
+    fill: #707EFF;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+
+  .header__navigation ul li:hover .submenu {
+    display: block;
+  }
+}
+
 @media (max-width: 1439px) {
   .header__navigation {
     padding: 0 20px;
@@ -2201,11 +2383,16 @@ h6 {
   .header__logo {
     position: relative;
     z-index: 1000;
+    margin: 0;
   }
 
   .header__content {
+    margin: 0;
     min-height: 70px;
     padding: 0 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .header__burger {
@@ -2216,6 +2403,7 @@ h6 {
     position: relative;
     z-index: 1000;
     max-width: 102px;
+    margin: 0;
   }
 
   .header__connect.desktop .header__strong-text.button-header {
@@ -2256,23 +2444,10 @@ h6 {
     margin: 0;
     font-size: 24px;
     line-height: 30px;
-    margin: 0 0 32px 0;
   }
 
   .header__navigation ul li:last-child {
     margin: 0;
-  }
-
-  .header__navigation ul li a {
-    position: relative;
-    padding: 0 24px 0 0;
-  }
-
-  .header__navigation ul li a:before {
-    top: 14px;
-    width: 12px;
-    height: 7px;
-    background-size: 12px 7px;
   }
 
   .header.active .header__navigation {
