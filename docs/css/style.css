@@ -2823,16 +2823,17 @@ h6 {
     font-size: 20px;
   }
 
-  .solution__img {
-    display: none;
-  }
-
   .solution__description h2 {
     margin: 0 0 16px 0;
   }
 
   .solution__button {
     margin: 0 auto;
+  }
+
+  .solution__img {
+    height: 260px;
+    margin: 70px 0 0 0;
   }
 
   .integration .clients .swiper__slide {
@@ -2907,6 +2908,10 @@ h6 {
 }
 
 @media (max-width: 374px) {
+  .solution__img {
+    display: none;
+  }
+
   .case-studies .models__content h2 {
     font-size: 30px;
   }
