@@ -16,7 +16,6 @@ const burgerAnimation = () => {
         addClass(menu, 'active')
         addClass(body, 'body-lock')
         addClass(mobBtns, 'active')
-        addClass(mobBtns, 'active')
     }
     plus.onclick = () => {
         addClass(plus, 'active')
