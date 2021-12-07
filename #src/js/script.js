@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
     swiperComments();
     select();
+    callSub();
+    closeSub();
 })
 
 const burgerAnimation = () => {
@@ -24,6 +26,24 @@ const burgerAnimation = () => {
     function addClass(obj, classname) {
         obj.classList.toggle(classname)
     }
+}
+
+const callSub = () => {
+    let elementsLink = document.querySelectorAll('.trigger');
+    elementsLink.forEach(link => link.addEventListener('click', function () {
+        let attr = this.getAttribute('data-attr');
+        let subWindow = document.getElementById(attr);
+        subWindow.classList.add('active');
+    }))
+}
+
+const closeSub = () => {
+    let subClose = document.querySelectorAll('.sub-close');
+    subClose.forEach(close => close.addEventListener('click', function () {
+        let attr = this.getAttribute('data-close');
+        let subMenu = document.getElementById(attr);
+        subMenu.classList.remove('active');
+    }))
 }
 
 const swiperComments = () => {
