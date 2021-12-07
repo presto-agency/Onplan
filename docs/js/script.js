@@ -9,11 +9,18 @@ const burgerAnimation = () => {
     const menu = document.querySelector('.header');
     const body = document.querySelector('body');
     const mobBtns = document.querySelector('.mobile-menu-btns');
+    const plus = document.querySelector('.submenu__plus');
+    const item = document.querySelector('.submenu__items');
     burger.onclick = () => {
         addClass(burger, 'active')
         addClass(menu, 'active')
         addClass(body, 'body-lock')
         addClass(mobBtns, 'active')
+        addClass(mobBtns, 'active')
+    }
+    plus.onclick = () => {
+        addClass(plus, 'active')
+        addClass(item, 'active')
     }
     function addClass(obj, classname) {
         obj.classList.toggle(classname)
