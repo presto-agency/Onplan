@@ -17,8 +17,10 @@
 		color: $whitecolor;
 		background-color: $textcolor;
         transition: 300ms;
-        &:hover{
-            background: $darkgreycolor;
+        @media(min-width: 1024px){
+            &:hover{
+                background: $darkgreycolor;
+            }
         }
 	}
 	&.arrow-svg{
@@ -34,9 +36,11 @@
 		span{
 			padding: 0 29px 0 0;
 		}
-        &:hover{
-            svg{
-                right: 19px;
+        @media(min-width: 1024px){
+            &:hover{
+                svg{
+                    right: 19px;
+                }
             }
         }
 	}
@@ -216,14 +220,60 @@
                 }
         }
     @media(max-width: 735px){
-        padding: 0 0 60px 0;
+        padding: 0 0 80px 0;
         &__bg{
             display: none;
         }
         .content{
-            margin: 50px 0 0 0;
+            margin: 41px 0 0 0;
             &__bottom-text{
-                margin: 40px auto 0 auto;
+                margin: 51px auto 0 auto;
+                h3{
+                    padding: 22px 0 0 0;
+                    &:before{
+                        left: 0;
+                        transform: inherit;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 424px){
+        &__bread-crumbs{
+            li{
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+        .content{
+            &__img{
+                height: 63px;
+                margin: 0 0 19px 0;
+            }
+            &__description{
+                h1{
+                    font-size: 40px;
+                    margin: 0 0 21px 0;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 28px;
+                    max-width: 325px;
+                }
+            }
+            &__bottom-text{
+                align-items: flex-start;
+                padding: 52px 36px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    text-align: left;
+                    font-size: 18px;
+                    margin: 21px 0 0 0;
+                    line-height: 29px;
+                }
             }
         }
     }
@@ -416,17 +466,26 @@
     }
     @media(max-width: 735px){
         &__content{
-            padding: 50px 0;
+            padding: 76px 0 70px 0;
         }
     }
     @media(max-width: 424px){
         &__description{
+            margin: 0 0 40px 0;
             h2{
+                font-size: 36px;
+                line-height: 42px;
                 margin: 0 0 16px 0;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                line-height: 28px;
             }
         }
         &__button{
             margin: 0 auto;
+            max-width: 223px;
         }
         &__img{
             height: 260px;
