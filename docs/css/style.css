@@ -1342,8 +1342,6 @@ h6 {
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
           box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
   border-radius: 24px;
-  -webkit-backdrop-filter: blur(52px);
-          backdrop-filter: blur(52px);
   width: 100%;
   max-width: 660px;
 }
@@ -2353,6 +2351,11 @@ h6 {
 
   .header .submenu .items ul li:hover a {
     color: #707EFF;
+  }
+
+  .integration .clients .swiper {
+    -webkit-backdrop-filter: blur(52px);
+            backdrop-filter: blur(52px);
   }
 }
 

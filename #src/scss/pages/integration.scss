@@ -114,9 +114,11 @@
         position: relative;
         box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
         border-radius: 24px;
-        backdrop-filter: blur(52px);
         width: 100%;
         max-width: 660px;
+        @media(min-width: 1024px){
+            backdrop-filter: blur(52px);
+        }
         &__slide{
             width: 100%;
             max-width: 660px;
