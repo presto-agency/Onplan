@@ -53,9 +53,6 @@ const swiperComments = () => {
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,
-        // autoplay: {
-        //     delay: 3000,
-        // },
         preloadImages: false,
         lazy: {
             loadOnTransitionStart: false,
