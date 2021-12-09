@@ -211,12 +211,17 @@
             }
         }
         &__top-content{
-            padding: 80px 0 0 0;
+            padding: 66px 0 0 0;
             justify-content: inherit;
             flex-direction: column;
         }
         .logo-column{
-            margin: 0 0 64px 0;
+            margin: 0 0 58px 0;
+            &__description{
+                margin: 17px 0 30px 0;
+                font-weight: 600;
+                font-size: 18px;
+            }
         }
         .bottom-content{
             flex-wrap: wrap;
@@ -254,6 +259,20 @@
             }
             &__right-side{
                 margin: 0;
+            }
+            &__social{
+                &.facebook{
+                    width: 24px;
+                    height: 24px;
+                }
+                &.linkedin{
+                    width: 24px;
+                    height: 24px;
+                }
+                &.twitter{
+                    width: 27px;
+                    height: 24px;
+                }
             }
         }
     }

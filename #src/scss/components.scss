@@ -59,7 +59,7 @@
     transform: translateX(-50%);
     background-color: $whitecolor;
 	transition: .25s ease-in-out;
-	@media(max-width:1023px){
+	@media(max-width:1024px){
 		display: flex;
 	}
     &__btn{

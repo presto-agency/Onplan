@@ -215,7 +215,7 @@
     .table{
         position: relative;
         width: 100%;
-        padding: 64px;
+        padding: 64px 64px 40px;
         background: $whitecolor;
         border: 1px solid $greycolor;
         box-sizing: border-box;
@@ -239,7 +239,7 @@
             grid-template-columns: 1fr 1fr;
             h3{
                 position: relative;
-                padding: 32px 0 0 0;
+                padding: 32px 0 20px 0;
                 &:before{
                     content: '';
                     position: absolute;
@@ -272,10 +272,10 @@
             }
         }
         &__content{
-            padding: 20px 0 47px 0;
+            padding: 20px 0 20px 0;
             margin: 0 10px 0 0;
             &:last-child{
-                padding: 20px 0 47px 52px;
+                padding: 20px 0 20px 52px;
                 margin: 0;
             }
             h3{
@@ -288,12 +288,13 @@
                 border-bottom: 1px solid $greycolor;
             }
             p{
-                padding: 0 0 0 34px;
+                padding: 0 0 0 26px;
                 max-width: 504px;
                 font-size: 18px;
                 line-height: 150%;
                 position: relative;
                 text-align: left;
+                margin: 0;
                 span{
                     position: absolute;
                     top: 5px;
@@ -671,14 +672,14 @@
         .models{
             &__content{
                 h2{
-                    font-size:36px;
+                    margin: 0;
                 }
                 p{
                     font-size: 20px;
                 }
             }
             .table{
-                margin: 32px 0 0 0;
+                margin: 24px 0 0 0;
                 &__content{
                     p{
                         font-size: 16px;

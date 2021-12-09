@@ -178,6 +178,7 @@
                 opacity: 0.5;
                 color: $textcolor;
                 margin: 0 20px 0 0;
+                text-transform: uppercase;
             }
             .sort-select {
                 position: relative;
@@ -220,7 +221,7 @@
                         top: 39px;
                         width: 100%;
                         overflow: hidden;
-                        background-color: rgba(98%, 99%, 99%, 0.7);
+                        background-color: rgba(98%, 99%, 99%, 0.9);
                         max-height: 0;
                         transition: 300ms;
                     }
@@ -239,6 +240,7 @@
         }
 
         .card {
+            position: relative;
                 width: calc((100% - (32px * 6)) / 3);
                 margin:32px;
                 &__img {
@@ -261,6 +263,22 @@
                                 }
                             }
                         }
+                }
+                &__new{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    width: 70px;
+                    height: 32px;
+                    border-radius: 32px;
+                    background-color: $purplecolor;
+                    color: $whitecolor;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 800;
                 }
                 h3{
                     font-weight: 900;
@@ -351,9 +369,91 @@
             }
         }
         .quickbooks{
+            padding: 0 0 58px 0;
+            &:before{
+                height: 297px;
+            }
             &__bread-crumbs{
                 ul{
                     justify-content: flex-start;
+                }
+            }
+            &__button{
+                margin:40px 0 0 0;
+                height: 52px;
+                max-width: 187px;
+            }
+            .content{
+                margin: 26px 0 0 0;
+                &__description{
+                    h1{
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                    }
+                }
+                &__top-text{
+                    align-items: flex-start;
+                }
+                &__bottom-text{
+                    margin: 67px auto 0 auto;
+                    align-items: center;
+                    h3{
+                        font-size: 22px;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+        .catalog{
+            margin: 36px 0 100px 0;
+            &__top-content{
+                align-items: flex-start;
+                margin: 0 0 55px 0;
+            }
+            &__cases{
+                margin: -8px -4px;
+                li{
+                    margin: 4px 8px;
+                }
+            }
+            &__bottom-content{
+                margin: 0;
+            }
+            &__button{
+                margin: 52px auto 0 0;
+                height: 52px;
+                max-width: 218px;
+                &:before{
+                    top: 22px;
+                    left: 36px;
+                }
+            }
+            .sort{
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin: 0 0 14px 0;
+                p{
+                    font-size: 12px;
+                    font-weight: 800;
+                }
+                .sort-select{
+                    margin: 20px 0 0 0;
+                }
+            }
+            .card{
+                max-width: 100%;
+                margin: 0 0 42px 0;
+                &:last-child{
+                    margin: 0;
+                }
+                p{
+                    font-size: 18px;
+                }
+                &__img{
+                    height: 250px;
                 }
             }
         }

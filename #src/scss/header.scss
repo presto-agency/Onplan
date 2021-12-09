@@ -86,7 +86,7 @@
             opacity: 0.9;
             transition: 300ms;
         }
-        @media(min-width: 1024px){
+        @media(min-width: 1025px){
             &:hover{
                 &:before{
                     width: 100%;
@@ -282,7 +282,7 @@
                     &:before{
                         display: none;
                     }
-                    @media(min-width:1024px){
+                    @media(min-width:1025px){
                         &:hover{
                             &:before{
                                 display: none;
@@ -323,7 +323,7 @@
                         a{
                             color: $textcolor;
                         }
-                        @media(min-width: 1024px){
+                        @media(min-width: 1025px){
                             &:hover{
                                 a{
                                     color: $purplecolor;
@@ -358,7 +358,7 @@
         }
     }
 }
-@media(max-width: 1023px){
+@media(max-width: 1024px){
     .header{
         &:after{
             content: '';
