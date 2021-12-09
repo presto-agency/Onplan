@@ -182,14 +182,14 @@
         h2{
             margin: 0 0 24px 0;
         }
-        p{
-            text-align: center;
-            font-size: 22px;
-            line-height: 33px;
-            font-weight: 600;
-            max-width: 640px;
-            margin: 0 auto;
-        }
+    }
+    &__content>p{
+        text-align: center;
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 600;
+        max-width: 640px;
+        margin: 0 auto;
     }
     &__container{
         position: relative;

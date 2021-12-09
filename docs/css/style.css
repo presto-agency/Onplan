@@ -317,7 +317,7 @@ h6 {
 
 .header__burger span {
   position: absolute;
-  width: 100%;
+  width: 24px;
   height: 3px;
   border-radius: 5px;
   background-color: #232F42;
@@ -2076,7 +2076,7 @@ h6 {
   margin: 0 0 24px 0;
 }
 
-.case-studies .models__content p {
+.case-studies .models__content > p {
   text-align: center;
   font-size: 22px;
   line-height: 33px;
@@ -2654,6 +2654,10 @@ h6 {
 
   .header .submenu__content-side {
     margin: 22px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .header .submenu__content-side li {
@@ -3257,6 +3261,10 @@ h6 {
   .footer .bottom-content__social.twitter {
     width: 27px;
     height: 24px;
+  }
+
+  .footer .nav-column a {
+    font-size: 16px;
   }
 
   .h1 h1 {

@@ -145,7 +145,7 @@
         cursor: pointer;
         span{
             position: absolute;
-            width: 100%;
+            width: 24px;
             height: 3px;
             border-radius: 5px;
             background-color: $textcolor;
@@ -470,6 +470,7 @@
             }
             &__content-side{
                 margin: 22px 0 0 0;
+                flex-direction: column;
                 li{
                     flex-direction: row;
                     flex-wrap: wrap;
