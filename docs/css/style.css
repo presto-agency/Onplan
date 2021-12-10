@@ -2381,12 +2381,20 @@ h6 {
   padding: 15px 0 0 0;
 }
 
-.blog .return {
+.blog {
+  background-color: #fff;
+}
+
+.blog .guide {
+  margin: 52px 0 114px 0;
+}
+
+.blog .guide .return {
   position: relative;
   padding: 0 0 0 23px;
 }
 
-.blog .return span {
+.blog .guide .return span {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2395,7 +2403,7 @@ h6 {
   color: #707EFF;
 }
 
-.blog .return svg {
+.blog .guide .return svg {
   width: 15px;
   height: 8px;
   fill: #707EFF;
@@ -2407,10 +2415,6 @@ h6 {
           transform: rotate(180deg);
 }
 
-.blog .guide {
-  margin: 52px 0 114px 0;
-}
-
 .blog .guide__container {
   max-width: 1040px;
   margin: 0 auto;
@@ -2419,13 +2423,17 @@ h6 {
 .blog .guide__title {
   max-width: 720px;
   margin: 0 auto 64px auto;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .blog .guide__title h1 {
   margin: 64px 0 20px 0;
+  line-height: 69px;
 }
 
-.blog .guide__title p {
+.blog .guide__title > p {
   font-size: 22px;
   line-height: 150%;
   color: #606A80;
@@ -2484,17 +2492,6 @@ h6 {
      object-fit: cover;
 }
 
-.blog .guide__photo-link {
-  font-size: 14px;
-  line-height: 18px;
-  color: #606A80;
-  padding: 5px 0 0 0;
-}
-
-.blog .guide__photo-link span {
-  color: #232F42;
-}
-
 .blog .guide__info {
   margin: 0 0 0 16px;
 }
@@ -2506,6 +2503,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 8px 0 0 0;
 }
 
 .blog .guide__info p span:last-child {
@@ -2554,6 +2552,191 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.blog .guide__bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .guide__link-exemple {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(96, 106, 128, 0.6);
+}
+
+.blog .guide__link-exemple span {
+  color: #606a80;
+}
+
+.blog .editor {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.blog .editor h2 {
+  font-size: 40px;
+  line-height: 44px;
+  color: #232F42;
+  font-weight: 900;
+  margin: 64px 0 24px 0;
+}
+
+.blog .editor p {
+  color: #606A80;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 24px 0;
+}
+
+.blog .editor p em {
+  position: relative;
+  display: block;
+  padding: 24px 0 24px 24px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-style: normal;
+  margin: 40px 0;
+}
+
+.blog .editor p em:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  border-radius: 8px;
+  background-color: #707EFF;
+}
+
+.blog .editor blockquote {
+  color: #606A80;
+  background-color: #F8F9FC;
+  padding: 52px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.blog .editor blockquote cite {
+  display: block;
+  position: relative;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  padding: 48px 0 0 0;
+}
+
+.blog .editor blockquote cite:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/blog/commas.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.blog .editor blockquote cite strong {
+  display: block;
+  position: relative;
+  padding: 0 0 0 26px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  margin: 32px 0 0 0;
+  color: #232F42;
+}
+
+.blog .editor blockquote cite strong:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #232F42;
+}
+
+.blog .editor ul {
+  margin: 24px 0 40px 0;
+}
+
+.blog .editor ul li {
+  position: relative;
+  font-size: 20px;
+  line-height: 32px;
+  color: #606A80;
+  margin: 4px 0;
+  padding: 0 0 0 24px;
+}
+
+.blog .editor ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #707EFF;
+}
+
+.blog .editor p strong {
+  font-size: 20px;
+  line-height: 32px;
+  color: #606A80;
+  font-weight: 800;
+}
+
+.blog .editor ol {
+  counter-reset: myCounter;
+}
+
+.blog .editor ol li {
+  position: relative;
+  list-style: none;
+  font-size: 20px;
+  line-height: 32px;
+  color: #606A80;
+  margin: 4px 0;
+  padding: 0 0 0 44px;
+}
+
+.blog .editor ol li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  counter-increment: myCounter;
+  content: counter(myCounter) ".";
+  color: #707EFF;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -3522,6 +3705,97 @@ h6 {
 
   .integration .clients .swiper .slider-arrow {
     display: none;
+  }
+
+  .blog .guide {
+    margin: 40px 0;
+  }
+
+  .blog .guide__title {
+    margin: 0 auto 40px auto;
+  }
+
+  .blog .guide__title h1 {
+    font-size: 40px;
+    line-height: 46px;
+    margin: 32px 0 20px 0;
+  }
+
+  .blog .guide__title > p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .blog .guide__title-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 32px 0 0 0;
+  }
+
+  .blog .guide__social-block {
+    min-width: 100%;
+    margin: 24px 0 0 0;
+  }
+
+  .blog .guide__social-block p {
+    text-align: left;
+    margin: 0 0 12px 0;
+  }
+
+  .blog .guide__person {
+    width: 100%;
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #EDF0F2;
+  }
+
+  .blog .guide__bottom-img {
+    height: 280px;
+    border-radius: inherit;
+  }
+
+  .blog .guide__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .blog .guide__info {
+    margin: 0 0 0 12px;
+  }
+
+  .blog .guide__info p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .blog .guide__info h3 {
+    font-size: 18px;
+  }
+
+  .blog .guide__social.facebook {
+    height: 24px;
+    width: 12px;
+  }
+
+  .blog .guide__social.linkedin {
+    width: 24px;
+    height: 24px;
+  }
+
+  .blog .guide__social.twitter {
+    width: 27px;
+    height: 22px;
+  }
+
+  .blog .guide__links {
+    width: 133px;
   }
 }
 
