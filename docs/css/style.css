@@ -1222,6 +1222,134 @@ h6 {
      object-fit: contain;
 }
 
+.join {
+  position: relative;
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
+}
+
+.join__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 180px 0;
+}
+
+.join__content h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 64px;
+  color: #fff;
+}
+
+.join__content p {
+  color: #fff;
+  margin: 24px 0 0 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.join__container {
+  position: relative;
+  max-width: 1440px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.join__form-wrapper {
+  height: 80px;
+  max-width: 485px;
+  width: 100%;
+  margin: 52px 0 0 0;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px 24px;
+}
+
+.join__form-wrapper form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.join__form-wrapper form input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #EDF0F2;
+  border-radius: 16px;
+  padding: 14px 141px 14px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #F8F9FC;
+  color: #232F42;
+}
+
+.join__form-wrapper form input::-webkit-input-placeholder {
+  color: #606A80;
+  opacity: 0.5;
+}
+
+.join__form-wrapper form input::-moz-placeholder {
+  color: #606A80;
+  opacity: 0.5;
+}
+
+.join__form-wrapper form input:-ms-input-placeholder {
+  color: #606A80;
+  opacity: 0.5;
+}
+
+.join__form-wrapper form input::-ms-input-placeholder {
+  color: #606A80;
+  opacity: 0.5;
+}
+
+.join__form-wrapper form input::placeholder {
+  color: #606A80;
+  opacity: 0.5;
+}
+
+.join__form-wrapper form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 800;
+  width: 141px;
+  line-height: 48px;
+  background: #232F42;
+  color: #fff;
+}
+
+.join__bg {
+  position: absolute;
+  z-index: 1;
+  width: 1480px;
+  height: 523px;
+  top: 95px;
+  left: 0;
+}
+
+.join__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .integration {
   position: relative;
   padding: 100px 0;
@@ -2904,133 +3032,6 @@ h6 {
   margin: 24px 0 0 0;
 }
 
-.blog .join {
-  position: relative;
-  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
-  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
-}
-
-.blog .join .container {
-  position: relative;
-}
-
-.blog .join__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 180px 0;
-}
-
-.blog .join__content h2 {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 64px;
-  color: #fff;
-}
-
-.blog .join__content p {
-  color: #fff;
-  margin: 24px 0 0 0;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 33px;
-}
-
-.blog .join__container {
-  position: relative;
-  max-width: 1440px;
-  padding: 0 20px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin: 0 auto;
-}
-
-.blog .join__form-wrapper {
-  height: 80px;
-  max-width: 485px;
-  width: 100%;
-  margin: 52px 0 0 0;
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 16px 24px;
-}
-
-.blog .join__form-wrapper form {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.blog .join__form-wrapper form input {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #EDF0F2;
-  border-radius: 16px;
-  padding: 14px 141px 14px 12px;
-  font-size: 16px;
-  font-weight: 400;
-  background: #F8F9FC;
-  color: #232F42;
-}
-
-.blog .join__form-wrapper form input::-webkit-input-placeholder {
-  color: #606A80;
-  opacity: 0.5;
-}
-
-.blog .join__form-wrapper form input::-moz-placeholder {
-  color: #606A80;
-  opacity: 0.5;
-}
-
-.blog .join__form-wrapper form input:-ms-input-placeholder {
-  color: #606A80;
-  opacity: 0.5;
-}
-
-.blog .join__form-wrapper form input::-ms-input-placeholder {
-  color: #606A80;
-  opacity: 0.5;
-}
-
-.blog .join__form-wrapper form input::placeholder {
-  color: #606A80;
-  opacity: 0.5;
-}
-
-.blog .join__form-wrapper form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 32px;
-  font-size: 16px;
-  font-weight: 800;
-  width: 141px;
-  line-height: 48px;
-  background: #232F42;
-  color: #fff;
-}
-
-.blog .join__bg {
-  position: absolute;
-  top: 95px;
-  left: 0;
-}
-
-.blog .join__bg img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -3126,6 +3127,11 @@ h6 {
 
   .solution__img {
     width: 100%;
+  }
+
+  .join__bg {
+    top: 0;
+    left: -211px;
   }
 
   .all-cases .catalog__bottom-content {
@@ -3710,6 +3716,44 @@ h6 {
     margin: 0 0 32px 0;
   }
 
+  .join__content {
+    padding: 100px 0 118px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+
+  .join__content h2 {
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+  }
+
+  .join__content p {
+    font-size: 20px;
+    text-align: center;
+    margin: 12px 0 0 0;
+    line-height: 28px;
+  }
+
+  .join__form-wrapper {
+    margin: 32px 0 0 0;
+    height: 100%;
+    padding: 16px;
+  }
+
+  .join__form-wrapper form button {
+    margin: 16px 0 0 0;
+    position: static;
+    width: 100%;
+  }
+
+  .join__form-wrapper form input {
+    padding: 14px 12px;
+  }
+
   .all-cases .catalog__top-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3941,6 +3985,10 @@ h6 {
     height: 330px;
   }
 
+  .blog .author {
+    margin: 52px 0 39px 0;
+  }
+
   .blog .author__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3959,7 +4007,7 @@ h6 {
   }
 
   .blog .author__content-side {
-    padding: 48px 0 0 0;
+    padding: 30px 0 0 0;
   }
 
   .blog .author__content-side h3 {
