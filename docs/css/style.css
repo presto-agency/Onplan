@@ -2558,7 +2558,12 @@ h6 {
 
 .blog {
   background-color: #fff;
-  padding: 52px 0 80px 0;
+  padding: 52px 0 0 0;
+}
+
+.blog__section-wrapper {
+  background-color: #F8F9FC;
+  padding: 100px 0;
 }
 
 .blog .guide {
@@ -2896,7 +2901,6 @@ h6 {
 .blog .editor figure.is-type-video {
   position: relative;
   margin: 64px 0;
-  height: 480px;
   max-width: 720px;
 }
 
@@ -2914,11 +2918,14 @@ h6 {
 }
 
 .blog .editor figure.is-type-video div {
+  position: relative;
+  padding: 0 0 67% 0;
   width: 100%;
   height: 100%;
 }
 
 .blog .editor figure.is-type-video div iframe {
+  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -3039,7 +3046,7 @@ h6 {
 }
 
 .blog .popular {
-  margin: 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .blog .popular__title {
@@ -4057,11 +4064,6 @@ h6 {
     margin: 20px 0;
   }
 
-  .blog .editor figure.is-type-video {
-    margin: 52px 0;
-    height: 330px;
-  }
-
   .blog .author {
     margin: 52px 0 39px 0;
   }
@@ -4270,6 +4272,10 @@ h6 {
     display: none;
   }
 
+  .blog__section-wrapper {
+    padding: 64px 0;
+  }
+
   .blog .guide {
     margin: 40px 0;
   }
@@ -4335,6 +4341,48 @@ h6 {
 
   .blog .guide__links {
     width: 133px;
+  }
+
+  .blog .popular {
+    margin: 0 0 55px 0;
+  }
+
+  .blog .popular .person {
+    border-bottom: inherit;
+  }
+
+  .blog .popular .slider__img {
+    border-radius: 24px;
+  }
+
+  .blog .popular .slider__content span {
+    margin: 0 0 20px 0;
+  }
+
+  .blog .popular .slider__content h3 {
+    font-size: 24px;
+  }
+
+  .blog .popular .slider__content p {
+    font-size: 18px;
+    margin: 0 0 18px 0;
+    -webkit-line-clamp: 4;
+  }
+
+  .blog .popular__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 20px 0;
+  }
+
+  .blog .popular__title h3 {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 247px;
   }
 }
 
@@ -4652,10 +4700,6 @@ h6 {
 
   .case-studies .models .table__content p {
     font-size: 16px;
-  }
-
-  .blog .editor figure.is-type-video {
-    height: 230px;
   }
 }
 

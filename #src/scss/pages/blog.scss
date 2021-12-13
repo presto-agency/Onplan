@@ -1,6 +1,10 @@
 .blog {
     background-color: $whitecolor;
-    padding: 52px 0 80px 0;
+    padding: 52px 0 0 0;
+    &__section-wrapper{
+        background-color: $bg-greycolor;
+        padding: 100px 0;
+    }
     .guide {
             margin: 0 0 114px 0;
             .return{
@@ -327,7 +331,6 @@
             &.is-type-video{
                 position: relative;
                 margin: 64px 0;
-                height: 480px;
                 max-width: 720px;
                 &:before{
                     content: '';
@@ -342,20 +345,16 @@
                     pointer-events: none;
                 }
                 div{
+                    position: relative;
+                    padding: 0 0 67% 0;
                     width: 100%;
                     height: 100%;
                     iframe{
+                        position: absolute;
                         object-fit: cover;
                         width: 100%;
                         height: 100%;
                     }
-                }
-                @media(max-width: 767px){
-                    margin: 52px 0;
-                    height: 330px;
-                }
-                @media(max-width: 424px){
-                    height: 230px;
                 }
             }
         }
@@ -463,14 +462,12 @@
 		}
     }
     .popular {
-        margin: 100px 0;
-
+        margin: 0 0 100px 0;
         &__title{
             margin: 0 0 64px 0;
         }
 
         .slider {
-
                 &__card {
                     max-width: 370px;
                     width: 100%;
@@ -605,6 +602,9 @@
 }
 @media(max-width: 567px){
     .blog{
+        &__section-wrapper{
+            padding: 64px 0;
+        }
         .guide{
             margin: 40px 0;
             &__title{
@@ -653,6 +653,40 @@
             }
             &__links{
                 width: 133px;
+            }
+        }
+        .popular{
+            margin: 0 0 55px 0;
+            .person{
+                border-bottom: inherit;
+            }
+            .slider{
+                &__img{
+                    border-radius: 24px;
+                }
+                &__content{
+                    span{
+                        margin: 0 0 20px 0;
+                    }
+                    h3{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 18px;
+                        margin: 0 0 18px 0;
+                        -webkit-line-clamp: 4;
+                    }
+                }
+            }
+            &__title{
+                display: flex;
+                justify-content: center;
+                margin: 0 0 20px 0;
+                h3{
+                    font-size: 36px;
+                    line-height: 42px;
+                    max-width: 247px;
+                }
             }
         }
     }
