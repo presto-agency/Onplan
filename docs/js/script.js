@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     closeSub();
     slick();
     showMore();
+    swiperCard();
 })
 
 const burgerAnimation = () => {
@@ -140,6 +141,33 @@ const showMore = () => {
     function showCase(obj, classname) {
         obj.classList.toggle(classname)
     }
+}
+
+const swiperCard = () => {
+    new Swiper('.popular__slider', {
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+            },
+            768: {
+                spaceBetween: 65,
+                slidesPerView: 2,
+            },
+            1024: {
+                spaceBetween: 65,
+                slidesPerView: 3,
+                loop: true,
+            },
+        },
+        preloadImages: true,
+        lazy: {
+            loadOnTransitionStart: true,
+            loadPrevNext: true,
+        },
+    });
 }
 
 // const bg = () => {

@@ -774,6 +774,12 @@ h6 {
   font-weight: 900;
 }
 
+.h3 h3 {
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 900;
+}
+
 .h4 h3 {
   color: #232F42;
   font-size: 40px;
@@ -1348,6 +1354,47 @@ h6 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.person__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.person__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.person__info {
+  margin: 0 0 0 16px;
+}
+
+.person__info p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #606A80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0 0 0;
+}
+
+.person__info p span:last-child {
+  margin: 0 0 0 15px;
 }
 
 .integration {
@@ -2581,29 +2628,6 @@ h6 {
   margin: 48px 0 0 0;
 }
 
-.blog .guide__person {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.blog .guide__img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.blog .guide__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .blog .guide__bottom-img {
   max-width: 1040px;
   width: 100%;
@@ -2619,24 +2643,6 @@ h6 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.blog .guide__info {
-  margin: 0 0 0 16px;
-}
-
-.blog .guide__info p {
-  font-size: 16px;
-  line-height: 20px;
-  color: #606A80;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 8px 0 0 0;
-}
-
-.blog .guide__info p span:last-child {
-  margin: 0 0 0 15px;
 }
 
 .blog .guide__social-block {
@@ -3030,6 +3036,77 @@ h6 {
   font-weight: 800;
   color: #232F42;
   margin: 24px 0 0 0;
+}
+
+.blog .popular {
+  margin: 100px 0;
+}
+
+.blog .popular__title {
+  margin: 0 0 64px 0;
+}
+
+.blog .popular .slider__card {
+  max-width: 370px;
+  width: 100%;
+}
+
+.blog .popular .slider__card.green .slider__content span {
+  background: rgba(133, 222, 175, 0.15);
+  color: #85DEAF;
+}
+
+.blog .popular .slider__card.blue .slider__content span {
+  background: rgba(141, 188, 254, 0.15);
+  color: #8DBCFE;
+}
+
+.blog .popular .slider__img {
+  max-width: 370px;
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.blog .popular .slider__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blog .popular .slider__content span {
+  display: block;
+  text-align: center;
+  width: 158px;
+  line-height: 20px;
+  border-radius: 32px;
+  padding: 6px 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin: 38px 0 20px 0;
+  font-size: 14px;
+}
+
+.blog .popular .slider__content h3 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 120%;
+  color: #232F42;
+  margin: 0 0 12px 0;
+}
+
+.blog .popular .slider__content p {
+  font-size: 20px;
+  line-height: 160%;
+  color: #606A80;
+  margin: 0 0 24px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -4038,6 +4115,12 @@ h6 {
   .blog .author__picture-side {
     margin: 0;
   }
+
+  .popular .slider {
+    max-width: 295px;
+    margin-left: 0;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 735px) {
@@ -4155,6 +4238,30 @@ h6 {
 }
 
 @media (max-width: 567px) {
+  .person {
+    width: 100%;
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #EDF0F2;
+  }
+
+  .person__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .person__info {
+    margin: 0 0 0 12px;
+  }
+
+  .person__info p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .person__info h3 {
+    font-size: 18px;
+  }
+
   .integration .benefits__card {
     width: calc(100% - 20px);
   }
@@ -4206,33 +4313,9 @@ h6 {
     margin: 0 0 12px 0;
   }
 
-  .blog .guide__person {
-    width: 100%;
-    padding: 0 0 24px 0;
-    border-bottom: 1px solid #EDF0F2;
-  }
-
   .blog .guide__bottom-img {
     height: 280px;
     border-radius: inherit;
-  }
-
-  .blog .guide__img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .blog .guide__info {
-    margin: 0 0 0 12px;
-  }
-
-  .blog .guide__info p {
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .blog .guide__info h3 {
-    font-size: 18px;
   }
 
   .blog .guide__social.facebook {
