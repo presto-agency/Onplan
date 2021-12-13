@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function () {
     select();
     callSub();
     closeSub();
+    slick();
+    showMore();
 })
 
 const burgerAnimation = () => {
@@ -121,6 +123,24 @@ const select = () => {
         }))
     }
 };
+
+const slick = () => {
+    $(document).ready(function () {
+        $('.blocks-gallery-grid').slick({
+        });
+    });
+}
+
+const showMore = () => {
+    const item = document.querySelector('.author__content-side');
+    const itemSpan = document.querySelector('.author__content-side > span');
+    itemSpan.onclick = () => {
+        showCase(item, 'active')
+    }
+    function showCase(obj, classname) {
+        obj.classList.toggle(classname)
+    }
+}
 
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {
