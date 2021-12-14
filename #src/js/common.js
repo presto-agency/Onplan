@@ -50,6 +50,16 @@ const swiperComments = () => {
             el: ".swiper__pagination",
             clickable: true
         },
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+                translate: ["-20%", 0, -1],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,

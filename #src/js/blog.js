@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
     showMore();
+    swiperTop();
     swiperCard();
 })
 
@@ -12,6 +13,37 @@ const showMore = () => {
     function showCase(obj, classname) {
         obj.classList.toggle(classname)
     }
+}
+
+const swiperTop = () => {
+    new Swiper('.slider-top__swiper', {
+        navigation: {
+            nextEl: '.slider-top__next',
+            prevEl: '.slider-top__prev'
+        },
+        pagination: {
+            el: '.swiper__pagination',
+            clickable: true
+        },
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+                translate: ["-20%", 0, -1],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        loop: true,
+        preloadImages: true,
+        lazy: {
+            loadOnTransitionStart: true,
+            loadPrevNext: true,
+        },
+    });
 }
 
 const swiperCard = () => {
@@ -33,6 +65,7 @@ const swiperCard = () => {
                 loop: true,
             },
         },
+        grabCursor: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,
