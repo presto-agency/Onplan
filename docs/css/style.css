@@ -4268,6 +4268,10 @@ h6 {
     margin: 20px 0;
   }
 
+  .blog .editor__content figure.is-type-video {
+    margin: 0;
+  }
+
   .blog .author {
     margin: 52px 0 39px 0;
   }
