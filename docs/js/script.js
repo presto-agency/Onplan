@@ -1,7 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
-    swiperComments();
-    select();
     callSub();
     closeSub();
 })
@@ -39,6 +37,9 @@ const closeSub = () => {
         subMenu.classList.remove('active');
     }))
 }
+window.addEventListener('DOMContentLoaded', function () {
+    swiperComments();
+})
 
 const swiperComments = () => {
     new Swiper('.clients__swiper', {
@@ -61,6 +62,7 @@ const swiperComments = () => {
             },
         },
         spaceBetween: 30,
+        autoHeight: true,
         slidesPerView: 1,
         slidesPerGroup: 1,
         preloadImages: false,
@@ -70,6 +72,9 @@ const swiperComments = () => {
         },
     });
 }
+window.addEventListener('DOMContentLoaded', function () {
+    select();
+})
 
 const select = () => {
     let blockSort = document.getElementById("sort");
@@ -171,6 +176,7 @@ const swiperTop = () => {
         slidesPerView: 1,
         slidesPerGroup: 1,
         loop: true,
+        autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,
@@ -199,6 +205,7 @@ const swiperCard = () => {
             },
         },
         grabCursor: true,
+        // autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,

@@ -1,4 +1,6 @@
 @@include('common.js')
+@@include('integration.js')
+@@include('all-cases.js')
 @@include('blog.js')
 
 // const bg = () => {

@@ -38,6 +38,7 @@ const swiperTop = () => {
         slidesPerView: 1,
         slidesPerGroup: 1,
         loop: true,
+        autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,
@@ -66,6 +67,7 @@ const swiperCard = () => {
             },
         },
         grabCursor: true,
+        // autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,
