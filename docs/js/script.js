@@ -205,7 +205,6 @@ const swiperCard = () => {
             },
         },
         grabCursor: true,
-        // autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,

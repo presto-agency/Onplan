@@ -1,0 +1,49 @@
+.header-demo {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: $blue-book-gradient;
+    min-height: 48px;
+    &__container{
+        max-width: 1336px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: content-box;
+    }
+    &__content {
+        display: flex;
+        margin: 0 -12px;
+    }
+    &__link{
+        margin: 0 12px;
+        display: flex;
+        align-items: center;
+        a{
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 120%;
+            color: $whitecolor;
+            margin: 0 0 0 8px;
+        }
+        svg{
+            fill: $whitecolor;
+        }
+        &.sign-in{
+            svg{
+                height: 16px;
+                width: 12px;
+            }
+        }
+        &.contact{
+            svg{
+                height: 15px;
+                width: 15px;
+            }
+        }
+    }
+}

@@ -148,6 +148,10 @@ h6 {
   padding: 84px 0 0 0;
 }
 
+.root-book {
+  padding: 48px 0 0 0;
+}
+
 .body-lock {
   position: relative;
   overflow: hidden;
@@ -3298,6 +3302,71 @@ h6 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.header-demo {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: -o-linear-gradient(359.94deg, #6E7AFF 0%, #98DCDB 100%);
+  background: linear-gradient(90.06deg, #6E7AFF 0%, #98DCDB 100%);
+  min-height: 48px;
+}
+
+.header-demo__container {
+  max-width: 1336px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header-demo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px;
+}
+
+.header-demo__link {
+  margin: 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-demo__link a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 120%;
+  color: #fff;
+  margin: 0 0 0 8px;
+}
+
+.header-demo__link svg {
+  fill: #fff;
+}
+
+.header-demo__link.sign-in svg {
+  height: 16px;
+  width: 12px;
+}
+
+.header-demo__link.contact svg {
+  height: 15px;
+  width: 15px;
 }
 
 @media (min-width: 1024px) {
