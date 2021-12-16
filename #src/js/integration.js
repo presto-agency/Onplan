@@ -3,13 +3,13 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 const swiperComments = () => {
-    new Swiper('.clients__swiper', {
+    new Swiper('.swiper-integration__swiper', {
         navigation: {
             nextEl: '.swiper__next',
             prevEl: '.swiper__prev'
         },
         pagination: {
-            el: ".swiper__pagination",
+            el: ".swiper-integration__pagination",
             clickable: true
         },
         grabCursor: true,
