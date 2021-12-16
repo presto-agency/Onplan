@@ -388,7 +388,7 @@ h6 {
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
-  padding: 28px 20px;
+  padding: 28px 15px;
   max-width: 1360px;
   background: #fff;
   cursor: initial;
@@ -473,8 +473,7 @@ h6 {
   border: 1px solid #fff;
   cursor: pointer;
   margin: 0;
-  max-width: 307px;
-  width: 100%;
+  width: 345px;
 }
 
 .header .submenu__item.content-bottom span {
