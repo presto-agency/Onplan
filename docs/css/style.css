@@ -3345,6 +3345,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
 }
 
 .header-demo__link a {
@@ -3367,6 +3371,10 @@ h6 {
 .header-demo__link.contact svg {
   height: 15px;
   width: 15px;
+}
+
+.header-demo__link:hover {
+  opacity: 0.5;
 }
 
 .book-a-demo {
@@ -3521,7 +3529,7 @@ h6 {
   right: 0;
   background-color: #fff;
   height: 100vh;
-  max-width: 560px;
+  max-width: 565px;
   width: 100%;
   padding: 47px 72px 90px;
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
@@ -3542,6 +3550,10 @@ h6 {
      object-fit: contain;
 }
 
+.book-a-demo .form__title {
+  margin: 0 0 24px 0;
+}
+
 .book-a-demo .form__title h3 {
   font-weight: 900;
   font-size: 32px;
@@ -3554,79 +3566,6 @@ h6 {
   line-height: 160%;
   color: #606A80;
   margin: 8px 0 0 0;
-}
-
-.book-a-demo .form__inputs-wrapper {
-  margin: 24px 0;
-}
-
-.book-a-demo .form__inputs-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 16px 0 0 0;
-}
-
-.book-a-demo .form__inputs-group:first-child {
-  margin: 0;
-}
-
-.book-a-demo .form__inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  max-width: 200px;
-}
-
-.book-a-demo .form__inputs.email {
-  max-width: 100%;
-}
-
-.book-a-demo .form__inputs.text-area {
-  max-width: 100%;
-}
-
-.book-a-demo .form__inputs span {
-  opacity: 0.5;
-}
-
-.book-a-demo .form__inputs label {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 120%;
-  color: #606A80;
-  margin: 0 0 8px 0;
-}
-
-.book-a-demo .form__inputs input {
-  height: 40px;
-  border: 1px solid #EDF0F2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 8px;
-  background-color: #F8F9FC;
-}
-
-.book-a-demo .form__inputs textarea {
-  background-color: #F8F9FC;
-  border: 1px solid #EDF0F2;
-  resize: none;
-  outline: none;
-  overflow: auto;
-  border-radius: 8px;
-  height: 80px;
-}
-
-.book-a-demo .form__button {
-  max-width: 100%;
 }
 
 .book-a-demo .form__text {
