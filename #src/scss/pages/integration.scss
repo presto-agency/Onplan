@@ -111,15 +111,6 @@
                     margin: 0 0 40px 0;
                 }
             }
-            .swiper-integration{
-                &:before{
-                    display: none;
-                }
-                .swiper-pagination{
-                    margin: 29px 0 0 0;
-                    justify-content: center;
-                }
-            }
             &__button{
                 margin: 46px 0 0 0;
                 &.button-top-clients{
@@ -149,52 +140,11 @@
                 width: calc((100% - (10px * 2)));
             }
         }
-        .clients{
-            .swiper-integration{
-                .swiper{
-                    .slider-arrow{
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 }
 @media(max-width: 424px){
     .integration{
         .clients{
-            .swiper-integration{
-                .swiper{
-                    &__component{
-                        padding: 80px 39px 34px;
-                        &:before{
-                            top: 35px;
-                            left: 15px;
-                        }
-                        p{
-                            font-size: 18px;
-                            line-height: 29px;
-                        }
-                    }
-                    &__person{
-                        margin: 31px 0 0 0;
-                    }
-                    &__img{
-                        width: 50px;
-                        height: 50px;
-                    }
-                    &__info{
-                        margin: 0 0 0 10px;
-                        h3{
-                            font-size: 18px;
-                        }
-                        p{
-                            font-size: 14px;
-                            margin: 0;
-                        }
-                    }
-                }
-            }
             &__left-side{
                 h2{
                     font-size: 36px;

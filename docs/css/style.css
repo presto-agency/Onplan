@@ -1474,8 +1474,6 @@ h6 {
 
 .swiper-integration .swiper {
   position: relative;
-  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
-          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
   border-radius: 24px;
   width: 100%;
   max-width: 660px;
@@ -3545,9 +3543,37 @@ h6 {
   line-height: 20px;
 }
 
-.book-a-demo .form {
+.book-a-demo__form-container {
   position: fixed;
+  pointer-events: none;
   z-index: 1001;
+  top: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  max-width: 1440px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+}
+
+.book-a-demo__form-container:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.book-a-demo .form {
+  position: absolute;
+  pointer-events: auto;
   top: 0;
   right: 0;
   background-color: #fff;
@@ -3558,6 +3584,10 @@ h6 {
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
   overflow: auto;
+}
+
+.book-a-demo .form::-webkit-scrollbar {
+  width: 0px;
 }
 
 .book-a-demo .form__logo {
@@ -3648,6 +3678,8 @@ h6 {
   }
 
   .swiper-integration .swiper {
+    -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+            box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
     -webkit-backdrop-filter: blur(52px);
             backdrop-filter: blur(52px);
   }
@@ -3791,6 +3823,59 @@ h6 {
 
   .blog .editor__content {
     padding: 0 20px;
+  }
+
+  .book-a-demo {
+    padding: 0 0 100px 0;
+  }
+
+  .book-a-demo__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 52px 0 0 0;
+  }
+
+  .book-a-demo__container {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .book-a-demo__form-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: static;
+    pointer-events: auto;
+    z-index: inherit;
+    top: inherit;
+    right: inherit;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
+    padding: 0;
+  }
+
+  .book-a-demo__form-container:before {
+    content: "";
+    display: none;
+  }
+
+  .book-a-demo .form {
+    position: static;
+    max-width: 100%;
+    overflow: inherit;
+    height: 100%;
+  }
+
+  .book-a-demo .form::-webkit-scrollbar {
+    width: 100%;
   }
 }
 
@@ -4127,6 +4212,17 @@ h6 {
     min-width: inherit;
   }
 
+  .swiper-integration:before {
+    display: none;
+  }
+
+  .swiper-integration .swiper-pagination {
+    margin: 29px 0 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .integration .benefits__card {
     width: calc((100% - 40px) / 2);
   }
@@ -4146,17 +4242,6 @@ h6 {
 
   .integration .clients__left-side h2 {
     margin: 0 0 40px 0;
-  }
-
-  .integration .clients .swiper-integration:before {
-    display: none;
-  }
-
-  .integration .clients .swiper-integration .swiper-pagination {
-    margin: 29px 0 0 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .integration .clients__button {
@@ -4694,6 +4779,63 @@ h6 {
     margin-left: 0;
     overflow: visible;
   }
+
+  .book-a-demo__form-container {
+    position: relative;
+  }
+
+  .book-a-demo__form-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 100%;
+    width: 100vw;
+    background-color: #fff;
+  }
+
+  .book-a-demo .form {
+    position: relative;
+    z-index: 2;
+    padding: 32px 0 55px;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+  }
+
+  .book-a-demo .form__logos-list {
+    margin: 5px -15px 0 -14px;
+  }
+
+  .book-a-demo .form__logos-list li {
+    margin: 17px 14px;
+    width: calc((100% - 84px) / 3);
+  }
+
+  .book-a-demo .form__logo {
+    margin: 0 0 40px 0;
+  }
+
+  .book-a-demo__title h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .book-a-demo__title p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .book-a-demo__img {
+    margin: 40px 0 32px 0;
+  }
+
+  .book-a-demo__awards {
+    margin: 32px 0 52px;
+  }
 }
 
 @media (max-width: 735px) {
@@ -4835,12 +4977,12 @@ h6 {
     font-size: 18px;
   }
 
-  .integration .benefits__card {
-    width: calc(100% - 20px);
+  .swiper-integration .swiper .slider-arrow {
+    display: none;
   }
 
-  .integration .clients .swiper-integration .swiper .slider-arrow {
-    display: none;
+  .integration .benefits__card {
+    width: calc(100% - 20px);
   }
 
   .blog__section-wrapper {
@@ -5040,38 +5182,38 @@ h6 {
     margin: 70px 0 0 0;
   }
 
-  .integration .clients .swiper-integration .swiper__component {
+  .swiper-integration .swiper__component {
     padding: 80px 39px 34px;
   }
 
-  .integration .clients .swiper-integration .swiper__component:before {
+  .swiper-integration .swiper__component:before {
     top: 35px;
     left: 15px;
   }
 
-  .integration .clients .swiper-integration .swiper__component p {
+  .swiper-integration .swiper__component p {
     font-size: 18px;
     line-height: 29px;
   }
 
-  .integration .clients .swiper-integration .swiper__person {
+  .swiper-integration .swiper__person {
     margin: 31px 0 0 0;
   }
 
-  .integration .clients .swiper-integration .swiper__img {
+  .swiper-integration .swiper__img {
     width: 50px;
     height: 50px;
   }
 
-  .integration .clients .swiper-integration .swiper__info {
+  .swiper-integration .swiper__info {
     margin: 0 0 0 10px;
   }
 
-  .integration .clients .swiper-integration .swiper__info h3 {
+  .swiper-integration .swiper__info h3 {
     font-size: 18px;
   }
 
-  .integration .clients .swiper-integration .swiper__info p {
+  .swiper-integration .swiper__info p {
     font-size: 14px;
     margin: 0;
   }
@@ -5291,5 +5433,9 @@ h6 {
   .blog .slider-top .swiper__img {
     width: 280px;
     height: 200px;
+  }
+
+  .book-a-demo .form__logos-list {
+    display: none;
   }
 }

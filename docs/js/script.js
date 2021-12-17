@@ -55,14 +55,15 @@ const swiperComments = () => {
         effect: "creative",
         creativeEffect: {
             prev: {
-                translate: ["-20%", 0, -1],
+                translate: ["-120%", 0, -1],
             },
             next: {
-                translate: ["100%", 0, 0],
+                translate: ["120%", 0, 0],
             },
         },
+        speed: 500,
         spaceBetween: 30,
-        autoHeight: true,
+        // autoHeight: true,
         slidesPerView: 1,
         slidesPerGroup: 1,
         preloadImages: false,
