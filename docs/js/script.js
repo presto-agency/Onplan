@@ -165,19 +165,21 @@ const swiperTop = () => {
             clickable: true
         },
         grabCursor: true,
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-                translate: ["-20%", 0, -1],
-            },
-            next: {
-                translate: ["100%", 0, 0],
-            },
-        },
+        // effect: "creative",
+        // creativeEffect: {
+        //     prev: {
+        //         translate: ["-20%", 0, -1],
+        //     },
+        //     next: {
+        //         translate: ["100%", 0, 0],
+        //     },
+        // },
         slidesPerView: 1,
         slidesPerGroup: 1,
         loop: true,
-        autoHeight: true,
+        spaceBetween: 30,
+        speed: 300,
+        // autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,

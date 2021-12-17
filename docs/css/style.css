@@ -1582,6 +1582,7 @@ h6 {
   -webkit-transition: 300ms ease-in-out;
   -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  background-color: #fff;
 }
 
 .swiper-integration .swiper .slider-arrow svg {
@@ -2760,6 +2761,19 @@ h6 {
   margin: 54px 0 0 0;
 }
 
+.blog .editor .sidebar__blog h5 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #606A80;
+  opacity: 0.5;
+  margin: 0 0 20px 0;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #EDF0F2;
+}
+
 .blog .editor .sidebar__blog h3 {
   font-weight: 900;
   font-size: 18px;
@@ -2787,6 +2801,7 @@ h6 {
 }
 
 .blog .editor__content {
+  width: 100%;
   max-width: 720px;
   padding: 0 280px 0 0;
   -webkit-box-sizing: content-box;
@@ -2993,23 +3008,14 @@ h6 {
   overflow: hidden;
 }
 
-.blog .slider-top__container {
-  max-width: 842px;
-  padding: 0 20px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  margin: 0 auto;
+.blog .slider-top {
   position: relative;
+  width: 100%;
+  margin: 64px 0;
 }
 
 .blog .slider-top .swiper {
-  max-width: 720px;
-}
-
-.blog .slider-top .swiper__slide {
-  max-width: 720px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
 }
 
 .blog .slider-top .swiper__content {
@@ -3023,13 +3029,15 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   max-width: 720px;
   background-color: #fff;
 }
 
 .blog .slider-top .swiper__img {
-  width: 720px;
-  height: 480px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 480px;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -3079,7 +3087,7 @@ h6 {
 }
 
 .blog .slider-top__prev {
-  left: 0;
+  left: -70px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3090,7 +3098,7 @@ h6 {
 }
 
 .blog .slider-top__next {
-  right: 0;
+  right: -70px;
   -webkit-transform: translateY(-50%) rotate(180deg);
       -ms-transform: translateY(-50%) rotate(180deg);
           transform: translateY(-50%) rotate(180deg);
@@ -3119,6 +3127,7 @@ h6 {
   -webkit-transition: 300ms ease-in-out;
   -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  background-color: #fff;
 }
 
 .blog .slider-top .slider-arrow svg {
@@ -3814,12 +3823,16 @@ h6 {
     display: none;
   }
 
+  .blog .editor {
+    padding: 0 20px;
+  }
+
   .blog .editor .sidebar {
     display: none;
   }
 
   .blog .editor__content {
-    padding: 0 20px;
+    padding: 0;
   }
 
   .book-a-demo {
@@ -4767,8 +4780,7 @@ h6 {
   }
 
   .blog .slider-top .swiper__img {
-    width: 527px;
-    height: 360px;
+    max-height: 360px;
   }
 
   .popular .slider {
@@ -5096,8 +5108,7 @@ h6 {
   }
 
   .blog .slider-top .swiper__img {
-    width: 335px;
-    height: 230px;
+    max-height: 230px;
   }
 }
 
@@ -5428,8 +5439,7 @@ h6 {
   }
 
   .blog .slider-top .swiper__img {
-    width: 280px;
-    height: 200px;
+    max-height: 200px;
   }
 
   .book-a-demo .form__logos-list {
