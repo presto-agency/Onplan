@@ -141,12 +141,14 @@
             }
         }
     }
-
-    &__burger{
-        display: none;
+    &__burger-wrapper{
         position: relative;
         height: 18px;
         width: 24px;
+    }
+    &__burger{
+        display: none;
+        padding: 15px 0 15px 15px;
         cursor: pointer;
         span{
             position: absolute;
@@ -286,9 +288,10 @@
                         font-weight: 800;
                         font-size: 18px;
                         line-height: 120%;
-                        color: $darkgreycolor;
+                        color: $textcolor;
                         margin: 16px 0 0 0;
                         max-width: 313px;
+                        transition: 300ms;
                     }
                     p{
                         font-size: 16px;
@@ -305,6 +308,9 @@
                         &:hover{
                             &:before{
                                 display: none;
+                            }
+                            h3{
+                                color: $darkgreycolor;
                             }
                             background: linear-gradient(0deg, rgba(242, 245, 250, 0.4), rgba(242, 245, 250, 0.4));
                             border: 1px solid  $greycolor;

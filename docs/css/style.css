@@ -312,11 +312,15 @@ h6 {
   transition: 300ms;
 }
 
-.header__burger {
-  display: none;
+.header__burger-wrapper {
   position: relative;
   height: 18px;
   width: 24px;
+}
+
+.header__burger {
+  display: none;
+  padding: 15px 0 15px 15px;
   cursor: pointer;
 }
 
@@ -492,9 +496,12 @@ h6 {
   font-weight: 800;
   font-size: 18px;
   line-height: 120%;
-  color: #606A80;
+  color: #232F42;
   margin: 16px 0 0 0;
   max-width: 313px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .header .submenu__item.content-bottom p {
@@ -3685,6 +3692,10 @@ h6 {
 
   .header .submenu__item.content-bottom:hover:before {
     display: none;
+  }
+
+  .header .submenu__item.content-bottom:hover h3 {
+    color: #606A80;
   }
 
   .header .submenu__item.submenu-bottom ul li:hover a {
