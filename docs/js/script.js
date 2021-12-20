@@ -219,6 +219,7 @@ const swiperCard = () => {
     });
 }
 
+
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {
 //         if (el.querySelector('img')) {
