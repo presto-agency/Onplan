@@ -24,7 +24,6 @@ const swiperComments = () => {
         },
         speed: 500,
         spaceBetween: 30,
-        // autoHeight: true,
         slidesPerView: 1,
         slidesPerGroup: 1,
         preloadImages: false,

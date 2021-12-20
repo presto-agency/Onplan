@@ -421,7 +421,8 @@
             position: absolute;
             top: -100vh;
             left: 0;
-            z-index: 1001;
+            // z-index: 1001;
+            z-index: 999;
             max-width: 100%;
             padding: 20px 20px 0 20px;
             transition: .25s ease-in-out;
@@ -567,6 +568,13 @@
                     a{
                         display: none;
                     }
+                }
+            }
+        }
+        &.active-sub{
+            .header{
+                &__navigation{
+                    z-index: 1001;
                 }
             }
         }

@@ -24,8 +24,10 @@ const callSub = () => {
     let elementsLink = document.querySelectorAll('.trigger');
     elementsLink.forEach(link => link.addEventListener('click', function () {
         let attr = this.getAttribute('data-attr');
+        const menu = document.querySelector('.header');
         let subWindow = document.getElementById(attr);
         subWindow.classList.add('active');
+        menu.classList.add('active-sub');
     }))
 }
 
@@ -33,8 +35,10 @@ const closeSub = () => {
     let subClose = document.querySelectorAll('.sub-close');
     subClose.forEach(close => close.addEventListener('click', function () {
         let attr = this.getAttribute('data-close');
+        const menu = document.querySelector('.header');
         let subMenu = document.getElementById(attr);
         subMenu.classList.remove('active');
+        menu.classList.remove('active-sub');
     }))
 }
 window.addEventListener('DOMContentLoaded', function () {
@@ -63,7 +67,6 @@ const swiperComments = () => {
         },
         speed: 500,
         spaceBetween: 30,
-        // autoHeight: true,
         slidesPerView: 1,
         slidesPerGroup: 1,
         preloadImages: false,
@@ -165,21 +168,21 @@ const swiperTop = () => {
             clickable: true
         },
         grabCursor: true,
-        // effect: "creative",
-        // creativeEffect: {
-        //     prev: {
-        //         translate: ["-20%", 0, -1],
-        //     },
-        //     next: {
-        //         translate: ["100%", 0, 0],
-        //     },
-        // },
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+                translate: ["-120%", 0, -1],
+            },
+            next: {
+                translate: ["120%", 0, 0],
+            },
+        },
+        speed: 500,
         slidesPerView: 1,
         slidesPerGroup: 1,
         loop: true,
         spaceBetween: 30,
         speed: 300,
-        // autoHeight: true,
         preloadImages: true,
         lazy: {
             loadOnTransitionStart: true,
