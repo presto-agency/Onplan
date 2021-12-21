@@ -3750,6 +3750,10 @@ h6 {
      object-fit: contain;
 }
 
+.main-page {
+  padding: 0 0 100px 0;
+}
+
 .main-page .simplicity {
   margin: 0 0 134px 0;
 }
@@ -4105,6 +4109,115 @@ h6 {
 
 .main-page .much-more .square__button {
   margin: 52px 0 0 0;
+}
+
+.main-page .logos {
+  margin: 180px 0 140px 0;
+}
+
+.main-page .logos__container {
+  max-width: 1240px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+.main-page .logos__title {
+  max-width: 640px;
+  position: relative;
+  z-index: 2;
+}
+
+.main-page .logos__slider-logo {
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+}
+
+.main-page .logos__bg {
+  position: absolute;
+  top: -133px;
+  left: 65%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1825px;
+  height: 628px;
+}
+
+.main-page .logos__swipers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0 0 0;
+}
+
+.main-page .logos .slider-logo-center {
+  max-width: 404px;
+}
+
+.main-page .logos .slider-logo {
+  max-width: 824px;
+  margin: 20px 0;
+}
+
+.main-page .logos .slider-logo__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 36px;
+}
+
+.main-page .logos .slider-logo__description h3 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #232F42;
+}
+
+.main-page .logos .slider-logo__description p {
+  font-size: 16px;
+  line-height: 120%;
+  color: #606A80;
+  opacity: 0.6;
+  margin: 8px 0 0 0;
+}
+
+.main-page .logos .slider-logo__slide {
+  height: 100%;
+  width: 100%;
+  max-width: 404px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 33px 45px;
+  border: 1px solid #EDF0F2;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.main-page .logos .slider-logo__img {
+  height: 48px;
+}
+
+.main-page .logos .slider-logo__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (min-width: 1024px) {
@@ -5556,6 +5669,10 @@ h6 {
 
   .case-studies {
     padding: 0 0 50px 0;
+  }
+
+  .main-page {
+    padding: 0 0 58px 0;
   }
 }
 

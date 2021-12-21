@@ -1,4 +1,8 @@
 .main-page{
+    padding: 0 0 100px 0;
+    @media(max-width: 735px){
+        padding: 0 0 58px 0;
+    }
     .simplicity {
     margin: 0 0 134px 0;
         &__container {
@@ -287,7 +291,91 @@
                 margin: 52px 0 0 0;
             }
         }
+    }
+    .logos {
+        margin: 180px 0 140px 0;
+		&__container {
+            max-width: 1240px;
+            padding: 0px 20px;
+            margin: 0px auto;
+            box-sizing: content-box;
+            position: relative;
+		}
+
+		&__title {
+            max-width: 640px;
+            position: relative;
+            z-index: 2;
+		}
+
+		&__slider-logo {
+            position: relative;
+            z-index: 2;
+            overflow: visible;
+		}
+
+		&__bg {
+            position: absolute;
+            top: -133px;
+            left: 65%;
+            transform: translateX(-50%);
+            width: 1825px;
+            height: 628px;
+		}
+        &__swipers-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 0 0 0;
+        }
+        .slider-logo-center{
+            max-width: 404px;
+        }
+        .slider-logo {
+            max-width: 824px;
+            margin: 20px 0;
+                &__description{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 0 0 36px;
+                    h3{
+                        font-weight: 800;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: $textcolor;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 120%;
+                        color: $darkgreycolor;
+                        opacity: 0.6;
+                        margin: 8px 0 0 0;
+                    }
+                }
+        
+                &__slide {
+                    height: 100%;
+                    width: 100%;
+                    max-width: 404px;
+                    display: flex;
+                    padding: 33px 45px;
+                    border: 1px solid #EDF0F2;
+                    border-radius: 16px;
+                    background-color: $whitecolor;
+                }
+        
+                &__img {
+                    height: 48px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+        }
 }
+
+
 
     @media(max-width: 1439px){
         .simplicity{
