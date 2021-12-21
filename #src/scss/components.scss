@@ -109,46 +109,6 @@
         }
     }
 
-    &__bread-crumbs {
-        position: relative;
-        z-index: 2;
-        ul{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        li{
-            padding: 0 10px 0 0;
-            margin: 0 10px 0 0;
-            position: relative;
-            &:before{
-                content: '';
-                position: absolute;
-                top: 4px;
-                right: 0;
-                transform: rotate(15deg);
-                width: 2px;
-                height: 13px;
-                background-color: $bluecolor;
-            }
-            a{
-                line-height: 20px;
-                font-size: 16px;
-                font-weight: 600;
-                letter-spacing: 0.15em;
-                text-transform: uppercase;
-                color: $bluecolor;
-            }
-            &:last-child{
-                margin: 0;
-                padding: 0;
-                &:before{
-                    display: none;
-                }
-            }
-        }
-    }
-    
     .content {
         position: relative;
         z-index: 2;
@@ -239,13 +199,6 @@
         }
     }
     @media(max-width: 424px){
-        &__bread-crumbs{
-            li{
-                a{
-                    font-size: 14px;
-                }
-            }
-        }
         .content{
             &__img{
                 height: 63px;
@@ -277,6 +230,54 @@
             }
         }
     }
+}
+
+.bread-crumbs {
+    position: relative;
+    z-index: 2;
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    li{
+        padding: 0 10px 0 0;
+        margin: 0 10px 0 0;
+        position: relative;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $bluecolor;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 4px;
+            right: 0;
+            transform: rotate(15deg);
+            width: 2px;
+            height: 13px;
+            background-color: $bluecolor;
+        }
+        a{
+            color: $bluecolor;
+        }
+        &:last-child{
+            margin: 0;
+            padding: 0;
+            &:before{
+                display: none;
+            }
+        }
+    }
+    @media(max-width: 424px){
+    li{
+        a{
+            font-size: 14px;
+        }
+    }
+}
 }
 
 .best {
