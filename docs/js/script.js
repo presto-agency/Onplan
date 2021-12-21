@@ -149,8 +149,10 @@ window.addEventListener('DOMContentLoaded', function () {
 const showMore = () => {
     const item = document.querySelector('.author__content-side');
     const itemSpan = document.querySelector('.author__content-side > span');
-    itemSpan.onclick = () => {
-        showCase(item, 'active')
+    if (!!item && !!itemSpan) {
+        itemSpan.onclick = () => {
+            showCase(item, 'active')
+        }
     }
     function showCase(obj, classname) {
         obj.classList.toggle(classname)
