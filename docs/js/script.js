@@ -144,6 +144,7 @@ window.addEventListener('DOMContentLoaded', function () {
     showMore();
     swiperTop();
     swiperCard();
+    relativeBlog()
 })
 
 const showMore = () => {
@@ -219,6 +220,21 @@ const swiperCard = () => {
             loadPrevNext: true,
         },
     });
+}
+
+const relativeBlog = () => {
+    const blogTitles = document.querySelectorAll('.editor__content > h2');
+    const blogTitlesArray = Array.from(blogTitles);
+    if (blogTitlesArray.length) {
+        blogTitlesArray.forEach(title => {
+            let yPosition = title.offsetTop;
+            let id = title.id;
+            const relativeBlog = document.querySelector(`[data-target='${id}']`);
+            if (!!relativeBlog) {
+                relativeBlog.style.top = yPosition + "px";
+            }
+        })
+    }
 }
 window.addEventListener('DOMContentLoaded', function () {
     sliderLogo(),

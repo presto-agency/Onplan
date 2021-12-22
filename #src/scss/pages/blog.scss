@@ -132,7 +132,11 @@
             width: 220px;
             padding: 0 60px 0 0;
             box-sizing: content-box;
+            position: relative;
             &__blog{
+                position: absolute;
+                top: 0;
+                left: 0;
                 margin: 54px 0 0 0;
                 h5{
                     font-weight: 800;
@@ -172,6 +176,7 @@
             }
         }
         &__content{
+            position: relative;
             width: 100%;
             max-width: 720px;
             padding: 0 280px 0 0;

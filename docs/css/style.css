@@ -2822,9 +2822,13 @@ h6 {
   padding: 0 60px 0 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  position: relative;
 }
 
 .blog .editor .sidebar__blog {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 54px 0 0 0;
 }
 
@@ -2868,6 +2872,7 @@ h6 {
 }
 
 .blog .editor__content {
+  position: relative;
   width: 100%;
   max-width: 720px;
   padding: 0 280px 0 0;
