@@ -4227,11 +4227,183 @@ h6 {
 }
 
 .all-integrtation {
-  padding: 0 0 100px 0;
+  padding: 100px 0;
+  position: relative;
+}
+
+.all-integrtation .quickbooks__bg {
+  top: -99px;
+  max-height: inherit;
+  min-height: 597px;
+}
+
+.all-integrtation .quickbooks .content {
+  margin: 30px 0 0 0;
+}
+
+.all-integrtation .quickbooks .content__bottom-wrapper {
+  margin: 80px auto 0 auto;
+  max-width: 802px;
+}
+
+.all-integrtation .quickbooks .content__bottom-links {
+  white-space: nowrap;
+  overflow: auto;
+  margin: 0 -8px;
+}
+
+.all-integrtation .quickbooks .content__bottom-links::-webkit-scrollbar {
+  width: 0px;
+}
+
+.all-integrtation .quickbooks .content__bottom-link {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #EDF0F2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 32px;
+  margin: 0 8px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.all-integrtation .quickbooks .content__bottom-link a {
+  display: block;
+  padding: 10px 24px;
+  color: #606A80;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.all-integrtation .quickbooks .content__bottom-link.active {
+  background: #707EFF;
+}
+
+.all-integrtation .quickbooks .content__bottom-link.active a {
+  color: #fff;
+}
+
+.all-integrtation .quickbooks .content__bottom-link:hover a {
+  opacity: 0.5;
+}
+
+.all-integrtation .accounting-system {
+  margin: 0 0 120px 0;
+}
+
+.all-integrtation .accounting-system__container {
+  position: relative;
+  max-width: 1304px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.all-integrtation .accounting-system__content {
+  padding: 16px 132px;
+  background: #F2F5FA;
+  border-radius: 52px;
+}
+
+.all-integrtation .accounting-system .block-integration {
+  margin: 64px 0;
+}
+
+.all-integrtation .accounting-system .block-integration__title h3 {
+  color: #232F42;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.all-integrtation .accounting-system .block-integration__title p {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 16px 0 0 0;
+  max-width: 720px;
+}
+
+.all-integrtation .accounting-system .block-integration__wrapper {
+  margin: 40px 0 0 0;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.all-integrtation .accounting-system .block-integration__wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.all-integrtation .accounting-system .block-integration__card {
+  display: inline-block;
+  width: calc((100% - 80px) / 4);
+  height: 237px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #EDF0F2;
+  border-radius: 16px;
+  margin: 0 10px;
+}
+
+.all-integrtation .accounting-system .block-integration__card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.all-integrtation .accounting-system .block-integration__card-wrapper h5 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+  color: #232F42;
+  margin: 0 0 12px 0;
+}
+
+.all-integrtation .accounting-system .block-integration__card-wrapper:hover .block-integration__img img {
+  height: 120%;
+}
+
+.all-integrtation .accounting-system .block-integration__img {
+  height: 52px;
+  width: 100%;
+  margin: 0 0 24px 0;
+  position: relative;
+}
+
+.all-integrtation .accounting-system .block-integration__img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .all-integrtation .exports {
-  margin: 120px 0;
+  margin: 0 0 120px 0;
 }
 
 .all-integrtation .exports__container {
@@ -4303,9 +4475,17 @@ h6 {
   font-weight: 600;
 }
 
+.all-integrtation .exports__link:hover .exports__img {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .all-integrtation .exports__img {
   width: 52px;
   height: 52px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .all-integrtation .exports__img img {

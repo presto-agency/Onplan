@@ -3,6 +3,7 @@
 @@include('all-cases.js')
 @@include('blog.js')
 @@include('main-page.js')
+@@include('all-integration.js')
 
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {
