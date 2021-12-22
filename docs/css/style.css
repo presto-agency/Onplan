@@ -4226,6 +4226,10 @@ h6 {
      object-fit: contain;
 }
 
+.all-integrtation .clients {
+  padding: 120px 0 80px 0;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -5548,6 +5552,10 @@ h6 {
 
   .book-a-demo__awards {
     margin: 32px 0 52px;
+  }
+
+  .all-integrtation .clients {
+    padding: 80px 0 134px 0;
   }
 }
 
