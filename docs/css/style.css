@@ -4231,6 +4231,10 @@ h6 {
   position: relative;
 }
 
+.all-integrtation .quickbooks {
+  padding: 0 0 66px 0;
+}
+
 .all-integrtation .quickbooks__bg {
   top: -99px;
   max-height: inherit;
@@ -4242,7 +4246,7 @@ h6 {
 }
 
 .all-integrtation .quickbooks .content__bottom-wrapper {
-  margin: 80px auto 0 auto;
+  margin: 74px auto 0 auto;
   max-width: 802px;
 }
 
@@ -4254,6 +4258,20 @@ h6 {
 
 .all-integrtation .quickbooks .content__bottom-links::-webkit-scrollbar {
   width: 0px;
+}
+
+.all-integrtation .quickbooks .content__text-integration {
+  display: none;
+  margin: 0 0 20px 0;
+}
+
+.all-integrtation .quickbooks .content__text-integration p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #232F42;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
 }
 
 .all-integrtation .quickbooks .content__bottom-link {
@@ -4332,21 +4350,25 @@ h6 {
 .all-integrtation .accounting-system .block-integration__wrapper {
   margin: 40px 0 0 0;
   white-space: nowrap;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .all-integrtation .accounting-system .block-integration__wrapper::-webkit-scrollbar {
-  width: 0px;
+  display: none;
 }
 
 .all-integrtation .accounting-system .block-integration__card {
   display: inline-block;
-  width: calc((100% - 80px) / 4);
-  height: 237px;
+  width: 244px;
+  height: 236px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #EDF0F2;
   border-radius: 16px;
-  margin: 0 10px;
+  margin: 0 17px 0 0;
+}
+
+.all-integrtation .accounting-system .block-integration__card:last-child {
+  margin: 0;
 }
 
 .all-integrtation .accounting-system .block-integration__card-wrapper {
@@ -4375,8 +4397,9 @@ h6 {
   margin: 0 0 12px 0;
 }
 
-.all-integrtation .accounting-system .block-integration__card-wrapper:hover .block-integration__img img {
-  height: 120%;
+.all-integrtation .accounting-system .block-integration__card-wrapper p {
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .all-integrtation .accounting-system .block-integration__img {
@@ -4475,11 +4498,6 @@ h6 {
   font-weight: 600;
 }
 
-.all-integrtation .exports__link:hover .exports__img {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
 .all-integrtation .exports__img {
   width: 52px;
   height: 52px;
@@ -4576,6 +4594,15 @@ h6 {
     opacity: 1;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+  }
+
+  .all-integrtation .accounting-system .block-integration__card-wrapper:hover .block-integration__img img {
+    height: 120%;
+  }
+
+  .all-integrtation .exports__link:hover .exports__img {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 
@@ -4729,6 +4756,10 @@ h6 {
 
   .main-page .much-more__bg {
     display: none;
+  }
+
+  .all-integrtation .accounting-system__content {
+    padding: 15px 50px;
   }
 }
 
@@ -5830,6 +5861,23 @@ h6 {
   .all-integrtation .clients {
     padding: 80px 0 134px 0;
   }
+
+  .all-integrtation .accounting-system .block-integration:first-child {
+    margin: 0 0 64px 0;
+  }
+
+  .all-integrtation .accounting-system .block-integration:last-child {
+    margin: 64px 0 0 0;
+  }
+
+  .all-integrtation .accounting-system__container {
+    padding: 0;
+  }
+
+  .all-integrtation .accounting-system__content {
+    border-radius: 0;
+    padding: 39px 20px 64px;
+  }
 }
 
 @media (max-width: 735px) {
@@ -5963,7 +6011,50 @@ h6 {
   }
 
   .all-integrtation {
-    padding: 0 0 58px 0;
+    padding: 58px 0;
+  }
+
+  .all-integrtation .quickbooks {
+    padding: 0 0 40px 0;
+  }
+
+  .all-integrtation .quickbooks .content {
+    margin: 23px 0 0 0;
+  }
+
+  .all-integrtation .quickbooks .content h1 {
+    text-align: left;
+    margin: 0 0 16px 0;
+  }
+
+  .all-integrtation .quickbooks .content p {
+    text-align: left;
+  }
+
+  .all-integrtation .quickbooks .content__bottom-wrapper {
+    margin: 64px 0 0 0;
+  }
+
+  .all-integrtation .quickbooks .content__text-integration {
+    display: block;
+  }
+
+  .all-integrtation .bread-crumbs ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .all-integrtation .accounting-system {
+    margin: 0 0 64px 0;
+  }
+
+  .all-integrtation .accounting-system .block-integration__title h3 {
+    font-size: 24px;
+  }
+
+  .all-integrtation .accounting-system .block-integration__title p {
+    margin: 12px 0 0 0;
   }
 }
 
@@ -6157,6 +6248,10 @@ h6 {
   .all-integrtation .exports__description h2 {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  .all-integrtation .exports__description p {
+    margin: 10px auto 0 auto;
   }
 
   .all-integrtation .exports__item {
@@ -6503,6 +6598,10 @@ h6 {
     position: relative;
     top: -17px;
     left: -71px;
+  }
+
+  .all-integrtation .quickbooks .content__description h1 {
+    line-height: 46px;
   }
 }
 

@@ -2,9 +2,10 @@
     padding: 100px 0;
     position: relative;
     @media(max-width: 735px){
-        padding: 0 0 58px 0;
+        padding: 58px 0;
     }
     .quickbooks{
+        padding: 0 0 66px 0;
         &__bg{
             top: -99px;
             max-height: inherit;
@@ -13,7 +14,7 @@
         .content {
             margin: 30px 0 0 0;
             &__bottom-wrapper {
-                margin: 80px auto 0 auto;
+                margin: 74px auto 0 auto;
                 max-width: 802px;
             }
             
@@ -23,6 +24,19 @@
                 margin: 0 -8px;
                 &::-webkit-scrollbar {
                     width: 0px;
+                }
+            }
+
+            &__text-integration{
+                display: none;
+                margin: 0 0 20px 0;
+                p{
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: $textcolor;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    opacity: .6;
                 }
             }
             
@@ -92,20 +106,23 @@
                 &__wrapper {
                     margin: 40px 0 0 0;
                     white-space: nowrap;
-                    overflow: auto;
+                    overflow-x: auto;
                     &::-webkit-scrollbar {
-                        width: 0px;
+                        display: none;
                     }
                 }
         
                 &__card {
                     display: inline-block;
-                    width: calc((100% - (10px * 8))/4);
-                    height: 237px;
+                    width: 244px;
+                    height: 236px;
                     background: rgba(255, 255, 255, 0.9);
                     border: 1px solid $greycolor;
                     border-radius: 16px;
-                    margin: 0 10px;
+                    margin: 0 17px 0 0;
+                    &:last-child{
+                        margin: 0;
+                    }
                 }
         
                 &__card-wrapper {
@@ -122,11 +139,17 @@
                         color: $textcolor;
                         margin: 0 0 12px 0;
                     }
-                    &:hover{
-                        .block-integration{
-                            &__img{
-                                img{
-                                    height: 120%;
+                    p{
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    @media(min-width: 1440px){
+                        &:hover{
+                            .block-integration{
+                                &__img{
+                                    img{
+                                        height: 120%;
+                                    }
                                 }
                             }
                         }
@@ -204,10 +227,12 @@
                 color: $darkgreycolor;
                 font-weight: 600;
             }
-            &:hover{
-                .exports{
-                    &__img{
-                        transform: rotateY(180deg);
+            @media(min-width: 1440px){
+                &:hover{
+                    .exports{
+                        &__img{
+                            transform: rotateY(180deg);
+                        }
                     }
                 }
             }
@@ -230,10 +255,75 @@
             padding: 80px 0 134px 0;
         }
     }
+    @media(max-width: 1439px){
+        .accounting-system{
+            &__content{
+                padding: 15px 50px;
+            }
+        }
+    }
     @media(max-width: 1023px){
         .exports{
             &__item{
                 width: calc(100% / 2);
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .accounting-system{
+            .block-integration{
+                &:first-child{
+                    margin: 0 0 64px 0;
+                }
+                &:last-child{
+                    margin: 64px 0 0 0;
+                }
+            }
+            &__container{
+                padding: 0;
+            }
+            &__content{
+                border-radius: 0;
+                padding: 39px 20px 64px;
+            }
+        }
+    }
+    @media(max-width: 735px){
+        .quickbooks{
+            padding: 0 0 40px 0;
+            .content{
+                margin: 23px 0 0 0;
+                h1{
+                    text-align: left;
+                    margin: 0 0 16px 0;
+                }
+                p{
+                    text-align: left;
+                }
+                &__bottom-wrapper{
+                    margin: 64px 0 0 0;
+                }
+                &__text-integration{
+                    display: block;
+                }
+            }
+        }
+        .bread-crumbs{
+            ul{
+                justify-content: flex-start;
+            }
+        }
+        .accounting-system{
+            margin: 0 0 64px 0;
+            .block-integration{
+                &__title{
+                    h3{
+                        font-size: 24px;
+                    }
+                    p{
+                        margin: 12px 0 0 0;
+                    }
+                }
             }
         }
     }
@@ -246,6 +336,9 @@
                     font-size: 36px;
                     line-height: 42px;
                 }
+                p{
+                    margin: 10px auto 0 auto;
+                }
             }
             &__item{
                 width: 100%;
@@ -253,6 +346,17 @@
             }
             &__list{
                 padding: 24px;
+            }
+        }
+    }
+    @media(max-width: 424px){
+        .quickbooks{
+            .content{
+                &__description{
+                    h1{
+                        line-height: 46px;
+                    }
+                }
             }
         }
     }
