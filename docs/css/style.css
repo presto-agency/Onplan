@@ -4153,7 +4153,10 @@ h6 {
   height: 628px;
 }
 
-.main-page .logos__swipers-wrapper {
+.main-page .logos .slider-logo {
+  margin: 80px auto 0 auto;
+  width: 100%;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4161,19 +4164,24 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 80px 0 0 0;
 }
 
-.main-page .logos .slider-logo-center {
-  max-width: 404px;
+.main-page .logos .slider-logo__slide-track {
+  overflow: hidden;
+  position: relative;
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5656px;
+  margin: 0 0 16px 0;
+  height: 120px;
 }
 
-.main-page .logos .slider-logo {
-  max-width: 824px;
-  margin: 20px 0;
+.main-page .logos .slider-logo__slide-track.delay {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .main-page .logos .slider-logo__description {
@@ -4200,6 +4208,7 @@ h6 {
   color: #606A80;
   opacity: 0.6;
   margin: 8px 0 0 0;
+  white-space: nowrap;
 }
 
 .main-page .logos .slider-logo__slide {
@@ -4209,10 +4218,15 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 33px 45px;
+  padding: 33px 35px;
   border: 1px solid #EDF0F2;
   border-radius: 16px;
   background-color: #fff;
+  margin: 0 16px 0 0;
+}
+
+.main-page .logos .slider-logo__slide:last-child {
+  margin: 0;
 }
 
 .main-page .logos .slider-logo__img {
@@ -4224,6 +4238,30 @@ h6 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2828px);
+            transform: translateX(-2828px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-2828px);
+            transform: translateX(-2828px);
+  }
 }
 
 .all-integrtation {
