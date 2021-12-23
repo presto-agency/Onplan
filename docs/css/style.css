@@ -4231,6 +4231,76 @@ h6 {
   position: relative;
 }
 
+.all-integrtation .all-integration-menu {
+  position: fixed;
+  z-index: 999;
+  top: -100%;
+  height: 74px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 500ms ease-in-out;
+  -o-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+.all-integrtation .all-integration-menu__bottom-links {
+  white-space: nowrap;
+  overflow: auto;
+  margin: 0 -8px;
+  padding: 0 20px;
+}
+
+.all-integrtation .all-integration-menu__bottom-links::-webkit-scrollbar {
+  display: none;
+}
+
+.all-integrtation .all-integration-menu.active {
+  top: 82px;
+}
+
+.all-integrtation .all-integration-menu__bottom-link {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #EDF0F2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 32px;
+  margin: 0 8px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.all-integrtation .all-integration-menu__bottom-link a {
+  display: block;
+  padding: 10px 24px;
+  color: #606A80;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.all-integrtation .all-integration-menu__bottom-link.active {
+  background: #707EFF;
+}
+
+.all-integrtation .all-integration-menu__bottom-link.active a {
+  color: #fff;
+}
+
 .all-integrtation .quickbooks {
   padding: 0 0 66px 0;
 }
@@ -4257,7 +4327,7 @@ h6 {
 }
 
 .all-integrtation .quickbooks .content__bottom-links::-webkit-scrollbar {
-  width: 0px;
+  display: none;
 }
 
 .all-integrtation .quickbooks .content__text-integration {
@@ -4304,10 +4374,6 @@ h6 {
 
 .all-integrtation .quickbooks .content__bottom-link.active a {
   color: #fff;
-}
-
-.all-integrtation .quickbooks .content__bottom-link:hover a {
-  opacity: 0.5;
 }
 
 .all-integrtation .accounting-system {
@@ -4594,6 +4660,14 @@ h6 {
     opacity: 1;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+  }
+
+  .all-integrtation .all-integration-menu__bottom-link:hover a {
+    opacity: 0.5;
+  }
+
+  .all-integrtation .quickbooks .content__bottom-link:hover a {
+    opacity: 0.5;
   }
 
   .all-integrtation .accounting-system .block-integration__card-wrapper:hover .block-integration__img img {
@@ -5019,6 +5093,10 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .all-integrtation .all-integration-menu.active {
+    top: 70px;
   }
 }
 

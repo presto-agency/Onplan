@@ -268,7 +268,8 @@ const sliderLogoCenter = () => {
     });
 }
 window.addEventListener('DOMContentLoaded', function () {
-    anchorAnimation()
+    anchorAnimation(),
+        showAllIntegrationMenu()
 })
 
 const anchorAnimation = () => {
@@ -278,11 +279,45 @@ const anchorAnimation = () => {
             e.preventDefault()
             const blockID = anchor.getAttribute('href').substr(1);
             const obj = document.getElementById(blockID);
-            const yOffset = -100;
+            const yOffset = -182;
             const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         })
     }
+}
+
+const showAllIntegrationMenu = () => {
+    let isScrolling = false;
+    const menu = document.querySelector('.all-integration-menu');
+    const btns = document.querySelector('.content__bottom-links');
+
+    window.addEventListener("scroll", throttleScroll, false);
+    function throttleScroll(e) {
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function () {
+                scrolling(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function isFullyVisible(el) {
+        let elementBoundary = el.getBoundingClientRect();
+        let top = elementBoundary.top;
+        let bottom = elementBoundary.bottom;
+        return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+
+    function scrolling() {
+        if (isFullyVisible(btns)) {
+            menu.classList.remove('active');
+        }
+        else {
+            menu.classList.add('active');
+        }
+    }
+    scrolling();
 }
 
 // const bg = () => {
