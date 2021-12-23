@@ -269,7 +269,8 @@ const sliderLogoCenter = () => {
 }
 window.addEventListener('DOMContentLoaded', function () {
     anchorAnimation(),
-        showAllIntegrationMenu()
+        showAllIntegrationMenu(),
+        addClassToBtn()
 })
 
 const anchorAnimation = () => {
@@ -318,6 +319,27 @@ const showAllIntegrationMenu = () => {
         }
     }
     scrolling();
+}
+
+const addClassToBtn = () => {
+    const pageBtns = document.querySelectorAll('.content__bottom-link');
+    const pageMenu = document.querySelector('.content__bottom-links');
+    const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link');
+    const relativeMenu = document.querySelector('.all-integration-menu__bottom-links');
+    function addColor(btns, menu) {
+        btns.forEach(btn => btn.addEventListener('click', function () {
+            const activeBtn = menu.querySelector('.active');
+            if (!!activeBtn) {
+                activeBtn.classList.remove('active')
+                btn.classList.add('active')
+            }
+            else {
+                btn.classList.add('active')
+            }
+        }))
+    }
+    addColor(pageBtns, pageMenu)
+    addColor(relativeBtns, relativeMenu)
 }
 
 // const bg = () => {
