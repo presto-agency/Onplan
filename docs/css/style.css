@@ -4265,6 +4265,158 @@ h6 {
   }
 }
 
+.main-page .stakeholders {
+  background: -o-linear-gradient(318.71deg, #91CAF2 21.97%, #7A9CCC 100%);
+  background: linear-gradient(131.29deg, #91CAF2 21.97%, #7A9CCC 100%);
+  padding: 120px 0;
+  margin: 135px 0;
+}
+
+.main-page .stakeholders__container {
+  max-width: 1140px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+.main-page .stakeholders__bg {
+  position: absolute;
+  bottom: -277px;
+  right: -156px;
+  width: 562px;
+  height: 562px;
+}
+
+.main-page .stakeholders__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-page .stakeholders__title {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.main-page .stakeholders__title h2 {
+  text-align: center;
+  font-size: 56px;
+  line-height: 62px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.main-page .stakeholders .tabs__items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 0 0 0;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.main-page .stakeholders .tabs__items::-webkit-scrollbar {
+  display: none;
+}
+
+.main-page .stakeholders .tabs__items:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.25;
+}
+
+.main-page .stakeholders .tabs__item {
+  position: relative;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.7;
+  padding: 0 40px 16px 0;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.main-page .stakeholders .tabs__item:after {
+  content: "";
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.main-page .stakeholders .tabs__item.active {
+  opacity: 1;
+}
+
+.main-page .stakeholders .tabs__item.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.main-page .stakeholders .tabs__body {
+  margin: 64px 0 0 0;
+}
+
+.main-page .stakeholders .tabs__block {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-page .stakeholders .tabs__block.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-page .stakeholders .tabs__img {
+  max-width: 580px;
+  max-height: 346px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 40px 0 0;
+}
+
+.main-page .stakeholders .tabs__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-page .stakeholders .tabs__description {
+  max-width: 480px;
+}
+
+.main-page .stakeholders .tabs__description p {
+  font-size: 20px;
+  line-height: 160%;
+  color: #fff;
+  margin: 59px 0 52px 0;
+  opacity: 0.9;
+}
+
 .all-integrtation {
   padding: 100px 0;
   position: relative;
@@ -5500,6 +5652,23 @@ h6 {
     margin-top: 12px;
   }
 
+  .main-page .stakeholders__bg {
+    display: none;
+  }
+
+  .main-page .stakeholders .tabs__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .main-page .stakeholders .tabs__img {
+    margin: 0;
+  }
+
   .all-integrtation .exports__item {
     width: 50%;
   }
@@ -6049,6 +6218,39 @@ h6 {
               transform: translateX(-1680px);
     }
 }
+
+  .main-page .stakeholders {
+    padding: 78px 0;
+  }
+
+  .main-page .stakeholders .tabs__items {
+    margin: 54px 0 0 0;
+  }
+
+  .main-page .stakeholders .tabs__items:after {
+    content: "";
+    width: 767px;
+  }
+
+  .main-page .stakeholders .tabs__item {
+    padding: 0 27px 16px 0;
+  }
+
+  .main-page .stakeholders .tabs__body {
+    margin: 52px 0 0 0;
+  }
+
+  .main-page .stakeholders .tabs__description p {
+    margin: 32px 0 40px 0;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .main-page .stakeholders__title h2 {
+    font-size: 36px;
+    line-height: 41px;
+    text-align: left;
+  }
 
   .all-integrtation .clients {
     padding: 80px 0 134px 0;
