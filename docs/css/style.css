@@ -3942,13 +3942,10 @@ h6 {
 
 .main-page .quickbooks__bg {
   top: -143px;
-  left: -17px;
-  -webkit-transform: inherit;
-      -ms-transform: inherit;
-          transform: inherit;
   width: 1250px;
   height: 509px;
-  margin: 0;
+  margin: 0 auto;
+  left: 45%;
 }
 
 .main-page .quickbooks__button {
