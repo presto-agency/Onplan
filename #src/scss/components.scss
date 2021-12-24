@@ -728,10 +728,6 @@
         border-radius: 24px;
         width: 100%;
         max-width: 660px;
-        @media(min-width: 1024px){
-            box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
-            backdrop-filter: blur(52px);
-        }
         &__slide{
             width: 100%;
             max-width: 660px;
