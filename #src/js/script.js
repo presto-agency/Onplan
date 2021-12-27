@@ -4,6 +4,7 @@
 @@include('blog.js')
 @@include('main-page.js')
 @@include('all-integration.js')
+@@include('resources-blog.js')
 
 // const bg = () => {
 //     document.querySelectorAll(".ibg").forEach(el => {
