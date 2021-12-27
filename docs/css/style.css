@@ -5348,6 +5348,38 @@ h6 {
   padding: 0;
 }
 
+.privacy-policy {
+  margin: 100px 0 160px 0;
+}
+
+.privacy-policy__container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.privacy-policy__content h1 {
+  margin: 32px 0 80px 0;
+  text-align: center;
+}
+
+.privacy-policy__content h3 {
+  color: #232F42;
+  margin: 52px 0 24px 0;
+}
+
+.privacy-policy__content p {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 20px 0;
+}
+
+.privacy-policy__content p a {
+  color: #707EFF;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -7211,6 +7243,35 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .privacy-policy {
+    margin: 60px 0 100px 0;
+  }
+
+  .privacy-policy__content h1 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 46px;
+    margin: 24px 0 40px 0;
+  }
+
+  .privacy-policy__content h3 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 40px 0 20px 0;
+  }
+
+  .privacy-policy__content p {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 0 17px 0;
+  }
+
+  .privacy-policy .bread-crumbs ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
