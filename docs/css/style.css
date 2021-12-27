@@ -5167,13 +5167,19 @@ h6 {
 }
 
 .resources-blog .resources-block .slider-resources__picture-side {
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .resources-blog .resources-block .slider-resources__img {
   position: relative;
-  max-width: 500px;
-  max-height: 440px;
+  width: 500px;
+  height: 440px;
   border-radius: 24px;
   overflow: hidden;
 }
@@ -5319,6 +5325,10 @@ h6 {
   font-size: 40px;
   line-height: 120%;
   color: #232F42;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .resources-blog .resources-block .slider-resources .card__content p {
@@ -5326,10 +5336,16 @@ h6 {
   line-height: 160%;
   color: #606A80;
   margin: 16px 0 0 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
 }
 
 .resources-blog .resources-block .slider-resources .card__person {
   margin: 40px 0 0 0;
+  border-bottom: inherit;
+  padding: 0;
 }
 
 @media (min-width: 1024px) {
@@ -5626,6 +5642,21 @@ h6 {
 
   .resources-blog .blog-cards__button {
     display: none;
+  }
+
+  .resources-blog .resources-block .slider-resources .card__content h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .resources-blog .resources-block .slider-resources .card__content p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .resources-blog .resources-block .slider-resources__img {
+    width: 335px;
+    height: 260px;
   }
 }
 
@@ -6315,6 +6346,30 @@ h6 {
 
   .summary .clients {
     padding: 80px 0 52px 0;
+  }
+
+  .resources-blog .resources-block .slider-resources {
+    max-width: 335px;
+    padding: 0;
+  }
+
+  .resources-blog .resources-block .slider-resources__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .resources-blog .resources-block .slider-resources__picture-side {
+    margin: 0;
+  }
+
+  .resources-blog .resources-block .slider-resources .slider-arrow {
+    display: none;
+  }
+
+  .resources-blog .resources-block .slider-resources .card__person {
+    margin: 20px 0 0 0;
   }
 }
 
