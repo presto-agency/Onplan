@@ -70,10 +70,10 @@
         font-size: 16px;
         font-weight: 800;
 		margin: 0 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &.sign{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             border: 2px solid $greycolor;
             color: $textcolor;
         }
