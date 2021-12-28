@@ -65,8 +65,13 @@ const swiperComments = () => {
                 translate: ["120%", 0, 0],
             },
         },
-        speed: 500,
+        breakpoints: {
+            1024: {
+                autoHeight: false,
+            },
+        },
         autoHeight: true,
+        speed: 500,
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,
