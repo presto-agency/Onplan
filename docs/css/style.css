@@ -3251,8 +3251,7 @@ h6 {
 .blog .slider-top {
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 100%;
+  height: auto;
   margin: 64px 0;
 }
 
