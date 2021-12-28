@@ -438,12 +438,12 @@
                 }
             }
     
-            &__link-exemple {
+            figcaption {
                 margin: 16px 0 0 0;
                 font-size: 14px;
                 line-height: 18px;
                 color: rgba($darkgreycolor, 0.6);
-                span{
+                a{
                     color: rgba($darkgreycolor, 1);
                 }
             }

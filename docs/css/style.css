@@ -166,8 +166,6 @@ h6 {
   background: #fff;
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
-  -webkit-backdrop-filter: blur(52px);
-          backdrop-filter: blur(52px);
 }
 
 .header__content {
@@ -1018,8 +1016,6 @@ h6 {
   border-radius: 32px;
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
           box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
-  -webkit-backdrop-filter: blur(52px);
-          backdrop-filter: blur(52px);
 }
 
 .quickbooks .content__bottom-text h3 {
@@ -1500,8 +1496,6 @@ h6 {
   max-height: 476px;
   background: -o-linear-gradient(332.79deg, #84DBDB 16.4%, #6E7AFF 129.13%), -o-linear-gradient(324.4deg, #E3BAC8 0%, #B88FD9 181.6%);
   background: linear-gradient(117.21deg, #84DBDB 16.4%, #6E7AFF 129.13%), linear-gradient(125.6deg, #E3BAC8 0%, #B88FD9 181.6%);
-  -webkit-backdrop-filter: blur(43.0769px);
-          backdrop-filter: blur(43.0769px);
   border-radius: 24px;
 }
 
@@ -3284,14 +3278,14 @@ h6 {
      object-fit: cover;
 }
 
-.blog .slider-top .swiper__link-exemple {
+.blog .slider-top .swiper figcaption {
   margin: 16px 0 0 0;
   font-size: 14px;
   line-height: 18px;
   color: rgba(96, 106, 128, 0.6);
 }
 
-.blog .slider-top .swiper__link-exemple span {
+.blog .slider-top .swiper figcaption a {
   color: #606a80;
 }
 
@@ -5081,8 +5075,8 @@ h6 {
 }
 
 .resources-blog .blog-cards .card__img {
-  max-width: 370px;
-  max-height: 280px;
+  width: 370px;
+  height: 280px;
   border-radius: 16px;
   overflow: hidden;
 }
@@ -5114,6 +5108,10 @@ h6 {
   line-height: 120%;
   color: #232F42;
   margin: 0 0 12px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .resources-blog .blog-cards .card__content p {
@@ -5631,8 +5629,12 @@ h6 {
   }
 
   .resources-blog .blog-cards__content {
-    display: block;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     white-space: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     overflow: auto;
     width: 100%;
     margin: 0;
@@ -5654,7 +5656,8 @@ h6 {
   }
 
   .resources-blog .blog-cards__content .card__img {
-    max-height: 220px;
+    width: 295px;
+    height: 220px;
   }
 
   .resources-blog .blog-cards__content .card__element-wrapper {

@@ -155,8 +155,8 @@
                 }
             }
             &__img {
-                max-width: 370px;
-                max-height: 280px;
+                width: 370px;
+                height: 280px;
                 border-radius: 16px;
                 overflow: hidden;
                 img{
@@ -186,6 +186,10 @@
                         line-height: 120%;
                         color: $textcolor;
                         margin: 0 0 12px 0;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
                     }
                     p{
                         font-size: 20px;
@@ -409,8 +413,9 @@
         .blog-cards{
             margin: 64px 0 80px 0;
             &__content{
-                display: block;
+                flex-wrap: nowrap;
                 white-space: nowrap;
+                justify-content: flex-start;
                 overflow: auto;
                 width: 100%;
                 margin: 0;
@@ -426,7 +431,8 @@
                         margin: 0;
                     }
                     &__img{
-                        max-height: 220px;
+                        width: 295px;
+                        height: 220px;
                     }
                     &__element-wrapper{
                         margin: 24px -8px 12px -8px;

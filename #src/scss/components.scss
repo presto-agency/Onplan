@@ -153,7 +153,6 @@
                     background-color: $whitecolor;
                     border-radius: 32px;
                     box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
-                    backdrop-filter: blur(52px);
                     h3{
                         padding: 37px 0 0 0;
                         position: relative;
@@ -345,16 +344,6 @@
     position: relative;
     margin: 0 auto;
     max-width: 1440px;
-    // &:before{
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     height: 100%;
-    //     width: 100vh;
-    //     background-color: $bg-greycolor;
-    // }
     &__content {
         position: relative;
         z-index: 2;
@@ -765,7 +754,6 @@
         max-width: 420px;
         max-height: 476px;
         background: $blue-greengradient;
-        backdrop-filter: blur(43.0769px);
         border-radius: 24px;
     }
     &__pagination {
