@@ -405,6 +405,12 @@
                             border-bottom: inherit;
                             padding: 0;
                         }
+
+                        &__element-wrapper{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: -8px;
+                        }
                 }
         }
 }

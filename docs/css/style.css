@@ -5346,6 +5346,15 @@ h6 {
   padding: 0;
 }
 
+.resources-blog .resources-block .slider-resources .card__element-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px;
+}
+
 .privacy-policy {
   margin: 100px 0 160px 0;
 }
