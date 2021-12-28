@@ -23,6 +23,7 @@ const swiperComments = () => {
             },
         },
         speed: 500,
+        autoHeight: true,
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,

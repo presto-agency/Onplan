@@ -1,24 +1,23 @@
 window.addEventListener('DOMContentLoaded', function () {
-    const page = document.querySelector('.all-integrtation');
-    if (!!page) {
-        anchorAnimation(),
-            showAllIntegrationMenu(),
-            addClassToBtn()
-    }
+    anchorAnimation(),
+        showAllIntegrationMenu(),
+        addClassToBtn()
 })
 
 const anchorAnimation = () => {
-
-    const anchors = document.querySelectorAll('a[href*="#"]');
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault()
-            const blockID = anchor.getAttribute('href').substr(1);
-            const obj = document.getElementById(blockID);
-            const yOffset = -182;
-            const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-        })
+    const page = document.querySelector('.all-integrtation');
+    if (!!page) {
+        const anchors = document.querySelectorAll('a[href*="#"]');
+        for (let anchor of anchors) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+                const blockID = anchor.getAttribute('href').substr(1);
+                const obj = document.getElementById(blockID);
+                const yOffset = -182;
+                const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            })
+        }
     }
 }
 
