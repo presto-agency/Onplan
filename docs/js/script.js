@@ -181,6 +181,7 @@ const swiperTop = () => {
             },
         },
         speed: 500,
+        autoHeight: true,
         slidesPerView: 1,
         slidesPerGroup: 1,
         loop: true,
