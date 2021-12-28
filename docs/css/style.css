@@ -3247,7 +3247,7 @@ h6 {
   width: 100%;
 }
 
-.blog .slider-top .swiper__content {
+.blog .slider-top .swiper__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3263,22 +3263,22 @@ h6 {
   background-color: #fff;
 }
 
+.blog .slider-top .swiper__slide img {
+  width: 100%;
+  height: 100%;
+  max-height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
 .blog .slider-top .swiper__img {
   width: 100%;
-  max-width: 100%;
-  max-height: 480px;
-  border-radius: 16px;
   overflow: hidden;
 }
 
-.blog .slider-top .swiper__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .blog .slider-top .swiper figcaption {
+  text-align: center;
   margin: 16px 0 0 0;
   font-size: 14px;
   line-height: 18px;
@@ -6811,10 +6811,6 @@ h6 {
     margin: 0;
   }
 
-  .blog .slider-top .swiper__img {
-    max-height: 360px;
-  }
-
   .popular .slider {
     max-width: 295px;
     margin-left: 0;
@@ -7427,10 +7423,6 @@ h6 {
     max-width: 247px;
   }
 
-  .blog .slider-top .swiper__img {
-    max-height: 230px;
-  }
-
   .main-page .simplicity__title h1 {
     font-size: 42px;
     line-height: 49px;
@@ -7868,10 +7860,6 @@ h6 {
 
   .case-studies .models__content h2 {
     font-size: 30px;
-  }
-
-  .blog .slider-top .swiper__img {
-    max-height: 200px;
   }
 
   .book-a-demo .form__logos-list {
