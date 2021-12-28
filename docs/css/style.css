@@ -316,7 +316,7 @@ h6 {
 .header__burger {
   display: none;
   padding: 15px 0 15px 15px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .header__burger span {
@@ -5705,6 +5705,10 @@ h6 {
 }
 
 @media (max-width: 1024px) {
+  a {
+    cursor: default;
+  }
+
   .header:after {
     content: "";
     height: 100%;
