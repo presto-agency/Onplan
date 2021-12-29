@@ -3290,7 +3290,16 @@ h6 {
 }
 
 .blog .slider-top .swiper__slide.wp-block-image {
-  all: inherit;
+  margin: 0;
+}
+
+.blog .slider-top .swiper__slide.wp-block-image img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: inherit;
 }
 
 .blog .slider-top .swiper__slide img {
