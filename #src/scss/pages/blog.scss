@@ -426,6 +426,9 @@
         margin: 64px 0;
         .swiper {
             &__slide {
+                &.wp-block-image{
+                    all: none;
+                }
                 position: relative;
                 width: 720px;
                 height: 480px;
