@@ -4293,7 +4293,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 0 36px;
+  margin: 0 0 0 35px;
 }
 
 .main-page .logos .slider-logo__description h3 {
@@ -4305,11 +4305,12 @@ h6 {
 
 .main-page .logos .slider-logo__description p {
   font-size: 16px;
-  line-height: 120%;
+  line-height: 20px;
   color: #606A80;
   opacity: 0.6;
   margin: 8px 0 0 0;
-  white-space: nowrap;
+  max-width: 244px;
+  overflow: hidden;
 }
 
 .main-page .logos .slider-logo__slide {
@@ -4319,11 +4320,18 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 33px 35px;
+  padding: 0 10px;
   border: 1px solid #EDF0F2;
   border-radius: 16px;
   background-color: #fff;
   margin: 0 16px 0 0;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-page .logos .slider-logo__slide:last-child {
@@ -4331,8 +4339,6 @@ h6 {
 }
 
 .main-page .logos .slider-logo__img {
-  width: 100%;
-  max-width: 85px;
   height: 48px;
 }
 
