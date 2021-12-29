@@ -434,10 +434,6 @@
                         object-fit: cover;
                         overflow: inherit;
                     }
-                    figcaption{
-                        margin-top: 0;
-                        margin-bottom: 0;
-                    }
                 }
                 position: relative;
                 width: 720px;
@@ -466,6 +462,8 @@
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 1;
                     overflow: hidden;
+                    margin-top: 0;
+                    margin-bottom: 0;
                     a{
                         color: rgba($darkgreycolor, 1);
                     }

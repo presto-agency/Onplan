@@ -3302,11 +3302,6 @@ h6 {
   overflow: inherit;
 }
 
-.blog .slider-top .swiper__slide.wp-block-image figcaption {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .blog .slider-top .swiper__slide img {
   width: 100%;
   height: 100%;
@@ -3330,6 +3325,8 @@ h6 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .blog .slider-top .swiper__slide figcaption a {
