@@ -1,4 +1,5 @@
-(function burgerAnimation() {
+window.addEventListener('DOMContentLoaded', function () {
+    (function burgerAnimation() {
     const burger = document.querySelector('.header__burger');
     const menu = document.querySelector('.header');
     const body = document.querySelector('body');
@@ -67,7 +68,7 @@
         },
     });
 }());
-const allCases = document.querySelector('.all-cases');
+    const allCases = document.querySelector('.all-cases');
 if (!!allCases) {
     (function select() {
         let blockSort = document.getElementById("sort");
@@ -130,7 +131,7 @@ if (!!allCases) {
         }
     }());
 }
-const blog = document.querySelector('.blog');
+    const blog = document.querySelector('.blog');
 if (!!blog) {
     (function showMore() {
         const itemSpan = document.querySelector('.author__content-side > span');
@@ -223,7 +224,7 @@ if (!!blog) {
     })();
 }
 
-const mainPage = document.querySelector('.main-page');
+    const mainPage = document.querySelector('.main-page');
 if (!!mainPage) {
     (function callTabs() {
         let elementsLink = document.querySelectorAll('.trigger-obj');
@@ -249,7 +250,7 @@ if (!!mainPage) {
         }))
     }());
 }
-const allIntegration = document.querySelector('.all-integrtation');
+    const allIntegration = document.querySelector('.all-integrtation');
 if (!!allIntegration) {
     (function anchorAnimation() {
         const page = document.querySelector('.all-integrtation');
@@ -326,7 +327,7 @@ if (!!allIntegration) {
 }
 
 
-const resourcesBlog = document.querySelector('.resources-blog');
+    const resourcesBlog = document.querySelector('.resources-blog');
 if (!!resourcesBlog) {
     (function swiperResources() {
         new Swiper('.slider-resources', {
@@ -358,6 +359,7 @@ if (!!resourcesBlog) {
     }());
 }
 
+})
 
 
 
