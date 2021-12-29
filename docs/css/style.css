@@ -4331,6 +4331,8 @@ h6 {
 }
 
 .main-page .logos .slider-logo__img {
+  width: 100%;
+  max-width: 85px;
   height: 48px;
 }
 

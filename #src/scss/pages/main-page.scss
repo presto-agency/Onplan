@@ -292,6 +292,8 @@
             }
 
             &__img {
+                width: 100%;
+                max-width: 85px;
                 height: 48px;
                 img{
                     width: 100%;
