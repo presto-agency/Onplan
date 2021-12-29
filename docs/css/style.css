@@ -3302,6 +3302,11 @@ h6 {
   overflow: inherit;
 }
 
+.blog .slider-top .swiper__slide.wp-block-image figcaption {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .blog .slider-top .swiper__slide img {
   width: 100%;
   height: 100%;
