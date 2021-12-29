@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
     burgerAnimation();
     callSub();
     closeSub();
+    swiperComments();
 })
 
 const burgerAnimation = () => {
@@ -41,9 +42,6 @@ const closeSub = () => {
         menu.classList.remove('active-sub');
     }))
 }
-window.addEventListener('DOMContentLoaded', function () {
-    swiperComments();
-})
 
 const swiperComments = () => {
     new Swiper('.swiper-integration__swiper', {
@@ -374,29 +372,6 @@ const swiperResources = () => {
     });
 }
 
-// const bg = () => {
-//     document.querySelectorAll(".ibg").forEach(el => {
-//         if (el.querySelector('img')) {
-//             el.style.backgroundImage = 'url(' + el.querySelector('img').getAttribute('src') + ')';
-//             el.querySelector('img').style.display = 'none';
-//         }
-//     });
-// }
-
-// const scrollPage = () => {
-//     let scrollPosition;
-//     const header = document.querySelector('.header');
-//     const scrollChange = 1;
-
-//     const addClass = () => header.classList.add("hide")
-//     const removeClass = () => header.classList.remove("hide")
-
-//     window.addEventListener('scroll', function () {
-//         scrollPosition = window.scrollY;
-//         if (scrollPosition >= scrollChange) { addClass() }
-//         else { removeClass() }
-//     })
-// }
 
 
 
