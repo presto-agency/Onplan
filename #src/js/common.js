@@ -1,11 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
-    burgerAnimation();
-    callSub();
-    closeSub();
-    swiperComments();
-})
-
-const burgerAnimation = () => {
+(function burgerAnimation() {
     const burger = document.querySelector('.header__burger');
     const menu = document.querySelector('.header');
     const body = document.querySelector('body');
@@ -19,9 +12,9 @@ const burgerAnimation = () => {
     function addClass(obj, classname) {
         obj.classList.toggle(classname)
     }
-}
+}());
 
-const callSub = () => {
+(function callSub() {
     let elementsLink = document.querySelectorAll('.trigger');
     elementsLink.forEach(link => link.addEventListener('click', function () {
         let attr = this.getAttribute('data-attr');
@@ -30,9 +23,9 @@ const callSub = () => {
         subWindow.classList.add('active');
         menu.classList.add('active-sub');
     }))
-}
+}());
 
-const closeSub = () => {
+(function closeSub() {
     let subClose = document.querySelectorAll('.sub-close');
     subClose.forEach(close => close.addEventListener('click', function () {
         let attr = this.getAttribute('data-close');
@@ -41,9 +34,9 @@ const closeSub = () => {
         subMenu.classList.remove('active');
         menu.classList.remove('active-sub');
     }))
-}
+})();
 
-const swiperComments = () => {
+(function swiperComments() {
     new Swiper('.swiper-integration__swiper', {
         navigation: {
             nextEl: '.swiper__next',
@@ -73,4 +66,4 @@ const swiperComments = () => {
             loadPrevNext: true,
         },
     });
-}
+}());
