@@ -111,49 +111,8 @@
             font-weight: 900;
         }
         .card {
-            max-width: 370px;
-            width: 100%;
+            width: 370px;
             margin: 32px;
-            &.green{
-                .card{
-                    &__content{
-                        span{
-                            background: rgba(133, 222, 175, 0.15);
-                            color: #85DEAF;
-                        }
-                    }
-                }
-            }
-            &.blue{
-                .card{
-                    &__content{
-                        span{
-                            background: rgba(141, 188, 254, 0.15);
-                            color: $purplecolor;
-                        }
-                    }
-                }
-            }
-            &.purple{
-                .card{
-                    &__content{
-                        span{
-                            background: rgba(110, 122, 255, 0.1);
-                            color: #8DBCFE;
-                        }
-                    }
-                }
-            }
-            &.orange{
-                .card{
-                    &__content{
-                        span{
-                            background: rgba(242, 151, 61, 0.15);
-                            color: #F2973D;
-                        }
-                    }
-                }
-            }
             &__img {
                 width: 370px;
                 height: 280px;
@@ -179,6 +138,22 @@
                     letter-spacing: 0.1em;
                     font-size: 14px;
                     margin: 8px;
+                    &.green{
+                        background: rgba(133, 222, 175, 0.15);
+                        color: #85DEAF;
+                    }
+                    &.blue{
+                        background: rgba(141, 188, 254, 0.15);
+                        color: $purplecolor;
+                    }
+                    &.purple{
+                        background: rgba(110, 122, 255, 0.1);
+                        color: #8DBCFE;
+                    }
+                    &.orange{
+                        background: rgba(242, 151, 61, 0.15);
+                        color: #F2973D;
+                    }
                 }
                     h3{
                         font-weight: 900;
@@ -420,7 +395,6 @@
             margin: 64px 0 80px 0;
             &__content{
                 flex-wrap: nowrap;
-                white-space: nowrap;
                 justify-content: flex-start;
                 overflow: auto;
                 width: 100%;
@@ -429,10 +403,8 @@
                     display: none;
                 }
                 .card{
-                    white-space: normal;
-                    display: inline-block;
                     margin: 0 24px 0 0;
-                    max-width: 295px;
+                    width: 295px;
                     &:last-child{
                         margin: 0;
                     }
@@ -449,6 +421,7 @@
                             line-height: 29px;
                         }
                         p{
+                            width: 295px;
                             font-size: 18px;
                             line-height: 29px;
                             -webkit-line-clamp: 4;

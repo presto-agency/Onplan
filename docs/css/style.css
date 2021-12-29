@@ -4512,6 +4512,10 @@ h6 {
   opacity: 0.9;
 }
 
+.main-page .stakeholders .tabs .trigger-obj {
+  cursor: pointer;
+}
+
 .all-integrtation {
   padding: 100px 0;
   position: relative;
@@ -5093,29 +5097,8 @@ h6 {
 }
 
 .resources-blog .blog-cards .card {
-  max-width: 370px;
-  width: 100%;
+  width: 370px;
   margin: 32px;
-}
-
-.resources-blog .blog-cards .card.green .card__content span {
-  background: rgba(133, 222, 175, 0.15);
-  color: #85DEAF;
-}
-
-.resources-blog .blog-cards .card.blue .card__content span {
-  background: rgba(141, 188, 254, 0.15);
-  color: #707EFF;
-}
-
-.resources-blog .blog-cards .card.purple .card__content span {
-  background: rgba(110, 122, 255, 0.1);
-  color: #8DBCFE;
-}
-
-.resources-blog .blog-cards .card.orange .card__content span {
-  background: rgba(242, 151, 61, 0.15);
-  color: #F2973D;
 }
 
 .resources-blog .blog-cards .card__img {
@@ -5144,6 +5127,26 @@ h6 {
   letter-spacing: 0.1em;
   font-size: 14px;
   margin: 8px;
+}
+
+.resources-blog .blog-cards .card__content span.green {
+  background: rgba(133, 222, 175, 0.15);
+  color: #85DEAF;
+}
+
+.resources-blog .blog-cards .card__content span.blue {
+  background: rgba(141, 188, 254, 0.15);
+  color: #707EFF;
+}
+
+.resources-blog .blog-cards .card__content span.purple {
+  background: rgba(110, 122, 255, 0.1);
+  color: #8DBCFE;
+}
+
+.resources-blog .blog-cards .card__content span.orange {
+  background: rgba(242, 151, 61, 0.15);
+  color: #F2973D;
 }
 
 .resources-blog .blog-cards .card__content h3 {
@@ -5684,7 +5687,6 @@ h6 {
   .resources-blog .blog-cards__content {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    white-space: nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -5698,10 +5700,8 @@ h6 {
   }
 
   .resources-blog .blog-cards__content .card {
-    white-space: normal;
-    display: inline-block;
     margin: 0 24px 0 0;
-    max-width: 295px;
+    width: 295px;
   }
 
   .resources-blog .blog-cards__content .card:last-child {
@@ -5723,6 +5723,7 @@ h6 {
   }
 
   .resources-blog .blog-cards__content .card__content p {
+    width: 295px;
     font-size: 18px;
     line-height: 29px;
     -webkit-line-clamp: 4;
