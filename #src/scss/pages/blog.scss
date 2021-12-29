@@ -423,41 +423,39 @@
     }
     .slider-top {
         position: relative;
-        width: 100%;
-        height: auto;
         margin: 64px 0;
         .swiper {
-            width: 100%;
             &__slide {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                max-width: 720px;
+                position: relative;
+                width: 720px;
+                height: 480px;
                 background-color: $whitecolor;
+                padding: 0 0 34px 0;
+                box-sizing: content-box;
                 img{
                     width: 100%;
                     height: 100%;
-                    max-height: 480px;
                     object-fit: cover;
                     border-radius: 16px;
                 }
-            }
-    
-            &__img {
-                width: 100%;
-                
-                overflow: hidden;
-            }
-    
-            figcaption {
-                text-align: center;
-                margin: 16px 0 0 0;
-                font-size: 14px;
-                line-height: 18px;
-                color: rgba($darkgreycolor, 0.6);
-                a{
-                    color: rgba($darkgreycolor, 1);
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 18px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: rgba($darkgreycolor, 0.6);
+                    background: rgba($whitecolor, 0.6);
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                    a{
+                        color: rgba($darkgreycolor, 1);
+                    }
                 }
             }
 
@@ -766,6 +764,16 @@
                 margin: 0;
             }
         }
+        .slider-top{
+            margin: 52px 0;
+            .swiper{
+                width: 335px;
+                &__slide{
+                    width: 335px;
+                    height: 230px;
+                }
+            }
+        }
     }
     .popular{
         .slider{
@@ -858,6 +866,20 @@
                     font-size: 36px;
                     line-height: 42px;
                     max-width: 247px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 374px){
+    .blog{
+        .slider-top{
+            margin: 32px 0;
+            .swiper{
+                width: 280px;
+                &__slide{
+                    width: 280px;
+                    height: 200px;
                 }
             }
         }
