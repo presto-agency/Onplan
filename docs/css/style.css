@@ -5312,26 +5312,6 @@ h6 {
   fill: #fff;
 }
 
-.resources-blog .resources-block .slider-resources .card.green .card__content span {
-  background: rgba(133, 222, 175, 0.15);
-  color: #85DEAF;
-}
-
-.resources-blog .resources-block .slider-resources .card.blue .card__content span {
-  background: rgba(141, 188, 254, 0.15);
-  color: #707EFF;
-}
-
-.resources-blog .resources-block .slider-resources .card.purple .card__content span {
-  background: rgba(110, 122, 255, 0.1);
-  color: #8DBCFE;
-}
-
-.resources-blog .resources-block .slider-resources .card.orange .card__content span {
-  background: rgba(242, 151, 61, 0.15);
-  color: #F2973D;
-}
-
 .resources-blog .resources-block .slider-resources .card__img {
   max-width: 370px;
   max-height: 280px;
@@ -5362,6 +5342,26 @@ h6 {
   letter-spacing: 0.1em;
   font-size: 14px;
   margin: 8px;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.green {
+  background: rgba(133, 222, 175, 0.15);
+  color: #85DEAF;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.blue {
+  background: rgba(141, 188, 254, 0.15);
+  color: #707EFF;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.purple {
+  background: rgba(110, 122, 255, 0.1);
+  color: #8DBCFE;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.orange {
+  background: rgba(242, 151, 61, 0.15);
+  color: #F2973D;
 }
 
 .resources-blog .resources-block .slider-resources .card__content h3 {
