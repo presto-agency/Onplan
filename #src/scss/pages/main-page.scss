@@ -240,6 +240,7 @@
             margin: 80px auto 0 auto;
             width: 100%;
             max-width: 1440px;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             &__slide-track {
