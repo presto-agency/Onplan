@@ -3274,6 +3274,10 @@ h6 {
   overflow: hidden;
 }
 
+.blog .editor__content a {
+  color: #707EFF;
+}
+
 .blog .slider-top {
   position: relative;
   margin: 64px 0;
