@@ -4274,7 +4274,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5656px;
+  width: 8888px;
   margin: 0 0 16px 0;
   height: 120px;
 }
@@ -4348,8 +4348,8 @@ h6 {
   }
 
   100% {
-    -webkit-transform: translateX(-2828px);
-            transform: translateX(-2828px);
+    -webkit-transform: translateX(-4444px);
+            transform: translateX(-4444px);
   }
 }
 
@@ -4360,8 +4360,8 @@ h6 {
   }
 
   100% {
-    -webkit-transform: translateX(-2828px);
-            transform: translateX(-2828px);
+    -webkit-transform: translateX(-4444px);
+            transform: translateX(-4444px);
   }
 }
 

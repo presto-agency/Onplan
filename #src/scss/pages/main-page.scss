@@ -248,7 +248,7 @@
                 position: relative;
                 animation: scroll 40s linear infinite;
                 display: flex;
-                width: calc(404px * 14);
+                width: calc(404px * 22);
                 margin: 0 0 16px 0;
                 height: 120px;
                 &.delay{
@@ -302,7 +302,7 @@
 
             @keyframes scroll {
                 0% { transform: translateX(0); }
-                100% { transform: translateX(calc(-404px * 7))}
+                100% { transform: translateX(calc(-404px * 11))}
             }
         }
     }
