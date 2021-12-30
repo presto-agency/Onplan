@@ -3721,6 +3721,25 @@ h6 {
      object-fit: cover;
 }
 
+.book-a-demo__video {
+  position: relative;
+  margin: 64px 0 40px 0;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  padding: 0 0 67% 0;
+  width: 100%;
+  height: 100%;
+}
+
+.book-a-demo__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .book-a-demo__list li {
   position: relative;
   font-weight: 700;
@@ -3833,6 +3852,10 @@ h6 {
   margin: 10px 0 0 0;
   font-size: 16px;
   line-height: 20px;
+}
+
+.book-a-demo .swiper-integration .swiper__slide:after {
+  bottom: 130px;
 }
 
 .book-a-demo__form-container {
@@ -7942,6 +7965,10 @@ h6 {
 
   .case-studies .models .table__content p {
     font-size: 16px;
+  }
+
+  .book-a-demo .swiper-integration .swiper__slide:after {
+    bottom: 120px;
   }
 
   .main-page .simplicity__img {
