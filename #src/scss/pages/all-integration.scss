@@ -39,6 +39,20 @@
             border-radius: 32px;
             margin: 0 8px;
             transition: 300ms;
+            &.exports-link{
+                position: relative;
+                margin: 0 0 0 32px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: -24px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 32px;
+                    background-color: $greycolor;
+                }
+            }
             a{
                 display: block;
                 padding: 10px 24px;
