@@ -1083,22 +1083,8 @@ h6 {
   transition: 300ms;
 }
 
-.quickbooks .content__bottom-link.exports-link {
-  position: relative;
-  margin: 0 0 0 32px;
-}
-
-.quickbooks .content__bottom-link.exports-link:before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 1px;
-  height: 32px;
-  background-color: #EDF0F2;
+.quickbooks .content__bottom-link:last-child {
+  margin: 0;
 }
 
 .quickbooks .content__bottom-link a {
@@ -4600,12 +4586,12 @@ h6 {
   transition: 300ms;
 }
 
-.all-integrtation .all-integration-menu__bottom-link.exports-link {
+.all-integrtation .all-integration-menu__bottom-link:last-child {
   position: relative;
   margin: 0 0 0 32px;
 }
 
-.all-integrtation .all-integration-menu__bottom-link.exports-link:before {
+.all-integrtation .all-integration-menu__bottom-link:last-child:before {
   content: "";
   position: absolute;
   left: -24px;
@@ -4659,6 +4645,24 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.all-integrtation .quickbooks .content__bottom-link:last-child {
+  position: relative;
+  margin: 0 0 0 32px;
+}
+
+.all-integrtation .quickbooks .content__bottom-link:last-child:before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 32px;
+  background-color: #EDF0F2;
 }
 
 .all-integrtation .accounting-system {
@@ -5031,6 +5035,24 @@ h6 {
 
 .resources-blog .quickbooks .content__bottom-link.active {
   background: #232F42;
+}
+
+.resources-blog .quickbooks .content__bottom-link:first-child {
+  position: relative;
+  margin: 0 42px 0 0;
+}
+
+.resources-blog .quickbooks .content__bottom-link:first-child:before {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 32px;
+  background-color: #EDF0F2;
 }
 
 .resources-blog .quickbooks .content .search {
@@ -7004,8 +7026,8 @@ h6 {
     width: 5616px;
   }
 
-  .main-page .logos .slider-logo__slide-track:first-child,
-  .main-page .logos .slider-logo__slide-track:last-child {
+  .main-page .logos .slider-logo__slide-track:nth-child(2),
+  .main-page .logos .slider-logo__slide-track:nth-child(3) {
     display: none;
   }
 

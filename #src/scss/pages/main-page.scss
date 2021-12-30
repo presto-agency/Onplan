@@ -540,7 +540,7 @@
                 &__slide-track{
                     height: 240px;
                     width: calc((240px * 22) + (16px * 21));
-                    &:first-child, &:last-child{
+                    &:nth-child(2), &:nth-child(3){
                         display: none;
                     }
                 }

@@ -39,6 +39,20 @@
                     &.active{
                         background: $textcolor;
                     }
+                    &:first-child{
+                        position: relative;
+                        margin: 0 42px 0 0;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            right: -24px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 1px;
+                            height: 32px;
+                            background-color: $greycolor;
+                        }
+                    }
                 }
 
                 .search{

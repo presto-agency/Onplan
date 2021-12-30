@@ -39,7 +39,7 @@
             border-radius: 32px;
             margin: 0 8px;
             transition: 300ms;
-            &.exports-link{
+            &:last-child{
                 position: relative;
                 margin: 0 0 0 32px;
                 &:before{
@@ -90,6 +90,22 @@
                 margin: 74px auto 0 auto;
                 display: flex;
                 justify-content: center;
+            }
+            &__bottom-link{
+                &:last-child{
+                    position: relative;
+                    margin: 0 0 0 32px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: -24px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 32px;
+                        background-color: $greycolor;
+                    }
+                }
             }
         }
     }
