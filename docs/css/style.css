@@ -3272,6 +3272,36 @@ h6 {
   color: #707EFF;
 }
 
+.blog .editor__content .wp-block-table {
+  margin: 35px 0;
+}
+
+.blog .editor__content .wp-block-table table {
+  border-collapse: collapse;
+}
+
+.blog .editor__content .wp-block-table figcaption,
+.blog .editor__content .wp-block-table caption {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 800;
+  padding: 20px 16px;
+}
+
+.blog .editor__content .wp-block-table td {
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 110%;
+  border: 1px solid #EDF0F2;
+}
+
+.blog .editor__content .wp-block-table td strong {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #606A80;
+}
+
 .blog .slider-top {
   position: relative;
   margin: 64px 0;
@@ -4226,7 +4256,16 @@ h6 {
 }
 
 .main-page .much-more .square__img {
+  height: 58px;
+  width: 65px;
   margin: 0 0 32px 0;
+}
+
+.main-page .much-more .square__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main-page .much-more .square__button {

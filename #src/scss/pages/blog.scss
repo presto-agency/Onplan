@@ -419,6 +419,30 @@
             a{
                 color: $purplecolor;
             }
+            .wp-block-table{
+                margin: 35px 0;
+                table{
+                    border-collapse: collapse;
+                }
+                figcaption, caption{
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 800;
+                    padding: 20px 16px;
+                }
+                td{
+                    padding: 10px 16px;
+                    font-size: 16px;
+                    line-height: 110%;
+                    border: 1px solid $greycolor;
+                    strong{
+                        font-weight: 800;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $darkgreycolor;
+                    }
+                }
+            }
         }
     }
     .slider-top {
