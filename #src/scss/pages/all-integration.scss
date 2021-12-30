@@ -266,15 +266,6 @@
                 color: $darkgreycolor;
                 font-weight: 600;
             }
-            @media(min-width: 1440px){
-                &:hover{
-                    .exports{
-                        &__img{
-                            transform: rotateY(180deg);
-                        }
-                    }
-                }
-            }
 		}
 
 		&__img {

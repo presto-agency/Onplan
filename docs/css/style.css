@@ -3175,10 +3175,7 @@ h6 {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 12px;
   width: 8px;
   height: 8px;
   border-radius: 2px;
@@ -3211,10 +3208,7 @@ h6 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 7px;
   counter-increment: myCounter;
   content: counter(myCounter) ".";
   color: #707EFF;
@@ -5607,11 +5601,6 @@ h6 {
 
   .all-integrtation .accounting-system .block-integration__card-wrapper:hover .block-integration__img img {
     height: 120%;
-  }
-
-  .all-integrtation .exports__link:hover .exports__img {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
   }
 }
 

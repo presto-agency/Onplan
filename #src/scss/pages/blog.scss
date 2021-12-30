@@ -307,8 +307,7 @@
                         content: '';
                         position: absolute;
                         left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
+                        top: 12px;
                         width: 8px;
                         height: 8px;
                         border-radius: 2px;
@@ -347,8 +346,7 @@
                         content: '';
                         position: absolute;
                         left: 0;
-                        bottom: 50%;
-                        transform: translateY(50%);
+                        top: 7px;
                         counter-increment: myCounter;
                         content: counter(myCounter)".";
                         color: $purplecolor;
