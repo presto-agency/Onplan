@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
     @@include('common.js')
-    @@include('all-cases.js')
     @@include('blog.js')
     @@include('main-page.js')
     @@include('all-integration.js')

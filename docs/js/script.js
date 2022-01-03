@@ -73,84 +73,58 @@ if (!!headerMenu) {
 }());
 
 (function lazyLoad() {
-    const images = document.querySelectorAll('img[data-src]');
-    const sources = document.querySelectorAll('source[data-srcset]');
+    // const images = document.querySelectorAll('img[data-src]');
+    // const sources = document.querySelectorAll('source[data-srcset]');
 
-    for (let i = 0; i < images.length; i++) {
-        let dataSrc = images[i].getAttribute('data-src');
-        images[i].setAttribute('src', dataSrc);
-        images[i].removeAttribute('data-src');
+    // for (let i = 0; i < images.length; i++) {
+    //     let dataSrc = images[i].getAttribute('data-src');
+    //     images[i].setAttribute('src', dataSrc);
+    //     images[i].removeAttribute('data-src');
+    // }
+
+    // for (let i = 0; i < sources.length; i++) {
+    //     let dataSrcSet = sources[i].getAttribute('data-srcset');
+    //     sources[i].setAttribute('srcset', dataSrcSet);
+    //     sources[i].removeAttribute('data-srcset');
+    // }
+
+    const lazyImages = document.querySelectorAll('img[data-src], source[data-srcset]');
+    const windowHeight = document.documentElement.clientHeight;
+
+    let lazyImagesPositions = [];
+    if (lazyImages.length > 0) {
+        lazyImages.forEach(img => {
+            if (img.dataset.src || img.dataset.stcset) {
+                lazyImagesPositions.push(img.getBoundingClientRect().top + pageYOffset);
+                lazyScrollCheck();
+            }
+        })
     }
 
-    for (let i = 0; i < sources.length; i++) {
-        let dataSrcSet = sources[i].getAttribute('data-srcset');
-        sources[i].setAttribute('srcset', dataSrcSet);
-        sources[i].removeAttribute('data-srcset');
+    window.addEventListener('scroll', lazyScroll);
+
+    function lazyScroll() {
+        if (document.querySelectorAll('img[data-src], source[data-srcset]').length > 0) {
+            lazyScrollCheck()
+        }
+    }
+
+    function lazyScrollCheck() {
+        let imgIndex = lazyImagesPositions.findIndex(
+            item => pageYOffset > item - windowHeight
+        )
+        if (imgIndex >= 0) {
+            if (lazyImages[imgIndex].dataset.src) {
+                lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
+                lazyImages[imgIndex].removeAttribute('data-src');
+            } else if (lazyImages[imgIndex].dataset.srcset) {
+                lazyImages[imgIndex].srcset = lazyImages[imgIndex].dataset.srcset;
+                lazyImages[imgIndex].removeAttribute('data-srcset');
+            }
+            delete lazyImagesPositions[imgIndex];
+        }
     }
 }());
-    const allCases = document.querySelector('.all-cases');
-if (!!allCases) {
-    (function select() {
-        let blockSort = document.getElementById("sort");
-        if (blockSort) {
-            let blockList = document.getElementById("sort-list");
-            let elemItemSelect = document.querySelectorAll('.sort-select__item');
-            let elemCurrent = document.getElementById('current-value');
-            let active = document.querySelector('#sort-list li.active');
-            let current = document.querySelector('#current-value');
-            current.textContent = active.textContent;
-
-            const hideSelectMenu = () => {
-                blockList.classList.remove('show-menu');
-                blockSort.classList.remove('turn-arrow');
-                blockList.style.maxHeight = 0;
-            };
-
-            const showSelectMenu = () => {
-                blockList.classList.add('show-menu');
-                blockList.style.maxHeight = blockList.scrollHeight + 'px';
-                blockSort.classList.add('turn-arrow');
-            };
-
-            const onMouseScroll = () => {
-                if (!blockList.classList.contains('show-menu')) {
-                    return;
-                };
-                if (window.pageYOffset > 0) {
-                    hideSelectMenu();
-                }
-            };
-
-            const onOutsideClick = (e) => {
-                if (!blockList.classList.contains('show-menu')) {
-                    return;
-                };
-
-                if (!e.target.classList.contains('sort-select__item') && !e.target.classList.contains('sort-select__current')) {
-                    hideSelectMenu();
-                };
-            };
-
-            const onSelectClick = () => {
-                blockList.classList.contains('show-menu')
-                    ? hideSelectMenu()
-                    : showSelectMenu();
-            };
-
-            blockSort.addEventListener('click', onSelectClick);
-            window.addEventListener('click', onOutsideClick);
-            window.addEventListener('scroll', onMouseScroll);
-
-            elemItemSelect.forEach(item => item.addEventListener('click', function () {
-                let elemItemSelectActive = document.querySelectorAll('.sort-select__item.active');
-                elemItemSelectActive.forEach(itemActive => itemActive.classList.remove('active'));
-                item.classList.add('active');
-                elemCurrent.textContent = item.textContent;
-                elemCurrent.setAttribute('data-value', item.getAttribute('data-value'));
-            }))
-        }
-    }());
-}
     const blog = document.querySelector('.blog');
 if (!!blog) {
     (function showMore() {

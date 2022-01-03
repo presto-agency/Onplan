@@ -72,18 +72,55 @@ if (!!headerMenu) {
 }());
 
 (function lazyLoad() {
-    const images = document.querySelectorAll('img[data-src]');
-    const sources = document.querySelectorAll('source[data-srcset]');
+    // const images = document.querySelectorAll('img[data-src]');
+    // const sources = document.querySelectorAll('source[data-srcset]');
 
-    for (let i = 0; i < images.length; i++) {
-        let dataSrc = images[i].getAttribute('data-src');
-        images[i].setAttribute('src', dataSrc);
-        images[i].removeAttribute('data-src');
+    // for (let i = 0; i < images.length; i++) {
+    //     let dataSrc = images[i].getAttribute('data-src');
+    //     images[i].setAttribute('src', dataSrc);
+    //     images[i].removeAttribute('data-src');
+    // }
+
+    // for (let i = 0; i < sources.length; i++) {
+    //     let dataSrcSet = sources[i].getAttribute('data-srcset');
+    //     sources[i].setAttribute('srcset', dataSrcSet);
+    //     sources[i].removeAttribute('data-srcset');
+    // }
+
+    const lazyImages = document.querySelectorAll('img[data-src], source[data-srcset]');
+    const windowHeight = document.documentElement.clientHeight;
+
+    let lazyImagesPositions = [];
+    if (lazyImages.length > 0) {
+        lazyImages.forEach(img => {
+            if (img.dataset.src || img.dataset.stcset) {
+                lazyImagesPositions.push(img.getBoundingClientRect().top + pageYOffset);
+                lazyScrollCheck();
+            }
+        })
     }
 
-    for (let i = 0; i < sources.length; i++) {
-        let dataSrcSet = sources[i].getAttribute('data-srcset');
-        sources[i].setAttribute('srcset', dataSrcSet);
-        sources[i].removeAttribute('data-srcset');
+    window.addEventListener('scroll', lazyScroll);
+
+    function lazyScroll() {
+        if (document.querySelectorAll('img[data-src], source[data-srcset]').length > 0) {
+            lazyScrollCheck()
+        }
+    }
+
+    function lazyScrollCheck() {
+        let imgIndex = lazyImagesPositions.findIndex(
+            item => pageYOffset > item - windowHeight
+        )
+        if (imgIndex >= 0) {
+            if (lazyImages[imgIndex].dataset.src) {
+                lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;
+                lazyImages[imgIndex].removeAttribute('data-src');
+            } else if (lazyImages[imgIndex].dataset.srcset) {
+                lazyImages[imgIndex].srcset = lazyImages[imgIndex].dataset.srcset;
+                lazyImages[imgIndex].removeAttribute('data-srcset');
+            }
+            delete lazyImagesPositions[imgIndex];
+        }
     }
 }());
