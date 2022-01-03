@@ -164,6 +164,12 @@
                     top: 40px;
                     left: 39px;
                 }
+                &:after{
+                    bottom: 130px;
+                    @media(max-width: 424px){
+                        bottom: 120px;
+                    }
+                }
             }
         
             &__info {
@@ -183,7 +189,7 @@
             }
 
             &__slide{
-                &:before{
+                &:after{
                     bottom: 130px;
                     @media(max-width: 424px){
                         bottom: 120px;

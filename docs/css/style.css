@@ -1549,22 +1549,6 @@ h6 {
 .swiper-integration .swiper__slide {
   width: 100%;
   max-width: 660px;
-  position: relative;
-}
-
-.swiper-integration .swiper__slide:before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-  overflow: inherit;
-  bottom: 140px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(20%, rgba(245, 245, 245, 0)));
-  background: -o-linear-gradient(bottom, white, rgba(245, 245, 245, 0) 20%);
-  background: linear-gradient(to top, white, rgba(245, 245, 245, 0) 20%);
 }
 
 .swiper-integration .swiper__component {
@@ -1596,6 +1580,20 @@ h6 {
   background-position: center;
   width: 24px;
   height: 24px;
+}
+
+.swiper-integration .swiper__component:after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  overflow: inherit;
+  bottom: 140px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(20%, rgba(245, 245, 245, 0)));
+  background: -o-linear-gradient(bottom, white, rgba(245, 245, 245, 0) 20%);
+  background: linear-gradient(to top, white, rgba(245, 245, 245, 0) 20%);
 }
 
 .swiper-integration .swiper__component > p {
@@ -3872,6 +3870,10 @@ h6 {
   left: 39px;
 }
 
+.book-a-demo .swiper-integration .swiper__component:after {
+  bottom: 130px;
+}
+
 .book-a-demo .swiper-integration .swiper__info h3 {
   font-weight: 800;
   font-size: 20px;
@@ -3891,7 +3893,7 @@ h6 {
   line-height: 20px;
 }
 
-.book-a-demo .swiper-integration .swiper__slide:before {
+.book-a-demo .swiper-integration .swiper__slide:after {
   bottom: 130px;
 }
 
@@ -7767,8 +7769,8 @@ h6 {
     margin: 70px 0 0 0;
   }
 
-  .swiper-integration .swiper__slide:before {
-    bottom: 120px;
+  .swiper-integration .swiper__component:after {
+    bottom: 115px;
   }
 
   .swiper-integration .swiper__component {
@@ -8018,7 +8020,11 @@ h6 {
     font-size: 16px;
   }
 
-  .book-a-demo .swiper-integration .swiper__slide:before {
+  .book-a-demo .swiper-integration .swiper__component:after {
+    bottom: 120px;
+  }
+
+  .book-a-demo .swiper-integration .swiper__slide:after {
     bottom: 120px;
   }
 
