@@ -27,6 +27,20 @@
 	overflow: hidden;
 }
 
+.editor .page__content {
+    padding-right: 0;
+    max-width: 100%;
+    margin-bottom: 150px;
+}
+
+.footer__bottom-content .bottom-content__left-side a{
+    color: #edf0f2;
+}
+
+.thanks-button a {
+    padding: 20px 40px;
+}
+
 @media(max-width: 1024px){
 	a{
 		cursor: default;

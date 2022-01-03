@@ -258,8 +258,7 @@
                         @media(min-width: 1024px){
                             &:hover{
                                 img{
-                                    width: 110%;
-                                    height: 110%;
+                                    transform: scale(1.1);
                                 }
                             }
                         }
