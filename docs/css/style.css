@@ -2276,6 +2276,7 @@ h6 {
 
 .all-cases .catalog .card__new {
   position: absolute;
+  z-index: 2;
   top: 20px;
   left: 20px;
   width: 70px;
