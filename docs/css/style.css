@@ -1552,9 +1552,10 @@ h6 {
   position: relative;
 }
 
-.swiper-integration .swiper__slide:after {
+.swiper-integration .swiper__slide:before {
   content: "";
   position: absolute;
+  z-index: 2;
   pointer-events: none;
   overflow: inherit;
   bottom: 140px;
@@ -3892,7 +3893,7 @@ h6 {
   line-height: 20px;
 }
 
-.book-a-demo .swiper-integration .swiper__slide:after {
+.book-a-demo .swiper-integration .swiper__slide:before {
   bottom: 130px;
 }
 
@@ -7768,7 +7769,7 @@ h6 {
     margin: 70px 0 0 0;
   }
 
-  .swiper-integration .swiper__slide:after {
+  .swiper-integration .swiper__slide:before {
     bottom: 120px;
   }
 
@@ -8019,7 +8020,7 @@ h6 {
     font-size: 16px;
   }
 
-  .book-a-demo .swiper-integration .swiper__slide:after {
+  .book-a-demo .swiper-integration .swiper__slide:before {
     bottom: 120px;
   }
 

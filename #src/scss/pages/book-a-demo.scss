@@ -185,7 +185,7 @@
             }
 
             &__slide{
-                &:after{
+                &:before{
                     bottom: 130px;
                     @media(max-width: 424px){
                         bottom: 120px;
