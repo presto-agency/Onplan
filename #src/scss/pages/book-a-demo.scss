@@ -260,62 +260,6 @@
                 }
             }
 
-            // &__inputs-wrapper {
-            //     margin: 24px 0;
-            // }
-
-            // &__inputs-group {
-            //     display: flex;
-            //     justify-content: space-between;
-            //     margin: 16px 0 0 0;
-            //     &:first-child{
-            //         margin: 0;
-            //     }
-            // }
-
-            // &__inputs {
-            //     display: flex;
-            //     flex-direction: column;
-            //     width: 100%;
-            //     max-width: 200px;
-            //     &.email{
-            //         max-width: 100%;
-            //     }
-            //     &.text-area{
-            //         max-width: 100%;
-            //     }
-            //     span{
-            //         opacity: 0.5;
-            //     }
-            //     label{
-            //         font-weight: 600;
-            //         font-size: 12px;
-            //         line-height: 120%;
-            //         color: $darkgreycolor;
-            //         margin: 0 0 8px 0;
-            //     }
-            //     input{
-            //         height: 40px;
-            //         border: 1px solid $greycolor;
-            //         box-sizing: border-box;
-            //         border-radius: 8px;
-            //         background-color: $bg-greycolor;
-            //     }
-            //     textarea{
-            //         background-color: $bg-greycolor;
-            //         border: 1px solid $greycolor;
-            //         resize: none;
-            //         outline: none;
-            //         overflow: auto;
-            //         border-radius: 8px;
-            //         height: 80px;
-            //     }
-            // }
-
-            // &__button {
-            //     max-width: 100%;
-            // }
-
             &__text {
                 margin: 16px 0 0 0;
                 p{
