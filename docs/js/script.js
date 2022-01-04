@@ -64,11 +64,6 @@ if (!!headerMenu) {
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,
-        preloadImages: false,
-        lazy: {
-            loadOnTransitionStart: false,
-            loadPrevNext: true,
-        },
     });
 }());
 
