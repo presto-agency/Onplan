@@ -430,6 +430,16 @@
             }
             a{
                 color: $textcolor;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $textcolor;
+                }
             }
             .wp-block-table{
                 &.is-style-stripes{
