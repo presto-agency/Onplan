@@ -3286,6 +3286,19 @@ h6 {
   margin: 24px 0;
 }
 
+.blog .editor__content h5 {
+  padding: 20px 16px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #232F42;
+  background: #FBFBFD;
+  border: 1px solid;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #EDF0F2;
+  border-bottom: 0;
+  font-weight: 800;
+}
+
 .blog .editor__content figure.is-type-video {
   position: relative;
   margin: 64px 0;
@@ -3326,7 +3339,11 @@ h6 {
 }
 
 .blog .editor__content .wp-block-table {
-  margin: 35px 0;
+  margin: 0 0 35px 0;
+}
+
+.blog .editor__content .wp-block-table.is-style-stripes {
+  border-bottom: initial;
 }
 
 .blog .editor__content .wp-block-table.is-style-stripes tr:first-child {
@@ -3338,6 +3355,7 @@ h6 {
 }
 
 .blog .editor__content .wp-block-table table {
+  width: 100%;
   border-collapse: collapse;
 }
 
