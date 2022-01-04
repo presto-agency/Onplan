@@ -157,16 +157,6 @@ h6 {
   overflow: hidden;
 }
 
-.editor .page__content {
-  padding-right: 0;
-  max-width: 100%;
-  margin-bottom: 150px;
-}
-
-.footer__bottom-content .bottom-content__left-side a {
-  color: #edf0f2;
-}
-
 .header {
   position: fixed;
   z-index: 1000;
@@ -732,6 +722,10 @@ h6 {
           justify-content: space-between;
   max-width: 300px;
   width: 100%;
+}
+
+.bottom-content__left-side a {
+  color: #EDF0F2;
 }
 
 .bottom-content__middle-side {
@@ -3103,6 +3097,12 @@ h6 {
   height: 36px;
   font-size: 14px;
   font-weight: 800;
+}
+
+.blog .editor .page__content {
+  padding-right: 0;
+  max-width: 100%;
+  margin-bottom: 150px;
 }
 
 .blog .editor__content {

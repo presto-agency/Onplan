@@ -124,6 +124,9 @@
         justify-content: space-between;
         max-width: 300px;
         width: 100%;
+        a{
+            color: $greycolor;
+        }
     }
 
     &__middle-side {
