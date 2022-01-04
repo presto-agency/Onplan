@@ -167,10 +167,6 @@ h6 {
   color: #edf0f2;
 }
 
-.thanks-button a {
-  padding: 20px 40px;
-}
-
 .header {
   position: fixed;
   z-index: 1000;
@@ -889,6 +885,45 @@ h6 {
   padding: 0 29px 0 0;
 }
 
+.button.thanks-button {
+  max-width: 284px;
+  height: 62px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.button.thanks-button svg {
+  position: absolute;
+  top: 22px;
+  left: 40px;
+  width: 12px;
+  height: 18px;
+  fill: #fff;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.button.thanks-button span {
+  padding: 0 0 0 24px;
+}
+
+.button.arrow-svg-play svg {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 42px;
+  height: 10px;
+  width: 9px;
+  fill: #fff;
+}
+
+.button.arrow-svg-play span {
+  padding: 0 20px 0 0;
+}
+
 .mobile-menu-btns {
   position: fixed;
   display: none;
@@ -1146,6 +1181,10 @@ h6 {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #89B8FA;
+  opacity: 1;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .bread-crumbs li:before {
@@ -4117,22 +4156,6 @@ h6 {
   height: 48px;
 }
 
-.main-page .quickbooks__button.arrow-svg-play svg {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 42px;
-  height: 10px;
-  width: 9px;
-  fill: #fff;
-}
-
-.main-page .quickbooks__button.arrow-svg-play span {
-  padding: 0 20px 0 0;
-}
-
 .main-page .quickbooks .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5652,6 +5675,10 @@ h6 {
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
+  }
+
+  .bread-crumbs li:hover {
+    opacity: 0.5;
   }
 }
 

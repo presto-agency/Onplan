@@ -84,20 +84,6 @@
 		&__button {
             max-width: 197px;
             height: 48px;
-            &.arrow-svg-play{
-                svg{
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 42px;
-                    height: 10px;
-                    width: 9px;
-                    fill: $whitecolor;
-                }
-                span{
-                    padding: 0 20px 0 0;
-                }
-            }
 		}
         .content {
             display: flex;
