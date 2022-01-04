@@ -3297,6 +3297,7 @@ h6 {
   border: 1px solid #EDF0F2;
   border-bottom: 0;
   font-weight: 800;
+  margin: 40px 0 0 0;
 }
 
 .blog .editor__content figure.is-type-video {
@@ -3337,16 +3338,7 @@ h6 {
 .blog .editor__content a {
   color: #232F42;
   position: relative;
-}
-
-.blog .editor__content a:before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #232F42;
+  border-bottom: 1px solid #232F42;
 }
 
 .blog .editor__content .wp-block-table {
@@ -3363,6 +3355,10 @@ h6 {
 
 .blog .editor__content .wp-block-table.is-style-stripes tr:nth-child(2n+3) {
   background: #FBFBFD;
+}
+
+.blog .editor__content .wp-block-table.active table {
+  overflow: auto;
 }
 
 .blog .editor__content .wp-block-table table {

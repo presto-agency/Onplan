@@ -393,6 +393,7 @@
                 border: 1px solid $greycolor;
                 border-bottom: 0;
                 font-weight: 800;
+                margin: 40px 0 0 0;
             }
             figure{
                 &.is-type-video{
@@ -431,15 +432,7 @@
             a{
                 color: $textcolor;
                 position: relative;
-                &:before{
-                    content: '';
-                    position: absolute;
-                    bottom: -2px;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: $textcolor;
-                }
+                border-bottom: 1px solid $textcolor;
             }
             .wp-block-table{
                 &.is-style-stripes{
@@ -451,6 +444,11 @@
                         &:nth-child(2n + 3){
                             background: #FBFBFD;
                         }
+                    }
+                }
+                &.active{
+                    table{
+                        overflow: auto;
                     }
                 }
                 margin: 0 0 35px 0;
