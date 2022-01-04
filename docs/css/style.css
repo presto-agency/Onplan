@@ -3342,6 +3342,7 @@ h6 {
 }
 
 .blog .editor__content .wp-block-table {
+  overflow: auto;
   margin: 0 0 35px 0;
 }
 
@@ -3357,8 +3358,8 @@ h6 {
   background: #FBFBFD;
 }
 
-.blog .editor__content .wp-block-table.active table {
-  overflow: auto;
+.blog .editor__content .wp-block-table::-webkit-scrollbar {
+  display: none;
 }
 
 .blog .editor__content .wp-block-table table {
@@ -3384,6 +3385,7 @@ h6 {
   font-size: 16px;
   line-height: 110%;
   border: 1px solid #EDF0F2;
+  white-space: nowrap;
 }
 
 .blog .editor__content .wp-block-table td strong {
@@ -3417,6 +3419,7 @@ h6 {
 }
 
 .blog .slider-top .swiper__slide.wp-block-image img {
+  border: 1px solid #606A80;
   border-radius: 16px;
   width: 100%;
   height: 100%;
