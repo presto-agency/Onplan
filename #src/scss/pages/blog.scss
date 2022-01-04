@@ -417,18 +417,33 @@
                 }
             }
             a{
-                color: $purplecolor;
+                color: $textcolor;
             }
             .wp-block-table{
+                &.is-style-stripes{
+                    tr{
+                        &:first-child{
+                            background:  #F0F2F7;
+                        }
+                        &:nth-child(2n + 3){
+                            background: #FBFBFD;
+                        }
+                    }
+                }
                 margin: 35px 0;
                 table{
                     border-collapse: collapse;
                 }
                 figcaption, caption{
-                    font-size: 18px;
-                    line-height: 20px;
-                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-weight: 400;
                     padding: 20px 16px;
+                    color: $darkgreycolor;
+                    border: 1px solid $greycolor;
+                    border-top: 0;
+                    background: #FBFBFD;
+                    border-radius: 0 0 8px 8px;
                 }
                 td{
                     padding: 10px 16px;
@@ -440,6 +455,13 @@
                         font-size: 14px;
                         line-height: 17px;
                         color: $darkgreycolor;
+                    }
+                }
+                tr{
+                    &:first-child{
+                        td{
+                            padding: 8px 16px;
+                        }
                     }
                 }
             }

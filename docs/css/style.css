@@ -3322,11 +3322,19 @@ h6 {
 }
 
 .blog .editor__content a {
-  color: #707EFF;
+  color: #232F42;
 }
 
 .blog .editor__content .wp-block-table {
   margin: 35px 0;
+}
+
+.blog .editor__content .wp-block-table.is-style-stripes tr:first-child {
+  background: #F0F2F7;
+}
+
+.blog .editor__content .wp-block-table.is-style-stripes tr:nth-child(2n+3) {
+  background: #FBFBFD;
 }
 
 .blog .editor__content .wp-block-table table {
@@ -3335,10 +3343,15 @@ h6 {
 
 .blog .editor__content .wp-block-table figcaption,
 .blog .editor__content .wp-block-table caption {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
   padding: 20px 16px;
+  color: #606A80;
+  border: 1px solid #EDF0F2;
+  border-top: 0;
+  background: #FBFBFD;
+  border-radius: 0 0 8px 8px;
 }
 
 .blog .editor__content .wp-block-table td {
@@ -3353,6 +3366,10 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   color: #606A80;
+}
+
+.blog .editor__content .wp-block-table tr:first-child td {
+  padding: 8px 16px;
 }
 
 .blog .slider-top {
