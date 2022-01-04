@@ -5618,9 +5618,9 @@ h6 {
   }
 
   .header__link:hover.arrow .submenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    opacity: 1;
+    top: 82px;
+    pointer-events: initial;
   }
 
   .header .submenu__item.content-bottom:hover {
@@ -5640,6 +5640,18 @@ h6 {
 
   .header .submenu__item.submenu-bottom ul li:hover a {
     color: #707EFF;
+  }
+
+  .header .submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    top: 62px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
   }
 }
 
