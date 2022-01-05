@@ -119,8 +119,10 @@
                 font-size: 14px;
                 line-height: 18px;
                 color: rgba($darkgreycolor, 0.6);
-                span{
-                    color: rgba($darkgreycolor, 1);
+                a{
+                    color: $textcolor;
+                    position: relative;
+                    border-bottom: 1px solid $textcolor;
                 }
             }
     }
@@ -453,6 +455,7 @@
                 cite{
                     position: relative;
                     display: block;
+                    text-align: left;
                     font-size: 20px;
                     line-height: 25px;
                     font-weight: 800;
@@ -536,7 +539,7 @@
                     width: 100%;
                     text-align: center;
                     font-size: 14px;
-                    line-height: 18px;
+                    line-height: 17px;
                     color: rgba($darkgreycolor, 0.6);
                     background: rgba($whitecolor, 0.6);
                     display: -webkit-box;
@@ -546,7 +549,6 @@
                     margin-top: 0;
                     margin-bottom: 0;
                     a{
-                        color: rgba($darkgreycolor, 1);
                     }
                 }
             }

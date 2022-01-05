@@ -54,23 +54,29 @@ if (!!allIntegration) {
 
     (function addClassToBtn() {
         const pageBtns = document.querySelectorAll('.content__bottom-link');
-        const pageMenu = document.querySelector('.content__bottom-links');
         const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link');
-        const relativeMenu = document.querySelector('.all-integration-menu__bottom-links');
-        function addColor(btns, menu) {
+        function addColor(btns) {
             btns.forEach(btn => btn.addEventListener('click', function () {
-                const activeBtn = menu.querySelector('.active');
-                if (!!activeBtn) {
-                    activeBtn.classList.remove('active')
-                    btn.classList.add('active')
+                const activeBtns = allIntegration.querySelectorAll('.active-color');
+                const attr = this.querySelector('a').getAttribute("href");
+                let els = document.querySelectorAll(`a[href='${attr}']`);
+                if (!!activeBtns) {
+                    activeBtns.forEach(aBtn => {
+                        aBtn.classList.remove('active-color')
+                    });
+                    els.forEach(el => {
+                        el.parentNode.classList.add('active-color')
+                    });
                 }
                 else {
-                    btn.classList.add('active')
+                    els.forEach(el => {
+                        el.parentNode.classList.add('active-color')
+                    });
                 }
             }))
         }
-        addColor(pageBtns, pageMenu)
-        addColor(relativeBtns, relativeMenu)
+        addColor(pageBtns)
+        addColor(relativeBtns)
     }());
 }
 

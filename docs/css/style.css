@@ -145,7 +145,7 @@ h6 {
 }
 
 .root {
-  padding: 84px 0 0 0;
+  padding: 68px 0 0 0;
 }
 
 .root-book {
@@ -1141,11 +1141,11 @@ h6 {
   transition: 300ms;
 }
 
-.quickbooks .content__bottom-link.active {
+.quickbooks .content__bottom-link.active-color {
   background: #707EFF;
 }
 
-.quickbooks .content__bottom-link.active a {
+.quickbooks .content__bottom-link.active-color a {
   color: #fff;
 }
 
@@ -3030,8 +3030,10 @@ h6 {
   color: rgba(96, 106, 128, 0.6);
 }
 
-.blog .guide__link-exemple span {
-  color: #606a80;
+.blog .guide__link-exemple a {
+  color: #232F42;
+  position: relative;
+  border-bottom: 1px solid #232F42;
 }
 
 .blog .editor {
@@ -3370,6 +3372,7 @@ h6 {
 .blog .editor__content .wp-block-pullquote cite {
   position: relative;
   display: block;
+  text-align: left;
   font-size: 20px;
   line-height: 25px;
   font-weight: 800;
@@ -3449,7 +3452,7 @@ h6 {
   width: 100%;
   text-align: center;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   color: rgba(96, 106, 128, 0.6);
   background: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
@@ -3458,10 +3461,6 @@ h6 {
   overflow: hidden;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.blog .slider-top .swiper__slide figcaption a {
-  color: #606a80;
 }
 
 .blog .slider-top .swiper__pagination {
@@ -4759,11 +4758,11 @@ h6 {
   transition: 300ms;
 }
 
-.all-integrtation .all-integration-menu__bottom-link.active {
+.all-integrtation .all-integration-menu__bottom-link.active-color {
   background: #707EFF;
 }
 
-.all-integrtation .all-integration-menu__bottom-link.active a {
+.all-integrtation .all-integration-menu__bottom-link.active-color a {
   color: #fff;
 }
 
@@ -4902,7 +4901,7 @@ h6 {
 }
 
 .all-integrtation .accounting-system .block-integration__img {
-  height: 52px;
+  height: 40px;
   width: 100%;
   margin: 0 0 24px 0;
   position: relative;
@@ -6251,7 +6250,7 @@ h6 {
 
 @media (max-width: 1023px) {
   .root {
-    padding: 70px 0 0 0;
+    padding: 57px 0 0 0;
   }
 
   .footer__container {
