@@ -257,6 +257,12 @@
                             color: $whitecolor;
                         }
                     }
+                    &.active{
+                        background:$purplecolor ;
+                        a{
+                            color: $whitecolor;
+                        }
+                    }
                     @media(min-width: 1440px){
                         &:hover{
                             a{

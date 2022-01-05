@@ -259,8 +259,7 @@ if (!!allIntegration) {
     }());
 
     (function addClassToBtn() {
-        const pageBtns = document.querySelectorAll('.content__bottom-link');
-        const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link');
+        const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link, .content__bottom-link');
         function addColor(btns) {
             btns.forEach(btn => btn.addEventListener('click', function () {
                 const activeBtns = allIntegration.querySelectorAll('.active-color');
@@ -281,9 +280,44 @@ if (!!allIntegration) {
                 }
             }))
         }
-        addColor(pageBtns)
         addColor(relativeBtns)
     }());
+
+    // (function scrollColor() {
+    //     let isScrolling = false;
+    //     window.addEventListener("scroll", throttleScroll, false);
+    //     function throttleScroll(e) {
+    //         if (isScrolling == false) {
+    //             window.requestAnimationFrame(function () {
+    //                 scrolling(e);
+    //                 isScrolling = false;
+    //             });
+    //         }
+    //         isScrolling = true;
+    //     }
+
+    //     const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
+    //     function isFullyVisible(el) {
+    //         let elementBoundary = el.getBoundingClientRect();
+    //         let top = elementBoundary.top;
+    //         let bottom = elementBoundary.bottom;
+    //         return ((top >= 0) && (bottom <= window.innerHeight));
+    //     }
+    //     function scrolling() {
+    //         elementsPage.forEach(el => {
+    //             if (isFullyVisible(el)) {
+    //                 let idEl = el.id;
+    //                 let btnMenu = document.querySelector(`a[href='#${idEl}']`);
+    //                 // btnMenu.classList.add('active-color');
+    //                 console.log(btnMenu)
+    //             }
+    //             else {
+    //                 // btnMenu.classList.remove('active-color');
+    //             }
+    //         });
+    //     }
+    //     scrolling();
+    // }());
 }
 
 
