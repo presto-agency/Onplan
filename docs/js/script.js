@@ -258,38 +258,33 @@ if (!!allIntegration) {
         }
     }());
 
-    (function addClassToBtn() {
-        const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link, .content__bottom-link');
-        function addColor(btns) {
-            btns.forEach(btn => btn.addEventListener('click', function () {
-                const activeBtns = allIntegration.querySelectorAll('.active-color');
-                const attr = this.querySelector('a').getAttribute("href");
-                let els = document.querySelectorAll(`a[href='${attr}']`);
-                if (!!activeBtns) {
-                    activeBtns.forEach(aBtn => {
-                        aBtn.classList.remove('active-color')
-                    });
-                    els.forEach(el => {
-                        el.parentNode.classList.add('active-color')
-                    });
-                }
-                else {
-                    els.forEach(el => {
-                        el.parentNode.classList.add('active-color')
-                    });
-                }
-            }))
-        }
-        addColor(relativeBtns)
-    }());
+    // (function addClassToBtn() {
+    //     const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link, .content__bottom-link');
+    //     function addColor(btns) {
+    //         btns.forEach(btn => btn.addEventListener('click', function () {
+    //             const activeBtns = allIntegration.querySelectorAll('.active-color');
+    //             const attr = this.querySelector('a').getAttribute("href");
+    //             let els = document.querySelectorAll(`a[href='${attr}']`);
+    //             if (!!activeBtns) {
+    //                 changeClass(activeBtns, els)
+    //             }
+    //             else {
+    //                 els.forEach(el => {
+    //                     el.parentNode.classList.add('active-color')
+    //                 });
+    //             }
+    //         }))
+    //     }
+    //     addColor(relativeBtns)
+    // }());
 
     (function scrollColor() {
         let isScrolling = false;
         window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
+        function throttleScroll() {
             if (isScrolling == false) {
                 window.requestAnimationFrame(function () {
-                    scrolling(e);
+                    scrolling();
                     isScrolling = false;
                 });
             }
@@ -307,18 +302,22 @@ if (!!allIntegration) {
                 if (isFullyVisible(el)) {
                     let idEl = el.id;
                     const activeBtns = allIntegration.querySelectorAll('.active-color');
-                    let btn = document.querySelectorAll(`a[href='#${idEl}']`);
-                    activeBtns.forEach(aBtn => {
-                        aBtn.classList.remove('active-color')
-                    });
-                    btn.forEach(el => {
-                        el.parentNode.classList.add('active-color')
-                    });
+                    let btns = document.querySelectorAll(`a[href='#${idEl}']`);
+                    changeClass(activeBtns, btns)
                 }
             });
         }
         scrolling();
     }());
+
+    const changeClass = (activeBtns, els) => {
+        activeBtns.forEach(aBtn => {
+            aBtn.classList.remove('active-color')
+        });
+        els.forEach(el => {
+            el.parentNode.classList.add('active-color')
+        });
+    }
 }
 
 
