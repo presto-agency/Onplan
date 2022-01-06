@@ -75,10 +75,10 @@ if (!!allIntegration) {
     (function scrollColor() {
         let isScrolling = false;
         window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll() {
+        function throttleScroll(e) {
             if (isScrolling == false) {
                 window.requestAnimationFrame(function () {
-                    scrolling();
+                    scrolling(e);
                     isScrolling = false;
                 });
             }
