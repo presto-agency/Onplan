@@ -283,41 +283,42 @@ if (!!allIntegration) {
         addColor(relativeBtns)
     }());
 
-    // (function scrollColor() {
-    //     let isScrolling = false;
-    //     window.addEventListener("scroll", throttleScroll, false);
-    //     function throttleScroll(e) {
-    //         if (isScrolling == false) {
-    //             window.requestAnimationFrame(function () {
-    //                 scrolling(e);
-    //                 isScrolling = false;
-    //             });
-    //         }
-    //         isScrolling = true;
-    //     }
+    (function scrollColor() {
+        let isScrolling = false;
+        window.addEventListener("scroll", throttleScroll, false);
+        function throttleScroll(e) {
+            if (isScrolling == false) {
+                window.requestAnimationFrame(function () {
+                    scrolling(e);
+                    isScrolling = false;
+                });
+            }
+            isScrolling = true;
+        }
 
-    //     const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
-    //     function isFullyVisible(el) {
-    //         let rect = el.getBoundingClientRect(),
-    //             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    //             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    //         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-    //     }
-    //     function scrolling() {
-    //         elementsPage.forEach(el => {
-    //             if (isFullyVisible(el)) {
-    //                 let idEl = el.id;
-    //                 let btnMenu = document.querySelector(`a[href='#${idEl}']`);
-    //                 // btnMenu.classList.add('active-color');
-    //                 console.log(btnMenu)
-    //             }
-    //             else {
-    //                 // btnMenu.classList.remove('active-color');
-    //             }
-    //         });
-    //     }
-    //     scrolling();
-    // }());
+        const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
+        function isFullyVisible(el) {
+            let topOfElements = el.getBoundingClientRect().top;
+            let topValue = + topOfElements;
+            return ((topValue <= 200) && (topValue > 0));
+        }
+        function scrolling() {
+            elementsPage.forEach(el => {
+                if (isFullyVisible(el)) {
+                    let idEl = el.id;
+                    const activeBtns = allIntegration.querySelectorAll('.active-color');
+                    let btn = document.querySelectorAll(`a[href='#${idEl}']`);
+                    activeBtns.forEach(aBtn => {
+                        aBtn.classList.remove('active-color')
+                    });
+                    btn.forEach(el => {
+                        el.parentNode.classList.add('active-color')
+                    });
+                }
+            });
+        }
+        scrolling();
+    }());
 }
 
 
