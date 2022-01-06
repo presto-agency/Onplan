@@ -92,10 +92,10 @@ if (!!allIntegration) {
 
     //     const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
     //     function isFullyVisible(el) {
-    //         let elementBoundary = el.getBoundingClientRect();
-    //         let top = elementBoundary.top;
-    //         let bottom = elementBoundary.bottom;
-    //         return ((top >= 0) && (bottom <= window.innerHeight));
+    //         let rect = el.getBoundingClientRect(),
+    //             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    //             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    //         return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
     //     }
     //     function scrolling() {
     //         elementsPage.forEach(el => {

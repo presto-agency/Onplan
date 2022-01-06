@@ -6026,7 +6026,14 @@ h6 {
 }
 
 .book-a-demo .form__button {
-  max-width: 100%;
+  margin: 20px 0 0 0;
+  width: 100%;
+  line-height: 48px;
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 32px;
+  color: #fff;
+  background-color: #232F42;
 }
 
 .book-a-demo .form__text {
