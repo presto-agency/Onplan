@@ -1228,6 +1228,7 @@ h6 {
 .best.variant-2 .best__content {
   max-width: 580px;
   margin: 0 auto;
+  padding: 100px 0 148px 0;
 }
 
 .best.variant-2 .best__content h2 {
@@ -1256,11 +1257,11 @@ h6 {
 }
 
 .best.variant-2 .best__box-1 {
-  top: 104px;
+  top: 50px;
 }
 
 .best.variant-2 .best__box-2 {
-  top: 64px;
+  top: 8px;
 }
 
 .best__content {
@@ -6952,7 +6953,7 @@ h6 {
   }
 
   .best.variant-2 .best__content {
-    padding: 328px 0 100px 0;
+    padding: 285px 0 100px 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -6975,7 +6976,7 @@ h6 {
   .best.variant-2 .best__box-1 {
     width: 302px;
     height: 360px;
-    top: 0;
+    top: -42px;
     right: inherit;
     left: 0;
   }
@@ -8646,11 +8647,11 @@ h6 {
   }
 
   .career .quickbooks .collage__img.picture-4 {
-    left: -86px;
+    left: -130px;
   }
 
   .career .quickbooks .collage__img.picture-5 {
-    left: 176px;
+    left: 139px;
   }
 
   .career .quickbooks .collage__img.picture-6 {

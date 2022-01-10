@@ -394,6 +394,7 @@
             &__content {
                 max-width: 580px;
                 margin: 0 auto;
+                padding: 100px 0 148px 0;
                 h2{
                     line-height: 70px;
                     margin: 0 0 24px 0;
@@ -420,15 +421,15 @@
             }
     
             &__box-1 {
-                top: 104px;
+                top: 50px;
             }
     
             &__box-2 {
-                top: 64px;
+                top: 8px;
             }
             @media(max-width: 1023px){
                 &__content{
-                    padding: 328px 0 100px 0;
+                    padding: 285px 0 100px 0;
                     align-items: flex-start;
                     h2{
                         margin: 0 0 17px 0;
@@ -445,7 +446,7 @@
                 &__box-1{
                     width: 302px;
                     height: 360px;
-                    top: 0;
+                    top: -42px;
                     right: inherit;
                     left: 0;
                 }
