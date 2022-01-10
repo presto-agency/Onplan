@@ -389,6 +389,81 @@
     position: relative;
     margin: 0 auto;
     max-width: 1440px;
+    &.variant-2{
+        .best{
+            &__content {
+                max-width: 580px;
+                margin: 0 auto;
+                h2{
+                    line-height: 70px;
+                    margin: 0 0 24px 0;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+    
+            &__button {
+                max-width: 259px;
+                margin: 39px 0 0 0;
+                font-size: 18px;
+                line-height: 22px;
+                svg{
+                    top: 27px;
+                    right: 40px;
+                }
+            }
+    
+            &__box-1 {
+                top: 104px;
+            }
+    
+            &__box-2 {
+                top: 64px;
+            }
+            @media(max-width: 1023px){
+                &__content{
+                    padding: 328px 0 100px 0;
+                    align-items: flex-start;
+                    h2{
+                        margin: 0 0 17px 0;
+                        text-align: left;
+                    }
+                    p{
+                        text-align: left;
+                        line-height: 28px;
+                    }
+                }
+                &__box-2{
+                    display: none;
+                }
+                &__box-1{
+                    width: 302px;
+                    height: 360px;
+                    top: 0;
+                    right: inherit;
+                    left: 0;
+                }
+                &__button{
+                    max-width: 283px;
+                    height: 60px;
+                    margin: 52px 0 0 0;
+                    svg{
+                        top: 26px;
+                        right: 52px;
+                    }
+                }
+            }
+            @media(max-width: 735px){
+                &__content{
+                    h2{
+                        font-size: 46px;
+                        line-height: 53px;
+                    }
+                }
+            }
+        }
+    }
     &__content {
         position: relative;
         z-index: 2;
@@ -442,6 +517,11 @@
         height: 62px;
     }
     @media(max-width: 1023px){
+        &.variant-2{
+            .container{
+                padding: 0 20px;
+            }
+        }
         &__content{
             padding: 219px 0 153px 0;
             h2{

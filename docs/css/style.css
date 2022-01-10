@@ -1221,6 +1221,40 @@ h6 {
   max-width: 1440px;
 }
 
+.best.variant-2 .best__content {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.best.variant-2 .best__content h2 {
+  line-height: 70px;
+  margin: 0 0 24px 0;
+}
+
+.best.variant-2 .best__content p {
+  text-align: center;
+}
+
+.best.variant-2 .best__button {
+  max-width: 259px;
+  margin: 39px 0 0 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.best.variant-2 .best__button svg {
+  top: 27px;
+  right: 40px;
+}
+
+.best.variant-2 .best__box-1 {
+  top: 104px;
+}
+
+.best.variant-2 .best__box-2 {
+  top: 64px;
+}
+
 .best__content {
   position: relative;
   z-index: 2;
@@ -6757,6 +6791,50 @@ h6 {
     display: none;
   }
 
+  .best.variant-2 .best__content {
+    padding: 328px 0 100px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .best.variant-2 .best__content h2 {
+    margin: 0 0 17px 0;
+    text-align: left;
+  }
+
+  .best.variant-2 .best__content p {
+    text-align: left;
+    line-height: 28px;
+  }
+
+  .best.variant-2 .best__box-2 {
+    display: none;
+  }
+
+  .best.variant-2 .best__box-1 {
+    width: 302px;
+    height: 360px;
+    top: 0;
+    right: inherit;
+    left: 0;
+  }
+
+  .best.variant-2 .best__button {
+    max-width: 283px;
+    height: 60px;
+    margin: 52px 0 0 0;
+  }
+
+  .best.variant-2 .best__button svg {
+    top: 26px;
+    right: 52px;
+  }
+
+  .best.variant-2 .container {
+    padding: 0 20px;
+  }
+
   .best__content {
     padding: 219px 0 153px 0;
   }
@@ -7972,6 +8050,11 @@ h6 {
 
   .quickbooks .content__text-integration {
     display: block;
+  }
+
+  .best.variant-2 .best__content h2 {
+    font-size: 46px;
+    line-height: 53px;
   }
 
   .solution__content {
