@@ -1,4 +1,224 @@
 .career {
+    .quickbooks {
+        margin: 100px 0 210px 0;
+        padding: 0 0 64px 0;
+		&__bg {
+            width: 1813px;
+            height: 598px;
+            max-height: inherit;
+            margin: 0;
+            top: -59px;
+		}
 
+        .content {
+        max-width: 982px;
+        margin: 0 auto;
+        
+                &__description {
+                    h1{
+                        margin: 30px 0 64px 0;
+                    }
+                }
+        
+                &__button {
+                    margin: 0 auto;
+                    max-width: 259px;
+                    height: 62px;
+                    font-size: 18px;
+                    line-height: 22px;
+                    svg{
+                        top: 25px;
+                        right: 40px;
+                    }
+                    &:hover{
+                        svg{
+                            right: 30px;
+                        }
+                    }
+                }
+        }
+
+    .collage {
+        margin: 120px 0 0 0;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 64px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 1240px;
+            width: 100%;
+            height: 542px;
+            background:  linear-gradient(151.55deg, #A8DAFE 17.57%, #90D8CB 100%);
+            border-radius: 24px;
+        }
+            &__content {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                width: 1040px;
+                height: 542px;
+            }
+    
+            &__img {
+                position: absolute;
+                &.picture-1 {
+                    top: 0;
+                    left: 0;
+                    width: 243px;
+                    height: 282px;
+                }
+                &.picture-2 {
+                    top: 0;
+                    left:267px;
+                    width: 415px;
+                    height: 221px;
+                }
+                &.picture-3 {
+                    top: 0;
+                    right: 0;
+                    width: 334px;
+                    height: 363px;
+                }
+                &.picture-4 {
+                    bottom: 0;
+                    left: 0;
+                    width: 243px;
+                    height: 236px;
+                }
+                &.picture-5 {
+                    bottom: 0;
+                    left: 267px;
+                    width: 415px;
+                    height: 297px;
+                }
+                &.picture-6 {
+                    bottom: 0;
+                    right: 178px;
+                    width: 155px;
+                    height: 155px;
+                }
+                &.picture-7 {
+                    bottom: 0;
+                    right: 0;
+                    width: 155px;
+                    height: 155px;
+                }
+                img{
+                    border-radius: 16px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+    }
+    
+    }
+    .obj-pict{
+        &__img{
+            max-height: 520px;
+            max-width: 520px;
+            img{
+                border-radius: 24px;
+            }
+        }
+        &__right-side{
+            max-width: 480px;
+        }
+        &__description{
+            margin: 106px 0 0 0;
+        }
+        @media(max-width: 1023px){
+            margin: 64px 0;
+            &__description{
+                margin: 32px 0 0 0;
+                p{
+                    margin: 12px 0 0 0;
+                    line-height: 29px;
+                }
+            }
+        }
+    }
+    @media(max-width: 1023px){
+        .quickbooks{
+            margin: 60px 0 64px 0;
+            padding: 0;
+            .bread-crumbs{
+                ul{
+                    justify-content: flex-start;
+                }
+            }
+            .content{
+                &__description{
+                    h1{
+                        text-align: left;
+                        margin: 24px 0 52px 0;
+                    }
+                }
+                &__button{
+                    margin: 0;
+                    max-width: 243px;
+                    height: 52px;
+                    svg{
+                        top: 22px;
+                        right: 32px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 535px){
+        .quickbooks{
+            .collage{
+                margin: 97px 0 112px 0;
+                &:after{
+                    top: -32px;
+                    height: 606px;
+                }
+                &__content{
+                    left: 470px;
+                }
+                &__img{
+                    &.picture-2{
+                        height: 282px;
+                    }
+                    &.picture-5{
+                        width: 415px;
+                        height: 236px;
+                    }
+                    &.picture-3{
+                        display: none;
+                    }
+                    &.picture-4{
+                        left: -86px;
+                    }
+                    &.picture-5{
+                        left: 176px;
+                    }
+                    &.picture-6{
+                        display: none;
+                    }
+                    &.picture-7{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 735px){
+        .quickbooks{
+            .content{
+                &__description{
+                    h1{
+                        line-height: 46px;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
 

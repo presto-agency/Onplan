@@ -412,6 +412,11 @@
                     top: 27px;
                     right: 40px;
                 }
+                &:hover{
+                    svg{
+                        right: 30px;
+                    }
+                }
             }
     
             &__box-1 {
@@ -1239,6 +1244,7 @@
     &__right-side {
         max-width: 475px;
         width: 100%;
+        margin: 0 0 0 30px;
     }
 
     &__description {
@@ -1269,6 +1275,7 @@
     &.right-content{
         .obj-pict{
             &__right-side{
+                margin: 0 30px 0 0;
                 order: 1;
             }
             &__left-side{
@@ -1295,6 +1302,7 @@
         }
         &__right-side{
             max-width: 100%;
+            margin: 0;
         }
         &__description{
             padding: 0;
@@ -1316,6 +1324,7 @@
             .obj-pict{
                 &__right-side{
                     order: 2;
+                    margin: 0;
                 }
                 &__left-side{
                     order: 1;
