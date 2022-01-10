@@ -12,14 +12,10 @@
 }
 
 .root{
-	padding: 68px 0 0 0;
-	@media(max-width: 1023px){
-		padding: 57px 0 0 0;
+	padding: 82px 0 0 0;
+	@media(max-width: 1024px){
+		padding: 68px 0 0 0;
 	}
-}
-
-.root-bug{
-	padding: 14px 0 0 0;
 }
 
 .root-book{
