@@ -380,8 +380,10 @@
             }
             .wp-block-table{
                 overflow: auto;
-                &::-webkit-scrollbar {
-                    display: none;
+                @media(max-width: 1025px){
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
                 }
                 &.is-style-stripes{
                     border-bottom: initial;

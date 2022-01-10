@@ -3345,10 +3345,6 @@ h6 {
   margin: 0 0 35px 0;
 }
 
-.blog .editor__content .wp-block-table::-webkit-scrollbar {
-  display: none;
-}
-
 .blog .editor__content .wp-block-table.is-style-stripes {
   border-bottom: initial;
 }
@@ -6661,6 +6657,12 @@ h6 {
 
   .book-a-demo .form::-webkit-scrollbar {
     width: 100%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .blog .editor__content .wp-block-table::-webkit-scrollbar {
+    display: none;
   }
 }
 
