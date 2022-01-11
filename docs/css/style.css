@@ -6469,59 +6469,6 @@ h6 {
     padding: 0;
   }
 
-  .book-a-demo {
-    padding: 0 0 100px 0;
-  }
-
-  .book-a-demo__content {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin: 52px 0 0 0;
-  }
-
-  .book-a-demo__container {
-    padding: 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .book-a-demo__form-container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    position: static;
-    pointer-events: auto;
-    z-index: inherit;
-    top: inherit;
-    right: inherit;
-    -webkit-transform: inherit;
-        -ms-transform: inherit;
-            transform: inherit;
-    padding: 0;
-  }
-
-  .book-a-demo__form-container:before {
-    content: "";
-    display: none;
-  }
-
-  .book-a-demo .form {
-    position: static;
-    max-width: 100%;
-    overflow: inherit;
-    height: 100%;
-  }
-
-  .book-a-demo .form::-webkit-scrollbar {
-    width: 100%;
-  }
-
   .main-page .simplicity__img {
     opacity: 0.3;
   }
@@ -6600,6 +6547,61 @@ h6 {
   .resources-blog .resources-block .slider-resources__img {
     width: 335px;
     height: 260px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .book-a-demo {
+    padding: 0 0 100px 0;
+  }
+
+  .book-a-demo__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 52px 0 0 0;
+  }
+
+  .book-a-demo__container {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .book-a-demo__form-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: static;
+    pointer-events: auto;
+    z-index: inherit;
+    top: inherit;
+    right: inherit;
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
+    padding: 0;
+  }
+
+  .book-a-demo__form-container:before {
+    content: "";
+    display: none;
+  }
+
+  .book-a-demo .form {
+    position: static;
+    max-width: 100%;
+    overflow: inherit;
+    height: 100%;
+  }
+
+  .book-a-demo .form::-webkit-scrollbar {
+    width: 100%;
   }
 
   .book-a-demo {
