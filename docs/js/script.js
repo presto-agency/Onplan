@@ -258,26 +258,6 @@ if (!!allIntegration) {
         }
     }());
 
-    // (function addClassToBtn() {
-    //     const relativeBtns = document.querySelectorAll('.all-integration-menu__bottom-link, .content__bottom-link');
-    //     function addColor(btns) {
-    //         btns.forEach(btn => btn.addEventListener('click', function () {
-    //             const activeBtns = allIntegration.querySelectorAll('.active-color');
-    //             const attr = this.querySelector('a').getAttribute("href");
-    //             let els = document.querySelectorAll(`a[href='${attr}']`);
-    //             if (!!activeBtns) {
-    //                 changeClass(activeBtns, els)
-    //             }
-    //             else {
-    //                 els.forEach(el => {
-    //                     el.parentNode.classList.add('active-color')
-    //                 });
-    //             }
-    //         }))
-    //     }
-    //     addColor(relativeBtns)
-    // }());
-
     (function scrollColor() {
         let isScrolling = false;
         window.addEventListener("scroll", throttleScroll, false);
