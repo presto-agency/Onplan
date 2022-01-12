@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     @@include('main-page.js')
     @@include('all-integration.js')
     @@include('resources-blog.js')
+    @@include('pricing.js')
 })
 
 

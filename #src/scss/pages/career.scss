@@ -130,6 +130,9 @@
         }
         &__description{
             margin: 106px 0 0 0;
+            h3{
+                color: $textcolor;
+            }
         }
         @media(max-width: 1023px){
             margin: 64px 0;
