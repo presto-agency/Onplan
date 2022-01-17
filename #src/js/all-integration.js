@@ -68,8 +68,10 @@ if (!!allIntegration) {
         const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
         function isFullyVisible(el) {
             let topOfElements = el.getBoundingClientRect().top;
+            let bottomOfElements = el.getBoundingClientRect().bottom;
             let topValue = + topOfElements;
-            return ((topValue <= 200) && (topValue > 0));
+            let bottomValue = + bottomOfElements;
+            return (((topValue <= 200) && (topValue > 0)) || ((bottomValue <= 200) && (bottomValue > 0)));
         }
         function scrolling() {
             elementsPage.forEach(el => {
