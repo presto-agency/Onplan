@@ -309,7 +309,6 @@
             }
 
             &__bottom-btn-col{
-                padding: 0 40px;
                 width: 100%;
             }
 
@@ -355,9 +354,28 @@
             .table-price{
                 border-radius: initial;
                 .column{
-                    padding: 0;
+                    padding: 0 0 24px 0;
+                    h5{
+                        font-size:16px;
+                        line-height: 19px;
+                    }
                     &.growth-plus{
                         border-radius: inherit;
+                    }
+                    &.growth, &.growth-plus{
+                        .table-price{
+                            &__content-description{
+                                h5{
+                                    text-align: left;
+                                }
+                                p{
+                                    text-align: left;
+                                    padding: 0 20px;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                }
+                            }
+                        }
                     }
                 }
                 .bottom-table{
@@ -394,10 +412,27 @@
                             margin: 0 0 4px 0;
                             color: $darkgreycolor;
                         }
+                        p{
+                            text-align: left;
+                        }
                     }
                 }
                 .description-title{
                     color: $darkgreycolor;
+                }
+                &__content-description{
+                    max-width: 100%;
+                    width: 100%;
+                    margin: 0 0 24px 0;
+                    h5{
+                        margin: 0;
+                        padding: 12px 20px;
+                        border-top: 1px solid $greycolor;
+                        border-bottom: 1px solid $greycolor;
+                    }
+                }
+                &__starting{
+                    padding: 0 20px;
                 }
                 &__top-block{
                     flex-direction: column;
@@ -410,7 +445,8 @@
                     }
                 }
                 &__button{
-                    margin: 32px 0 0 0;
+                    max-width: 83px;
+                    height: 33px;
                     span{
                         &:first-child{
                             display: none;
@@ -443,6 +479,57 @@
                 }
                 &__bottom-buttons{
                     display: flex;
+                    .button{
+                        margin: 24px auto;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .platform-plans{
+            .table-price{
+                .column{
+                    &.essentials{
+                        .table-price{
+                            &__starting{
+                                display: block;
+                                p{
+                                    &:nth-child(1){
+                                        color: $darkgreycolor;
+                                        font-size: 18px;
+                                        line-height: 21px;
+                                        font-weight: 700;
+                                        
+                                    }
+                                    &:nth-child(2){
+                                        span{
+                                            font-size: 18px;
+                                            line-height: 21px;
+                                            margin: 0;
+                                        }
+                                    }
+                                    &:nth-child(1), &:nth-child(2){
+                                        display: inline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 374px){
+        .platform-plans{
+            .table-price{
+                &__starting{
+                    padding: 0 15px;
+                }
+                &__content-description{
+                    h5{
+                        padding: 12px 15px;
+                    }
                 }
             }
         }
