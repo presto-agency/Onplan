@@ -7908,8 +7908,20 @@ h6 {
     right: 32px;
   }
 
+  .pricing .platform-plans__title {
+    padding: 0 20px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+
+  .pricing .platform-plans__title span {
+    display: none;
+  }
+
   .pricing .platform-plans .table-price {
+    margin: 52px 0 0 0;
     border-radius: initial;
+    border-bottom: initial;
   }
 
   .pricing .platform-plans .table-price .column {
@@ -7938,7 +7950,13 @@ h6 {
     line-height: 17px;
   }
 
+  .pricing .platform-plans .table-price .bottom-table {
+    background: #fff;
+    padding: 0 0 24px 0;
+  }
+
   .pricing .platform-plans .table-price .bottom-table:last-child {
+    padding: 0;
     border-radius: initial;
   }
 
@@ -7949,10 +7967,15 @@ h6 {
             flex-direction: column;
   }
 
+  .pricing .platform-plans .table-price .bottom-table__bottom-block:last-child {
+    border-bottom: 1px solid #EDF0F2;
+  }
+
   .pricing .platform-plans .table-price .bottom-table__bottom-block h5 {
     border-bottom: 1px solid #EDF0F2;
     font-weight: 700;
     font-size: 18px;
+    padding: 24px 20px 15px;
   }
 
   .pricing .platform-plans .table-price .bottom-table__link {
@@ -7969,6 +7992,10 @@ h6 {
     padding: 12px 20px;
   }
 
+  .pricing .platform-plans .table-price .bottom-table__link:first-child {
+    border-left: initial;
+  }
+
   .pricing .platform-plans .table-price .bottom-table__link.purple:after,
   .pricing .platform-plans .table-price .bottom-table__link.green:after {
     position: static;
@@ -7978,6 +8005,9 @@ h6 {
         -ms-transform: initial;
             transform: initial;
     margin: 4px 0 0 0;
+    width: 18px;
+    height: 18px;
+    background-size: 18px 18px;
   }
 
   .pricing .platform-plans .table-price .bottom-table__link span {
@@ -7995,6 +8025,7 @@ h6 {
 
   .pricing .platform-plans .table-price .description-title {
     color: #606A80;
+    text-transform: uppercase;
   }
 
   .pricing .platform-plans .table-price__content-description {
@@ -9046,6 +9077,37 @@ h6 {
   .pricing {
     padding: 0 0 58px 0;
   }
+
+  .pricing .platform-plans .table-price .description-title {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 12px 20px;
+  }
+
+  .pricing .platform-plans .table-price__content-description {
+    margin: 0 0 33px 0;
+  }
+
+  .pricing .platform-plans .table-price__most-popular {
+    border-radius: 6px 6px 0px 0px;
+    height: 27px;
+    top: -27px;
+  }
+
+  .pricing .platform-plans .table-price__title {
+    padding: 24px 20px;
+  }
+
+  .pricing .platform-plans .table-price__title h5 {
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0 0 6px 0;
+  }
+
+  .pricing .platform-plans .h1 h1 {
+    text-align: center;
+    line-height: 50px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -9674,6 +9736,15 @@ h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  .pricing .platform-plans {
+    margin: 52px 0 80px 0;
+  }
+
+  .pricing .platform-plans .h1 h1 {
+    font-size: 40px;
+    line-height: 115%;
+  }
 }
 
 @media (max-width: 374px) {
@@ -9723,6 +9794,10 @@ h6 {
 
   .book-a-demo .form__inputs:nth-child(2) {
     margin: 16px 0 0 0;
+  }
+
+  .pricing .platform-plans .table-price .bottom-table__link {
+    padding: 12px 15px;
   }
 
   .pricing .platform-plans .table-price__starting {
