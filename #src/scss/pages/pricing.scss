@@ -18,7 +18,27 @@
             width: 100%;
             transition: 500ms ease-in-out;
             @media(max-width: 1024px){
-                display: none;
+                display: flex;
+                &.active{
+                    top: 70px;
+                }
+            }
+            @media(max-width: 1023px){
+                display: block;
+                .pricing{
+                    &__relative-link{
+                        display: none;
+                        &:first-child{
+                            display: block;
+                            border-right: initial;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: $darkgreycolor;
+                            padding: 12px 20px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
             }
             &.active{
                 top: 81px;
@@ -83,6 +103,8 @@
             border: 1px solid $greycolor;
             border-radius: 24px;
             box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+            border-radius: 24px;
+            overflow: hidden;
             .description-title{
                 padding: 13px 40px;
                 color: $textcolor;
@@ -91,10 +113,6 @@
                 line-height: 22px;
             }
             .bottom-table {
-            &:last-child{
-                border-radius: 0 0 24px 24px;
-                overflow: hidden;
-            }
                 &__bottom-block {
                     display: flex;
                     font-size: 16px;
@@ -108,10 +126,78 @@
                 }
         
                 &__bottom-title {
+                    position: relative;
                     flex: 0 1 25%;
                     padding: 14px 40px;
                     background: $whitecolor;
                     color: $textcolor;
+                }
+
+                &__info-svg{
+                    display: none;
+                    position: absolute;
+                    z-index: 6;
+                    @media(max-width: 1024px){
+                            // position: relative;
+                            // display: inline;
+                            // top: initial;
+                            // right: initial;
+                            // margin: 0 0 0 4px;
+                            &.active-info{
+                                display: none;
+                            }
+                    }
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                        fill: $darkgreycolor;
+                        opacity: 0.5;
+                        transition: 300ms;
+                    }
+                    top: 16px;
+                    right: 16px;
+                    width: 16px;
+                    height: 16px;
+                    p{
+                        opacity: 0;
+                        font-size: 12px;
+                        line-height: 15px;
+                        position: absolute;
+                        width: 147px;
+                        bottom: 23px;
+                        right: -66px;
+                        background: $textcolor;
+                        color: $whitecolor;
+                        padding: 8px;
+                        border-radius: 6px;
+                        transition: 300ms;
+                        pointer-events: none;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            bottom: -4px;
+                            left: 56px;
+                            width: 0;
+                            height: 0;
+                            border: 0 solid transparent;
+                            border-left-width: 18px;
+                            border-right-width: 17px;
+                            border-top: 9px solid $textcolor;
+                        }
+                    }
+                    &.active-info{
+                        display: inline;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        svg{
+                            opacity: 1;
+                            fill: $textcolor;
+                        }
+                        p{
+                            opacity: 1;
+                        }
+                    }
                 }
         
                 &__list {
@@ -400,6 +486,7 @@
                             border-bottom: 1px solid $greycolor;
                         }
                         h5{
+                            display: inline;
                             border-bottom: 1px solid $greycolor;
                             font-weight: 700;
                             font-size: 18px;

@@ -6380,6 +6380,8 @@ h6 {
   border-radius: 24px;
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
           box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .pricing .platform-plans .table-price .description-title {
@@ -6388,11 +6390,6 @@ h6 {
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
-}
-
-.pricing .platform-plans .table-price .bottom-table:last-child {
-  border-radius: 0 0 24px 24px;
-  overflow: hidden;
 }
 
 .pricing .platform-plans .table-price .bottom-table__bottom-block {
@@ -6411,12 +6408,81 @@ h6 {
 }
 
 .pricing .platform-plans .table-price .bottom-table__bottom-title {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   padding: 14px 40px;
   background: #fff;
   color: #232F42;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg {
+  display: none;
+  position: absolute;
+  z-index: 6;
+  top: 16px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg svg {
+  width: 16px;
+  height: 16px;
+  fill: #606A80;
+  opacity: 0.5;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg p {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  width: 147px;
+  bottom: 23px;
+  right: -66px;
+  background: #232F42;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  pointer-events: none;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg p:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 56px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 18px;
+  border-right-width: 17px;
+  border-top: 9px solid #232F42;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg.active-info {
+  display: inline;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg:hover {
+  cursor: pointer;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg:hover svg {
+  opacity: 1;
+  fill: #232F42;
+}
+
+.pricing .platform-plans .table-price .bottom-table__info-svg:hover p {
+  opacity: 1;
 }
 
 .pricing .platform-plans .table-price .bottom-table__list {
@@ -7373,6 +7439,16 @@ h6 {
   }
 
   .pricing .pricing__relative-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .pricing .pricing__relative-title.active {
+    top: 70px;
+  }
+
+  .pricing .platform-plans .table-price .bottom-table__info-svg.active-info {
     display: none;
   }
 }
@@ -7908,6 +7984,24 @@ h6 {
     right: 32px;
   }
 
+  .pricing .pricing__relative-title {
+    display: block;
+  }
+
+  .pricing .pricing__relative-title .pricing__relative-link {
+    display: none;
+  }
+
+  .pricing .pricing__relative-title .pricing__relative-link:first-child {
+    display: block;
+    border-right: initial;
+    font-size: 12px;
+    line-height: 15px;
+    color: #606A80;
+    padding: 12px 20px;
+    text-transform: uppercase;
+  }
+
   .pricing .platform-plans__title {
     padding: 0 20px;
     -webkit-box-sizing: content-box;
@@ -7972,6 +8066,7 @@ h6 {
   }
 
   .pricing .platform-plans .table-price .bottom-table__bottom-block h5 {
+    display: inline;
     border-bottom: 1px solid #EDF0F2;
     font-weight: 700;
     font-size: 18px;
