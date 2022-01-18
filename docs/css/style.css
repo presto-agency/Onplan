@@ -9858,6 +9858,18 @@ h6 {
     font-size: 40px;
     line-height: 115%;
   }
+
+  .pricing .platform-plans .table-price .bottom-table__link {
+    padding: 12px 15px;
+  }
+
+  .pricing .platform-plans .table-price__starting {
+    padding: 0 15px;
+  }
+
+  .pricing .platform-plans .table-price__content-description h5 {
+    padding: 12px 15px;
+  }
 }
 
 @media (max-width: 374px) {
@@ -9907,17 +9919,5 @@ h6 {
 
   .template-page .form__inputs:nth-child(2) {
     margin: 16px 0 0 0;
-  }
-
-  .pricing .platform-plans .table-price .bottom-table__link {
-    padding: 12px 15px;
-  }
-
-  .pricing .platform-plans .table-price__starting {
-    padding: 0 15px;
-  }
-
-  .pricing .platform-plans .table-price__content-description h5 {
-    padding: 12px 15px;
   }
 }
