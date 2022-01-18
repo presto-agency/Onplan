@@ -6398,8 +6398,6 @@ h6 {
   border-radius: 24px;
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
           box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
-  border-radius: 24px;
-  overflow: hidden;
 }
 
 .pricing .platform-plans .table-price .description-title {
@@ -6815,6 +6813,14 @@ h6 {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1);
+  }
+
+  .pricing .platform-plans .table-price .bottom-table:last-child .bottom-table__bottom-block:last-child .bottom-table__bottom-title {
+    border-radius: 0 0 0 24px;
+  }
+
+  .pricing .platform-plans .table-price .bottom-table:last-child .bottom-table__bottom-block:last-child .bottom-table__link:last-child {
+    border-radius: 0 0 24px 0;
   }
 }
 
