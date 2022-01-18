@@ -69,9 +69,7 @@ if (!!allIntegration) {
         function isFullyVisible(el) {
             let topOfElements = el.getBoundingClientRect().top;
             let bottomOfElements = el.getBoundingClientRect().bottom;
-            let topValue = + topOfElements;
-            let bottomValue = + bottomOfElements;
-            return (((topValue <= 200) && (topValue > 0)) || ((bottomValue <= 200) && (bottomValue > 0)));
+            return (((topOfElements <= 200) && (bottomOfElements > 0)));
         }
         function scrolling() {
             elementsPage.forEach(el => {

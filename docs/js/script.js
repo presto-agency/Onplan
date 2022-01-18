@@ -275,9 +275,7 @@ if (!!allIntegration) {
         function isFullyVisible(el) {
             let topOfElements = el.getBoundingClientRect().top;
             let bottomOfElements = el.getBoundingClientRect().bottom;
-            let topValue = + topOfElements;
-            let bottomValue = + bottomOfElements;
-            return (((topValue <= 200) && (topValue > 0)) || ((bottomValue <= 200) && (bottomValue > 0)));
+            return (((topOfElements <= 200) && (bottomOfElements > 0)));
         }
         function scrolling() {
             elementsPage.forEach(el => {
@@ -370,27 +368,9 @@ if (!!pricing) {
         scrolling();
     }());
     (function scrollName() {
-        let isScrolling = false;
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
-
-        const elementsPage = document.querySelectorAll('.table-price__bottom-table');
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            let topValue = + topOfElements;
-            let bottomValue = + bottomOfElements;
-            return (((topValue <= 130) && (topValue > 0)) || ((bottomValue <= 130) && (bottomValue > 0)));
-        }
+        window.addEventListener("scroll", scrolling, true);
         function scrolling() {
+            const elementsPage = document.querySelectorAll('.table-price__bottom-table');
             elementsPage.forEach(el => {
                 if (isFullyVisible(el)) {
                     let idEl = el.id;
@@ -399,7 +379,11 @@ if (!!pricing) {
                 }
             });
         }
-        scrolling();
+        function isFullyVisible(el) {
+            let topOfElements = el.getBoundingClientRect().top;
+            let bottomOfElements = el.getBoundingClientRect().bottom;
+            return (((topOfElements <= 130) && (bottomOfElements > 0)));
+        }
     }());
 }
 })
