@@ -9844,6 +9844,11 @@ h6 {
     margin: 52px 0 64px 0;
   }
 
+  .open-roles-v .customer-service .editor-v h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
   .open-roles-v .customer-service__return {
     margin: 0 0 32px 0;
   }
