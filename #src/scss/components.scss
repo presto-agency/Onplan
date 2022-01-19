@@ -1515,3 +1515,25 @@
         }
     }
 }
+
+.return{
+    position: relative;
+    padding: 0 0 0 23px;
+    span{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $purplecolor;
+    }
+    svg{
+        width: 15px;
+        height: 8px;
+        fill: $purplecolor;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        transform: rotate(180deg);
+    }
+}
