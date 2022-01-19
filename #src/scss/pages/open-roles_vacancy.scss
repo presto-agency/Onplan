@@ -72,6 +72,8 @@
         margin: 0 auto;
         background-color: $bg-greycolor;
         border-radius: 24px;
+        padding: 0 20px;
+        box-sizing: content-box;
         .form {
             max-width: 680px;
             margin: 0 auto;
@@ -81,8 +83,8 @@
                     margin: 0 0 52px 0;
                     h3{
                         font-weight: 900;
-                        font-size: 32px;
-                        line-height: 120%;
+                        font-size: 48px;
+                        line-height: 53px;
                         color: $textcolor;
                         text-align: center;
                     }
@@ -107,8 +109,6 @@
                 &__inputs-wrapper {
                     margin: 24px 0;
                     max-width: 416px;
-                    padding: 0 20px;
-                    box-sizing: content-box;
                     margin: 0 auto;
                 }
     
@@ -152,6 +152,7 @@
                         border-radius: 8px;
                         background-color: $whitecolor;
                         padding: 0 12px;
+                        box-sizing: content-box;
                     }
                     textarea{
                         background-color: $whitecolor;
@@ -166,7 +167,7 @@
                 }
     
                 &__button {
-                    margin: 20px 0 0 0;
+                    margin: 40px 0 0 0;
                     width: 100%;
                     line-height: 48px;
                     font-weight: 800;
@@ -190,6 +191,14 @@
                     }
                 }
             }
+    }
+    @media(max-width: 1199px){
+        .form-job{
+            border-radius: initial;
+            .form{
+                padding: 64px 0;
+            }
+        }
     }
     @media(max-width: 567px){
         padding: 52px 0 0 0;
@@ -218,6 +227,42 @@
             }
             &__img{
                 border-radius: initial;
+            }
+        }
+    }
+    @media(max-width: 474px){
+        .form-job{
+            .form{
+                h3{
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: left;
+                }
+                p{
+                    text-align: left;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                &__inputs{
+                    input{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 374px){
+        .form-job{
+            .form{
+                &__inputs-group{
+                    flex-direction: column;
+                }
+                &__inputs{
+                    max-width: 100%;
+                    &:nth-child(2){
+                        margin: 16px 0 0 0;
+                    }
+                }
             }
         }
     }
