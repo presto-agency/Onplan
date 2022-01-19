@@ -5914,7 +5914,38 @@ h6 {
      object-fit: cover;
 }
 
-.template-page__list p {
+.template-page__list-t {
+  margin: 30px 0;
+}
+
+.template-page__list-t li {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #232F42;
+  opacity: 0.9;
+  padding: 0 0 0 34px;
+  margin: 0 0 12px 0;
+}
+
+.template-page__list-t li:last-child {
+  margin: 0;
+}
+
+.template-page__list-t li:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background-image: url(../img/book-a-demo/accept.svg);
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+}
+
+.template-page__list-t p {
   font-size: 20px;
   line-height: 30px;
   color: #606A80;
@@ -6108,7 +6139,7 @@ h6 {
 }
 
 .template-page .form__title p a {
-  color: #232F42;
+  color: #707EFF;
   font-weight: 700;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
