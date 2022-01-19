@@ -3522,6 +3522,45 @@ h6 {
   font-weight: 400;
 }
 
+.blog .editor__content .financial-planning {
+  background: #F8F9FC;
+  border-radius: 16px;
+  padding: 64px 0;
+  margin: 64px 0;
+}
+
+.blog .editor__content .financial-planning__content {
+  max-width: 500px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.blog .editor__content .financial-planning__content h6 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  color: #232F42;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.blog .editor__content .financial-planning__content p {
+  text-align: center;
+  color: #606a80;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 52px 0;
+}
+
+.blog .editor__content .financial-planning__button {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 248px;
+  height: 62px;
+}
+
 .blog .slider-top {
   position: relative;
   margin: 64px 0;
@@ -9466,6 +9505,21 @@ h6 {
     max-width: 247px;
   }
 
+  .blog .editor__content .financial-planning {
+    padding: 50px 0;
+  }
+
+  .blog .editor__content .financial-planning__content h6 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .blog .editor__content .financial-planning__content p {
+    margin: 0 0 30px 0;
+    text-align: left;
+  }
+
   .main-page .simplicity__title h1 {
     font-size: 42px;
     line-height: 49px;
@@ -9993,6 +10047,20 @@ h6 {
   .blog .slider-top .swiper__slide {
     width: 280px;
     height: 200px;
+  }
+
+  .blog .editor__content .financial-planning {
+    padding: 50px 0;
+  }
+
+  .blog .editor__content .financial-planning__content h6 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .blog .editor__content .financial-planning__content p {
+    margin: 0 0 25px 0;
+    text-align: left;
   }
 
   .book-a-demo .form__logos-list {
