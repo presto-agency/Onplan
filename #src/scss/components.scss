@@ -1441,15 +1441,15 @@
     }
     
     &__container {
-        position: relative;
         background: linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%);
         border-radius: 16px;
-        z-index: 2;
         width: 100%;
         box-sizing: content-box;
     }
     
     &__content {
+        position: relative;
+        z-index: 2;
         margin: 0 auto;
         max-width: 616px;
         padding: 80px 20px;
@@ -1472,7 +1472,6 @@
 
     &__bg {
         position: absolute;
-        z-index: 2;
         top: 101px;
         left: 20px;
         width: 1040px;
@@ -1491,13 +1490,6 @@
     }
     @media(max-width: 1199px){
         &__bg{
-            top: 75px;
-            width: 1000px;
-            left: -8px;
-        }
-    }
-    @media(max-width: 1023px){
-        &__bg{
             display: none;
         }
     }
@@ -1513,6 +1505,13 @@
         }
         &__button{
             margin:40px 0 0 0;
+        }
+    }
+    @media(max-width: 374px){
+        &__content{
+            h2{
+                font-size: 25px;
+            }
         }
     }
 }
