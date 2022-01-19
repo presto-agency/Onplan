@@ -9,9 +9,6 @@
                 box-sizing: content-box;
             }
     
-            &__top-content {
-            }
-    
             &__return {
                 display: block;
                 margin: 0 0 64px 0;
@@ -22,6 +19,7 @@
                     font-size: 22px;
                     line-height: 33px;
                     margin: 20px 0 64px 0;
+                    letter-spacing: 0.01em;
                 }
             }
     
@@ -49,6 +47,7 @@
                         color: $darkgreycolor;
                         margin: 7px 0;
                         padding: 0 0 0 24px;
+                        letter-spacing: .006em;
                         &:before{
                             content: '';
                             position: absolute;
@@ -94,7 +93,7 @@
                         line-height: 33px;
                         font-weight: 600;
                         color: $darkgreycolor;
-                        margin: 8px 0 0 0;
+                        margin: 15px 0 0 0;
                         a{
                             color: $textcolor;
                             font-weight: 700;
@@ -161,13 +160,13 @@
                         outline: none;
                         overflow: auto;
                         border-radius: 8px;
-                        height: 80px;
+                        height: 120px;
                         padding: 12px;
                     }
                 }
     
                 &__button {
-                    margin: 40px 0 0 0;
+                    margin: 33px 0 0 0;
                     width: 100%;
                     line-height: 48px;
                     font-weight: 800;
@@ -201,7 +200,7 @@
         }
     }
     @media(max-width: 567px){
-        padding: 52px 0 0 0;
+        padding: 43px 0 0 0;
         .customer-service{
             .editor-v{
                 padding: 0 20px;
@@ -250,6 +249,13 @@
                 &__inputs{
                     input{
                         padding: 0;
+                    }
+                }
+                &__text{
+                    p{
+                        text-align: center;
+                        font-size: 12px;
+                        line-height: 16px;
                     }
                 }
             }

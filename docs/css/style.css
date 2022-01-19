@@ -6951,6 +6951,7 @@ h6 {
   font-size: 22px;
   line-height: 33px;
   margin: 20px 0 64px 0;
+  letter-spacing: 0.01em;
 }
 
 .open-roles-v .customer-service__img {
@@ -6983,6 +6984,7 @@ h6 {
   color: #606A80;
   margin: 7px 0;
   padding: 0 0 0 24px;
+  letter-spacing: 0.006em;
 }
 
 .open-roles-v .customer-service .editor-v ul li:before {
@@ -7031,7 +7033,7 @@ h6 {
   line-height: 33px;
   font-weight: 600;
   color: #606A80;
-  margin: 8px 0 0 0;
+  margin: 15px 0 0 0;
 }
 
 .open-roles-v .form-job .form__title p a {
@@ -7121,12 +7123,12 @@ h6 {
   outline: none;
   overflow: auto;
   border-radius: 8px;
-  height: 80px;
+  height: 120px;
   padding: 12px;
 }
 
 .open-roles-v .form-job .form__button {
-  margin: 40px 0 0 0;
+  margin: 33px 0 0 0;
   width: 100%;
   line-height: 48px;
   font-weight: 800;
@@ -9836,7 +9838,7 @@ h6 {
   }
 
   .open-roles-v {
-    padding: 52px 0 0 0;
+    padding: 43px 0 0 0;
   }
 
   .open-roles-v .customer-service .editor-v {
@@ -9936,6 +9938,12 @@ h6 {
 
   .open-roles-v .form-job .form__inputs input {
     padding: 0;
+  }
+
+  .open-roles-v .form-job .form__text p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
