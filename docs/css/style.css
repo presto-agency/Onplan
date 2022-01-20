@@ -2107,6 +2107,12 @@ h6 {
   font-size: 20px;
   line-height: 32px;
   color: #fff;
+  margin: 20px 0;
+}
+
+.purple-solution__content p a {
+  color: #232F42;
+  border-bottom: 1px solid #232F42;
 }
 
 .purple-solution__bg {
@@ -2125,7 +2131,7 @@ h6 {
 }
 
 .purple-solution__button {
-  margin: 52px auto 0;
+  margin: 26px auto;
   max-width: 248px;
   height: 62px;
 }
@@ -7349,16 +7355,10 @@ h6 {
     display: none;
   }
 
-  .blog .editor {
-    padding: 0 20px;
-  }
-
   .blog .editor .sidebar {
-    display: none;
-  }
-
-  .blog .editor__content {
     padding: 0;
+    margin: 0 20px 0 0;
+    width: 160px;
   }
 
   .main-page .simplicity__img {
@@ -7553,6 +7553,18 @@ h6 {
 @media (max-width: 1199px) {
   .purple-solution__bg {
     display: none;
+  }
+
+  .blog .editor {
+    padding: 0 20px;
+  }
+
+  .blog .editor .sidebar {
+    display: none;
+  }
+
+  .blog .editor__content {
+    padding: 0;
   }
 
   .open-roles-v .form-job {

@@ -1467,6 +1467,11 @@
             font-size: 20px;
             line-height: 32px;
             color: $whitecolor;
+            margin:20px 0 ;
+            a{
+                color: $textcolor;
+                border-bottom: 1px solid $textcolor;
+            }
         }
     }
 
@@ -1484,7 +1489,7 @@
     }
 
     &__button{
-        margin: 52px auto 0;
+        margin: 26px auto;
         max-width: 248px;
         height: 62px;
     }
