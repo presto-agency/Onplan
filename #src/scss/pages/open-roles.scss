@@ -8,7 +8,104 @@
                 height: 598px;
                 margin: 0;
                 top: -91px;
+                pointer-events: none;
             }
+    }
+    .vacancies {
+        padding: 0 20px;
+        box-sizing: content-box;
+        margin: 0 auto;
+        max-width: 1244px;
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -8px;
+		}
+
+		&__link {
+            width: calc((100% - (8* 8px))/4);
+            margin: 8px;
+            border: 1px solid $greycolor;
+            background: $whitecolor;
+            border-radius: 16px;
+            box-shadow: 0px 20px 40px rgba(35, 40, 51, 0.05);
+            padding: 40px 32px;
+            height: 100%;
+		}
+
+		&__title {
+            h3{
+                font-size: 22px;
+                line-height: 26px;
+                font-weight: 800;
+                color: $textcolor;
+            }
+            p{
+                font-weight: 600;
+                color: $darkgreycolor;
+                font-size: 16px;
+                line-height: 26px;
+                margin: 12px 0 24px 0;
+            }
+		}
+
+		&__description {
+            li{
+                span{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $darkgreycolor;
+                    opacity: 0.8;
+                    padding: 0 0 0 26px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 3px;
+                        width:14px;
+                        height: 14px;
+                        background-size: 14px 14px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &.full-time{
+                        &:before{
+                            background-image: url(../img/open-roles/fulltime.svg);
+                        }
+                    }
+                    &.location{
+                        &:before{
+                            width: 12px;
+                            height: 16px;
+                            background-size: 12px 16px;
+                            background-image: url(../img/open-roles/location.svg);
+                        }
+                    }
+                    &.part-time{
+                        &:before{
+                            background-image: url(../img/open-roles/part-time.svg);
+                        }
+                    }
+                    &.worldwide{
+                        &:before{
+                            width: 12px;
+                            height: 16px;
+                            background-size: 12px 16px;
+                            background-image: url(../img/open-roles/worldwide.svg);
+                        }
+                    }
+                }
+            }
+		}
+    }
+    @media(max-width: 1023px){
+        .vacancies{
+            &__link{
+                width: calc((100% - (8* 8px))/3);
+            }
+        }
     }
     @media(max-width: 767px){
         padding: 60px 0;

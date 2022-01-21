@@ -7171,6 +7171,95 @@ h6 {
   height: 598px;
   margin: 0;
   top: -91px;
+  pointer-events: none;
+}
+
+.open-roles .vacancies {
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1244px;
+}
+
+.open-roles .vacancies__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -8px;
+}
+
+.open-roles .vacancies__link {
+  width: calc((100% - 64px) / 4);
+  margin: 8px;
+  border: 1px solid #EDF0F2;
+  background: #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 20px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 20px 40px rgba(35, 40, 51, 0.05);
+  padding: 40px 32px;
+  height: 100%;
+}
+
+.open-roles .vacancies__title h3 {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #232F42;
+}
+
+.open-roles .vacancies__title p {
+  font-weight: 600;
+  color: #606A80;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 12px 0 24px 0;
+}
+
+.open-roles .vacancies__description li span {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #606A80;
+  opacity: 0.8;
+  padding: 0 0 0 26px;
+}
+
+.open-roles .vacancies__description li span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 14px;
+  height: 14px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.open-roles .vacancies__description li span.full-time:before {
+  background-image: url(../img/open-roles/fulltime.svg);
+}
+
+.open-roles .vacancies__description li span.location:before {
+  width: 12px;
+  height: 16px;
+  background-size: 12px 16px;
+  background-image: url(../img/open-roles/location.svg);
+}
+
+.open-roles .vacancies__description li span.part-time:before {
+  background-image: url(../img/open-roles/part-time.svg);
+}
+
+.open-roles .vacancies__description li span.worldwide:before {
+  width: 12px;
+  height: 16px;
+  background-size: 12px 16px;
+  background-image: url(../img/open-roles/worldwide.svg);
 }
 
 @media (min-width: 1024px) {
@@ -8618,6 +8707,10 @@ h6 {
 
   .pricing .platform-plans .table-price__bottom-buttons .button {
     margin: 24px auto;
+  }
+
+  .open-roles .vacancies__link {
+    width: calc((100% - 64px) / 3);
   }
 }
 
