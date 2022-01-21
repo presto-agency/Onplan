@@ -7160,6 +7160,19 @@ h6 {
   color: #707EFF;
 }
 
+.open-roles {
+  padding: 100px 0 200px 0;
+}
+
+.open-roles .quickbooks__bg {
+  max-width: 1440px;
+  width: 100%;
+  max-height: initial;
+  height: 598px;
+  margin: 0;
+  top: -91px;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -9357,6 +9370,33 @@ h6 {
   .open-roles-v .customer-service .editor-v ul li {
     font-size: 18px;
     line-height: 29px;
+  }
+
+  .open-roles {
+    padding: 60px 0;
+  }
+
+  .open-roles .quickbooks .content {
+    margin: 24px 0 0 0;
+  }
+
+  .open-roles .quickbooks .content__description h1 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: left;
+    margin: 0 0 16px 0;
+  }
+
+  .open-roles .quickbooks .content__description p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .open-roles .quickbooks .bread-crumbs ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
