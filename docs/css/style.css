@@ -7161,7 +7161,7 @@ h6 {
 }
 
 .open-roles {
-  padding: 100px 0 200px 0;
+  padding: 100px 0 100px 0;
 }
 
 .open-roles .quickbooks__bg {
@@ -7170,15 +7170,27 @@ h6 {
   max-height: initial;
   height: 598px;
   margin: 0;
-  top: -91px;
+  top: -58px;
   pointer-events: none;
+}
+
+.open-roles .quickbooks__content {
+  margin: 32px 0 0 0;
+}
+
+.open-roles .quickbooks .content__description p {
+  max-width: 577px;
+}
+
+.open-roles .quickbooks .content__description h1 {
+  margin: 0 0 24px 0;
 }
 
 .open-roles .vacancies {
   padding: 0 20px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   max-width: 1244px;
 }
 
@@ -7201,6 +7213,9 @@ h6 {
           box-shadow: 0px 20px 40px rgba(35, 40, 51, 0.05);
   padding: 40px 32px;
   height: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .open-roles .vacancies__title h3 {
@@ -7350,6 +7365,12 @@ h6 {
 
   .bread-crumbs li:hover {
     opacity: 0.5;
+  }
+
+  .open-roles .vacancies__link:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -8710,7 +8731,13 @@ h6 {
   }
 
   .open-roles .vacancies__link {
-    width: calc((100% - 64px) / 3);
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+@media (max-width: 811px) {
+  .open-roles .vacancies__link {
+    width: calc((100% - 32px) / 2);
   }
 }
 
@@ -10021,6 +10048,10 @@ h6 {
 
   .open-roles-v .customer-service__img {
     border-radius: initial;
+  }
+
+  .open-roles .vacancies__link {
+    width: calc(100% - 16px);
   }
 }
 
