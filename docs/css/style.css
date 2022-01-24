@@ -2162,6 +2162,155 @@ h6 {
           transform: rotate(180deg);
 }
 
+.comments {
+  background: -o-linear-gradient(317.38deg, #9CA2E6 0%, #7E5CE6 100%), -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(132.62deg, #9CA2E6 0%, #7E5CE6 100%), linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  padding: 120px 0;
+}
+
+.comments h2 {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 40px 0;
+}
+
+.comments__content {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 40px 40px 58px;
+}
+
+.comments__left-side {
+  max-width: 100%;
+  margin: 0 20px 0 0;
+}
+
+.comments__img {
+  width: 100%;
+  height: 100%;
+  max-width: 370px;
+  max-height: 370px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.comments__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comments__img.mobile {
+  display: none;
+}
+
+.comments__right-side {
+  max-width: 590px;
+  width: 100%;
+  padding: 44px 0 0 0;
+  margin: 44px 0 0 0;
+  position: relative;
+}
+
+.comments__right-side:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/case-studies/commas.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.comments__right-side p {
+  color: #fff;
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.comments__right-side h3 {
+  color: #fff;
+}
+
+.comments__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 52px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments__person {
+  max-width: 180px;
+}
+
+.comments__person p {
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.comments__company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+}
+
+.comments__company span {
+  padding: 0 24px 0 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-right: 1px solid #fff;
+  max-width: 200px;
+  max-height: 30px;
+}
+
+.comments__company span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.comments__company svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  opacity: 0.8;
+  padding: 0 0 0 24px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.comments__company.mobile {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.comments__company.desktop {
+  padding: 15px 0 0 0;
+}
+
 .integration {
   position: relative;
   padding: 100px 0;
@@ -2872,155 +3021,6 @@ h6 {
 
 .case-studies .models .table__content.green p span {
   color: #47CCAB;
-}
-
-.case-studies .comments {
-  background: -o-linear-gradient(317.38deg, #9CA2E6 0%, #7E5CE6 100%), -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
-  background: linear-gradient(132.62deg, #9CA2E6 0%, #7E5CE6 100%), linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
-  padding: 120px 0;
-}
-
-.case-studies .comments h2 {
-  text-align: center;
-  color: #fff;
-  margin: 0 0 40px 0;
-}
-
-.case-studies .comments__content {
-  max-width: 1120px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 40px 40px 40px 58px;
-}
-
-.case-studies .comments__left-side {
-  max-width: 100%;
-  margin: 0 20px 0 0;
-}
-
-.case-studies .comments__img {
-  width: 100%;
-  height: 100%;
-  max-width: 370px;
-  max-height: 370px;
-  border-radius: 30px;
-  overflow: hidden;
-}
-
-.case-studies .comments__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.case-studies .comments__img.mobile {
-  display: none;
-}
-
-.case-studies .comments__right-side {
-  max-width: 590px;
-  width: 100%;
-  padding: 44px 0 0 0;
-  margin: 44px 0 0 0;
-  position: relative;
-}
-
-.case-studies .comments__right-side:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-image: url(../img/case-studies/commas.svg);
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.case-studies .comments__right-side p {
-  color: #fff;
-  line-height: 32px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.case-studies .comments__right-side h3 {
-  color: #fff;
-}
-
-.case-studies .comments__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 52px 0 0 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.case-studies .comments__person {
-  max-width: 180px;
-}
-
-.case-studies .comments__person p {
-  opacity: 0.6;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.case-studies .comments__company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  max-height: 100%;
-}
-
-.case-studies .comments__company span {
-  padding: 0 24px 0 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border-right: 1px solid #fff;
-  max-width: 200px;
-  max-height: 30px;
-}
-
-.case-studies .comments__company span img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.case-studies .comments__company svg {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
-  opacity: 0.8;
-  padding: 0 0 0 24px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.case-studies .comments__company.mobile {
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 40px 0 0 0;
-}
-
-.case-studies .comments__company.desktop {
-  padding: 15px 0 0 0;
 }
 
 .blog {
@@ -7277,6 +7277,186 @@ h6 {
   background-image: url(../img/open-roles/worldwide.svg);
 }
 
+.about-onplan {
+  padding: 100px 0;
+}
+
+.about-onplan .wrapper-sections {
+  position: relative;
+  padding: 0 20px;
+  max-width: 1140px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.about-onplan .wrapper-sections:before {
+  content: "";
+  background: -o-linear-gradient(318.33deg, #91CAF2 6%, #7A9CCC 100%);
+  background: linear-gradient(131.67deg, #91CAF2 6%, #7A9CCC 100%);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% - 300px);
+}
+
+.about-onplan .quickbooks__bg {
+  max-width: 1440px;
+  width: 100%;
+  max-height: initial;
+  height: 598px;
+  margin: 0;
+  top: -58px;
+  pointer-events: none;
+}
+
+.about-onplan .quickbooks__content {
+  margin: 32px 0 0 0;
+}
+
+.about-onplan .quickbooks .content__description p {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.about-onplan .quickbooks .content__description h1 {
+  max-width: 888px;
+  margin: 0 0 24px 0;
+}
+
+.about-onplan .quickbooks .content__button {
+  margin: 65px auto 0 auto;
+  max-width: 248px;
+  height: 62px;
+}
+
+.about-onplan .quickbooks .content__bottom-text {
+  margin: 120px auto 0 auto;
+  max-width: 100%;
+}
+
+.about-onplan .quickbooks .content__bottom-text h3 {
+  color: #606A80;
+  padding: 0;
+}
+
+.about-onplan .quickbooks .content__bottom-text h3:before {
+  display: none;
+}
+
+.about-onplan .quickbooks .content__bottom-text ul {
+  width: 100%;
+  max-width: 977px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 33px -15px -15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-onplan .quickbooks .content__bottom-text li {
+  width: calc((100% - 180px) / 6);
+  height: 28px;
+  margin: 15px;
+}
+
+.about-onplan .quickbooks .content__bottom-text li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.about-onplan .quickbooks .content__bottom-text li a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-onplan .comments {
+  padding: 0;
+  background: initial;
+  margin: 0 0 100px 0;
+  position: relative;
+}
+
+.about-onplan .comments .container {
+  padding: 0;
+}
+
+.about-onplan .comments__right-side:before {
+  background-image: url(../img/Integration/commas.svg);
+}
+
+.about-onplan .comments__right-side p {
+  color: #232F42;
+}
+
+.about-onplan .comments__right-side h3 {
+  color: #232F42;
+}
+
+.about-onplan .comments__content {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #EDF0F2;
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  max-width: 100%;
+}
+
+.about-onplan .comments__company {
+  display: none;
+}
+
+.about-onplan .for-who {
+  position: relative;
+  max-width: 1140px;
+  margin: 100px auto 120px;
+}
+
+.about-onplan .for-who__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -40px;
+}
+
+.about-onplan .for-who__column {
+  margin: 0 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.about-onplan .for-who__column:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.about-onplan .for-who__column h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+  margin: 0 0 32px 0;
+  color: #fff;
+}
+
+.about-onplan .for-who__column p {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 20px 0 0 0;
+  color: #fff;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -7439,6 +7619,10 @@ h6 {
     max-width: 400px;
   }
 
+  .comments__right-side {
+    margin: 0;
+  }
+
   .all-cases .catalog__bottom-content {
     margin: -16px;
   }
@@ -7468,10 +7652,6 @@ h6 {
   .case-studies .quickbooks .content .studies__img {
     width: 342px;
     max-height: 531px;
-  }
-
-  .case-studies .comments__right-side {
-    margin: 0;
   }
 
   .case-studies .models__bg {
@@ -8213,6 +8393,32 @@ h6 {
     width: calc((100% - 40px) / 2);
   }
 
+  .comments__img {
+    width: 286px;
+    height: 286px;
+  }
+
+  .comments__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .comments__company {
+    margin: 20px 0 0 0;
+  }
+
+  .comments__company.desktop {
+    padding: 0;
+  }
+
+  .comments__bottom {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
   .all-cases .catalog__bottom-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -8272,32 +8478,6 @@ h6 {
 
   .case-studies .quickbooks .content .studies__img:after {
     display: none;
-  }
-
-  .case-studies .comments__img {
-    width: 286px;
-    height: 286px;
-  }
-
-  .case-studies .comments__bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .case-studies .comments__company {
-    margin: 20px 0 0 0;
-  }
-
-  .case-studies .comments__company.desktop {
-    padding: 0;
-  }
-
-  .case-studies .comments__bottom {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
 
   .case-studies .models .table {
@@ -8873,6 +9053,48 @@ h6 {
     margin: 40px 0 0 0;
   }
 
+  .comments__left-side {
+    display: none;
+  }
+
+  .comments__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .comments__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+  }
+
+  .comments__img.mobile {
+    display: block;
+  }
+
+  .comments__company.desktop {
+    display: none;
+  }
+
+  .comments__company.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .comments__content {
+    padding: 40px 32px 40px;
+  }
+
+  .comments__bottom {
+    margin: 24px 0 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .all-cases .catalog__top-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -8916,48 +9138,6 @@ h6 {
 
   .case-studies .about__bg {
     display: none;
-  }
-
-  .case-studies .comments__left-side {
-    display: none;
-  }
-
-  .case-studies .comments__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .case-studies .comments__img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0 12px 0 0;
-  }
-
-  .case-studies .comments__img.mobile {
-    display: block;
-  }
-
-  .case-studies .comments__company.desktop {
-    display: none;
-  }
-
-  .case-studies .comments__company.mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .case-studies .comments__content {
-    padding: 40px 32px 40px;
-  }
-
-  .case-studies .comments__bottom {
-    margin: 24px 0 0 0;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 
   .case-studies .models {
@@ -9518,6 +9698,82 @@ h6 {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
+  .about-onplan .comments__company.mobile {
+    display: none;
+  }
+
+  .about-onplan {
+    padding: 60px 0;
+  }
+
+  .about-onplan .quickbooks .content {
+    margin: 24px 0 0 0;
+  }
+
+  .about-onplan .quickbooks .content__description h1 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: left;
+    margin: 0 0 16px 0;
+  }
+
+  .about-onplan .quickbooks .content__description p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .about-onplan .quickbooks .content__bottom-text {
+    margin: 52px 0 0 0;
+  }
+
+  .about-onplan .quickbooks .bread-crumbs ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .about-onplan .for-who {
+    margin: 0;
+  }
+
+  .about-onplan .for-who__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+
+  .about-onplan .for-who__column {
+    margin: 52px 0 0 0;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+
+  .about-onplan .for-who__column:first-child {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+
+  .about-onplan .for-who__column h3 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 20px 0;
+  }
+
+  .about-onplan .for-who__column p {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 10px 0 0 0;
+  }
+
+  .about-onplan .comments {
+    margin: 0;
+  }
 }
 
 @media (max-width: 735px) {
@@ -9794,6 +10050,19 @@ h6 {
   .pricing .platform-plans .h1 h1 {
     text-align: center;
     line-height: 50px;
+  }
+
+  .about-onplan .quickbooks .content__bottom-text li {
+    width: calc((100% - 90px) / 3);
+  }
+
+  .about-onplan .quickbooks .content__bottom-text li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -10269,6 +10538,10 @@ h6 {
     max-width: 335px;
   }
 
+  .comments {
+    padding: 80px 0;
+  }
+
   .all-cases .quickbooks .content__bottom-text li {
     width: calc((100% - 60px) / 2);
   }
@@ -10432,10 +10705,6 @@ h6 {
     margin: 52px 0 0 0;
   }
 
-  .case-studies .comments {
-    padding: 80px 0;
-  }
-
   .case-studies .models__content h2 {
     margin: 0;
   }
@@ -10527,6 +10796,28 @@ h6 {
 
   .pricing .platform-plans .table-price__content-description h5 {
     padding: 12px 15px;
+  }
+
+  .about-onplan .quickbooks .content__bottom-text li {
+    width: calc((100% - 60px) / 2);
+  }
+
+  .about-onplan .quickbooks .content__button {
+    margin: 40px 0 0 0;
+    max-width: 187px;
+    height: 52px;
+  }
+
+  .about-onplan .quickbooks .content__bottom-text {
+    margin: 67px auto 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about-onplan .quickbooks .content__bottom-text h3 {
+    font-size: 22px;
+    font-weight: 800;
   }
 }
 

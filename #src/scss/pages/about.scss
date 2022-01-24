@@ -1,0 +1,248 @@
+.about-onplan{
+    padding: 100px 0;
+    .wrapper-sections{
+        position: relative;
+        padding: 0 20px;
+        max-width: 1140px;
+        box-sizing: content-box;
+        margin: 0 auto;
+        &:before{
+            content: '';
+            background:linear-gradient(131.67deg, #91CAF2 6%, #7A9CCC 100%);
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: calc(100% - 300px);
+        }
+    }
+    .quickbooks {
+        &__bg {
+            max-width: 1440px;
+            width: 100%;
+            max-height: initial;
+            height: 598px;
+            margin: 0;
+            top: -58px;
+            pointer-events: none;
+        }
+        &__content{
+            margin: 32px 0 0 0;
+        }
+        .content{
+            &__description{
+                p{
+                    max-width: 820px;
+                    margin: 0 auto;
+                }
+                h1{
+                    max-width: 888px;
+                    margin: 0 0 24px 0;
+                }
+            }
+            &__button {
+                margin: 65px auto 0 auto;
+                max-width: 248px;
+                height: 62px;
+            }
+            &__bottom-text {
+                margin: 120px auto 0 auto;
+                max-width: 100%;
+                h3{
+                    color:$darkgreycolor;
+                    padding: 0;
+                    &:before{
+                        display: none;
+                    }
+                }
+                ul{
+                    width: 100%;
+                    max-width: 977px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 33px -15px -15px;
+                    align-items: center;
+                }
+                li{
+                    width: calc((100% - 15px*12)/6);
+                    height: 28px;
+                    margin: 15px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: 735px){
+            .content{
+                &__bottom-text{
+                    li{
+                        width: calc((100% - 15px *6)/ 3);
+                        a{
+                            display: flex;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+        @media(max-width: 424px){
+            .content{
+                &__bottom-text{
+                    li{
+                        width: calc((100% - 15px *4)/ 2);
+                    }
+                }
+            }
+        }
+    }
+    .comments{
+        padding: 0;
+        background: initial;
+        margin: 0 0 100px 0;
+        position: relative;
+        .container{
+            padding: 0;
+        }
+        &__right-side{
+            &:before{
+                background-image: url(../img/Integration/commas.svg);
+            }
+            p{
+                color: $textcolor;
+            }
+            h3{
+                color: $textcolor;
+            }
+        }
+        &__content{
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #EDF0F2;
+        box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+        max-width: 100%;
+        }
+        &__company{
+            display: none;
+            @media(max-width: 767px){
+                &.mobile{
+                    display: none;
+                }
+            }
+        }
+    }
+    .for-who {
+        position: relative;
+        max-width: 1140px;
+        margin: 100px auto 120px;
+		&__content {
+            display: flex;
+            margin: 0 -40px;
+		}
+
+		&__column {
+            margin: 0 40px;
+            flex: 1 1 40%;
+            &:first-child{
+                flex: 1 1 60%;
+            }
+            h3{
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: 900;
+                margin: 0 0 32px 0;
+                color: $whitecolor;
+            }
+            p{
+                font-size: 18px;
+                line-height: 29px;
+                margin: 20px 0 0 0;
+                color: $whitecolor;
+            }
+		}
+    }
+
+    @media(max-width: 767px){
+        padding: 60px 0;
+        .quickbooks{
+            .content{
+                margin: 24px 0 0 0;
+                &__description{
+                    h1{
+                        font-size: 40px;
+                        line-height: 46px;
+                        text-align: left;
+                        margin: 0 0 16px 0;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: left;
+                    }
+                }
+                &__bottom-text{
+                    margin: 52px 0 0 0;
+                }
+            }
+            .bread-crumbs{
+                ul{
+                    justify-content: flex-start;
+                }
+            }
+        }
+        .for-who{
+            margin: 0;
+            &__content{
+                flex-direction: column;
+                margin: 0;
+            }
+            &__column{
+                margin: 52px 0 0 0;
+                flex: initial;
+                &:first-child{
+                    flex: initial;
+                }
+                h3{
+                    font-size: 32px;
+                    line-height: 36px;
+                    margin: 0 0 20px 0;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 29px;
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+        .comments{
+            margin: 0;
+        }
+    }
+    @media(max-width: 424px){
+        .quickbooks{
+            .content{
+                &__button{
+                    margin: 40px 0 0 0;
+                    max-width: 187px;
+                    height: 52px;
+                }
+                &__bottom-text{
+                    margin: 67px auto 0 auto;
+                    align-items: center;
+                    h3{
+                        font-size: 22px;
+                        font-weight: 800;
+                    }
+                }
+            }
+            
+        }
+    }
+}
