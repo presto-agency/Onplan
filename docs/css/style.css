@@ -7457,6 +7457,269 @@ h6 {
   color: #fff;
 }
 
+.about-onplan .great-people {
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  margin: 160px 0 120px;
+}
+
+.about-onplan .great-people__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 164px 20px 202px;
+  max-width: 1080px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.about-onplan .great-people__title {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.about-onplan .great-people__title h3 {
+  color: #fff;
+  font-size: 56px;
+  line-height: 62px;
+  font-weight: 900;
+}
+
+.about-onplan .great-people__description {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  margin: 0 0 0 40px;
+}
+
+.about-onplan .great-people__description p {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #fff;
+  margin: 0 0 52px 0;
+}
+
+.about-onplan .great-people__button {
+  max-width: 188px;
+  height: 48px;
+}
+
+.about-onplan .great-people__bg-l {
+  position: absolute;
+  top: 164px;
+  left: -30px;
+  width: 308px;
+  height: 214px;
+}
+
+.about-onplan .great-people__bg-r {
+  position: absolute;
+  bottom: 118px;
+  right: -82px;
+  width: 203px;
+  height: 206px;
+}
+
+.about-onplan .our-team {
+  margin: 120px 0 160px 0;
+}
+
+.about-onplan .our-team__content {
+  max-width: 1236px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+}
+
+.about-onplan .our-team__title {
+  margin: 0 0 80px 0;
+}
+
+.about-onplan .our-team__title h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 60px;
+  color: #232F42;
+  margin: 0 0 24px 0;
+}
+
+.about-onplan .our-team__title p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #232F42;
+}
+
+.about-onplan .our-team__list {
+  margin: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-onplan .our-team__link {
+  position: relative;
+  width: calc((100% - 96px) / 4);
+  height: 413px;
+  padding: 32px 30px;
+  background: #fff;
+  border: 1px solid #EDF0F2;
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 16px;
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.about-onplan .our-team__link:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  overflow: inherit;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  height: 100%;
+  background: -o-linear-gradient(bottom, #fff, rgba(245, 245, 245, 0) 20%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(20%, rgba(245, 245, 245, 0)));
+  background: linear-gradient(to top, #fff, rgba(245, 245, 245, 0) 20%);
+}
+
+.about-onplan .our-team__link.active:before {
+  opacity: 1;
+}
+
+.about-onplan .our-team__link.active .our-team__author {
+  opacity: 0;
+}
+
+.about-onplan .our-team__link.active .our-team__more-text {
+  opacity: 0;
+}
+
+.about-onplan .our-team__link.active .our-team__description {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.about-onplan .our-team__description {
+  position: absolute;
+  padding: 32px 30px 62px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  font-size: 16px;
+  line-height: 24px;
+  overflow-y: scroll;
+  pointer-events: none;
+  opacity: 0;
+  transition: 300ms;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.about-onplan .our-team__description::-webkit-scrollbar {
+  display: none;
+}
+
+.about-onplan .our-team__description svg {
+  width: 30px;
+  height: 20px;
+  fill: #232F42;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding: 10px 0 10px 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  cursor: pointer;
+}
+
+.about-onplan .our-team__more-text {
+  opacity: 1;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.about-onplan .our-team__author {
+  height: 100%;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.about-onplan .our-team__author h5 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #232F42;
+}
+
+.about-onplan .our-team__author p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606A80;
+  margin: 8px 0 0 0;
+}
+
+.about-onplan .our-team__img {
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 0 0 24px 0;
+}
+
+.about-onplan .our-team__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-onplan .our-team__more-text {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232F42;
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -8167,6 +8430,36 @@ h6 {
 
   .pricing .platform-plans .table-price .bottom-table__info-svg.active-info {
     display: none;
+  }
+
+  .about-onplan .our-team {
+    margin: 0 0 80px 0;
+  }
+
+  .about-onplan .our-team__list {
+    display: block;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .about-onplan .our-team__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .about-onplan .our-team__link {
+    display: inline-block;
+    width: 291px;
+    max-height: 413px;
+    height: 100%;
+    white-space: initial;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+  }
+
+  .about-onplan .our-team__more-text {
+    margin: 52px 0 0 0;
   }
 }
 
@@ -8912,6 +9205,25 @@ h6 {
 
   .open-roles .vacancies__link {
     width: calc((100% - 48px) / 3);
+  }
+
+  .about-onplan .great-people {
+    margin: 80px 0;
+  }
+
+  .about-onplan .great-people__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    padding: 100px 20px;
+  }
+
+  .about-onplan .great-people__description {
+    margin: 12px 0 0 0;
   }
 }
 
@@ -9774,6 +10086,23 @@ h6 {
   .about-onplan .comments {
     margin: 0;
   }
+
+  .about-onplan .our-team__title {
+    margin: 0 0 40px 0;
+  }
+
+  .about-onplan .our-team__title h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 12px 0;
+    text-align: left;
+  }
+
+  .about-onplan .our-team__title p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 735px) {
@@ -10321,6 +10650,16 @@ h6 {
 
   .open-roles .vacancies__link {
     width: calc(100% - 16px);
+  }
+
+  .about-onplan .great-people__title h3 {
+    font-size: 36px;
+    line-height: 41px;
+  }
+
+  .about-onplan .great-people__description p {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
