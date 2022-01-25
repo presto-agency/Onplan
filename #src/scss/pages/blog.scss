@@ -358,7 +358,7 @@
             }
             .wp-block-table{
                 overflow: auto;
-                @media(max-width: 1025px){
+                @media(max-width: 1024px){
                     &::-webkit-scrollbar {
                         display: none;
                     }

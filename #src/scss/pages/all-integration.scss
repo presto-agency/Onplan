@@ -143,24 +143,33 @@
                 }
 
                 &__wrapper {
-                    margin: 40px 0 0 0;
-                    white-space: nowrap;
-                    overflow-x: auto;
-                    &::-webkit-scrollbar {
-                        display: none;
+                    margin: 31px -9px -9px -9px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    @media(max-width: 1024px ){
+                        display: block;
+                        white-space: nowrap;
+                        overflow-x: auto;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
                     }
                 }
         
                 &__card {
-                    display: inline-block;
-                    width: 244px;
                     height: 236px;
+                    width: calc((100% - (8* 9px))/4);
                     background: rgba(255, 255, 255, 0.9);
                     border: 1px solid $greycolor;
                     border-radius: 16px;
-                    margin: 0 17px 0 0;
-                    &:last-child{
-                        margin: 0;
+                    margin: 9px;
+                    @media(max-width: 1024px){
+                        display: inline-block;
+                        width: 244px;
+                        margin: 0 17px 0 0;
+                        &:last-child{
+                            margin: 0;
+                        }
                     }
                 }
         

@@ -1668,13 +1668,12 @@ h6 {
   pointer-events: none;
   overflow: inherit;
   bottom: 140px;
-  left: 52px;
-  width: 554px;
-  height: 224px;
-  background: url(../img/gradient.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(20%, rgba(245, 245, 245, 0)));
+  background: -o-linear-gradient(bottom, white, rgba(245, 245, 245, 0) 20%);
+  background: linear-gradient(to top, white, rgba(245, 245, 245, 0) 20%);
 }
 
 .swiper-integration .swiper__component > p {
@@ -5006,27 +5005,21 @@ h6 {
 }
 
 .all-integrtation .accounting-system .block-integration__wrapper {
-  margin: 40px 0 0 0;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
-.all-integrtation .accounting-system .block-integration__wrapper::-webkit-scrollbar {
-  display: none;
+  margin: 31px -9px -9px -9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .all-integrtation .accounting-system .block-integration__card {
-  display: inline-block;
-  width: 244px;
   height: 236px;
+  width: calc((100% - 72px) / 4);
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #EDF0F2;
   border-radius: 16px;
-  margin: 0 17px 0 0;
-}
-
-.all-integrtation .accounting-system .block-integration__card:last-child {
-  margin: 0;
+  margin: 9px;
 }
 
 .all-integrtation .accounting-system .block-integration__card-wrapper {
@@ -8148,12 +8141,6 @@ h6 {
   }
 }
 
-@media (max-width: 1025px) {
-  .blog .editor__content .wp-block-table::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 @media (max-width: 1024px) {
   .root {
     padding: 68px 0 0 0;
@@ -8420,8 +8407,32 @@ h6 {
     display: flex;
   }
 
+  .blog .editor__content .wp-block-table::-webkit-scrollbar {
+    display: none;
+  }
+
   .all-integrtation .all-integration-menu.active {
     top: 70px;
+  }
+
+  .all-integrtation .accounting-system .block-integration__wrapper {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .all-integrtation .accounting-system .block-integration__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .all-integrtation .accounting-system .block-integration__card {
+    display: inline-block;
+    width: 244px;
+    margin: 0 17px 0 0;
+  }
+
+  .all-integrtation .accounting-system .block-integration__card:last-child {
+    margin: 0;
   }
 
   .pricing .pricing__relative-title {

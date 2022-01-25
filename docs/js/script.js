@@ -174,6 +174,14 @@ if (!!blog) {
             })
         }
     })();
+    (function tableWidth() {
+        const tables = document.querySelectorAll('table');
+        tables.forEach(table => {
+            let tableWidth = table.clientWidth + 'px';
+            let bottomText = table.nextElementSibling;
+            bottomText.style.width = tableWidth;
+        });
+    })();
 }
 
     const mainPage = document.querySelector('.main-page');
