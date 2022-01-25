@@ -164,11 +164,11 @@
                     top: 40px;
                     left: 39px;
                 }
-            }
-            &__gradient{
-                bottom: 130px;
-                @media(max-width: 424px){
-                    bottom: 120px;
+                &:after{
+                    bottom: 130px;
+                    @media(max-width: 424px){
+                        bottom: 120px;
+                    }
                 }
             }
         

@@ -82,37 +82,3 @@ if (!!headerMenu) {
         sources[i].removeAttribute('data-srcset');
     }
 }());
-
-(function grabSlider() {
-    const container = document.querySelector('.swiper__component > p');
-
-    let startY;
-    let scrollTop;
-    let isDown;
-
-
-    container.addEventListener('mousedown', e => mouseIsDown(e));
-    container.addEventListener('mouseup', e => mouseUp(e))
-    container.addEventListener('mouseleave', e => mouseLeave(e));
-    container.addEventListener('mousemove', e => mouseMove(e));
-    function mouseIsDown(e) {
-        isDown = true;
-        startY = e.pageY - container.offsetTop;
-        scrollLeft = container.scrollLeft;
-        scrollTop = container.scrollTop;
-    }
-    function mouseUp(e) {
-        isDown = false;
-    }
-    function mouseLeave(e) {
-        isDown = false;
-    }
-    function mouseMove(e) {
-        if (isDown) {
-            e.preventDefault();
-            const y = e.pageY - container.offsetTop;
-            const walkY = y - startY;
-            container.scrollTop = scrollTop - walkY;
-        }
-    }
-}());
