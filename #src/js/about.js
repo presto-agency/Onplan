@@ -5,7 +5,14 @@ if (!!about) {
         const closeArrows = document.querySelectorAll('.our-team__description>svg');
         btns.forEach(btn => {
             btn.onclick = () => {
-                btn.parentNode.classList.add('active')
+                let activeBtn = document.querySelector('.our-team__list> .active')
+                if (activeBtn) {
+                    activeBtn.classList.remove('active')
+                    btn.parentNode.classList.add('active')
+                }
+                else {
+                    btn.parentNode.classList.add('active')
+                }
             }
         });
         closeArrows.forEach(arrows => {

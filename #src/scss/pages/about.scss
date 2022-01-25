@@ -10,7 +10,7 @@
             content: '';
             background:linear-gradient(131.67deg, #91CAF2 6%, #7A9CCC 100%);
             position: absolute;
-            top: 100px;
+            top: 159px;
             left: 50%;
             transform: translateX(-50%);
             width: 100vw;
@@ -42,7 +42,7 @@
                 }
             }
             &__button {
-                margin: 65px auto 0 auto;
+                margin: 58px auto 0 auto;
                 max-width: 248px;
                 height: 62px;
             }
@@ -113,6 +113,8 @@
             padding: 0;
         }
         &__right-side{
+            max-width: 624px;
+            margin: 11px 0 0 0;
             &:before{
                 background-image: url(../img/Integration/commas.svg);
             }
@@ -136,6 +138,9 @@
                     display: none;
                 }
             }
+        }
+        &__bottom{
+            margin: 89px 0 0 0;
         }
     }
     .for-who {
@@ -175,7 +180,7 @@
             position: relative;
             display: flex;
             justify-content: space-between;
-            padding: 164px 20px 202px;
+            padding: 164px 20px 184px;
             max-width: 1080px;
             margin: 0 auto;
             box-sizing: content-box;
@@ -254,7 +259,7 @@
         }
     }
     .our-team {
-        margin: 120px 0 160px 0; 
+        margin: 43px 0 189px 0;
 		&__content {
             max-width: 1236px;
             padding: 0 20px;
@@ -311,7 +316,6 @@
                 opacity: 0;
                 left: 0;
                 width: 100%;
-                transition: 300ms;
                 height: 100%;
                 background: -webkit-gradient(linear,left bottom,left top,from(white),color-stop(20%,rgba(245,245,245,0)));
                 background: -o-linear-gradient(bottom,#fff,rgba(245,245,245,0) 20%);
@@ -342,13 +346,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            transition: 300ms;
             font-size: 16px;
             line-height: 24px;
             overflow-y: scroll;
             pointer-events: none;
             opacity: 0;
-            transition: 300ms;
             cursor: grab;
             &::-webkit-scrollbar {
                 display: none;
@@ -364,15 +366,8 @@
             }
         }
 
-        &__more-text{
-            opacity: 1;
-            transition: 300ms;
-            cursor: pointer;
-        }
-
 		&__author {
             height: 100%;
-            transition: 300ms;
             h5{
                 text-align: center;
                 font-size: 22px;
@@ -408,6 +403,8 @@
             line-height: 19px;
             color: $textcolor;
             text-align: center;
+            opacity: 1;
+            cursor: pointer;
         }
     }
 
@@ -426,13 +423,15 @@
             &__link{
                 display: inline-block;
                 width: 291px;
-                max-height: 413px;
-                height: 100%;
+                height: 413px;
                 white-space: initial;
                 box-shadow: initial;
             }
             &__more-text{
-                margin: 52px 0 0 0;
+                position: absolute;
+                bottom: 32px;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }

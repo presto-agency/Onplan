@@ -7179,7 +7179,8 @@ h6 {
 }
 
 .open-roles .quickbooks .content__description p {
-  max-width: 577px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .open-roles .quickbooks .content__description h1 {
@@ -7231,6 +7232,11 @@ h6 {
   font-size: 16px;
   line-height: 26px;
   margin: 12px 0 24px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  min-height: 130px;
 }
 
 .open-roles .vacancies__description li span {
@@ -7295,7 +7301,7 @@ h6 {
   background: -o-linear-gradient(318.33deg, #91CAF2 6%, #7A9CCC 100%);
   background: linear-gradient(131.67deg, #91CAF2 6%, #7A9CCC 100%);
   position: absolute;
-  top: 100px;
+  top: 159px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -7329,7 +7335,7 @@ h6 {
 }
 
 .about-onplan .quickbooks .content__button {
-  margin: 65px auto 0 auto;
+  margin: 58px auto 0 auto;
   max-width: 248px;
   height: 62px;
 }
@@ -7392,6 +7398,11 @@ h6 {
   padding: 0;
 }
 
+.about-onplan .comments__right-side {
+  max-width: 624px;
+  margin: 11px 0 0 0;
+}
+
 .about-onplan .comments__right-side:before {
   background-image: url(../img/Integration/commas.svg);
 }
@@ -7414,6 +7425,10 @@ h6 {
 
 .about-onplan .comments__company {
   display: none;
+}
+
+.about-onplan .comments__bottom {
+  margin: 89px 0 0 0;
 }
 
 .about-onplan .for-who {
@@ -7471,7 +7486,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 164px 20px 202px;
+  padding: 164px 20px 184px;
   max-width: 1080px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
@@ -7528,7 +7543,7 @@ h6 {
 }
 
 .about-onplan .our-team {
-  margin: 120px 0 160px 0;
+  margin: 43px 0 189px 0;
 }
 
 .about-onplan .our-team__content {
@@ -7603,9 +7618,6 @@ h6 {
   opacity: 0;
   left: 0;
   width: 100%;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
   height: 100%;
   background: -o-linear-gradient(bottom, #fff, rgba(245, 245, 245, 0) 20%);
   background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(20%, rgba(245, 245, 245, 0)));
@@ -7636,15 +7648,11 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
   font-size: 16px;
   line-height: 24px;
   overflow-y: scroll;
   pointer-events: none;
   opacity: 0;
-  transition: 300ms;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -7666,19 +7674,8 @@ h6 {
   cursor: pointer;
 }
 
-.about-onplan .our-team__more-text {
-  opacity: 1;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
-  cursor: pointer;
-}
-
 .about-onplan .our-team__author {
   height: 100%;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
 }
 
 .about-onplan .our-team__author h5 {
@@ -7718,6 +7715,8 @@ h6 {
   line-height: 19px;
   color: #232F42;
   text-align: center;
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -8451,15 +8450,19 @@ h6 {
   .about-onplan .our-team__link {
     display: inline-block;
     width: 291px;
-    max-height: 413px;
-    height: 100%;
+    height: 413px;
     white-space: initial;
     -webkit-box-shadow: initial;
             box-shadow: initial;
   }
 
   .about-onplan .our-team__more-text {
-    margin: 52px 0 0 0;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
