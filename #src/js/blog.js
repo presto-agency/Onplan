@@ -93,9 +93,10 @@ if (!!blog) {
     (function tableWidth() {
         const tables = document.querySelectorAll('table');
         tables.forEach(table => {
-            let tableWidth = table.clientWidth + 'px';
-            let bottomText = table.nextElementSibling;
-            if (bottomText) {
+            let bottomDescription = document.querySelector('.wp-block-table>figcaption');
+            if (bottomDescription) {
+                let tableWidth = table.clientWidth + 'px';
+                let bottomText = table.nextElementSibling;
                 bottomText.style.width = tableWidth;
             }
         });
