@@ -4116,7 +4116,7 @@ h6 {
   left: 39px;
 }
 
-.book-a-demo .swiper-integration .swiper__component__gradient {
+.book-a-demo .swiper-integration .swiper__gradient {
   bottom: 130px;
 }
 
@@ -6044,6 +6044,10 @@ h6 {
   content: "";
   top: 40px;
   left: 39px;
+}
+
+.template-page .swiper-integration .swiper__gradient {
+  bottom: 130px;
 }
 
 .template-page .swiper-integration .swiper__info h3 {
@@ -11080,7 +11084,7 @@ h6 {
     font-size: 16px;
   }
 
-  .book-a-demo .swiper-integration .swiper__component__gradient {
+  .book-a-demo .swiper-integration .swiper__gradient {
     bottom: 120px;
   }
 
@@ -11134,6 +11138,10 @@ h6 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+
+  .template-page .swiper-integration .swiper__gradient {
+    bottom: 120px;
   }
 
   .pricing .platform-plans {

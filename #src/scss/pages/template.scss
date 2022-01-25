@@ -176,6 +176,13 @@
                     left: 39px;
                 }
             }
+
+            &__gradient{
+                bottom: 130px;
+                @media(max-width: 424px){
+                    bottom: 120px;
+                }
+            }
         
             &__info {
                 h3{
