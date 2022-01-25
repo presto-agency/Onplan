@@ -7307,7 +7307,7 @@ h6 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100vw;
-  height: calc(100% - 300px);
+  height: calc(100% - 355px);
 }
 
 .about-onplan .quickbooks__bg {
@@ -7447,14 +7447,14 @@ h6 {
 .about-onplan .for-who__column {
   margin: 0 40px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
 }
 
 .about-onplan .for-who__column:first-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
+      -ms-flex: 1 1 55%;
+          flex: 1 1 55%;
 }
 
 .about-onplan .for-who__column h3 {
@@ -7468,7 +7468,7 @@ h6 {
 .about-onplan .for-who__column p {
   font-size: 18px;
   line-height: 29px;
-  margin: 20px 0 0 0;
+  margin: 13px 0 0 0;
   color: #fff;
 }
 
@@ -7543,7 +7543,7 @@ h6 {
 }
 
 .about-onplan .our-team {
-  margin: 43px 0 189px 0;
+  margin: 43px 0 154px 0;
 }
 
 .about-onplan .our-team__content {
@@ -7573,6 +7573,8 @@ h6 {
   font-weight: 600;
   line-height: 30px;
   color: #232F42;
+  max-width: 613px;
+  margin: 0 auto;
 }
 
 .about-onplan .our-team__list {
@@ -8432,7 +8434,7 @@ h6 {
   }
 
   .about-onplan .our-team {
-    margin: 0 0 80px 0;
+    margin: 29px 0 80px 0;
   }
 
   .about-onplan .our-team__list {
@@ -10022,6 +10024,10 @@ h6 {
     padding: 60px 0;
   }
 
+  .about-onplan .wrapper-sections:before {
+    top: 80px;
+  }
+
   .about-onplan .quickbooks .content {
     margin: 24px 0 0 0;
   }
@@ -10090,6 +10096,10 @@ h6 {
     margin: 0;
   }
 
+  .about-onplan .comments__content {
+    border-radius: 16px;
+  }
+
   .about-onplan .our-team__title {
     margin: 0 0 40px 0;
   }
@@ -10105,6 +10115,14 @@ h6 {
     font-size: 20px;
     line-height: 30px;
     text-align: left;
+  }
+
+  .about-onplan .great-people__bg-l {
+    display: none;
+  }
+
+  .about-onplan .great-people__bg-r {
+    display: none;
   }
 }
 
@@ -11144,8 +11162,12 @@ h6 {
     width: calc((100% - 60px) / 2);
   }
 
+  .about-onplan .quickbooks {
+    padding: 0 0 65px 0;
+  }
+
   .about-onplan .quickbooks .content__button {
-    margin: 40px 0 0 0;
+    margin: 51px 0 0 0;
     max-width: 187px;
     height: 52px;
   }
@@ -11160,6 +11182,24 @@ h6 {
   .about-onplan .quickbooks .content__bottom-text h3 {
     font-size: 22px;
     font-weight: 800;
+  }
+
+  .about-onplan .comments__right-side {
+    margin: 0;
+  }
+
+  .about-onplan .comments__right-side p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .about-onplan .comments__bottom {
+    margin: 26px 0 0 0;
+  }
+
+  .about-onplan .comments__person p {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
