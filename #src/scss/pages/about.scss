@@ -314,7 +314,7 @@
                 z-index: 2;
                 pointer-events: none;
                 overflow: inherit;
-                bottom: 0;
+                bottom: -1px;
                 opacity: 0;
                 left: 0;
                 width: 100%;
@@ -343,6 +343,8 @@
 		}
         &__description{
             position: absolute;
+            border-radius: 16px;
+            overflow: hidden;
             padding: 32px 30px 62px;
             top: 0;
             left: 0;
