@@ -7719,6 +7719,128 @@ h6 {
   cursor: pointer;
 }
 
+.compare-competition {
+  padding: 100px 0;
+}
+
+.compare-competition .quickbooks__bg {
+  max-width: 1440px;
+  width: 100%;
+  max-height: initial;
+  height: 598px;
+  margin: 0;
+  top: -58px;
+  pointer-events: none;
+}
+
+.compare-competition .quickbooks__content {
+  margin: 32px 0 0 0;
+}
+
+.compare-competition .quickbooks .content__description p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.compare-competition .quickbooks .content__description h1 {
+  max-width: 888px;
+  margin: 0 0 24px 0;
+}
+
+.compare-competition .trusted-by {
+  margin: 120px 0;
+}
+
+.compare-competition .user-experience__container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.compare-competition .user-experience__title {
+  text-align: center;
+}
+
+.compare-competition .user-experience__title p {
+  max-width: 680px;
+  margin: 24px auto 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.compare-competition .user-experience__list {
+  margin: 80px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 70px -10px 90px;
+}
+
+.compare-competition .user-experience__link {
+  width: calc((100% - 80px) / 4);
+  max-width: 295px;
+  margin: 10px;
+  padding: 42px 32px 52px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 16px;
+}
+
+.compare-competition .user-experience__link h5 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #232F42;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+}
+
+.compare-competition .user-experience__link p {
+  font-size: 18px;
+  line-height: 29px;
+  color: #606A80;
+}
+
+.compare-competition .user-experience__link a {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #707EFF;
+  margin: 24px 0 0 0;
+  display: block;
+}
+
+.compare-competition .user-experience__link a svg {
+  width: 14px;
+  height: 8px;
+  fill: #707EFF;
+  margin: 0 0 0 8px;
+}
+
+.compare-competition .user-experience__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 68px;
+  max-width: 123px;
+  margin: 0 0 32px 0;
+}
+
+.compare-competition .user-experience__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media (min-width: 1024px) {
   .button.button-dark:hover {
     background: #606A80;
@@ -7809,6 +7931,12 @@ h6 {
     opacity: 0.5;
   }
 
+  .trusted-by li:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+
   .open-roles .vacancies__link:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -7824,12 +7952,6 @@ h6 {
 
   .quickbooks .content__bottom-link:hover a {
     opacity: 0.5;
-  }
-
-  .trusted-by li:hover {
-    opacity: 1;
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
   }
 
   .all-integrtation .all-integration-menu__bottom-link:hover a {
@@ -9245,6 +9367,10 @@ h6 {
 
   .about-onplan .great-people__description {
     margin: 12px 0 0 0;
+  }
+
+  .compare-competition .user-experience__link {
+    width: calc((100% - 40px) / 2);
   }
 }
 
@@ -10698,6 +10824,14 @@ h6 {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .compare-competition .user-experience__link {
+    width: calc(100% - 20px);
+  }
+
+  .compare-competition .user-experience__list {
+    margin: 40px -10px;
+  }
 }
 
 @media (max-width: 535px) {
@@ -11220,6 +11354,10 @@ h6 {
   .about-onplan .comments__person p {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .compare-competition .quickbooks .content__description h1 {
+    line-height: 46px;
   }
 }
 
