@@ -29,6 +29,158 @@
             }
         }
     }
+    .compare-table{
+        max-width: 1240px;
+        padding: 0 20px;
+        margin: 0 auto;
+        box-sizing: content-box;
+        .table-price {
+            &__top-block {
+                max-width: 496px;
+                display: flex;
+                border-radius: 24px 0 0 0;
+            }
+    
+            &__title {
+                background: $whitecolor;
+                padding: 32px 40px 40px;
+                border-radius: 24px 0 0 0;
+                max-width: 200px;
+                width: 100%;
+                box-sizing: content-box;
+                border-right: 1px solid $greycolor;
+                h5{
+                    font-size: 32px;
+                    line-height: 40px;
+                    font-weight: 900;
+                    color: $textcolor;
+                    max-width: 150px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 8px 0 0 0;
+                }
+            }
+    
+            &__content-wrapper {
+                width: 100%;
+                border-right: 1px solid $greycolor;
+            }
+    
+            &__col {
+                width: 100%;
+                height: 100%;
+            }
+    
+            &__content-description {
+                background: #FBFCFE;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                img{
+                    width: 52px;
+                    height: 52px;
+                }
+                p{
+                    margin: 20px 0 0 0;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $darkgreycolor;
+                }
+            }
+    
+            .bottom-table {
+            
+                    &__description-title {
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $darkgreycolor;
+                        font-weight: 800;
+                        padding: 13px 40px;
+                        border-bottom: 1px solid $greycolor;
+                    }
+    
+                    &__bottom-heading {
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: $textcolor;
+                        font-weight: 800;
+                        padding: 28px 40px;
+                        border-bottom: 1px solid $greycolor;
+                        border-top: 1px solid $greycolor;
+                    }
+            
+                    &__bottom-block {
+                        display: flex;
+                        max-width: 496px;
+                        border-bottom: 1px solid $greycolor;
+                    }
+            
+                    &__bottom-title {
+                        width: 100%;
+                        box-sizing: content-box;
+                        padding: 13px 16px 13px 40px;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $textcolor;
+                        background: $whitecolor;
+                        border-right: 1px solid $greycolor;
+                    }
+            
+                    &__list {
+                        width: 100%;
+                        background: #FBFCFE;
+                        border-right: 1px solid $greycolor;
+                    }
+            
+                    &__link {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        span{
+                            display: none;
+                        }
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 46px;
+                            height: 7px;
+                            background-size: 46px 7px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background: url(../../img/compare/no-dots.svg);
+                        }
+                        &.dots-4{
+                            &:after{
+                                background: url(../img/compare/4_dots.svg);
+                            }
+                        }
+                        &.dots-3{
+                            &:after{
+                                background: url(../img/compare/3_dots.svg);
+                            }
+                        }
+                        &.dots-2{
+                            &:after{
+                                background: url(../img/compare/2_dots.svg);
+                            }
+                        }
+                        &.dot-1{
+                            &:after{
+                                background: url(../../img/compare/1_dot.svg);
+                            }
+                        }
+                    }
+            }
+        }
+    }
     .trusted-by{
         margin: 120px 0;
     }
