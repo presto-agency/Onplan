@@ -176,13 +176,11 @@ if (!!blog) {
     })();
 
     (function tableWidth() {
-        const tables = document.querySelectorAll('table');
-        tables.forEach(table => {
-            let bottomDescription = document.querySelector('.wp-block-table>figcaption');
-            if (bottomDescription) {
-                let tableWidth = table.clientWidth + 'px';
-                let bottomText = table.nextElementSibling;
-                bottomText.style.width = tableWidth;
+        let tableWrappers = document.querySelectorAll('.wp-block-table');
+        tableWrappers.forEach(wrapper => {
+            let tableWidth = wrapper.children[0].clientWidth + 'px';
+            if (wrapper.children[1]) {
+                wrapper.children[1].style.width = tableWidth;
             }
         });
     })();
