@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     @@include('resources-blog.js')
     @@include('pricing.js')
     @@include('about.js')
+    @@include('compare.js')
 })
 
 
