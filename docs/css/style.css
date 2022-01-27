@@ -7756,21 +7756,86 @@ h6 {
 }
 
 .compare-competition .compare-table .table-price__top-block {
-  max-width: 496px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 24px 0 0 0;
+  border-radius: 24px 24px 0 0;
+  border: 1px solid #EDF0F2;
+  border-bottom: initial;
+}
+
+.compare-competition .compare-table .table-price__top-block .content-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.compare-competition .compare-table .table-price__top-block .content-description p {
+  margin: 20px 0 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #606A80;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  max-width: 774px;
+  width: 100%;
+  background: #fff;
+  border-radius: 0 24px 0 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll__col {
+  display: inline-block;
+  width: 191px;
+  height: 100%;
+  border-right: 1px solid #EDF0F2;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll__col:last-child {
+  margin: 0 583px 0 0;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll__img {
+  height: 52px;
+  max-width: 105px;
+}
+
+.compare-competition .compare-table .table-price__top-block .table-scroll__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .compare-competition .compare-table .table-price__title {
   background: #fff;
   padding: 32px 40px 40px;
   border-radius: 24px 0 0 0;
-  max-width: 200px;
-  width: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 281px;
+          flex: 0 0 281px;
   border-right: 1px solid #EDF0F2;
 }
 
@@ -7789,102 +7854,101 @@ h6 {
 }
 
 .compare-competition .compare-table .table-price__content-wrapper {
-  width: 100%;
+  width: 187px;
   border-right: 1px solid #EDF0F2;
+  -webkit-box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
+          box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
+  position: relative;
+  z-index: 2;
 }
 
 .compare-competition .compare-table .table-price__col {
-  width: 100%;
+  width: 187px;
   height: 100%;
+  border-right: 1px solid #EDF0F2;
 }
 
 .compare-competition .compare-table .table-price__content-description {
   background: #FBFCFE;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
 }
 
-.compare-competition .compare-table .table-price__content-description img {
-  width: 52px;
-  height: 52px;
-}
-
-.compare-competition .compare-table .table-price__content-description p {
-  margin: 20px 0 0 0;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #606A80;
-}
-
-.compare-competition .compare-table .table-price .bottom-table__description-title {
+.compare-competition .compare-table .table-price__description-title {
   font-size: 18px;
   line-height: 21px;
   color: #606A80;
   font-weight: 800;
   padding: 13px 40px;
-  border-bottom: 1px solid #EDF0F2;
+  border: 1px solid #EDF0F2;
+  border-top: initial;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__bottom-heading {
+.compare-competition .compare-table .table-price__bottom-heading {
   font-size: 24px;
   line-height: 29px;
   color: #232F42;
   font-weight: 800;
   padding: 28px 40px;
-  border-bottom: 1px solid #EDF0F2;
-  border-top: 1px solid #EDF0F2;
+  border: 1px solid #EDF0F2;
+  border-top: initial;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__bottom-block {
+.compare-competition .compare-table .table-price .bottom-table__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 496px;
-  border-bottom: 1px solid #EDF0F2;
+  border: 1px solid #EDF0F2;
+  border-top: initial;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__bottom-title {
-  width: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  padding: 13px 16px 13px 40px;
+.compare-competition .compare-table .table-price .bottom-table__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 281px;
+          flex: 0 0 281px;
   font-size: 16px;
   line-height: 19px;
-  color: #232F42;
   background: #fff;
+  padding: 14px 14px 14px 40px;
   border-right: 1px solid #EDF0F2;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__list {
-  width: 100%;
+.compare-competition .compare-table .table-price .bottom-table__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 187px;
+          flex: 0 0 187px;
   background: #FBFCFE;
   border-right: 1px solid #EDF0F2;
-}
-
-.compare-competition .compare-table .table-price .bottom-table__link {
+  -webkit-box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
+          box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
   position: relative;
-  width: 100%;
-  height: 100%;
+  z-index: 2;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link span {
-  display: none;
+.compare-competition .compare-table .table-price .bottom-table__column span {
+  font-size: 12px;
+  line-height: 15px;
+  color: #606A80;
+  opacity: 0;
+  display: block;
+  margin: 12px 0 0 20px;
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link:after {
+.compare-competition .compare-table .table-price .bottom-table__column p {
+  position: absolute;
+  font-size: 16px;
+  line-height: 19px;
+  color: #606A80;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.compare-competition .compare-table .table-price .bottom-table .link-dots {
+  position: relative;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .link-dots:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -7900,20 +7964,64 @@ h6 {
   background: url(../../img/compare/no-dots.svg);
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link.dots-4:after {
+.compare-competition .compare-table .table-price .bottom-table .link-dots.dots-4:after {
   background: url(../img/compare/4_dots.svg);
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link.dots-3:after {
+.compare-competition .compare-table .table-price .bottom-table .link-dots.dots-3:after {
   background: url(../img/compare/3_dots.svg);
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link.dots-2:after {
+.compare-competition .compare-table .table-price .bottom-table .link-dots.dots-2:after {
   background: url(../img/compare/2_dots.svg);
 }
 
-.compare-competition .compare-table .table-price .bottom-table__link.dot-1:after {
+.compare-competition .compare-table .table-price .bottom-table .link-dots.dot-1:after {
   background: url(../../img/compare/1_dot.svg);
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  max-width: 774px;
+  width: 100%;
+  background: #fff;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table::-webkit-scrollbar {
+  display: none;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table__column {
+  position: relative;
+  display: inline-block;
+  width: 191px;
+  height: 100%;
+  border-right: 1px solid #EDF0F2;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table__column:last-child {
+  margin: 0 583px 0 0;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table__column span {
+  opacity: 0;
+}
+
+.compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table__column p {
+  position: absolute;
+  font-size: 16px;
+  line-height: 19px;
+  color: #606A80;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .compare-competition .trusted-by {
