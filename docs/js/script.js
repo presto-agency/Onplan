@@ -178,9 +178,15 @@ if (!!blog) {
     (function tableWidth() {
         let tableWrappers = document.querySelectorAll('.wp-block-table');
         tableWrappers.forEach(wrapper => {
-            let tableWidth = wrapper.children[0].clientWidth + 'px';
+            let tableWidth = Math.floor(wrapper.children[0].clientWidth);
             if (wrapper.children[1]) {
-                wrapper.children[1].style.width = tableWidth;
+                wrapper.children[0].style.width = tableWidth + 'px';
+                if (wrapper.clientWidth < wrapper.children[0].clientWidth) {
+                    wrapper.children[1].style.width = tableWidth + 1 + 'px';
+                }
+                else {
+                    wrapper.children[1].style.width = tableWidth + 'px';
+                }
             }
         });
     })();
