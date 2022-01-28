@@ -1,5 +1,70 @@
 .compare-competition{
     padding: 100px 0;
+    .relative-title {
+        position: fixed;
+        background: $bg-greycolor;
+        border: 1px solid $greycolor;
+        z-index: 5;
+        top: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1240px;
+        width: 100%;
+        transition: 500ms ease-in-out;
+        display: flex;
+        min-height: 48px;
+        transition: 500ms ease-in-out;
+        &.active{
+            top: 81px;
+        }
+
+        .relative-link {
+            color: $darkgreycolor;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 800;
+            border-right: 1px solid $greycolor;
+        }
+
+        &__heading{
+            width: 281px;
+            display: flex;
+            align-items: center;
+            padding: 12px 12px 12px 39px;
+        }
+
+        &__relative-list{
+            display: block;
+            white-space: nowrap;
+            overflow-x: auto;
+            width: 100%;
+            max-width: 764px;
+            cursor: grab;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__onplan{
+            padding: 12px 0;
+            width: 187px;
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        &__link{
+            display: inline-block;
+            padding: 12px 0;
+            width: 191px;
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
     .quickbooks {
         &__bg {
             max-width: 1440px;
@@ -230,7 +295,7 @@
                         background-size: 46px 7px;
                         background-repeat: no-repeat;
                         background-position: center;
-                        background: url(../../img/compare/no-dots.svg);
+                        background: url(../img/compare/no-dots.svg);
                     }
                     &.dots-4{
                         &:after{

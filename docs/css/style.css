@@ -7723,6 +7723,86 @@ h6 {
   padding: 100px 0;
 }
 
+.compare-competition .relative-title {
+  position: fixed;
+  background: #F8F9FC;
+  border: 1px solid #EDF0F2;
+  z-index: 5;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 1240px;
+  width: 100%;
+  -webkit-transition: 500ms ease-in-out;
+  -o-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 48px;
+  transition: 500ms ease-in-out;
+}
+
+.compare-competition .relative-title.active {
+  top: 81px;
+}
+
+.compare-competition .relative-title .relative-link {
+  color: #606A80;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  border-right: 1px solid #EDF0F2;
+}
+
+.compare-competition .relative-title__heading {
+  width: 281px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 12px 12px 39px;
+}
+
+.compare-competition .relative-title__relative-list {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  max-width: 764px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.compare-competition .relative-title__relative-list::-webkit-scrollbar {
+  display: none;
+}
+
+.compare-competition .relative-title__onplan {
+  padding: 12px 0;
+  width: 187px;
+}
+
+.compare-competition .relative-title__onplan span {
+  display: block;
+  text-align: center;
+}
+
+.compare-competition .relative-title__link {
+  display: inline-block;
+  padding: 12px 0;
+  width: 191px;
+}
+
+.compare-competition .relative-title__link span {
+  display: block;
+  text-align: center;
+}
+
 .compare-competition .quickbooks__bg {
   max-width: 1440px;
   width: 100%;
@@ -7977,7 +8057,7 @@ h6 {
   background-size: 46px 7px;
   background-repeat: no-repeat;
   background-position: center;
-  background: url(../../img/compare/no-dots.svg);
+  background: url(../img/compare/no-dots.svg);
 }
 
 .compare-competition .compare-table .table-price .bottom-table .link-dots.dots-4:after {
