@@ -157,18 +157,20 @@
             }
 
             .bottom-table {
-                &:last-child{
-                    .bottom-table{
-                        &__row{
-                            &:last-child{
-                                border-radius: 0 0 24px 24px;
-                                .bottom-table{
-                                    &__title{
-                                        border-radius: 0 0 0 24px;
+                @media(min-width: 768px){
+                    &:last-child{
+                        .bottom-table{
+                            &__row{
+                                &:last-child{
+                                    border-radius: 0 0 24px 24px;
+                                    .bottom-table{
+                                        &__title{
+                                            border-radius: 0 0 0 24px;
+                                        }
                                     }
-                                }
-                                .bottom-scrolling-table{
-                                    border-radius: 0 0 24px 0;
+                                    .bottom-scrolling-table{
+                                        border-radius: 0 0 24px 0;
+                                    }
                                 }
                             }
                         }
@@ -374,6 +376,132 @@
         .user-experience{
             &__link {
                 width: calc((100% - (4* 10px))/2);
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .compare-table{
+            padding: 0;
+            .table-price{
+                &__top-block{
+                    display: grid;
+                    grid-template-areas: 'heading heading''static-logo logos';
+                    grid-template-columns: minmax(0,115px) minmax(0, 1fr);
+                    border-radius: initial;
+                    .content-description{
+                        p{
+                            margin: 16px 0 0 0;
+                        }
+                    }
+                    .table-scroll{
+                        grid-area: logos;
+                        height: 126px;
+                        border-radius: initial;
+                        &__img{
+                            max-width: 74px;
+                            height: 40px;
+                        }
+                        &__col{
+                            width: 126px;
+                        }
+                    }
+                }
+                &__title{
+                    grid-area: heading;
+                    flex: initial;
+                    border-radius: initial;
+                    padding: 24px 20px;
+                    border-right: initial;
+                    border-bottom: 1px solid $greycolor;
+                    h5{
+                        font-size: 22px;
+                        line-height: 26px;
+                        max-width: initial;
+                    }
+                    p{
+                        margin: 6px 0 0 0;
+                    }
+                }
+                &__content-wrapper{
+                    grid-area: static-logo;
+                    width: 115px;
+                    height: 126px;
+                }
+                &__col{
+                    width: 115px;
+                }
+                &__bottom-heading{
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding: 20px;
+                    white-space: nowrap;
+                    overflow-x: auto;
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+                &__description-title{
+                    font-size: 12px;
+                    line-height: 15px;
+                    padding: 12px 20px;
+                    text-transform: uppercase;
+                }
+                .bottom-table{
+                    &__row{
+                        display: grid;
+                        grid-template-areas: 'head head''static-dots dots';
+                        grid-template-columns: minmax(0,115px) minmax(0, 1fr);
+                    }
+                    &__title{
+                        grid-area: head;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 24px 20px 12px;
+                        border-right: initial;
+                        border-bottom: 1px solid $greycolor;
+                    }
+                    &__column{
+                        grid-area: static-dots;
+                        flex: initial;
+                        width: 115px;
+                        span{
+                            opacity: 1;
+                            margin: 0;
+                            padding: 12px 52px 36px 20px;
+                        }
+                        p{
+                            top: 31px;
+                            transform: initial;
+                            left: 20px;
+                            color: $textcolor;
+                        }
+                    }
+                    .bottom-scrolling-table{
+                        grid-area: dots;
+                        &__column{
+                            width: 126px;
+                            span{
+                                padding: 12px 0  0 20px;
+                                display: block;
+                                opacity: 1;
+                            }
+                            p{
+                                top: 31px;
+                                transform: initial;
+                                left: 20px;
+                                color: $textcolor;
+                            }
+                        }
+                    }
+                    .link-dots{
+                        &:after{
+                            top: 39px;
+                            transform: initial;
+                            left: 20px;
+                        }
+                    }
+                }
             }
         }
     }
