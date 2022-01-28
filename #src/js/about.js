@@ -22,37 +22,38 @@ if (!!about) {
         });
     }());
     (function grabCursor() {
-        const containers = document.querySelectorAll('.our-team__description');
+        if (window.screen.width > 1024) {
+            const containers = document.querySelectorAll('.our-team__description');
+            let startY;
+            let scrollTop;
+            let isDown;
 
-        let startY;
-        let scrollTop;
-        let isDown;
-
-        containers.forEach(container => {
-            container.addEventListener('mousedown', e => mouseIsDown(e));
-            container.addEventListener('mouseup', e => mouseUp(e))
-            container.addEventListener('mouseleave', e => mouseLeave(e));
-            container.addEventListener('mousemove', e => mouseMove(e));
-            function mouseIsDown(e) {
-                isDown = true;
-                startY = e.pageY - container.offsetTop;
-                scrollLeft = container.scrollLeft;
-                scrollTop = container.scrollTop;
-            }
-            function mouseUp(e) {
-                isDown = false;
-            }
-            function mouseLeave(e) {
-                isDown = false;
-            }
-            function mouseMove(e) {
-                if (isDown) {
-                    e.preventDefault();
-                    const y = e.pageY - container.offsetTop;
-                    const walkY = y - startY;
-                    container.scrollTop = scrollTop - walkY;
+            containers.forEach(container => {
+                container.addEventListener('mousedown', e => mouseIsDown(e));
+                container.addEventListener('mouseup', e => mouseUp(e))
+                container.addEventListener('mouseleave', e => mouseLeave(e));
+                container.addEventListener('mousemove', e => mouseMove(e));
+                function mouseIsDown(e) {
+                    isDown = true;
+                    startY = e.pageY - container.offsetTop;
+                    scrollLeft = container.scrollLeft;
+                    scrollTop = container.scrollTop;
                 }
-            }
-        });
+                function mouseUp(e) {
+                    isDown = false;
+                }
+                function mouseLeave(e) {
+                    isDown = false;
+                }
+                function mouseMove(e) {
+                    if (isDown) {
+                        e.preventDefault();
+                        const y = e.pageY - container.offsetTop;
+                        const walkY = y - startY;
+                        container.scrollTop = scrollTop - walkY;
+                    }
+                }
+            });
+        }
     }());
 }
