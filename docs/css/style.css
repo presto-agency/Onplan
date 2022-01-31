@@ -6561,6 +6561,17 @@ h6 {
   color: #232F42;
 }
 
+.pricing .platform-plans .table-price .bottom-table__description-title-big {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+  color: #232F42;
+  padding: 28px 40px;
+  background: #F8F9FC;
+  border-top: 1px solid #EDF0F2;
+  border-bottom: 1px solid #EDF0F2;
+}
+
 .pricing .platform-plans .table-price .bottom-table__info-svg {
   display: none;
   position: absolute;
@@ -11112,6 +11123,12 @@ h6 {
     font-size: 12px;
     line-height: 15px;
     padding: 12px 20px;
+  }
+
+  .pricing .platform-plans .table-price .bottom-table__description-title-big {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px;
   }
 
   .pricing .platform-plans .table-price__content-description {
