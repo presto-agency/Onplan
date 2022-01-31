@@ -590,7 +590,7 @@
                         span{
                             opacity: 1;
                             margin: 0;
-                            padding: 12px 52px 36px 20px;
+                            padding: 10px 52px 36px 20px;
                         }
                         p{
                             top: 31px;
@@ -609,6 +609,7 @@
                                 display: block;
                                 opacity: 1;
                                 text-align: left;
+                                font-size: 12px;
                             }
                             p{
                                 margin: 5px 0 0 20px;
@@ -621,7 +622,7 @@
                     }
                     .link-dots{
                         &:after{
-                            top: 39px;
+                            top: 36px;
                             transform: initial;
                             left: 20px;
                         }

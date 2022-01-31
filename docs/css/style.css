@@ -10825,7 +10825,7 @@ h6 {
   .compare-competition .compare-table .table-price .bottom-table__column span {
     opacity: 1;
     margin: 0;
-    padding: 12px 52px 36px 20px;
+    padding: 10px 52px 36px 20px;
   }
 
   .compare-competition .compare-table .table-price .bottom-table__column p {
@@ -10851,6 +10851,7 @@ h6 {
     display: block;
     opacity: 1;
     text-align: left;
+    font-size: 12px;
   }
 
   .compare-competition .compare-table .table-price .bottom-table .bottom-scrolling-table__column p {
@@ -10863,7 +10864,7 @@ h6 {
   }
 
   .compare-competition .compare-table .table-price .bottom-table .link-dots:after {
-    top: 39px;
+    top: 36px;
     -webkit-transform: initial;
         -ms-transform: initial;
             transform: initial;
