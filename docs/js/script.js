@@ -481,21 +481,17 @@ if (!!about) {
 }());
 
 (function scrollingAll() {
+    // if (window.screen.width > 1024) {
     let scrollers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
-
     scrollers.forEach(element => {
         element.onscroll = function (e) {
-            scrollAll(e.target.scrollLeft);
+            let targetElScroll = e.target.scrollLeft;
+            scrollers.forEach(element => {
+                element.scrollLeft = targetElScroll;
+            });
         };
     });
-
-    function scrollAll(scrollLeft) {
-        scrollers.forEach(element => {
-            element.scrollLeft = scrollLeft;
-        });
-    }
-
-
+    // }
 }());
 
 (function grabCursorTop() {
