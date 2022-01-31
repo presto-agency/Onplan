@@ -139,38 +139,28 @@
         justify-content: space-between;
         max-width: 118px;
         width: 100%;
+        a{
+            opacity: 1;
+            transition: 300ms;
+            height: 18px;
+            max-width: 20px;
+            svg{
+                fill: $whitecolor;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:hover{
+                opacity: 0.5;
+            }
+        }
     }
 
-    &__social{
-        fill: $whitecolor;
-        &.facebook{
-            height: 18px;
-            width: 9px;
-            opacity: 1;
-            transition: 300ms;
-            &:hover{
-                opacity: 0.5;
-            }
-        }
-        &.linkedin{
-            width: 18px;
-            height: 18px;
-            opacity: 1;
-            transition: 300ms;
-            &:hover{
-                opacity: 0.5;
-            }
-        }
-        &.twitter{
-            width: 20px;
-            height: 18px;
-            opacity: 1;
-            transition: 300ms;
-            &:hover{
-                opacity: 0.5;
-            }
-        }
-    }
 }
 
 @media(max-width: 1023px){
@@ -262,19 +252,9 @@
             }
             &__right-side{
                 margin: 0;
-            }
-            &__social{
-                &.facebook{
-                    width: 24px;
+                a{
                     height: 24px;
-                }
-                &.linkedin{
-                    width: 24px;
-                    height: 24px;
-                }
-                &.twitter{
-                    width: 27px;
-                    height: 24px;
+                    max-width: 27px;
                 }
             }
         }

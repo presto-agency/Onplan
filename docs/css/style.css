@@ -744,46 +744,31 @@ h6 {
   width: 100%;
 }
 
-.bottom-content__social {
+.bottom-content__right-side a {
+  opacity: 1;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  height: 18px;
+  max-width: 20px;
+}
+
+.bottom-content__right-side a svg {
   fill: #fff;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.bottom-content__social.facebook {
-  height: 18px;
-  width: 9px;
-  opacity: 1;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
+.bottom-content__right-side a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.bottom-content__social.facebook:hover {
-  opacity: 0.5;
-}
-
-.bottom-content__social.linkedin {
-  width: 18px;
-  height: 18px;
-  opacity: 1;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
-}
-
-.bottom-content__social.linkedin:hover {
-  opacity: 0.5;
-}
-
-.bottom-content__social.twitter {
-  width: 20px;
-  height: 18px;
-  opacity: 1;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
-}
-
-.bottom-content__social.twitter:hover {
+.bottom-content__right-side a:hover {
   opacity: 0.5;
 }
 
@@ -6705,6 +6690,22 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.pricing .platform-plans .table-price .bottom-table__link.blue:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/pricing/check-blue-light.svg);
+  background-size: 20px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .pricing .platform-plans .table-price__top-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7853,7 +7854,6 @@ h6 {
   display: flex;
   border-radius: 24px 24px 0 0;
   border: 1px solid #EDF0F2;
-  border-bottom: initial;
 }
 
 .compare-competition .compare-table .table-price__top-block .content-description {
@@ -7958,8 +7958,8 @@ h6 {
 .compare-competition .compare-table .table-price__content-wrapper {
   width: 187px;
   border-right: 1px solid #EDF0F2;
-  -webkit-box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
-          box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
+  -webkit-box-shadow: 10px 0 7px -5px rgba(216, 216, 216, 0.5);
+          box-shadow: 10px 0 7px -5px rgba(216, 216, 216, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -8019,8 +8019,8 @@ h6 {
           flex: 0 0 187px;
   background: #FBFCFE;
   border-right: 1px solid #EDF0F2;
-  -webkit-box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
-          box-shadow: 10px 0 7px -5px rgba(112, 111, 111, 0.5);
+  -webkit-box-shadow: 10px 0 7px -5px rgba(216, 216, 216, 0.5);
+          box-shadow: 10px 0 7px -5px rgba(216, 216, 216, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -9690,7 +9690,8 @@ h6 {
   }
 
   .pricing .platform-plans .table-price .bottom-table__link.purple:after,
-  .pricing .platform-plans .table-price .bottom-table__link.green:after {
+  .pricing .platform-plans .table-price .bottom-table__link.green:after,
+  .pricing .platform-plans .table-price .bottom-table__link.blue:after {
     position: static;
     top: initial;
     left: initial;
@@ -10894,19 +10895,9 @@ h6 {
     margin: 0;
   }
 
-  .footer .bottom-content__social.facebook {
-    width: 24px;
+  .footer .bottom-content__right-side a {
     height: 24px;
-  }
-
-  .footer .bottom-content__social.linkedin {
-    width: 24px;
-    height: 24px;
-  }
-
-  .footer .bottom-content__social.twitter {
-    width: 27px;
-    height: 24px;
+    max-width: 27px;
   }
 
   .footer .nav-column a {

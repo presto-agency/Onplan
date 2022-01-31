@@ -137,7 +137,6 @@
                 display: flex;
                 border-radius: 24px 24px 0 0;
                 border: 1px solid $greycolor;
-                border-bottom: initial;
                 .content-description{
                     display: flex;
                     flex-direction: column;
@@ -217,7 +216,7 @@
             &__content-wrapper {
                 width: 187px;
                 border-right: 1px solid $greycolor;
-                box-shadow: 10px 0 7px -5px rgba($color: rgb(112, 111, 111) , $alpha: 0.5);
+                box-shadow: 10px 0 7px -5px rgba($color: rgb(216, 216, 216) , $alpha: 0.5);
                 position: relative;
                 z-index: 2;
             }
@@ -291,7 +290,7 @@
                     flex: 0 0 187px;
                     background: #FBFCFE;
                     border-right:  1px solid $greycolor;
-                    box-shadow: 10px 0 7px -5px rgb(112 111 111 / 50%);
+                    box-shadow: 10px 0 7px -5px rgba($color: rgb(216, 216, 216) , $alpha: 0.5);
                     position: relative;
                     z-index: 2;
                     span{
