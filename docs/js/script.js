@@ -564,24 +564,24 @@ if (!!about) {
     scrolling();
 }());
 
-// (function scrollName() {
-//     window.addEventListener("scroll", scrolling, true);
-//     function scrolling() {
-//         const elementsPage = document.querySelectorAll('.table-price__bottom-table');
-//         elementsPage.forEach(el => {
-//             if (isFullyVisible(el)) {
-//                 let idEl = el.id;
-//                 const changeBtn = document.getElementById('change-btn');
-//                 changeBtn.innerHTML = idEl;
-//             }
-//         });
-//     }
-//     function isFullyVisible(el) {
-//         let topOfElements = el.getBoundingClientRect().top;
-//         let bottomOfElements = el.getBoundingClientRect().bottom;
-//         return (((topOfElements <= 130) && (bottomOfElements > 0)));
-//     }
-// }());
+(function scrollNameCompare() {
+    window.addEventListener("scroll", scrolling, true);
+    function scrolling() {
+        const elementsPage = document.querySelectorAll('.table-price__bottom-table');
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                let idEl = el.id;
+                const changeBtn = document.getElementById('change-btn');
+                changeBtn.innerHTML = idEl;
+            }
+        });
+    }
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 130) && (bottomOfElements > 0)));
+    }
+}());
 
 function changeMargin(elements, tableWidth) {
     let widthOfLogo = elements[0].clientWidth;

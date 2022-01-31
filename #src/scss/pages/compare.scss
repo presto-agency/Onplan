@@ -16,18 +16,23 @@
         transition: 500ms ease-in-out;
         &.active{
             top: 81px;
+            @media(max-width: 1024px){
+                top: 70px;
+            }
         }
 
         .relative-link {
             color: $darkgreycolor;
             font-size: 18px;
+            height: 100%;
             line-height: 21px;
             font-weight: 800;
             border-right: 1px solid $greycolor;
         }
 
         &__heading{
-            width: 281px;
+            max-width: 281px;
+            width: 100%;
             display: flex;
             align-items: center;
             padding: 12px 12px 12px 39px;
@@ -47,17 +52,22 @@
 
         &__onplan{
             padding: 12px 0;
-            width: 187px;
             span{
                 display: block;
                 text-align: center;
             }
         }
 
+        &__onplan-wrapper{
+            max-width: 187px;
+            width: 100%;
+        }
+
         &__link{
             display: inline-block;
             padding: 12px 0;
-            width: 191px;
+            max-width: 191px;
+            width: 100%;
             span{
                 display: block;
                 text-align: center;
@@ -96,7 +106,6 @@
     }
     .compare-table{
         max-width: 1240px;
-        padding: 0 20px;
         margin: 0 auto;
         box-sizing: content-box;
         .table-price {
@@ -446,7 +455,6 @@
     }
     @media(max-width: 767px){
         .compare-table{
-            padding: 0;
             .table-price{
                 &__top-block{
                     display: grid;
@@ -567,6 +575,24 @@
                         }
                     }
                 }
+            }
+        }
+        .relative-title{
+            &__onplan-wrapper{
+                display: none;
+            }
+            &__relative-list{
+                display: none;
+            }
+            &__heading{
+                width: 100%;
+                max-width: 100%;
+                padding: 12px 12px 12px 20px;
+            }
+            .relative-link{
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
             }
         }
     }

@@ -7752,13 +7752,15 @@ h6 {
 .compare-competition .relative-title .relative-link {
   color: #606A80;
   font-size: 18px;
+  height: 100%;
   line-height: 21px;
   font-weight: 800;
   border-right: 1px solid #EDF0F2;
 }
 
 .compare-competition .relative-title__heading {
-  width: 281px;
+  max-width: 281px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7784,7 +7786,6 @@ h6 {
 
 .compare-competition .relative-title__onplan {
   padding: 12px 0;
-  width: 187px;
 }
 
 .compare-competition .relative-title__onplan span {
@@ -7792,10 +7793,16 @@ h6 {
   text-align: center;
 }
 
+.compare-competition .relative-title__onplan-wrapper {
+  max-width: 187px;
+  width: 100%;
+}
+
 .compare-competition .relative-title__link {
   display: inline-block;
   padding: 12px 0;
-  width: 191px;
+  max-width: 191px;
+  width: 100%;
 }
 
 .compare-competition .relative-title__link span {
@@ -7829,7 +7836,6 @@ h6 {
 
 .compare-competition .compare-table {
   max-width: 1240px;
-  padding: 0 20px;
   margin: 0 auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -8990,6 +8996,10 @@ h6 {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+
+  .compare-competition .relative-title.active {
+    top: 70px;
   }
 }
 
@@ -10654,10 +10664,6 @@ h6 {
     display: none;
   }
 
-  .compare-competition .compare-table {
-    padding: 0;
-  }
-
   .compare-competition .compare-table .table-price__top-block {
     display: grid;
     grid-template-areas: "heading heading" "static-logo logos";
@@ -10802,6 +10808,26 @@ h6 {
         -ms-transform: initial;
             transform: initial;
     left: 20px;
+  }
+
+  .compare-competition .relative-title__onplan-wrapper {
+    display: none;
+  }
+
+  .compare-competition .relative-title__relative-list {
+    display: none;
+  }
+
+  .compare-competition .relative-title__heading {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 12px 12px 20px;
+  }
+
+  .compare-competition .relative-title .relative-link {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
   }
 }
 
