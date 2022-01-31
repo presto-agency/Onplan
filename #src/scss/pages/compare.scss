@@ -73,6 +73,28 @@
                 text-align: center;
             }
         }
+        @media(max-width: 1024px){
+            &__onplan-wrapper{
+                display: none;
+            }
+            &__relative-list{
+                display: none;
+            }
+            &__heading{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        @media(max-width: 767px){
+            .relative-link{
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+            }
+            &__heading{
+                padding: 12px 12px 12px 20px;
+            }
+        }
     }
 
     .quickbooks {
@@ -305,6 +327,10 @@
                         background-repeat: no-repeat;
                         background-position: center;
                         background: url(../img/compare/no-dots.svg);
+                        @media(max-width: 1024px){
+                            top: 24px;
+                            transform: translateX(-50%);
+                        }
                     }
                     &.dots-4{
                         &:after{
@@ -323,7 +349,7 @@
                     }
                     &.dot-1{
                         &:after{
-                            background: url(../img/compare/1_dot.svg);
+                            background: url(../../img/compare/1_dot.svg);
                         }
                     }
                 }
@@ -351,15 +377,38 @@
                             }
                             span{
                                 opacity: 0;
+                                color: $darkgreycolor;
                             }
                             p{
                                 position: absolute;
                                 font-size: 16px;
                                 line-height: 19px;
-                                color: $darkgreycolor;
+                                color: $textcolor;
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
+                            }
+                            @media(max-width: 1024px){
+                                span{
+                                    display: block;
+                                    opacity: 1;
+                                    text-align: center;
+                                    margin: 6px 0 0 0;
+                                }
+                                &:after{
+                                    display: block;
+                                    position: static;
+                                    transform: initial;
+                                    margin: 6px auto 0;
+                                }
+                                p{
+                                    position: static;
+                                    top: initial;
+                                    left:  initial;
+                                    transform: initial;
+                                    text-align: center;
+                                    margin: 3px 0 0 0;
+                                }
                             }
                         }
                 }
@@ -555,15 +604,18 @@
                         &__column{
                             width: 126px;
                             span{
+                                margin: 0;
                                 padding: 12px 0  0 20px;
                                 display: block;
                                 opacity: 1;
+                                text-align: left;
                             }
                             p{
-                                top: 31px;
-                                transform: initial;
-                                left: 20px;
-                                color: $textcolor;
+                                margin: 5px 0 0 20px;
+                                text-align: left;
+                            }
+                            &:after{
+                                margin: 12px 0 0 20px;
                             }
                         }
                     }
@@ -575,24 +627,6 @@
                         }
                     }
                 }
-            }
-        }
-        .relative-title{
-            &__onplan-wrapper{
-                display: none;
-            }
-            &__relative-list{
-                display: none;
-            }
-            &__heading{
-                width: 100%;
-                max-width: 100%;
-                padding: 12px 12px 12px 20px;
-            }
-            .relative-link{
-                font-size: 12px;
-                line-height: 16px;
-                text-transform: uppercase;
             }
         }
     }

@@ -20,17 +20,17 @@
 }());
 
 (function scrollingAll() {
-    // if (window.screen.width > 1024) {
-    let scrollers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
-    scrollers.forEach(element => {
-        element.onscroll = function (e) {
-            let targetElScroll = e.target.scrollLeft;
-            scrollers.forEach(element => {
-                element.scrollLeft = targetElScroll;
-            });
-        };
-    });
-    // }
+    if (window.screen.width > 1024) {
+        let scrollers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
+        scrollers.forEach(element => {
+            element.onscroll = function (e) {
+                let targetElScroll = e.target.scrollLeft;
+                scrollers.forEach(element => {
+                    element.scrollLeft = targetElScroll;
+                });
+            };
+        });
+    }
 }());
 
 (function grabCursorTop() {
