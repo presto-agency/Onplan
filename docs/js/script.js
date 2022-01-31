@@ -484,9 +484,9 @@ if (!!about) {
     let scrollers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
 
     scrollers.forEach(element => {
-        element.addEventListener('scroll', function (e) {
+        element.onscroll = function (e) {
             scrollAll(e.target.scrollLeft);
-        });
+        };
     });
 
     function scrollAll(scrollLeft) {
@@ -494,6 +494,8 @@ if (!!about) {
             element.scrollLeft = scrollLeft;
         });
     }
+
+
 }());
 
 (function grabCursorTop() {
