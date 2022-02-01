@@ -80,8 +80,13 @@
 		}
 
 		&__title {
-            max-width: 524px;
+            max-width: 1240px;
             margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: content-box;
+            h1{
+                text-align: center;
+            }
 		}
 
 		&__bg {
@@ -375,6 +380,7 @@
                     }
                 }
                 &.growth {
+                    text-align: center;
                     position: relative;
                     background: #FBFCFE;
                     .table-price{
