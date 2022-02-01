@@ -1,0 +1,164 @@
+.feature-template{
+    .top-heading {
+        padding: 90px 0 100px 0;
+        background:linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%), #C4C4C4;
+        &__container {
+            position: relative;
+            max-width: 1240px;
+            padding: 0 20px;
+            box-sizing: content-box;
+            margin: 0 auto;
+            display: flex;
+        }
+    
+        &__description {
+            flex: 0 1 49%;
+            position: relative;
+            z-index: 2;
+            margin: 10px 0 0 0;
+        }
+    
+        &__title {
+            h1{
+                color: $whitecolor;
+                line-height: 69px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 33px;
+                color: $whitecolor;
+                margin: 20px 0 0 0;
+            }
+        }
+    
+        &__button {
+            margin: 64px 0 0 0;
+            max-width: 248px;
+            height: 62px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    
+        &__picture {
+            position: relative;
+            z-index: 2;
+        }
+    
+        &__img {
+            position: relative;
+            width: 538px;
+            height: 468px;
+            box-sizing: content-box;
+            padding: 0 0 0 33px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 26px;
+                left: 140px;
+                width: 420px;
+                height: 520px;
+                background: #8F9EF7;
+                border-radius: 24px;
+                opacity: 0.5;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            img{
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    
+        &__bg-top {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: -153px;
+            left: 327px;
+        }
+    
+        &__bg-bottom {
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            bottom: -79px;
+            left: 203px;
+        }
+
+        .bread-crumbs{
+            margin: 0 0 32px 0;
+            ul{
+                justify-content: flex-start;
+            }
+            li{
+                a{
+                    color: $whitecolor;
+                    opacity: 0.5;
+                }
+                &:before{
+                    background: $whitecolor;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    @media(max-width: 1023px){
+        .top-heading{
+            &__container{
+                flex-direction: column;
+            }
+            &__img{
+                &:before{
+                    top: -33px;
+                }
+                margin: 50px auto 0;
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .top-heading{
+            padding: 50px 0 80px 0;
+            &__img{
+                display: none;
+            }
+            &__title{
+                h1{
+                    font-size: 40px;
+                    line-height: 46px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+            &__button{
+                margin: 52px 0 0 0;
+                max-width: 187px;
+                height: 52px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__bg-top{
+                left: initial;
+                right: 0;
+                top: 109px;
+            }
+            &__bg-bottom{
+                display: none;
+            }
+            .bread-crumbs{
+                margin: 0 0 24px 0;
+            }
+        }
+    }
+    @media(max-width: 424px){
+        .top-heading{
+            &__bg-top{
+                right: -70px;
+                top: 360px;
+            }
+        }
+    }
+}

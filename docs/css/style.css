@@ -8249,6 +8249,126 @@ h6 {
      object-fit: contain;
 }
 
+.feature-template .top-heading {
+  padding: 90px 0 100px 0;
+  background: -o-linear-gradient(2.76deg, #96B2F7 4.6%, #838AF5 95.4%), #C4C4C4;
+  background: linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%), #C4C4C4;
+}
+
+.feature-template .top-heading__container {
+  position: relative;
+  max-width: 1240px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature-template .top-heading__description {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+  position: relative;
+  z-index: 2;
+  margin: 10px 0 0 0;
+}
+
+.feature-template .top-heading__title h1 {
+  color: #fff;
+  line-height: 69px;
+}
+
+.feature-template .top-heading__title p {
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;
+  margin: 20px 0 0 0;
+}
+
+.feature-template .top-heading__button {
+  margin: 64px 0 0 0;
+  max-width: 248px;
+  height: 62px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.feature-template .top-heading__picture {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-template .top-heading__img {
+  position: relative;
+  width: 538px;
+  height: 468px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0 0 0 33px;
+}
+
+.feature-template .top-heading__img:before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 140px;
+  width: 420px;
+  height: 520px;
+  background: #8F9EF7;
+  border-radius: 24px;
+  opacity: 0.5;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.feature-template .top-heading__img img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.feature-template .top-heading__bg-top {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -153px;
+  left: 327px;
+}
+
+.feature-template .top-heading__bg-bottom {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  bottom: -79px;
+  left: 203px;
+}
+
+.feature-template .top-heading .bread-crumbs {
+  margin: 0 0 32px 0;
+}
+
+.feature-template .top-heading .bread-crumbs ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.feature-template .top-heading .bread-crumbs li a {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.feature-template .top-heading .bread-crumbs li:before {
+  background: #fff;
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
@@ -9890,6 +10010,21 @@ h6 {
   .compare-competition .user-experience__link {
     width: calc((100% - 40px) / 2);
   }
+
+  .feature-template .top-heading__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .feature-template .top-heading__img {
+    margin: 50px auto 0;
+  }
+
+  .feature-template .top-heading__img:before {
+    top: -33px;
+  }
 }
 
 @media (max-width: 811px) {
@@ -10942,6 +11077,46 @@ h6 {
         -ms-transform: initial;
             transform: initial;
     left: 20px;
+  }
+
+  .feature-template .top-heading {
+    padding: 50px 0 80px 0;
+  }
+
+  .feature-template .top-heading__img {
+    display: none;
+  }
+
+  .feature-template .top-heading__title h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .feature-template .top-heading__title p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .feature-template .top-heading__button {
+    margin: 52px 0 0 0;
+    max-width: 187px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .feature-template .top-heading__bg-top {
+    left: initial;
+    right: 0;
+    top: 109px;
+  }
+
+  .feature-template .top-heading__bg-bottom {
+    display: none;
+  }
+
+  .feature-template .top-heading .bread-crumbs {
+    margin: 0 0 24px 0;
   }
 }
 
@@ -12031,6 +12206,11 @@ h6 {
 
   .compare-competition .quickbooks .content__description h1 {
     line-height: 46px;
+  }
+
+  .feature-template .top-heading__bg-top {
+    right: -70px;
+    top: 360px;
   }
 }
 
