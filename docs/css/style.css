@@ -3551,6 +3551,10 @@ h6 {
   height: 62px;
 }
 
+.blog .editor__content .editor-inside-block {
+  display: none;
+}
+
 .blog .slider-top {
   position: relative;
   margin: 64px 0;
@@ -8645,6 +8649,50 @@ h6 {
 @media (max-width: 1199px) {
   .purple-solution__bg {
     display: none;
+  }
+
+  .blog .editor__content .editor-inside-block {
+    display: block;
+    position: static;
+    margin: 40px 0;
+    background: #F8F9FC;
+    padding: 40px 32px;
+    border-radius: 16px;
+    max-width: 100%;
+  }
+
+  .blog .editor__content .editor-inside-block .sidebar__button {
+    color: #fff;
+  }
+
+  .blog .editor__content .editor-inside-block h5 {
+    border: initial;
+    border-bottom: initial;
+    padding: 0;
+    background: initial;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #606A80;
+    opacity: 0.5;
+    margin: 0 0 20px 0;
+  }
+
+  .blog .editor__content .editor-inside-block h3 {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 900;
+  }
+
+  .blog .editor__content .editor-inside-block p {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 0 36px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
   }
 
   .blog .editor {

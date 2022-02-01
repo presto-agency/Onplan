@@ -514,7 +514,51 @@
                     max-width: 248px;
                     height: 62px;
                 }
-        }
+            }
+            .editor-inside-block{
+                display: none;
+                @media(max-width: 1199px){
+                    display: block;
+                    position: static;
+                    margin: 40px 0;
+                    background: $bg-greycolor;
+                    padding: 40px 32px;
+                    border-radius: 16px;
+                    max-width: 100%;
+                    .sidebar{
+                        &__button{
+                            color: $whitecolor;
+                        }
+                    }
+                    h5{
+                        border: initial;
+                        border-bottom: initial;
+                        padding: 0;
+                        background: initial;
+                        font-size: 12px;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                        color: $darkgreycolor;
+                        opacity: 0.5;
+                        margin: 0 0 20px 0;
+                    }
+                    h3{
+                        margin: 0 0 12px 0;
+                        font-size: 24px;
+                        line-height: 29px;
+                        font-weight: 900;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 29px;
+                        margin: 0 0 36px 0;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        overflow: hidden;
+                    }
+                }
+            }
         }
     }
     .slider-top {

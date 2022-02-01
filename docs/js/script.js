@@ -170,6 +170,12 @@ if (!!blog) {
                 const relativeBlog = document.querySelector(`[data-target='${id}']`);
                 if (!!relativeBlog) {
                     relativeBlog.style.top = yPosition + "px";
+                    let blogsHtml = relativeBlog.innerHTML;
+                    let titlesParent = title.parentNode;
+                    let new_el = document.createElement('div');
+                    new_el.className = "editor-inside-block";
+                    new_el.innerHTML = blogsHtml;
+                    titlesParent.insertBefore(new_el, title)
                 }
             })
         }
