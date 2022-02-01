@@ -4709,6 +4709,11 @@ h6 {
   color: #fff;
 }
 
+.main-page .stakeholders .tabs {
+  position: relative;
+  z-index: 2;
+}
+
 .main-page .stakeholders .tabs__items {
   position: relative;
   display: -webkit-box;

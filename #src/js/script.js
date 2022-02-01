@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
     @@include('pricing.js')
     @@include('about.js')
     @@include('compare.js')
+    @@include('feature-template.js')
 })
 
 

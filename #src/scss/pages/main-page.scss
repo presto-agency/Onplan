@@ -342,7 +342,8 @@
 		}
 
         .tabs {
-
+            position: relative;
+            z-index: 2;
             &__items {
                 position: relative;
                 display: flex;
