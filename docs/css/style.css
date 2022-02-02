@@ -8400,11 +8400,18 @@ h6 {
 }
 
 .feature-template .editor .right-relative-block {
-  position: sticky;
-  top: 130px;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: -100%;
+  right: 140px;
+  width: 254px;
   max-height: 100%;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.feature-template .editor .right-relative-block.active-menu {
+  top: 92px;
 }
 
 .feature-template .editor .right-relative-block h5 {
@@ -8413,24 +8420,33 @@ h6 {
   opacity: 0.5;
   font-size: 12px;
   line-height: 15px;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
   text-transform: uppercase;
   padding: 0 0 0 10px;
 }
 
-.feature-template .editor .right-relative-block h2 {
+.feature-template .editor .right-relative-block p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-template .editor .right-relative-block p a {
   font-size: 16px;
   line-height: 17px;
   font-weight: 700;
   color: #232F42;
-  margin: 12px 0;
-  cursor: pointer;
+  margin: 6px 0;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
 }
 
-.feature-template .editor .right-relative-block h2.active {
+.feature-template .editor .right-relative-block p a.active-color {
   font-weight: 700;
   font-size: 16px;
   line-height: 17px;

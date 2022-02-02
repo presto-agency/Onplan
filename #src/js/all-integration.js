@@ -65,7 +65,7 @@ if (!!allIntegration) {
             isScrolling = true;
         }
 
-        const elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
+        let elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
         function isFullyVisible(el) {
             let topOfElements = el.getBoundingClientRect().top;
             let bottomOfElements = el.getBoundingClientRect().bottom;
