@@ -8935,6 +8935,11 @@ h6 {
   .open-roles-v .form-job .form {
     padding: 64px 0;
   }
+
+  .feature-template .editor .right-relative-block {
+    right: 10px;
+    width: 230px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -10099,6 +10104,10 @@ h6 {
     width: calc((100% - 40px) / 2);
   }
 
+  .feature-template .top-heading {
+    margin: 0 0 32px 0;
+  }
+
   .feature-template .top-heading__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10112,6 +10121,57 @@ h6 {
 
   .feature-template .top-heading__img:before {
     top: -33px;
+  }
+
+  .feature-template .editor {
+    margin: 32px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .feature-template .editor__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .feature-template .editor__position-block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .feature-template .editor .right-relative-block {
+    position: static;
+    background: #EDF0F2;
+    padding: 32px 32px 40px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 0 0 32px 0;
+  }
+
+  .feature-template .editor .right-relative-block h5 {
+    padding: 0;
+  }
+
+  .feature-template .editor .right-relative-block a {
+    position: relative;
+    padding: 0 0 0 24px;
+  }
+
+  .feature-template .editor .right-relative-block a:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 7px;
+    width: 4px;
+    background: url(../img/feature-template/triangle.svg);
+    background-size: 4px 7px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
