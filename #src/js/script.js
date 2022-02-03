@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
     @@include('about.js')
     @@include('compare.js')
     @@include('feature-template.js')
+    @@include('knowledge-hub.js')
 })
 
 
