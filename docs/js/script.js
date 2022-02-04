@@ -105,12 +105,16 @@ function swiperTemplate() {
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                direction: "horizontal",
+                grid: {
+                    rows: 1,
+                }
             },
             0: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 slidesPerGroup: 2,
-                direction: "vertical",
+                grid: {
+                    rows: 2,
+                },
             }
         }
     });
@@ -137,12 +141,16 @@ function swiperGuide() {
             768: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
-                direction: "horizontal",
+                grid: {
+                    rows: 1,
+                }
             },
             0: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 slidesPerGroup: 2,
-                direction: "vertical",
+                grid: {
+                    rows: 2,
+                },
             }
         }
     });
