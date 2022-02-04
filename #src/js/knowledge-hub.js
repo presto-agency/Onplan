@@ -1,69 +1,5 @@
 const knowledgeHub = document.querySelector('.knowledge-hub');
 if (knowledgeHub) {
-    (function swiperTemplate() {
-        new Swiper('.swiper-template', {
-            navigation: {
-                nextEl: '.load-more-template',
-            },
-            grabCursor: true,
-            creativeEffect: {
-                prev: {
-                    translate: ["-120%", 0, -1],
-                },
-                next: {
-                    translate: ["120%", 0, 0],
-                },
-            },
-            speed: 500,
-            spaceBetween: 32,
-            preloadImages: false,
-            lazy: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                    direction: "horizontal",
-                },
-                0: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                    direction: "vertical",
-                }
-            }
-        });
-    }());
-    (function swiperGuide() {
-        new Swiper('.swiper-guide', {
-            navigation: {
-                nextEl: '.load-more-guide',
-            },
-            grabCursor: true,
-            creativeEffect: {
-                prev: {
-                    translate: ["-120%", 0, -1],
-                },
-                next: {
-                    translate: ["120%", 0, 0],
-                },
-            },
-            speed: 500,
-            spaceBetween: 32,
-            preloadImages: false,
-            lazy: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                    direction: "horizontal",
-                },
-                0: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-                    direction: "vertical",
-                }
-            }
-        });
-    }());
     (function sortSelect() {
         let blockSort = document.getElementById("sort");
         if (blockSort) {
@@ -124,4 +60,6 @@ if (knowledgeHub) {
             }))
         }
     }());
+    swiperTemplate()
+    swiperGuide()
 }
