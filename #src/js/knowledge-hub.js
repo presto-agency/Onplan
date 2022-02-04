@@ -28,7 +28,6 @@ if (knowledgeHub) {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                     direction: "vertical",
-                    touchRatio: 0,
                 }
             }
         });
@@ -61,7 +60,6 @@ if (knowledgeHub) {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                     direction: "vertical",
-                    touchRatio: 0,
                 }
             }
         });

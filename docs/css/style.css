@@ -1617,6 +1617,7 @@ h6 {
 }
 
 .swiper-integration .swiper__component {
+  position: relative;
   background: white;
   border: 1px solid rgba(255, 255, 255, 0.8);
   position: relative;
@@ -1647,29 +1648,34 @@ h6 {
   height: 24px;
 }
 
-.swiper-integration .swiper__component:after {
-  content: "";
+.swiper-integration .swiper__gradient {
   position: absolute;
   pointer-events: none;
-  overflow: inherit;
   bottom: 140px;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(20%, rgba(245, 245, 245, 0)));
-  background: -o-linear-gradient(bottom, white, rgba(245, 245, 245, 0) 20%);
-  background: linear-gradient(to top, white, rgba(245, 245, 245, 0) 20%);
+  height: 100px;
 }
 
 .swiper-integration .swiper__component > p {
   position: relative;
   height: 224px;
   overflow-y: auto;
-  padding: 0 0 100px 0;
+  padding: 0 24px 100px 0;
 }
 
 .swiper-integration .swiper__component > p::-webkit-scrollbar {
-  display: none;
+  background-color: #fff;
+  width: 4px;
+}
+
+.swiper-integration .swiper__component > p::-webkit-scrollbar-track {
+  width: 4px;
+}
+
+.swiper-integration .swiper__component > p::-webkit-scrollbar-thumb {
+  border-radius: 24px;
+  background-color: rgba(35, 47, 66, 0.15);
 }
 
 .swiper-integration .swiper__person {
@@ -2179,10 +2185,8 @@ h6 {
 }
 
 .comments__img {
-  width: 100%;
-  height: 100%;
-  max-width: 370px;
-  max-height: 370px;
+  width: 370px;
+  height: 370px;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -4106,7 +4110,7 @@ h6 {
   left: 39px;
 }
 
-.book-a-demo .swiper-integration .swiper__component:after {
+.book-a-demo .swiper-integration .swiper__gradient {
   bottom: 130px;
 }
 
@@ -6035,7 +6039,7 @@ h6 {
   left: 39px;
 }
 
-.template-page .swiper-integration .swiper__component:after {
+.template-page .swiper-integration .swiper__gradient {
   bottom: 130px;
 }
 
@@ -7442,7 +7446,7 @@ h6 {
 }
 
 .about-onplan .comments__content {
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   border: 1px solid #EDF0F2;
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
           box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
@@ -7648,9 +7652,15 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(bottom, #fff, rgba(245, 245, 245, 0) 20%);
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(20%, rgba(245, 245, 245, 0)));
-  background: linear-gradient(to top, #fff, rgba(245, 245, 245, 0) 20%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#7a9ccc), color-stop(20%, rgba(245, 245, 245, 0)));
+  background: -o-linear-gradient(bottom, #7a9ccc, rgba(245, 245, 245, 0) 20%);
+  background: linear-gradient(to top, #7a9ccc, rgba(245, 245, 245, 0) 20%);
+}
+
+.about-onplan .our-team__link.active {
+  background: -o-linear-gradient(318.33deg, #91caf2 6%, #7a9ccc 100%);
+  background: linear-gradient(131.67deg, #91caf2 6%, #7a9ccc 100%);
+  color: #fff;
 }
 
 .about-onplan .our-team__link.active:before {
@@ -7693,7 +7703,7 @@ h6 {
 .about-onplan .our-team__description svg {
   width: 30px;
   height: 20px;
-  fill: #232F42;
+  fill: #fff;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -12559,7 +12569,7 @@ h6 {
     margin: 70px 0 0 0;
   }
 
-  .swiper-integration .swiper__component:after {
+  .swiper-integration .swiper__gradient {
     bottom: 115px;
   }
 
@@ -12810,7 +12820,7 @@ h6 {
     font-size: 16px;
   }
 
-  .book-a-demo .swiper-integration .swiper__component:after {
+  .book-a-demo .swiper-integration .swiper__gradient {
     bottom: 120px;
   }
 
@@ -12866,7 +12876,7 @@ h6 {
             justify-content: flex-start;
   }
 
-  .template-page .swiper-integration .swiper__component:after {
+  .template-page .swiper-integration .swiper__gradient {
     bottom: 120px;
   }
 

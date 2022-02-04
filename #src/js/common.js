@@ -49,7 +49,6 @@ if (!!headerMenu) {
             el: ".swiper-integration__pagination",
             clickable: true
         },
-        grabCursor: true,
         effect: "creative",
         creativeEffect: {
             prev: {
