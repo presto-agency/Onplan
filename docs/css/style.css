@@ -4058,6 +4058,23 @@ h6 {
   font-weight: 700;
 }
 
+.book-a-demo__description {
+  margin: 40px 0;
+}
+
+.book-a-demo__description h3 {
+  color: #232F42;
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.book-a-demo__description p {
+  font-size: 18px;
+  line-height: 29px;
+}
+
 .book-a-demo__awards {
   max-width: 428px;
   display: -webkit-box;
@@ -5923,6 +5940,23 @@ h6 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.template-page__description {
+  margin: 40px 0;
+}
+
+.template-page__description h3 {
+  color: #232F42;
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 800;
+}
+
+.template-page__description p {
+  font-size: 18px;
+  line-height: 29px;
 }
 
 .template-page__list-t {
