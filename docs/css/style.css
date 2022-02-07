@@ -4030,7 +4030,7 @@ h6 {
   position: relative;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 29px;
   color: #232F42;
   opacity: 0.9;
   margin: 0 0 12px 0;
@@ -4064,8 +4064,8 @@ h6 {
 }
 
 .book-a-demo__list p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 29px;
   color: #606A80;
   font-weight: 400;
 }
@@ -5979,7 +5979,7 @@ h6 {
   position: relative;
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 29px;
   color: #232F42;
   opacity: 0.9;
   margin: 0 0 12px 0;
@@ -6013,8 +6013,8 @@ h6 {
 }
 
 .template-page__list-t p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 29px;
   color: #606A80;
   font-weight: 400;
 }
