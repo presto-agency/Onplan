@@ -4052,6 +4052,12 @@ h6 {
   height: 14px;
 }
 
+.book-a-demo__list li h3 {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
 .book-a-demo__awards {
   max-width: 428px;
   display: -webkit-box;
@@ -5925,7 +5931,7 @@ h6 {
 
 .template-page__list-t li {
   position: relative;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: #232F42;
@@ -5941,13 +5947,22 @@ h6 {
 .template-page__list-t li:before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-image: url(../img/book-a-demo/accept.svg);
   background-size: 18px 14px;
   background-repeat: no-repeat;
   width: 18px;
   height: 14px;
+}
+
+.template-page__list-t li h3 {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 700;
 }
 
 .template-page__list-t p {
