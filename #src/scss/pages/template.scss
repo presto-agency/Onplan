@@ -104,33 +104,35 @@
             line-height: 150%;
             color: $textcolor;
             opacity: 0.9;
-            padding: 0 0 0 34px;
             margin: 0 0 12px 0;
             &:last-child{
                 margin: 0;
             }
-            &:before{
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                background-image: url(../img/book-a-demo/accept.svg);
-                background-size: 18px 14px;
-                background-repeat: no-repeat;
-                width: 18px;
-                height: 14px;
-            }
             h3{
+                padding: 0 0 0 34px;
+                position: relative;
                 font-size: 24px;
                 line-height: 33px;
                 font-weight: 700;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background-image: url(../img/book-a-demo/accept.svg);
+                    background-size: 18px 14px;
+                    background-repeat: no-repeat;
+                    width: 18px;
+                    height: 14px;
+                }
             }
         }
         p{
             font-size: 20px;
             line-height: 30px;
             color: $darkgreycolor;
+            font-weight: 400;
         }
     }
     &__logos-top{
