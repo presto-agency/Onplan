@@ -840,8 +840,8 @@ if (knowledgeHub) {
             }))
         }
     }());
-    swiperTemplate()
-    swiperGuide()
+    // swiperTemplate()
+    // swiperGuide()
 }
     
 })
