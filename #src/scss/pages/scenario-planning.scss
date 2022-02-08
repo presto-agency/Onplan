@@ -1,0 +1,62 @@
+.scenario-planning{
+    padding: 0 0 100px 0;
+    @media(max-width: 735px){
+        padding: 0 0 58px 0;
+    }
+    .career{
+        .quickbooks{
+            margin: 100px 0 120px;
+            padding: 0;
+            .content{
+                &__description {
+                    h1{
+                        margin: 32px 0 24px 0;
+                    }
+                    p{
+                        margin: 0 auto;
+                    }
+                }
+                &__button{
+                    max-width: 248px;
+                    margin: 64px auto 0;
+                }
+            }
+        }
+        .obj-pict{
+            &__description{
+                h3{
+                    margin: 0 0 17px 0;
+                }
+                p{
+                    margin: 0 0 17px 0;
+                }
+            }
+            &__img{
+                max-height: 623px;
+                max-width: 615px;
+            }
+        }
+    }
+    @media(max-width: 1023px){
+        .career{
+            .quickbooks{
+                margin: 60px 0 80px 0;
+                .content{
+                    &__description{
+                        p{
+                            text-align: left;
+                            max-width: 100%;
+                        }
+                    }
+                    &__button{
+                        margin:40px 0 0 0;
+                        max-width: 187px;
+                        height: 52px;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -843,6 +843,7 @@ if (knowledgeHub) {
     swiperTemplate()
     swiperGuide()
 }
+    
 })
 
 

@@ -9340,6 +9340,41 @@ h6 {
   height: 578px;
 }
 
+.scenario-planning {
+  padding: 0 0 100px 0;
+}
+
+.scenario-planning .career .quickbooks {
+  margin: 100px 0 120px;
+  padding: 0;
+}
+
+.scenario-planning .career .quickbooks .content__description h1 {
+  margin: 32px 0 24px 0;
+}
+
+.scenario-planning .career .quickbooks .content__description p {
+  margin: 0 auto;
+}
+
+.scenario-planning .career .quickbooks .content__button {
+  max-width: 248px;
+  margin: 64px auto 0;
+}
+
+.scenario-planning .career .obj-pict__description h3 {
+  margin: 0 0 17px 0;
+}
+
+.scenario-planning .career .obj-pict__description p {
+  margin: 0 0 17px 0;
+}
+
+.scenario-planning .career .obj-pict__img {
+  max-height: 623px;
+  max-width: 615px;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
@@ -11128,6 +11163,23 @@ h6 {
   .knowledge-hub .see-apps__bg {
     display: none;
   }
+
+  .scenario-planning .career .quickbooks {
+    margin: 60px 0 80px 0;
+  }
+
+  .scenario-planning .career .quickbooks .content__description p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .scenario-planning .career .quickbooks .content__button {
+    margin: 40px 0 0 0;
+    max-width: 187px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 @media (max-width: 811px) {
@@ -12637,6 +12689,10 @@ h6 {
   }
 
   .knowledge-hub {
+    padding: 0 0 58px 0;
+  }
+
+  .scenario-planning {
     padding: 0 0 58px 0;
   }
 }
