@@ -9374,6 +9374,201 @@ h6 {
   max-width: 615px;
 }
 
+.scenario-planning .frequently {
+  background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
+  padding: 100px 0 120px 0;
+  margin: 120px 0;
+}
+
+.scenario-planning .frequently__container {
+  position: relative;
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scenario-planning .frequently__title {
+  position: relative;
+  z-index: 2;
+}
+
+.scenario-planning .frequently__title h3 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 59px;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 24px 0;
+}
+
+.scenario-planning .frequently__title p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  max-width: 520px;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+
+.scenario-planning .frequently__content {
+  position: relative;
+  z-index: 2;
+  margin: 52px 0 0 0;
+}
+
+.scenario-planning .frequently__bg {
+  position: absolute;
+  top: -87px;
+  left: -297px;
+  width: 1480px;
+  height: 612px;
+}
+
+.scenario-planning .frequently .open-menu {
+  position: relative;
+  margin: 0 0 16px 0;
+}
+
+.scenario-planning .frequently .open-menu:last-child {
+  margin: 0;
+}
+
+.scenario-planning .frequently .open-menu.active {
+  margin: 0;
+}
+
+.scenario-planning .frequently .open-menu.active .plus {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.scenario-planning .frequently .open-menu.active .plus__horizontal {
+  opacity: 0;
+}
+
+.scenario-planning .frequently .open-menu.active .open-menu__submenu {
+  max-height: 100%;
+}
+
+.scenario-planning .frequently .open-menu__heading {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  color: #232F42;
+  padding: 22px 100px 24px 32px;
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+}
+
+.scenario-planning .frequently .open-menu__heading .plus {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  height: 16px;
+  width: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.scenario-planning .frequently .open-menu__heading .plus__horizontal {
+  position: absolute;
+  background-color: #232F42;
+  width: 16px;
+  height: 3px;
+  left: 50%;
+  top: 50%;
+  border-radius: 16px;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+      -ms-transform: rotate(0deg) translate(-50%, -50%);
+          transform: rotate(0deg) translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.scenario-planning .frequently .open-menu__heading .plus__vertical {
+  position: absolute;
+  border-radius: 16px;
+  background-color: #232F42;
+  width: 3px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.scenario-planning .frequently .open-menu__heading .plus:hover {
+  background: rgba(112, 126, 255, 0.1);
+}
+
+.scenario-planning .frequently .open-menu__heading .plus:hover .plus__horizontal {
+  background-color: #707EFF;
+}
+
+.scenario-planning .frequently .open-menu__heading .plus:hover .plus__vertical {
+  background-color: #707EFF;
+}
+
+.scenario-planning .frequently .open-menu__submenu {
+  -webkit-transform: translateY(-16px);
+      -ms-transform: translateY(-16px);
+          transform: translateY(-16px);
+  max-height: 0;
+  overflow: hidden;
+}
+
+.scenario-planning .frequently .open-menu__list {
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  background: #fff;
+  padding: 12px 100px 23px 32px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.scenario-planning .frequently .open-menu__link {
+  position: relative;
+  font-size: 18px;
+  line-height: 29px;
+  color: #606A80;
+  padding: 0 0 0 18px;
+  margin: 0 0 4px 0;
+}
+
+.scenario-planning .frequently .open-menu__link:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #232F42;
+}
+
+.scenario-planning .frequently .open-menu__link:last-child {
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;

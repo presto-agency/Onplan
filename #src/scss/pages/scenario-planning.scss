@@ -37,6 +37,169 @@
             }
         }
     }
+    .frequently {
+        background: $greengradient;
+        padding: 100px 0 120px 0;
+        margin: 120px 0;
+		&__container {
+            position: relative;
+            max-width: 800px;
+            padding: 0 20px;
+            margin: 0 auto;
+            box-sizing: content-box;
+		}
+
+		&__title {
+            position: relative;
+            z-index: 2;
+            h3{
+                font-weight: 900;
+                font-size: 54px;
+                line-height: 59px;
+                text-align: center;
+                color: $whitecolor;
+                margin: 0 0 24px 0;
+            }
+            p{
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 150%;
+                text-align: center;
+                color: $whitecolor;
+                max-width: 520px;
+                opacity: 0.9;
+                margin: 0 auto;
+            }
+		}
+
+		&__content {
+            position: relative;
+            z-index: 2;
+            margin: 52px 0 0 0;
+		}
+
+		&__bg {
+            position: absolute;
+            top: -87px;
+            left: -297px;
+            width: 1480px;
+            height: 612px;
+		}
+        .open-menu {
+            position: relative;
+            margin: 0 0 16px 0;
+            &:last-child{
+                margin: 0;
+            }
+            &.active {
+                margin: 0;
+                .plus{
+                    transform: rotate(-90deg);
+                    &__horizontal {
+                        opacity: 0;
+                    }
+                }
+                .open-menu{
+                    &__submenu{
+                        max-height: 100%;
+                    }
+                }
+            }
+                &__heading {
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: $textcolor;
+                    padding: 22px 100px 24px 32px;
+                    border-radius: 12px;
+                    background: $whitecolor;
+                    position: relative;
+                        .plus {
+                            position:absolute;
+                            top: 15px;
+                            right: 20px;
+                            height: 16px;
+                            width: 16px;
+                            transition: all 0.3s ease-in-out;
+                            padding: 12px;
+                            box-sizing: content-box;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            &__horizontal {
+                                position: absolute;
+                                background-color: $textcolor;
+                                width: 16px;
+                                height: 3px;
+                                left: 50%;
+                                top: 50%;
+                                border-radius: 16px;
+                                transform: rotate(0deg) translate(-50%, -50%);
+                                transition: all 0.3s ease-in-out;
+                            }
+                            &__vertical {
+                                position: absolute;
+                                border-radius: 16px;
+                                background-color: $textcolor;
+                                width: 3px;
+                                height: 16px;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                transition: all 0.3s ease-in-out;
+                            }
+                            &:hover{
+                                background: rgba($color: $purplecolor, $alpha: 0.1);
+                                .plus{
+                                    &__horizontal{
+                                        background-color: $purplecolor;
+                                    }
+                                    &__vertical{
+                                        background-color: $purplecolor;
+                                    }
+                                }
+                            }
+                        }
+                }
+
+                &__submenu{
+                    transform: translateY(-16px);
+                    max-height: 0;
+                    overflow: hidden;
+                }
+        
+                &__list {
+                    position: relative;
+                    border-radius: 0 0 12px 12px;
+                    background: $whitecolor;
+                    padding: 12px 100px 23px 32px;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                }
+        
+                &__link {
+                    position: relative;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: $darkgreycolor;
+                    padding: 0 0 0 18px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 12px;
+                        left: 0;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background: $textcolor;
+                    }
+                    margin: 0 0 4px 0;
+                    &:last-child{
+                        margin: 0;
+                    }
+                }
+        }
+}
+
     @media(max-width: 1023px){
         .career{
             .quickbooks{
