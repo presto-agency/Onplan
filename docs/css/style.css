@@ -8340,6 +8340,16 @@ h6 {
   margin: 0 0 100px 0;
 }
 
+.feature-template .top-heading.temporarily .top-heading__picture {
+  display: none;
+}
+
+.feature-template .top-heading.temporarily .top-heading__description {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
 .feature-template .top-heading__container {
   position: relative;
   max-width: 1240px;
@@ -8482,7 +8492,10 @@ h6 {
 .feature-template .editor .right-relative-block {
   position: fixed;
   top: -100%;
-  right: 140px;
+  right: 50%;
+  -webkit-transform: translateX(580px);
+      -ms-transform: translateX(580px);
+          transform: translateX(580px);
   width: 254px;
   max-height: 100%;
   -webkit-transition: 300ms ease-in-out;
@@ -10056,6 +10069,9 @@ h6 {
 
   .feature-template .editor .right-relative-block {
     right: 10px;
+    -webkit-transform: initial;
+        -ms-transform: initial;
+            transform: initial;
     width: 230px;
   }
 

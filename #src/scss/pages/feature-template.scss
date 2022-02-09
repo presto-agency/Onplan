@@ -4,6 +4,16 @@
         padding: 90px 0 100px 0;
         background:linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%), #C4C4C4;
         margin: 0 0 100px 0;
+        &.temporarily{
+            .top-heading{
+                &__picture{
+                    display: none;
+                }
+                &__description{
+                    flex: initial;
+                }
+            }
+        }
         &__container {
             position: relative;
             max-width: 1240px;
@@ -128,7 +138,9 @@
         .right-relative-block{
             position: fixed;
             top: -100%;
-            right: 140px;
+            // right: 140px;
+            right: 50%;
+            transform: translateX(580px);
             width: 254px;
             max-height: 100%;
             transition: 300ms ease-in-out;
@@ -173,6 +185,7 @@
         .editor{
             .right-relative-block{
                 right: 10px;
+                transform: initial;
                 width: 230px;
             }
         }
