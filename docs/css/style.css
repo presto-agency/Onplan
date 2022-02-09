@@ -8748,7 +8748,6 @@ h6 {
 
 .knowledge-hub .filter .scroll-slider__slide {
   max-width: 286px;
-  height: 412px;
   position: relative;
 }
 
@@ -12286,7 +12285,6 @@ h6 {
   }
 
   .knowledge-hub .filter .scroll-slider .swiper {
-    height: 856px;
     width: 100%;
     margin: 32px auto 0;
   }
