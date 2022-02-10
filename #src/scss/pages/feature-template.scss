@@ -5,12 +5,28 @@
         background:linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%), #C4C4C4;
         margin: 0 0 100px 0;
         &.temporarily{
+            .bread-crumbs{
+                ul{
+                    justify-content: center;
+                }
+            }
             .top-heading{
                 &__picture{
                     display: none;
                 }
                 &__description{
                     flex: initial;
+                }
+                &__title{
+                    h1{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                &__button{
+                    margin: 64px auto 0;
                 }
             }
         }

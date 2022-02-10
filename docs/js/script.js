@@ -60,6 +60,7 @@ if (!!headerMenu) {
             },
         },
         speed: 500,
+        grabCursor: true,
         spaceBetween: 30,
         slidesPerView: 1,
         slidesPerGroup: 1,
