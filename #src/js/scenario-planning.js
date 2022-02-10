@@ -5,12 +5,9 @@ if (scenarioPlanning) {
         crosses.forEach(cross => {
             cross.onclick = () => {
                 let activeBtn = document.querySelector('.frequently__content> .active')
-                if (!activeBtn) {
-                    cross.classList.add('active')
-                }
-                else {
+                cross.classList.toggle('active')
+                if (activeBtn) {
                     activeBtn.classList.remove('active')
-                    cross.classList.add('active')
                 }
             }
         })
