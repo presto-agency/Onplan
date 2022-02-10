@@ -5765,6 +5765,16 @@ h6 {
   color: #707EFF;
 }
 
+.resources-blog .blog-cards .card__content span.dark-orange {
+  background: #F2973D;
+  color: #fff;
+}
+
+.resources-blog .blog-cards .card__content span.dark-purple {
+  background: #707EFF;
+  color: #fff;
+}
+
 .resources-blog .blog-cards .card__content h3 {
   font-weight: 900;
   font-size: 30px;
@@ -5988,6 +5998,16 @@ h6 {
 .resources-blog .resources-block .slider-resources .card__content span.dark-purple {
   background: rgba(125, 93, 249, 0.15);
   color: #707EFF;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.dark-orange {
+  background: #F2973D;
+  color: #fff;
+}
+
+.resources-blog .resources-block .slider-resources .card__content span.dark-purple {
+  background: #707EFF;
+  color: #fff;
 }
 
 .resources-blog .resources-block .slider-resources .card__content h3 {
@@ -9087,6 +9107,26 @@ h6 {
   color: #F2973D;
 }
 
+.knowledge-hub .filter .scroll-slider__tag-wrap span.grey {
+  background: rgba(35, 47, 66, 0.75);
+  color: #fff;
+}
+
+.knowledge-hub .filter .scroll-slider__tag-wrap span.dark-purple {
+  background: rgba(125, 93, 249, 0.15);
+  color: #707EFF;
+}
+
+.knowledge-hub .filter .scroll-slider__tag-wrap span.dark-orange {
+  background: #F2973D;
+  color: #fff;
+}
+
+.knowledge-hub .filter .scroll-slider__tag-wrap span.dark-purple {
+  background: #707EFF;
+  color: #fff;
+}
+
 .knowledge-hub .filter .scroll-slider__description h3 {
   font-weight: 900;
   font-size: 22px;
@@ -9356,6 +9396,26 @@ h6 {
 .knowledge-hub .related-content .card__content span.orange {
   background: rgba(242, 151, 61, 0.15);
   color: #F2973D;
+}
+
+.knowledge-hub .related-content .card__content span.grey {
+  background: rgba(35, 47, 66, 0.75);
+  color: #fff;
+}
+
+.knowledge-hub .related-content .card__content span.dark-purple {
+  background: rgba(125, 93, 249, 0.15);
+  color: #707EFF;
+}
+
+.knowledge-hub .related-content .card__content span.dark-orange {
+  background: #F2973D;
+  color: #fff;
+}
+
+.knowledge-hub .related-content .card__content span.dark-purple {
+  background: #707EFF;
+  color: #fff;
 }
 
 .knowledge-hub .related-content .card__content h3 {

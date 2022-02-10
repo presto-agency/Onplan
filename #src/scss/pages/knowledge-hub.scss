@@ -254,6 +254,22 @@
                                 background: rgba(242, 151, 61, 0.15);
                                 color: #F2973D;
                             }
+                            &.grey{
+                                background: rgba(35, 47, 66, 0.75);
+                                color: $whitecolor;
+                            }
+                            &.dark-purple{
+                                background: rgba(125, 93, 249, 0.15);
+                                color: $purplecolor;
+                            }
+                            &.dark-orange{
+                                background: #F2973D;
+                                color: $whitecolor;
+                            }
+                            &.dark-purple{
+                                background: $purplecolor;
+                                color: $whitecolor;
+                            }
                         }
                 }
         
@@ -493,6 +509,22 @@
                     &.orange{
                         background: rgba(242, 151, 61, 0.15);
                         color: #F2973D;
+                    }
+                    &.grey{
+                        background: rgba(35, 47, 66, 0.75);
+                        color: $whitecolor;
+                    }
+                    &.dark-purple{
+                        background: rgba(125, 93, 249, 0.15);
+                        color: $purplecolor;
+                    }
+                    &.dark-orange{
+                        background: #F2973D;
+                        color: $whitecolor;
+                    }
+                    &.dark-purple{
+                        background: $purplecolor;
+                        color: $whitecolor;
                     }
                 }
                     h3{

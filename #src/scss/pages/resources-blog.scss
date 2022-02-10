@@ -184,6 +184,14 @@
                         background: rgba(125, 93, 249, 0.15);
                         color: $purplecolor;
                     }
+                    &.dark-orange{
+                        background: #F2973D;
+                        color: $whitecolor;
+                    }
+                    &.dark-purple{
+                        background: $purplecolor;
+                        color: $whitecolor;
+                    }
                 }
                     h3{
                         font-weight: 900;
@@ -364,6 +372,14 @@
                                 &.dark-purple{
                                     background: rgba(125, 93, 249, 0.15);
                                     color: $purplecolor;
+                                }
+                                &.dark-orange{
+                                    background: #F2973D;
+                                    color: $whitecolor;
+                                }
+                                &.dark-purple{
+                                    background: $purplecolor;
+                                    color: $whitecolor;
                                 }
                             }
                             h3{
