@@ -420,7 +420,42 @@
         }
 }
 
-    @media(max-width: 1439px){
+    @media(max-width: 1023px){
+        .resources-block{
+            .slider-resources{
+                max-width: 335px;
+                padding: 0;
+                &__slide{
+                    flex-direction: column;
+                }
+                &__picture-side{
+                    margin: 0;
+                }
+                .slider-arrow{
+                    display: none;
+                }
+                .card{
+                    &__person{
+                        margin: 20px 0 0 0;
+                    }
+
+                    &__content{
+                        h3{
+                            font-size: 32px;
+                            line-height: 36px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 29px;
+                        }
+                    }
+                }
+                &__img{
+                    width: 335px;
+                    height: 260px;
+                }
+            }
+        }
         .blog-cards{
             margin: 64px 0 80px 0;
             &__content{
@@ -461,48 +496,6 @@
             }
             &__button{
                 display: none;
-            }
-        }
-        .resources-block{
-            .slider-resources{
-                .card{
-                    &__content{
-                        h3{
-                            font-size: 32px;
-                            line-height: 36px;
-                        }
-                        p{
-                            font-size: 18px;
-                            line-height: 29px;
-                        }
-                    }
-                }
-                &__img{
-                    width: 335px;
-                    height: 260px;
-                }
-            }
-        }
-    }
-    @media(max-width: 1023px){
-        .resources-block{
-            .slider-resources{
-                max-width: 335px;
-                padding: 0;
-                &__slide{
-                    flex-direction: column;
-                }
-                &__picture-side{
-                    margin: 0;
-                }
-                .slider-arrow{
-                    display: none;
-                }
-                .card{
-                    &__person{
-                        margin: 20px 0 0 0;
-                    }
-                }
             }
         }
     }
