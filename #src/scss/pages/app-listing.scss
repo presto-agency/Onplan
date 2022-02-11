@@ -1,0 +1,110 @@
+.app-listing{
+    .quickbooks{
+        margin: 100px 0 150px 0;
+        padding: 0;
+        .content{
+            &__buttons-wrapper{
+                display: flex;
+                justify-content: space-between;
+                max-width: 540px;
+                margin: 64px auto 0;
+            }
+            &__description{
+                h1{
+                    margin: 32px 0 24px 0;
+                }
+            }
+            &__button{
+                margin: 0;
+                &:first-child{
+                    max-width: 282px;
+                    height: 62px;
+                }
+                &:last-child{
+                    max-width: 224px;
+                    height: 62px;
+                }
+            }
+        }
+        &__bg{
+            height: 627px;
+            top: -39px;
+        }
+    }
+    .knowledge-hub{
+        padding: 0;
+        .related-content{
+            position: relative;
+            z-index: 2;
+            margin: 100px 0 84px 0;
+            padding: 0;
+            background: initial;
+            &__title{
+                h2{
+                    text-align: left;
+                    font-size: 48px;
+                    line-height: 53px;
+                    margin: 0;
+                }
+            }
+            &__content{
+                margin: 32px -32px 68px;
+            }
+            .card{
+                &__element-wrapper{
+                    margin: 16px -8px 6px -8px;
+                }
+            }
+        }
+    }
+    @media(max-width: 1023px){
+        .quickbooks{
+            .bread-crumbs{
+                ul{
+                    justify-content: center;
+                }
+            }
+            .content{
+                &__description{
+                    h1{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 767px){
+        .knowledge-hub{
+            .related-content{
+                margin: 80px 0;
+            }
+        }
+    }
+    @media(max-width: 567px){
+        .quickbooks{
+            .content{
+                &__description{
+                    h1{
+                        margin: 24px 0 30px 0;
+                    }
+                }
+                &__buttons-wrapper{
+                    flex-direction: column;
+                    justify-content: initial;
+                    align-items: center;
+                    margin: 30px auto 0;
+                }
+                &__button{
+                    &:first-child{
+                        max-width: 224px;
+                        height: 58px;
+                    }
+                    &:last-child{
+                        height: 58px;
+                        margin: 15px 0 0 0  ;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -903,6 +903,34 @@ h6 {
   padding: 0 20px 0 0;
 }
 
+.button.download {
+  background: initial;
+  color: #232F42;
+  border: 2px solid #232F42;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.button.download svg {
+  width: 12px;
+  height: 18px;
+  fill: #232F42;
+  margin: 0 12px 0 0;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.button.download:hover {
+  border: 2px solid #606A80;
+  color: #fff;
+}
+
+.button.download:hover svg {
+  fill: #fff;
+}
+
 .mobile-menu-btns {
   position: fixed;
   display: none;
@@ -9687,6 +9715,72 @@ h6 {
   margin: 0;
 }
 
+.app-listing .quickbooks {
+  margin: 100px 0 150px 0;
+  padding: 0;
+}
+
+.app-listing .quickbooks .content__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 540px;
+  margin: 64px auto 0;
+}
+
+.app-listing .quickbooks .content__description h1 {
+  margin: 32px 0 24px 0;
+}
+
+.app-listing .quickbooks .content__button {
+  margin: 0;
+}
+
+.app-listing .quickbooks .content__button:first-child {
+  max-width: 282px;
+  height: 62px;
+}
+
+.app-listing .quickbooks .content__button:last-child {
+  max-width: 224px;
+  height: 62px;
+}
+
+.app-listing .quickbooks__bg {
+  height: 627px;
+  top: -39px;
+}
+
+.app-listing .knowledge-hub {
+  padding: 0;
+}
+
+.app-listing .knowledge-hub .related-content {
+  position: relative;
+  z-index: 2;
+  margin: 100px 0 84px 0;
+  padding: 0;
+  background: initial;
+}
+
+.app-listing .knowledge-hub .related-content__title h2 {
+  text-align: left;
+  font-size: 48px;
+  line-height: 53px;
+  margin: 0;
+}
+
+.app-listing .knowledge-hub .related-content__content {
+  margin: 32px -32px 68px;
+}
+
+.app-listing .knowledge-hub .related-content .card__element-wrapper {
+  margin: 16px -8px 6px -8px;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
@@ -11499,6 +11593,16 @@ h6 {
   .scenario-planning .frequently__bg {
     display: none;
   }
+
+  .app-listing .quickbooks .bread-crumbs ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .app-listing .quickbooks .content__description h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 811px) {
@@ -12737,6 +12841,10 @@ h6 {
     font-size: 16px;
     line-height: 23px;
   }
+
+  .app-listing .knowledge-hub .related-content {
+    margin: 80px 0;
+  }
 }
 
 @media (max-width: 735px) {
@@ -13306,6 +13414,34 @@ h6 {
 
   .compare-competition .user-experience__list {
     margin: 40px -10px;
+  }
+
+  .app-listing .quickbooks .content__description h1 {
+    margin: 24px 0 30px 0;
+  }
+
+  .app-listing .quickbooks .content__buttons-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px auto 0;
+  }
+
+  .app-listing .quickbooks .content__button:first-child {
+    max-width: 224px;
+    height: 58px;
+  }
+
+  .app-listing .quickbooks .content__button:last-child {
+    height: 58px;
+    margin: 15px 0 0 0;
   }
 }
 

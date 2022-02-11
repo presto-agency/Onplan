@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function () {
     @@include('feature-template.js')
     @@include('knowledge-hub.js')
     @@include('scenario-planning.js')
+    @@include('app-listing.js')
 })
 
 

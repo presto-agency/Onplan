@@ -76,6 +76,26 @@
             padding: 0 20px 0 0;
         }
     }
+    &.download{
+        background: initial;
+        color: $textcolor;
+        border: 2px solid $textcolor;
+        transition: 300ms;
+        svg{
+            width: 12px;
+            height: 18px;
+            fill: $textcolor;
+            margin: 0 12px 0 0;
+            transition: 300ms;
+        }
+        &:hover{
+            border: 2px solid $darkgreycolor;
+            color: $whitecolor;
+            svg{
+                fill: $whitecolor
+            }
+        }
+    }
 }
 
 .mobile-menu-btns{
