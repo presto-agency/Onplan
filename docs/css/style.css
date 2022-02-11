@@ -9781,6 +9781,85 @@ h6 {
   margin: 16px -8px 6px -8px;
 }
 
+.app-listing .features-app {
+  margin: 120px 0 100px 0;
+  padding: 0 0 64px 0;
+  position: relative;
+}
+
+.app-listing .features-app:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 1134px;
+  height: 390px;
+  width: 100%;
+  background: #F2F5FA;
+  border-radius: 32px;
+}
+
+.app-listing .features-app__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.app-listing .features-app__title h3 {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 59px;
+  color: #232F42;
+  text-align: center;
+  margin: 0 0 64px 0;
+}
+
+.app-listing .features-app__list {
+  margin: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.app-listing .features-app__link {
+  margin: 10px;
+  width: calc((100% - 80px) / 4);
+  height: 391px;
+  background: #fff;
+  -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+          box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
+  border-radius: 16px;
+  padding: 40px 32px 43px;
+}
+
+.app-listing .features-app__link span {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 90%;
+  color: #707EFF;
+}
+
+.app-listing .features-app__link p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #606A80;
+  opacity: 0.8;
+  margin: 20px 0 0 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
@@ -11602,6 +11681,25 @@ h6 {
 
   .app-listing .quickbooks .content__description h1 {
     text-align: center;
+  }
+
+  .app-listing .features-app {
+    margin: 80px 0;
+    padding: 0;
+  }
+
+  .app-listing .features-app:after {
+    display: none;
+  }
+
+  .app-listing .features-app__link {
+    width: calc((100% - 40px) / 2);
+  }
+
+  .app-listing .features-app__title h3 {
+    margin: 0 0 30px 0;
+    font-size: 48px;
+    line-height: 52px;
   }
 }
 
@@ -13442,6 +13540,20 @@ h6 {
   .app-listing .quickbooks .content__button:last-child {
     height: 58px;
     margin: 15px 0 0 0;
+  }
+
+  .app-listing .features-app__link {
+    width: calc(100% - 20px);
+  }
+
+  .app-listing .features-app__title h3 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .app-listing .knowledge-hub .related-content__title h2 {
+    font-size: 38px;
+    line-height: 40px;
   }
 }
 
