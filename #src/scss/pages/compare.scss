@@ -446,16 +446,17 @@
 		}
 
 		&__link {
+            position: relative;
             width: calc((100% - (8* 10px))/4);
             max-width: 295px;
             margin: 10px;
-            padding: 42px 32px 52px;
+            padding: 42px 32px 72px;
             background: rgba(255, 255, 255, 0.9);
             border: 1px solid rgba(255, 255, 255, 0.8);
             box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
             border-radius: 16px;
             h5{
-                font-size: 22px;
+                font-size: 20px;
                 line-height: 26px;
                 color: $textcolor;
                 font-weight: 800;
@@ -466,13 +467,14 @@
                 line-height: 29px;
                 color: $darkgreycolor;
             }
-            a{
+            a{  
+                position: absolute;
+                bottom: 42px;
+                left: 32px;
                 font-size: 16px;
                 line-height: 19px;
                 font-weight: 700;
                 color: $purplecolor;
-                margin: 24px 0 0 0;
-                display: block;
                 svg{
                     width: 14px;
                     height: 8px;

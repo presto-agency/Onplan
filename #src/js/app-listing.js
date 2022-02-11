@@ -26,10 +26,10 @@ if (!!appListing) {
             spaceBetween: 30,
             preloadImages: true,
             loop: true,
-            // lazy: {
-            //     loadOnTransitionStart: true,
-            //     loadPrevNext: true,
-            // },
+            lazy: {
+                loadOnTransitionStart: true,
+                loadPrevNext: true,
+            },
         });
     }());
 }

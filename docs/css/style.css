@@ -7368,6 +7368,13 @@ h6 {
   background: #707EFF;
 }
 
+.open-roles-v .customer-service .editor-v p {
+  color: #606A80;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 17px 0;
+}
+
 .open-roles-v .form-job {
   max-width: 1240px;
   margin: 0 auto;
@@ -8535,10 +8542,11 @@ h6 {
 }
 
 .compare-competition .user-experience__link {
+  position: relative;
   width: calc((100% - 80px) / 4);
   max-width: 295px;
   margin: 10px;
-  padding: 42px 32px 52px;
+  padding: 42px 32px 72px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px 16px 40px rgba(35, 40, 51, 0.05);
@@ -8547,7 +8555,7 @@ h6 {
 }
 
 .compare-competition .user-experience__link h5 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   color: #232F42;
   font-weight: 800;
@@ -8561,12 +8569,13 @@ h6 {
 }
 
 .compare-competition .user-experience__link a {
+  position: absolute;
+  bottom: 42px;
+  left: 32px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
   color: #707EFF;
-  margin: 24px 0 0 0;
-  display: block;
 }
 
 .compare-competition .user-experience__link a svg {
