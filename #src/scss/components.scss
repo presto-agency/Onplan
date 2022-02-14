@@ -254,32 +254,29 @@
                 
                 &__bottom-link {
                     display: inline-block;
-                    background: $whitecolor;
-                    border: 1px solid $greycolor;
                     box-sizing: border-box;
-                    border-radius: 32px;
                     margin: 0 16px 0 0;
-                    transition: 300ms;
+                    &.active{
+                        a{
+                            background:$purplecolor ;
+                            color: $whitecolor;
+                        }
+                    }
                     &:last-child{
                         margin: 0;
                     }
                     a{
+                        border-radius: 32px;
+                        background: $whitecolor;
                         display: block;
+                        border: 1px solid $greycolor;
                         padding: 10px 24px;
                         color: $darkgreycolor;
                         font-size: 16px;
                         font-weight: 700;
                         transition: 300ms;
-                    }
-                    &.active-color{
-                        background:$purplecolor ;
-                        a{
-                            color: $whitecolor;
-                        }
-                    }
-                    &.active{
-                        background:$purplecolor ;
-                        a{
+                        &.active-color{
+                            background:$purplecolor ;
                             color: $whitecolor;
                         }
                     }

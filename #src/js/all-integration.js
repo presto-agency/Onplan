@@ -1,96 +1,23 @@
 const allIntegration = document.querySelector('.all-integrtation');
 if (!!allIntegration) {
-    (function anchorAnimation() {
-        const page = document.querySelector('.all-integrtation');
-        if (!!page) {
-            const anchors = document.querySelectorAll('a[href*="#"]');
-            for (let anchor of anchors) {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault()
-                    const blockID = anchor.getAttribute('href').substr(1);
-                    const obj = document.getElementById(blockID);
-                    const yOffset = -182;
-                    const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                })
-            }
-        }
+    (function anchorsIntegration() {
+        const anchors = document.querySelectorAll('a[href*="#"]');
+        const yOffset = -182;
+        anchorAnimation(anchors, yOffset)
     }());
 
-    (function showAllIntegrationMenu() {
-        let isScrolling = false;
+    (function showMenuIntegration() {
         const menu = document.querySelector('.all-integration-menu');
-        const btns = document.querySelector('.content__bottom-links');
-        if (!!menu) {
-            window.addEventListener("scroll", throttleScroll, false);
-            function throttleScroll(e) {
-                if (isScrolling == false) {
-                    window.requestAnimationFrame(function () {
-                        scrolling(e);
-                        isScrolling = false;
-                    });
-                }
-                isScrolling = true;
-            }
-
-            function isFullyVisible(el) {
-                let elementBoundary = el.getBoundingClientRect();
-                let top = elementBoundary.top;
-                let bottom = elementBoundary.bottom;
-                return ((top >= 0) && (bottom <= window.innerHeight));
-            }
-
-            function scrolling() {
-                if (isFullyVisible(btns)) {
-                    menu.classList.remove('active');
-                }
-                else {
-                    menu.classList.add('active');
-                }
-            }
-            scrolling();
-        }
+        const content = document.querySelector('.accounting-system__content');
+        let topValue = 182;
+        let bottomValue = 0;
+        showMenu(menu, content, topValue, bottomValue)
     }());
 
-    (function scrollColor() {
-        let isScrolling = false;
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
-
+    (function scrollColorIntegration() {
         let elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            return (((topOfElements <= 200) && (bottomOfElements > 0)));
-        }
-        function scrolling() {
-            elementsPage.forEach(el => {
-                if (isFullyVisible(el)) {
-                    let idEl = el.id;
-                    const activeBtns = allIntegration.querySelectorAll('.active-color');
-                    let btns = document.querySelectorAll(`a[href='#${idEl}']`);
-                    changeClass(activeBtns, btns)
-                }
-            });
-        }
-        scrolling();
+        scrollerColors(elementsPage, allIntegration)
     }());
 
-    const changeClass = (activeBtns, els) => {
-        activeBtns.forEach(aBtn => {
-            aBtn.classList.remove('active-color')
-        });
-        els.forEach(el => {
-            el.parentNode.classList.add('active-color')
-        });
-    }
 }
 

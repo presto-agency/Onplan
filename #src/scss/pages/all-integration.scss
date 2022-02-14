@@ -33,12 +33,8 @@
         }
         &__bottom-link {
             display: inline-block;
-            background: $whitecolor;
-            border: 1px solid $greycolor;
             box-sizing: border-box;
-            border-radius: 32px;
             margin: 0 8px;
-            transition: 300ms;
             &:last-child{
                 position: relative;
                 margin: 0 0 0 32px;
@@ -54,16 +50,17 @@
                 }
             }
             a{
+                border: 1px solid $greycolor;
                 display: block;
+                border-radius: 32px;
                 padding: 10px 24px;
+                background: $whitecolor;
                 color: $darkgreycolor;
                 font-size: 16px;
                 font-weight: 700;
                 transition: 300ms;
-            }
-            &.active-color{
-                background:$purplecolor ;
-                a{
+                &.active-color{
+                    background:$purplecolor;
                     color: $whitecolor;
                 }
             }

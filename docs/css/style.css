@@ -1128,15 +1128,14 @@ h6 {
 
 .quickbooks .content__bottom-link {
   display: inline-block;
-  background: #fff;
-  border: 1px solid #EDF0F2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 32px;
   margin: 0 16px 0 0;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
+}
+
+.quickbooks .content__bottom-link.active a {
+  background: #707EFF;
+  color: #fff;
 }
 
 .quickbooks .content__bottom-link:last-child {
@@ -1144,7 +1143,10 @@ h6 {
 }
 
 .quickbooks .content__bottom-link a {
+  border-radius: 32px;
+  background: #fff;
   display: block;
+  border: 1px solid #EDF0F2;
   padding: 10px 24px;
   color: #606A80;
   font-size: 16px;
@@ -1154,19 +1156,8 @@ h6 {
   transition: 300ms;
 }
 
-.quickbooks .content__bottom-link.active-color {
+.quickbooks .content__bottom-link a.active-color {
   background: #707EFF;
-}
-
-.quickbooks .content__bottom-link.active-color a {
-  color: #fff;
-}
-
-.quickbooks .content__bottom-link.active {
-  background: #707EFF;
-}
-
-.quickbooks .content__bottom-link.active a {
   color: #fff;
 }
 
@@ -5140,15 +5131,9 @@ h6 {
 
 .all-integrtation .all-integration-menu__bottom-link {
   display: inline-block;
-  background: #fff;
-  border: 1px solid #EDF0F2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 32px;
   margin: 0 8px;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
 }
 
 .all-integrtation .all-integration-menu__bottom-link:last-child {
@@ -5170,8 +5155,11 @@ h6 {
 }
 
 .all-integrtation .all-integration-menu__bottom-link a {
+  border: 1px solid #EDF0F2;
   display: block;
+  border-radius: 32px;
   padding: 10px 24px;
+  background: #fff;
   color: #606A80;
   font-size: 16px;
   font-weight: 700;
@@ -5180,11 +5168,8 @@ h6 {
   transition: 300ms;
 }
 
-.all-integrtation .all-integration-menu__bottom-link.active-color {
+.all-integrtation .all-integration-menu__bottom-link a.active-color {
   background: #707EFF;
-}
-
-.all-integrtation .all-integration-menu__bottom-link.active-color a {
   color: #fff;
 }
 
@@ -5594,10 +5579,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.resources-blog .quickbooks .content__bottom-link.active {
-  background: #232F42;
 }
 
 .resources-blog .quickbooks .content__bottom-link:first-child {
@@ -8793,7 +8774,7 @@ h6 {
   transition: 300ms ease-in-out;
 }
 
-.feature-template .editor .right-relative-block.active-menu {
+.feature-template .editor .right-relative-block.active {
   top: 92px;
 }
 

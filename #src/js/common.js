@@ -82,3 +82,144 @@ if (!!headerMenu) {
         sources[i].removeAttribute('data-srcset');
     }
 }());
+
+function grabCursor(containers) {
+    if (window.screen.width > 1024) {
+        let startY;
+        let scrollTop;
+        let startX;
+        let scrollLeft;
+        let isDown;
+
+        containers.forEach(container => {
+            container.addEventListener('mousedown', e => mouseIsDown(e));
+            container.addEventListener('mouseup', e => mouseUp(e))
+            container.addEventListener('mouseleave', e => mouseLeave(e));
+            container.addEventListener('mousemove', e => mouseMove(e));
+            function mouseIsDown(e) {
+                isDown = true;
+                startY = e.pageY - container.offsetTop;
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;
+                scrollTop = container.scrollTop;
+            }
+            function mouseUp(e) {
+                isDown = false;
+            }
+            function mouseLeave(e) {
+                isDown = false;
+            }
+            function mouseMove(e) {
+                if (isDown) {
+                    e.preventDefault();
+                    const y = e.pageY - container.offsetTop;
+                    const x = e.pageX - container.offsetLeft;
+                    const walkY = y - startY;
+                    const walkX = x - startX;
+                    container.scrollTop = scrollTop - walkY;
+                    container.scrollLeft = scrollLeft - walkX;
+                }
+            }
+        });
+    }
+};
+
+function anchorAnimation(anchors, yOffset) {
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+            const blockID = anchor.getAttribute('href').substr(1);
+            const obj = document.getElementById(blockID);
+            const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        })
+    }
+};
+
+function showMenu(menu, objects, topValue, bottomValue) {
+    let isScrolling = false;
+    window.addEventListener("scroll", throttleScroll, false);
+    function throttleScroll(e) {
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function () {
+                scrolling(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function isFullyVisible(el) {
+        let elementBoundary = el.getBoundingClientRect();
+        let top = elementBoundary.top;
+        let bottom = elementBoundary.bottom;
+        return ((top <= topValue) && (bottom >= bottomValue));
+    }
+
+    function scrolling() {
+        if (isFullyVisible(objects)) {
+            menu.classList.add('active');
+        }
+        else {
+            menu.classList.remove('active');
+        }
+    }
+    scrolling();
+};
+
+function scrollerColors(elementsPage, sheet) {
+    let isScrolling = false;
+    window.addEventListener("scroll", throttleScroll, false);
+    function throttleScroll(e) {
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function () {
+                scrolling(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 200) && (bottomOfElements > 0)));
+    }
+    function scrolling() {
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                let idEl = el.id;
+                const activeBtns = sheet.querySelectorAll('.active-color');
+                let btns = document.querySelectorAll(`a[href='#${idEl}']`);
+                changeClass(activeBtns, btns)
+            }
+        });
+    }
+    function changeClass(activeBtns, els) {
+        activeBtns.forEach(aBtn => {
+            aBtn.classList.remove('active-color')
+        });
+        els.forEach(el => {
+            el.classList.add('active-color')
+        });
+    }
+    scrolling();
+};
+
+function scrollName(elementsPage) {
+    window.addEventListener("scroll", scrolling, true);
+    function scrolling() {
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                let idEl = el.id;
+                const changeBtn = document.getElementById('change-btn');
+                changeBtn.innerHTML = idEl;
+            }
+        });
+    }
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 130) && (bottomOfElements > 0)));
+    }
+};

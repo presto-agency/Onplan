@@ -36,91 +36,23 @@ if (!!compare) {
         }
     }());
 
-    (function grabCursorTop() {
-        if (window.screen.width > 1024) {
-            let containers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
-            let startX;
-            let scrollLeft;
-            let isDown;
-            containers.forEach(container => {
-                container.addEventListener('mousedown', e => mouseIsDown(e));
-                container.addEventListener('mouseup', e => mouseUp(e))
-                container.addEventListener('mouseleave', e => mouseLeave(e));
-                container.addEventListener('mousemove', e => mouseMove(e));
-
-                function mouseIsDown(e) {
-                    isDown = true;
-                    startX = e.pageX - container.offsetLeft;
-                    scrollLeft = container.scrollLeft;
-                }
-                function mouseUp(e) {
-                    isDown = false;
-                }
-                function mouseLeave(e) {
-                    isDown = false;
-                }
-                function mouseMove(e) {
-                    if (isDown) {
-                        e.preventDefault();
-                        const x = e.pageX - container.offsetLeft;
-                        const walkX = x - startX;
-                        container.scrollLeft = scrollLeft - walkX;
-                    }
-                }
-            })
-        }
+    (function grabCursorCompare() {
+        let containers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
+        grabCursor(containers)
     }());
 
-    (function compareRelativeBlock() {
-        let isScrolling = false;
+    (function showMenuCompare() {
         const menu = document.querySelector('.relative-title');
-        const btns = document.querySelector('.table-price');
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
+        const table = document.querySelector('.table-price');
+        let topValue = 0;
+        let bottomValue = 0;
 
-        function isFullyVisible(el) {
-            let elementBoundary = el.getBoundingClientRect();
-            let top = elementBoundary.top;
-            let bottom = elementBoundary.bottom;
-            return ((top <= 0) && (bottom >= 0));
-        }
-
-        function scrolling() {
-            if (isFullyVisible(btns)) {
-                menu.classList.add('active');
-            }
-            else {
-                menu.classList.remove('active');
-            }
-        }
-        scrolling();
+        showMenu(menu, table, topValue, bottomValue)
     }());
 
     (function scrollNameCompare() {
-        window.addEventListener("scroll", scrolling, true);
-        function scrolling() {
-            const elementsPage = document.querySelectorAll('.table-price__bottom-table');
-            elementsPage.forEach(el => {
-                if (isFullyVisible(el)) {
-                    let idEl = el.id;
-                    const changeBtn = document.getElementById('change-btn');
-                    changeBtn.innerHTML = idEl;
-                }
-            });
-        }
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            return (((topOfElements <= 130) && (bottomOfElements > 0)));
-        }
+        const elementsPage = document.querySelectorAll('.table-price__bottom-table');
+        scrollName(elementsPage)
     }());
 
     function changeMargin(elements, tableWidth) {

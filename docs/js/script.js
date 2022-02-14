@@ -83,6 +83,147 @@ if (!!headerMenu) {
         sources[i].removeAttribute('data-srcset');
     }
 }());
+
+function grabCursor(containers) {
+    if (window.screen.width > 1024) {
+        let startY;
+        let scrollTop;
+        let startX;
+        let scrollLeft;
+        let isDown;
+
+        containers.forEach(container => {
+            container.addEventListener('mousedown', e => mouseIsDown(e));
+            container.addEventListener('mouseup', e => mouseUp(e))
+            container.addEventListener('mouseleave', e => mouseLeave(e));
+            container.addEventListener('mousemove', e => mouseMove(e));
+            function mouseIsDown(e) {
+                isDown = true;
+                startY = e.pageY - container.offsetTop;
+                startX = e.pageX - container.offsetLeft;
+                scrollLeft = container.scrollLeft;
+                scrollTop = container.scrollTop;
+            }
+            function mouseUp(e) {
+                isDown = false;
+            }
+            function mouseLeave(e) {
+                isDown = false;
+            }
+            function mouseMove(e) {
+                if (isDown) {
+                    e.preventDefault();
+                    const y = e.pageY - container.offsetTop;
+                    const x = e.pageX - container.offsetLeft;
+                    const walkY = y - startY;
+                    const walkX = x - startX;
+                    container.scrollTop = scrollTop - walkY;
+                    container.scrollLeft = scrollLeft - walkX;
+                }
+            }
+        });
+    }
+};
+
+function anchorAnimation(anchors, yOffset) {
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+            const blockID = anchor.getAttribute('href').substr(1);
+            const obj = document.getElementById(blockID);
+            const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        })
+    }
+};
+
+function showMenu(menu, objects, topValue, bottomValue) {
+    let isScrolling = false;
+    window.addEventListener("scroll", throttleScroll, false);
+    function throttleScroll(e) {
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function () {
+                scrolling(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function isFullyVisible(el) {
+        let elementBoundary = el.getBoundingClientRect();
+        let top = elementBoundary.top;
+        let bottom = elementBoundary.bottom;
+        return ((top <= topValue) && (bottom >= bottomValue));
+    }
+
+    function scrolling() {
+        if (isFullyVisible(objects)) {
+            menu.classList.add('active');
+        }
+        else {
+            menu.classList.remove('active');
+        }
+    }
+    scrolling();
+};
+
+function scrollerColors(elementsPage, sheet) {
+    let isScrolling = false;
+    window.addEventListener("scroll", throttleScroll, false);
+    function throttleScroll(e) {
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function () {
+                scrolling(e);
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 200) && (bottomOfElements > 0)));
+    }
+    function scrolling() {
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                let idEl = el.id;
+                const activeBtns = sheet.querySelectorAll('.active-color');
+                let btns = document.querySelectorAll(`a[href='#${idEl}']`);
+                changeClass(activeBtns, btns)
+            }
+        });
+    }
+    function changeClass(activeBtns, els) {
+        activeBtns.forEach(aBtn => {
+            aBtn.classList.remove('active-color')
+        });
+        els.forEach(el => {
+            el.classList.add('active-color')
+        });
+    }
+    scrolling();
+};
+
+function scrollName(elementsPage) {
+    window.addEventListener("scroll", scrolling, true);
+    function scrolling() {
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                let idEl = el.id;
+                const changeBtn = document.getElementById('change-btn');
+                changeBtn.innerHTML = idEl;
+            }
+        });
+    }
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 130) && (bottomOfElements > 0)));
+    }
+};
     const blog = document.querySelector('.blog');
 if (!!blog) {
     (function showMore() {
@@ -226,98 +367,25 @@ if (!!mainPage) {
 }
     const allIntegration = document.querySelector('.all-integrtation');
 if (!!allIntegration) {
-    (function anchorAnimation() {
-        const page = document.querySelector('.all-integrtation');
-        if (!!page) {
-            const anchors = document.querySelectorAll('a[href*="#"]');
-            for (let anchor of anchors) {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault()
-                    const blockID = anchor.getAttribute('href').substr(1);
-                    const obj = document.getElementById(blockID);
-                    const yOffset = -182;
-                    const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                })
-            }
-        }
+    (function anchorsIntegration() {
+        const anchors = document.querySelectorAll('a[href*="#"]');
+        const yOffset = -182;
+        anchorAnimation(anchors, yOffset)
     }());
 
-    (function showAllIntegrationMenu() {
-        let isScrolling = false;
+    (function showMenuIntegration() {
         const menu = document.querySelector('.all-integration-menu');
-        const btns = document.querySelector('.content__bottom-links');
-        if (!!menu) {
-            window.addEventListener("scroll", throttleScroll, false);
-            function throttleScroll(e) {
-                if (isScrolling == false) {
-                    window.requestAnimationFrame(function () {
-                        scrolling(e);
-                        isScrolling = false;
-                    });
-                }
-                isScrolling = true;
-            }
-
-            function isFullyVisible(el) {
-                let elementBoundary = el.getBoundingClientRect();
-                let top = elementBoundary.top;
-                let bottom = elementBoundary.bottom;
-                return ((top >= 0) && (bottom <= window.innerHeight));
-            }
-
-            function scrolling() {
-                if (isFullyVisible(btns)) {
-                    menu.classList.remove('active');
-                }
-                else {
-                    menu.classList.add('active');
-                }
-            }
-            scrolling();
-        }
+        const content = document.querySelector('.accounting-system__content');
+        let topValue = 182;
+        let bottomValue = 0;
+        showMenu(menu, content, topValue, bottomValue)
     }());
 
-    (function scrollColor() {
-        let isScrolling = false;
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
-
+    (function scrollColorIntegration() {
         let elementsPage = document.querySelectorAll('.accounting-system__block-integration, .exports');
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            return (((topOfElements <= 200) && (bottomOfElements > 0)));
-        }
-        function scrolling() {
-            elementsPage.forEach(el => {
-                if (isFullyVisible(el)) {
-                    let idEl = el.id;
-                    const activeBtns = allIntegration.querySelectorAll('.active-color');
-                    let btns = document.querySelectorAll(`a[href='#${idEl}']`);
-                    changeClass(activeBtns, btns)
-                }
-            });
-        }
-        scrolling();
+        scrollerColors(elementsPage, allIntegration)
     }());
 
-    const changeClass = (activeBtns, els) => {
-        activeBtns.forEach(aBtn => {
-            aBtn.classList.remove('active-color')
-        });
-        els.forEach(el => {
-            el.parentNode.classList.add('active-color')
-        });
-    }
 }
 
 
@@ -356,54 +424,15 @@ if (!!resourcesBlog) {
     const pricing = document.querySelector('.pricing');
 if (!!pricing) {
     (function showAllIntegrationMenu() {
-        let isScrolling = false;
         const menu = document.querySelector('.pricing__relative-title');
-        const btns = document.querySelector('.table-price');
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
-
-        function isFullyVisible(el) {
-            let elementBoundary = el.getBoundingClientRect();
-            let top = elementBoundary.top;
-            let bottom = elementBoundary.bottom;
-            return ((top <= 0) && (bottom >= 0));
-        }
-
-        function scrolling() {
-            if (isFullyVisible(btns)) {
-                menu.classList.add('active');
-            }
-            else {
-                menu.classList.remove('active');
-            }
-        }
-        scrolling();
+        const table = document.querySelector('.table-price');
+        let topValue = 0;
+        let bottomValue = 0;
+        showMenu(menu, table, topValue, bottomValue)
     }());
-    (function scrollName() {
-        window.addEventListener("scroll", scrolling, true);
-        function scrolling() {
-            const elementsPage = document.querySelectorAll('.table-price__bottom-table');
-            elementsPage.forEach(el => {
-                if (isFullyVisible(el)) {
-                    let idEl = el.id;
-                    const changeBtn = document.getElementById('change-btn');
-                    changeBtn.innerHTML = idEl;
-                }
-            });
-        }
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            return (((topOfElements <= 130) && (bottomOfElements > 0)));
-        }
+    (function scrollNamePricing() {
+        const elementsPage = document.querySelectorAll('.table-price__bottom-table');
+        scrollName(elementsPage)
     }());
 }
     const about = document.querySelector('.about-onplan');
@@ -429,40 +458,9 @@ if (!!about) {
             }
         });
     }());
-    (function grabCursor() {
-        if (window.screen.width > 1024) {
-            const containers = document.querySelectorAll('.our-team__description');
-            let startY;
-            let scrollTop;
-            let isDown;
-
-            containers.forEach(container => {
-                container.addEventListener('mousedown', e => mouseIsDown(e));
-                container.addEventListener('mouseup', e => mouseUp(e))
-                container.addEventListener('mouseleave', e => mouseLeave(e));
-                container.addEventListener('mousemove', e => mouseMove(e));
-                function mouseIsDown(e) {
-                    isDown = true;
-                    startY = e.pageY - container.offsetTop;
-                    scrollLeft = container.scrollLeft;
-                    scrollTop = container.scrollTop;
-                }
-                function mouseUp(e) {
-                    isDown = false;
-                }
-                function mouseLeave(e) {
-                    isDown = false;
-                }
-                function mouseMove(e) {
-                    if (isDown) {
-                        e.preventDefault();
-                        const y = e.pageY - container.offsetTop;
-                        const walkY = y - startY;
-                        container.scrollTop = scrollTop - walkY;
-                    }
-                }
-            });
-        }
+    (function grabCursorAbout() {
+        let containers = document.querySelectorAll('.our-team__description');
+        grabCursor(containers)
     }());
 }
     const compare = document.querySelector('.compare-competition');
@@ -503,91 +501,23 @@ if (!!compare) {
         }
     }());
 
-    (function grabCursorTop() {
-        if (window.screen.width > 1024) {
-            let containers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
-            let startX;
-            let scrollLeft;
-            let isDown;
-            containers.forEach(container => {
-                container.addEventListener('mousedown', e => mouseIsDown(e));
-                container.addEventListener('mouseup', e => mouseUp(e))
-                container.addEventListener('mouseleave', e => mouseLeave(e));
-                container.addEventListener('mousemove', e => mouseMove(e));
-
-                function mouseIsDown(e) {
-                    isDown = true;
-                    startX = e.pageX - container.offsetLeft;
-                    scrollLeft = container.scrollLeft;
-                }
-                function mouseUp(e) {
-                    isDown = false;
-                }
-                function mouseLeave(e) {
-                    isDown = false;
-                }
-                function mouseMove(e) {
-                    if (isDown) {
-                        e.preventDefault();
-                        const x = e.pageX - container.offsetLeft;
-                        const walkX = x - startX;
-                        container.scrollLeft = scrollLeft - walkX;
-                    }
-                }
-            })
-        }
+    (function grabCursorCompare() {
+        let containers = document.querySelectorAll('.bottom-scrolling-table, .table-scroll, .relative-title__relative-list');
+        grabCursor(containers)
     }());
 
-    (function compareRelativeBlock() {
-        let isScrolling = false;
+    (function showMenuCompare() {
         const menu = document.querySelector('.relative-title');
-        const btns = document.querySelector('.table-price');
-        window.addEventListener("scroll", throttleScroll, false);
-        function throttleScroll(e) {
-            if (isScrolling == false) {
-                window.requestAnimationFrame(function () {
-                    scrolling(e);
-                    isScrolling = false;
-                });
-            }
-            isScrolling = true;
-        }
+        const table = document.querySelector('.table-price');
+        let topValue = 0;
+        let bottomValue = 0;
 
-        function isFullyVisible(el) {
-            let elementBoundary = el.getBoundingClientRect();
-            let top = elementBoundary.top;
-            let bottom = elementBoundary.bottom;
-            return ((top <= 0) && (bottom >= 0));
-        }
-
-        function scrolling() {
-            if (isFullyVisible(btns)) {
-                menu.classList.add('active');
-            }
-            else {
-                menu.classList.remove('active');
-            }
-        }
-        scrolling();
+        showMenu(menu, table, topValue, bottomValue)
     }());
 
     (function scrollNameCompare() {
-        window.addEventListener("scroll", scrolling, true);
-        function scrolling() {
-            const elementsPage = document.querySelectorAll('.table-price__bottom-table');
-            elementsPage.forEach(el => {
-                if (isFullyVisible(el)) {
-                    let idEl = el.id;
-                    const changeBtn = document.getElementById('change-btn');
-                    changeBtn.innerHTML = idEl;
-                }
-            });
-        }
-        function isFullyVisible(el) {
-            let topOfElements = el.getBoundingClientRect().top;
-            let bottomOfElements = el.getBoundingClientRect().bottom;
-            return (((topOfElements <= 130) && (bottomOfElements > 0)));
-        }
+        const elementsPage = document.querySelectorAll('.table-price__bottom-table');
+        scrollName(elementsPage)
     }());
 
     function changeMargin(elements, tableWidth) {
@@ -603,7 +533,7 @@ if (!!compare) {
 }
     const featureTemplate = document.querySelector('.feature-template');
 if (featureTemplate) {
-    (function addTitlesTorelativeBlock() {
+    (function addTitlesToRelativeBlock() {
         let titles = document.querySelectorAll('.editor__content>h2');
         const relativeBlock = document.querySelector('.right-relative-block>p');
         titles.forEach(title => {
@@ -616,95 +546,26 @@ if (featureTemplate) {
         })
     }());
 
+    (function anchorsFeature() {
+        const anchors = document.querySelectorAll('a[href*="#"]');
+        const yOffset = -92;
+        anchorAnimation(anchors, yOffset)
+    }());
+
     if (window.screen.width > 1023) {
         (function featureRelativeBlock() {
-            let isScrolling = false;
             const menu = document.querySelector('.right-relative-block');
-            const btns = document.querySelector('.editor');
-            window.addEventListener("scroll", throttleScroll, false);
-            function throttleScroll(e) {
-                if (isScrolling == false) {
-                    window.requestAnimationFrame(function () {
-                        scrolling(e);
-                        isScrolling = false;
-                    });
-                }
-                isScrolling = true;
-            }
-
-            function isFullyVisible(el) {
-                let elementBoundary = el.getBoundingClientRect();
-                let top = elementBoundary.top;
-                let bottom = elementBoundary.bottom;
-                return ((top <= 182) && (bottom >= 0));
-            }
-
-            function scrolling() {
-                if (isFullyVisible(btns)) {
-                    menu.classList.add('active-menu');
-                }
-                else {
-                    menu.classList.remove('active-menu');
-                }
-            }
-            scrolling();
+            const editor = document.querySelector('.editor');
+            let topValue = 182;
+            let bottomValue = 0;
+            showMenu(menu, editor, topValue, bottomValue)
         }());
 
         (function feauterScrollColor() {
-            let isScrolling = false;
-            window.addEventListener("scroll", throttleScroll, false);
-            function throttleScroll(e) {
-                if (isScrolling == false) {
-                    window.requestAnimationFrame(function () {
-                        scrolling(e);
-                        isScrolling = false;
-                    });
-                }
-                isScrolling = true;
-            }
-
             let elementsPage = document.querySelectorAll('.editor__content>h2');
-            function isFullyVisible(el) {
-                let topOfElements = el.getBoundingClientRect().top;
-                let bottomOfElements = el.getBoundingClientRect().bottom;
-                return (((topOfElements <= 200) && (bottomOfElements > 0)));
-            }
-            function scrolling() {
-                elementsPage.forEach(el => {
-                    if (isFullyVisible(el)) {
-                        let idEl = el.id;
-                        const activeBtns = featureTemplate.querySelectorAll('.active-color');
-                        let btns = document.querySelectorAll(`a[href='#${idEl}']`);
-                        changeClass(activeBtns, btns)
-                    }
-                });
-            }
-            scrolling();
+            scrollerColors(elementsPage, featureTemplate)
         }());
-
-        const changeClass = (activeBtns, els) => {
-            activeBtns.forEach(aBtn => {
-                aBtn.classList.remove('active-color')
-            });
-            els.forEach(el => {
-                el.classList.add('active-color')
-            });
-        }
     }
-
-    (function anchorAnimationFeature() {
-        const anchors = document.querySelectorAll('a[href*="#"]');
-        for (let anchor of anchors) {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault()
-                const blockID = anchor.getAttribute('href').substr(1);
-                const obj = document.getElementById(blockID);
-                const yOffset = -92;
-                const y = obj.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-            })
-        }
-    }());
 }
     const knowledgeHub = document.querySelector('.knowledge-hub');
 if (knowledgeHub) {

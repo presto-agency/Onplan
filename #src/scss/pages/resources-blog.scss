@@ -36,9 +36,6 @@
                 }
 
                 &__bottom-link{
-                    &.active{
-                        background: $textcolor;
-                    }
                     &:first-child{
                         position: relative;
                         margin: 0 42px 0 0;
