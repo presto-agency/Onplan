@@ -9793,6 +9793,10 @@ h6 {
           box-sizing: content-box;
 }
 
+.app-listing .slider-app__slide {
+  margin: auto 0;
+}
+
 .app-listing .slider-app__slide img {
   width: 100%;
   height: 100%;
