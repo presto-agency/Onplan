@@ -5,7 +5,7 @@
         .content{
             &__buttons-wrapper{
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 max-width: 540px;
                 margin: 64px auto 0;
             }
@@ -15,12 +15,13 @@
                 }
             }
             &__button{
-                margin: 0;
                 &:first-child{
+                    margin: 0 15px;
                     max-width: 282px;
                     height: 62px;
                 }
                 &:last-child{
+                    margin: 0 15px;
                     max-width: 224px;
                     height: 62px;
                 }
@@ -82,6 +83,16 @@
                 object-fit: contain;
             }
 		}
+
+        &__description{
+            p{
+                font-size: 18px;
+                line-height: 22px;
+                color: $textcolor;
+                text-align: center;
+                padding: 10px;
+            }
+        }
 
 		&__prev {
             left: 20px;

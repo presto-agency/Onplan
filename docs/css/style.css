@@ -9714,9 +9714,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 540px;
   margin: 64px auto 0;
 }
@@ -9725,16 +9725,14 @@ h6 {
   margin: 32px 0 24px 0;
 }
 
-.app-listing .quickbooks .content__button {
-  margin: 0;
-}
-
 .app-listing .quickbooks .content__button:first-child {
+  margin: 0 15px;
   max-width: 282px;
   height: 62px;
 }
 
 .app-listing .quickbooks .content__button:last-child {
+  margin: 0 15px;
   max-width: 224px;
   height: 62px;
 }
@@ -9800,6 +9798,14 @@ h6 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.app-listing .slider-app__description p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #232F42;
+  text-align: center;
+  padding: 10px;
 }
 
 .app-listing .slider-app__prev {
