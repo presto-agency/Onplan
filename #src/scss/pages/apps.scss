@@ -25,16 +25,16 @@
                 }
             }
             &__picture-side{
-                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
             }
             &__description{
-                position: absolute;
-                bottom: 10px;
-                left: 0;
                 padding: 10px;
                 width: 100%;
                 p{
                     text-align: center;
+                    color: $textcolor;
                 }
             }
         }
