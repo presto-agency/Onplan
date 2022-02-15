@@ -138,17 +138,7 @@ function anchorAnimation(anchors, yOffset) {
 };
 
 function showMenu(menu, objects, topValue, bottomValue) {
-    let isScrolling = false;
-    window.addEventListener("scroll", throttleScroll, false);
-    function throttleScroll(e) {
-        if (isScrolling == false) {
-            window.requestAnimationFrame(function () {
-                scrolling(e);
-                isScrolling = false;
-            });
-        }
-        isScrolling = true;
-    }
+    window.addEventListener("scroll", scrolling, false);
 
     function isFullyVisible(el) {
         let elementBoundary = el.getBoundingClientRect();
@@ -169,23 +159,7 @@ function showMenu(menu, objects, topValue, bottomValue) {
 };
 
 function scrollerColors(elementsPage, sheet) {
-    let isScrolling = false;
-    window.addEventListener("scroll", throttleScroll, false);
-    function throttleScroll(e) {
-        if (isScrolling == false) {
-            window.requestAnimationFrame(function () {
-                scrolling(e);
-                isScrolling = false;
-            });
-        }
-        isScrolling = true;
-    }
-
-    function isFullyVisible(el) {
-        let topOfElements = el.getBoundingClientRect().top;
-        let bottomOfElements = el.getBoundingClientRect().bottom;
-        return (((topOfElements <= 200) && (bottomOfElements > 0)));
-    }
+    window.addEventListener("scroll", scrolling, false);
     function scrolling() {
         elementsPage.forEach(el => {
             if (isFullyVisible(el)) {
@@ -203,6 +177,11 @@ function scrollerColors(elementsPage, sheet) {
         els.forEach(el => {
             el.classList.add('active-color')
         });
+    }
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= 200) && (bottomOfElements > 0)));
     }
     scrolling();
 };
