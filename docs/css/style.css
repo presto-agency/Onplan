@@ -10016,6 +10016,22 @@ h6 {
      object-fit: contain;
 }
 
+.apps .resources-blog .slider-resources__picture-side {
+  position: relative;
+}
+
+.apps .resources-blog .slider-resources__description {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.apps .resources-blog .slider-resources__description p {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
