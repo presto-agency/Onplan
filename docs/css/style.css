@@ -9996,6 +9996,21 @@ h6 {
   overflow: hidden;
 }
 
+.apps .resources-blog .blog-cards .card__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.apps .resources-blog .slider-resources__pagination {
+  position: static;
+  margin: 30px 0 0 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #232F42;
+  font-family: "Mulish";
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
@@ -11848,6 +11863,30 @@ h6 {
     margin: 0 0 30px 0;
     font-size: 48px;
     line-height: 52px;
+  }
+
+  .apps .resources-blog .blog-cards__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 50px auto 0;
+  }
+
+  .apps .resources-blog .blog-cards__container {
+    position: relative;
+  }
+
+  .apps .resources-blog .blog-cards__container:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(90%, #f8f9fc));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 50%, #f8f9fc 90%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #f8f9fc 90%);
   }
 }
 

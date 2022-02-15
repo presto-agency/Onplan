@@ -396,6 +396,17 @@ if (!!resourcesBlog) {
                 loadOnTransitionStart: true,
                 loadPrevNext: true,
             },
+            breakpoints: {
+                1024: {
+                    pagination: false,
+                },
+                0: {
+                    pagination: {
+                        el: ".slider-resources__pagination",
+                        type: "fraction",
+                    },
+                }
+            }
         });
     }());
 }

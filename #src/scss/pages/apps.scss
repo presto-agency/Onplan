@@ -1,0 +1,45 @@
+.apps{
+    .resources-blog{
+        .blog-cards{
+            .card{
+                &__img{
+                    img{
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .slider-resources{
+            &__pagination{
+                position: static;
+                margin: 30px 0 0 0;
+                font-size: 18px;
+                line-height: 22px;
+                color: $textcolor;
+                font-family: $fontfamily;
+                text-align: left;
+            }
+        }
+        @media(max-width: 1023px){
+            .blog-cards{
+                &__button{
+                    display: flex;
+                    margin: 50px auto 0;
+                }
+                &__container{
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        pointer-events: none;
+                        right: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: linear-gradient(to right,rgba($whitecolor, 0) 50%, rgba($bg-greycolor, 1) 90%);
+                    }
+                }
+            }
+        }
+    }
+}
