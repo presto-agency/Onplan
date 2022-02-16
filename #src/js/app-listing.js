@@ -24,15 +24,22 @@ if (!!appListing) {
             },
             speed: 500,
             spaceBetween: 30,
-            preloadImages: true,
-            loop: true,
-            lazy: {
-                loadOnTransitionStart: true,
-                loadPrevNext: true,
-            },
         });
     }());
     (function pauseMainSlider() {
-
+        let pauseBtns = document.querySelectorAll('.swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet');
+        let iframes = document.querySelectorAll('iframe');
+        iframes.forEach(iframe => {
+            let iframeSrc = iframe.src + '?enablejsapi=1&html5=1';
+            iframe.removeAttribute('src');
+            iframe.setAttribute('src', iframeSrc);
+        })
+        pauseBtns.forEach(btn => {
+            btn.onclick = () => {
+                iframes.forEach(iframe => {
+                    iframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                })
+            }
+        })
     }());
 }

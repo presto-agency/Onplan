@@ -1,5 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
-    const headerMenu = document.querySelector('.header');
+const headerMenu = document.querySelector('.header');
 if (!!headerMenu) {
     (function burgerAnimation() {
         const burger = document.querySelector('.header__burger');
@@ -203,7 +202,9 @@ function scrollName(elementsPage) {
         return (((topOfElements <= 130) && (bottomOfElements > 0)));
     }
 };
-    const blog = document.querySelector('.blog');
+
+
+const blog = document.querySelector('.blog');
 if (!!blog) {
     (function showMore() {
         const itemSpan = document.querySelector('.author__content-side > span');
@@ -318,7 +319,7 @@ if (!!blog) {
     })();
 }
 
-    const mainPage = document.querySelector('.main-page');
+const mainPage = document.querySelector('.main-page');
 if (!!mainPage) {
     (function callTabs() {
         let elementsLink = document.querySelectorAll('.trigger-obj');
@@ -344,7 +345,7 @@ if (!!mainPage) {
         }))
     }());
 }
-    const allIntegration = document.querySelector('.all-integrtation');
+const allIntegration = document.querySelector('.all-integrtation');
 if (!!allIntegration) {
     (function anchorsIntegration() {
         const anchors = document.querySelectorAll('a[href*="#"]');
@@ -368,7 +369,7 @@ if (!!allIntegration) {
 }
 
 
-    const resourcesBlog = document.querySelector('.resources-blog');
+const resourcesBlog = document.querySelector('.resources-blog');
 if (!!resourcesBlog) {
     (function swiperResources() {
         new Swiper('.slider-resources', {
@@ -411,7 +412,7 @@ if (!!resourcesBlog) {
     }());
 }
 
-    const pricing = document.querySelector('.pricing');
+const pricing = document.querySelector('.pricing');
 if (!!pricing) {
     (function showAllIntegrationMenu() {
         const menu = document.querySelector('.pricing__relative-title');
@@ -425,7 +426,7 @@ if (!!pricing) {
         scrollName(elementsPage)
     }());
 }
-    const about = document.querySelector('.about-onplan');
+const about = document.querySelector('.about-onplan');
 if (!!about) {
     (function addClassToAuthor() {
         const btns = document.querySelectorAll('.our-team__more-text');
@@ -453,7 +454,7 @@ if (!!about) {
         grabCursor(containers)
     }());
 }
-    const compare = document.querySelector('.compare-competition');
+const compare = document.querySelector('.compare-competition');
 if (!!compare) {
 
     (function marginTopTable() {
@@ -521,7 +522,7 @@ if (!!compare) {
     }
 
 }
-    const featureTemplate = document.querySelector('.feature-template');
+const featureTemplate = document.querySelector('.feature-template');
 if (featureTemplate) {
     (function addTitlesToRelativeBlock() {
         let titles = document.querySelectorAll('.editor__content>h2');
@@ -557,7 +558,7 @@ if (featureTemplate) {
         }());
     }
 }
-    const knowledgeHub = document.querySelector('.knowledge-hub');
+const knowledgeHub = document.querySelector('.knowledge-hub');
 if (knowledgeHub) {
     (function sortSelect() {
         let blockSort = document.getElementById("sort");
@@ -680,7 +681,7 @@ if (knowledgeHub) {
     //     });
     // }());
 }
-    const scenarioPlanning = document.querySelector('.scenario-planning');
+const scenarioPlanning = document.querySelector('.scenario-planning');
 if (scenarioPlanning) {
     (function turnCross() {
         let crosses = document.querySelectorAll('.open-menu');
@@ -695,7 +696,7 @@ if (scenarioPlanning) {
         })
     }());
 }
-    const appListing = document.querySelector('.app-listing');
+const appListing = document.querySelector('.app-listing');
 if (!!appListing) {
     (function swiperApp() {
         new Swiper('.slider-app__swiper', {
@@ -721,19 +722,29 @@ if (!!appListing) {
             },
             speed: 500,
             spaceBetween: 30,
-            preloadImages: true,
-            loop: true,
-            lazy: {
-                loadOnTransitionStart: true,
-                loadPrevNext: true,
-            },
         });
     }());
     (function pauseMainSlider() {
-
+        let pauseBtns = document.querySelectorAll('.swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet');
+        let iframes = document.querySelectorAll('iframe');
+        iframes.forEach(iframe => {
+            let iframeSrc = iframe.src + '?enablejsapi=1&html5=1';
+            iframe.removeAttribute('src');
+            iframe.setAttribute('src', iframeSrc);
+        })
+        pauseBtns.forEach(btn => {
+            btn.onclick = () => {
+                iframes.forEach(iframe => {
+                    iframe.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                })
+            }
+        })
     }());
 }
-})
+
+
+
+
 
 
 
