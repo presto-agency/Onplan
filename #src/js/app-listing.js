@@ -33,13 +33,6 @@ if (!!appListing) {
         });
     }());
     (function pauseMainSlider() {
-        let sliderNavElement = document.querySelectorAll('.swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet');
-        sliderNavElement.forEach(el => {
-            el.onclick = () => {
-                let iframe = document.querySelector('iframe');
-                let iframeSrc = iframe.src;
-                iframe.src = iframeSrc;
-            }
-        })
+
     }());
 }
