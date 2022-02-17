@@ -620,66 +620,6 @@ if (knowledgeHub) {
             }))
         }
     }());
-    // (function swiperTemplate() {
-    //     new Swiper('.swiper-template', {
-    //         navigation: {
-    //             nextEl: '.load-more-template',
-    //         },
-    //         grabCursor: true,
-    //         creativeEffect: {
-    //             prev: {
-    //                 translate: ["-120%", 0, -1],
-    //             },
-    //             next: {
-    //                 translate: ["120%", 0, 0],
-    //             },
-    //         },
-    //         speed: 500,
-    //         spaceBetween: 32,
-    //         preloadImages: false,
-    //         lazy: true,
-    //         breakpoints: {
-    //             768: {
-    //                 slidesPerView: 2,
-    //                 slidesPerGroup: 2,
-    //             },
-    //             0: {
-    //                 slidesPerView: 1,
-    //                 slidesPerGroup: 1,
-    //             }
-    //         }
-    //     });
-    // }());
-    // (function swiperGuide() {
-    //     new Swiper('.swiper-guide', {
-    //         navigation: {
-    //             nextEl: '.load-more-guide',
-    //         },
-    //         grabCursor: true,
-    //         creativeEffect: {
-    //             prev: {
-    //                 translate: ["-120%", 0, -1],
-    //             },
-    //             next: {
-    //                 translate: ["120%", 0, 0],
-    //             },
-    //         },
-    //         speed: 500,
-    //         spaceBetween: 32,
-    //         preloadImages: false,
-    //         lazy: true,
-    //         breakpoints: {
-    //             768: {
-    //                 slidesPerView: 2,
-    //                 slidesPerGroup: 2,
-    //             },
-    //             0: {
-    //                 slidesPerView: 1,
-    //                 slidesPerGroup: 1,
-    //             }
-    //         }
-    //     });
-    // }());
 }
 const scenarioPlanning = document.querySelector('.scenario-planning');
 if (scenarioPlanning) {
