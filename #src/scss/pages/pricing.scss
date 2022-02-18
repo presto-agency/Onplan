@@ -510,9 +510,6 @@
                     &.growth, &.growth-plus{
                         .table-price{
                             &__content-description{
-                                h5{
-                                    text-align: left;
-                                }
                                 p{
                                     text-align: left;
                                     padding: 0 20px;
@@ -586,6 +583,7 @@
                     width: 100%;
                     margin: 0 0 24px 0;
                     h5{
+                        text-align: center;
                         margin: 0;
                         padding: 12px 20px;
                         border-top: 1px solid $greycolor;

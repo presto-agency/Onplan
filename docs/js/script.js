@@ -410,6 +410,10 @@ if (!!resourcesBlog) {
             }
         });
     }());
+    (function grabCursorResources() {
+        let containers = document.querySelectorAll('.card__element-wrapper');
+        grabCursor(containers)
+    }());
 }
 
 const pricing = document.querySelector('.pricing');

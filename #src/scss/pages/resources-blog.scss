@@ -135,16 +135,21 @@
                     object-fit: cover;
                     transition: 300ms;
                 }
-                @media(min-width: 1024px){
-                    &:hover{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
             }
 
             &__content{
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: 2;
+                    right: -8px;
+                    top: 0;
+                    width: 50%;
+                    height: 48px;
+                    background: linear-gradient(to right, rgb(245, 245, 245, 0) 20%, rgb($bg-greycolor, 1));
+                }
                 span{
                     text-align: center;
                     max-width: 100%;
@@ -157,6 +162,7 @@
                     letter-spacing: 0.1em;
                     font-size: 14px;
                     margin: 8px;
+                    white-space: nowrap;
                     &.green{
                         background: rgba(133, 222, 175, 0.15);
                         color: #85DEAF;
@@ -194,12 +200,22 @@
                         font-weight: 900;
                         font-size: 30px;
                         line-height: 120%;
-                        color: $textcolor;
                         margin: 0 0 12px 0;
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 2;
                         overflow: hidden;
+                        a{
+                            color: $textcolor;
+                            transition: 300ms;
+                        }
+                        @media(min-width: 1024px){
+                            &:hover{
+                                a{
+                                    color: rgba($color: $textcolor, $alpha: 0.5);
+                                }
+                            }
+                        }
                     }
                     p{
                         font-size: 20px;
@@ -214,9 +230,16 @@
             }
     
             &__element-wrapper {
+                position: relative;
+                overflow-x: auto;
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 margin: 30px -8px 12px -8px;
+                min-height: 48px;
+                cursor: grab;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
 
             &__person{
