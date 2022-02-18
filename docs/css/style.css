@@ -5804,6 +5804,7 @@ h6 {
 }
 
 .resources-blog .blog-cards .card__content h3 {
+  min-height: 72px;
   font-weight: 900;
   font-size: 30px;
   line-height: 120%;
@@ -5822,6 +5823,7 @@ h6 {
 }
 
 .resources-blog .blog-cards .card__content p {
+  min-height: 96px;
   font-size: 20px;
   line-height: 160%;
   color: #606A80;
