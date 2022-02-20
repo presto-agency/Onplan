@@ -202,11 +202,11 @@
                         font-size: 30px;
                         line-height: 120%;
                         margin: 0 0 12px 0;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;
-                        overflow: hidden;
                         a{
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
                             color: $textcolor;
                             transition: 300ms;
                         }

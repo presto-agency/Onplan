@@ -5809,13 +5809,13 @@ h6 {
   font-size: 30px;
   line-height: 120%;
   margin: 0 0 12px 0;
+}
+
+.resources-blog .blog-cards .card__content h3 a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-}
-
-.resources-blog .blog-cards .card__content h3 a {
   color: #232F42;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
