@@ -173,17 +173,6 @@
                     position: relative;
                     margin: 16px;
                     cursor: pointer;
-                    &:before{
-                        content: '';
-                        position: absolute;
-                        pointer-events: none;
-                        z-index: 2;
-                        right: -8px;
-                        top: 240px;
-                        width: 50%;
-                        height: 48px;
-                        background: linear-gradient(to right, rgb(245, 245, 245, 0) 20%, rgb($bg-greycolor, 1));
-                    }
                     &.featured{
                         .content-cards {
                             &__tag{
@@ -319,6 +308,18 @@
                 }
         
                 &__description {
+                    position: relative;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        pointer-events: none;
+                        z-index: 2;
+                        right: -9px;
+                        top: -52px;
+                        width: 50%;
+                        height: 48px;
+                        background: linear-gradient(to right, rgb(245, 245, 245, 0) 20%, rgb($bg-greycolor, 1));
+                    }
                     h3{
                         min-height: 48px;
                         font-weight: 900;
