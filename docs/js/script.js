@@ -624,6 +624,10 @@ if (knowledgeHub) {
             }))
         }
     }());
+    (function grabCursorknowledge() {
+        let containers = document.querySelectorAll('.content-cards__tag-wrap');
+        grabCursor(containers)
+    }());
 }
 const scenarioPlanning = document.querySelector('.scenario-planning');
 if (scenarioPlanning) {

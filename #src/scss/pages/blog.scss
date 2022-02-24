@@ -370,26 +370,6 @@
                 &__card {
                     max-width: 370px;
                     width: 100%;
-                    &.green{
-                        .slider{
-                            &__content{
-                                span{
-                                    background: rgba(133, 222, 175, 0.15);
-                                    color: #85DEAF;
-                                }
-                            }
-                        }
-                    }
-                    &.blue{
-                        .slider{
-                            &__content{
-                                span{
-                                    background: rgba(141, 188, 254, 0.15);
-                                    color: #8DBCFE;
-                                }
-                            }
-                        }
-                    }
                 }
         
                 &__img {
@@ -406,19 +386,6 @@
                 }
         
                 &__content {
-                    span{
-                        text-align: center;
-                        max-width: 100%;
-                        height: 100%;
-                        line-height: 20px;
-                        border-radius: 32px;
-                        padding: 6px 16px;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        letter-spacing: 0.1em;
-                        font-size: 14px;
-                        margin: 8px;
-                    }
                         h3{
                             font-weight: 900;
                             font-size: 30px;
@@ -440,7 +407,54 @@
                 &__element-wrapper{
                     display: flex;
                     flex-wrap: wrap;
+                    overflow: hidden;
                     margin: 30px -8px 12px -8px;
+                    span{
+                        text-align: center;
+                        max-width: 100%;
+                        height: 100%;
+                        line-height: 20px;
+                        border-radius: 32px;
+                        padding: 6px 16px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        letter-spacing: 0.1em;
+                        font-size: 14px;
+                        margin: 8px;
+                        white-space: nowrap;
+                        &.green{
+                            background: rgba(133, 222, 175, 0.15);
+                            color: #85DEAF;
+                        }
+                        &.blue{
+                            background: rgba(141, 188, 254, 0.15);
+                            color: $purplecolor;
+                        }
+                        &.purple{
+                            background: rgba(110, 122, 255, 0.1);
+                            color: #8DBCFE;
+                        }
+                        &.orange{
+                            background: rgba(242, 151, 61, 0.15);
+                            color: #F2973D;
+                        }
+                        &.grey{
+                            background: rgba(35, 47, 66, 0.75);
+                            color: $whitecolor;
+                        }
+                        &.dark-purple{
+                            background: rgba(125, 93, 249, 0.15);
+                            color: $purplecolor;
+                        }
+                        &.dark-orange{
+                            background: #F2973D;
+                            color: $whitecolor;
+                        }
+                        &.dark-purple{
+                            background: $purplecolor;
+                            color: $whitecolor;
+                        }
+                    }
                 }
         }
     }
