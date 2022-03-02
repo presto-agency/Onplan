@@ -3916,6 +3916,149 @@ h6 {
   background-image: url(../img/arrow-slider-w.svg);
 }
 
+.blog .slider-top {
+  position: relative;
+  margin: 64px 0;
+}
+
+.blog .slider-top .swiper__slide {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  background-color: #fff;
+  padding: 0 0 34px 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.blog .slider-top .swiper__slide.wp-block-image {
+  margin: 0;
+}
+
+.blog .slider-top .swiper__slide.wp-block-image img {
+  border: 1px solid #606A80;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: inherit;
+}
+
+.blog .slider-top .swiper__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.blog .slider-top .swiper__slide figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 18px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(96, 106, 128, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.blog .slider-top .swiper__pagination {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 17px 0 0 0;
+}
+
+.blog .slider-top .swiper__pagination .swiper-pagination-bullet {
+  background: #EDF0F2;
+  opacity: 1;
+  margin: 5px 20px 5px 0;
+}
+
+.blog .slider-top .swiper__pagination .swiper-pagination-bullet-active {
+  background: #707EFF;
+}
+
+.blog .slider-top__prev {
+  left: -70px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.blog .slider-top__prev:after {
+  font-size: 0;
+}
+
+.blog .slider-top__next {
+  right: -70px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.blog .slider-top__next:after {
+  font-size: 0;
+}
+
+.blog .slider-top .slider-arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(230, 233, 245, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  background-color: #fff;
+}
+
+.blog .slider-top .slider-arrow svg {
+  width: 7px;
+  height: 9px;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  fill: #707EFF;
+}
+
+.blog .slider-top .slider-arrow:hover {
+  background-color: #707EFF;
+}
+
+.blog .slider-top .slider-arrow:hover svg {
+  fill: #fff;
+}
+
 .blog .author {
   margin: 80px 0 100px 0;
 }
@@ -11331,6 +11474,18 @@ h6 {
     padding: 60px 80px;
   }
 
+  .blog .slider-top .slider-arrow {
+    display: none;
+  }
+
+  .blog .slider-top__prev {
+    display: none;
+  }
+
+  .blog .slider-top__next {
+    display: none;
+  }
+
   .main-page .simplicity {
     margin: 0 0 64px 0;
   }
@@ -12488,6 +12643,19 @@ h6 {
 
   .blog .author__picture-side {
     margin: 0;
+  }
+
+  .blog .slider-top {
+    margin: 52px 0;
+  }
+
+  .blog .slider-top .swiper {
+    width: 335px;
+  }
+
+  .blog .slider-top .swiper__slide {
+    width: 335px;
+    height: 230px;
   }
 
   .popular .slider {
@@ -14461,6 +14629,19 @@ h6 {
 
   .case-studies .models__content h2 {
     font-size: 30px;
+  }
+
+  .blog .slider-top {
+    margin: 32px 0;
+  }
+
+  .blog .slider-top .swiper {
+    width: 280px;
+  }
+
+  .blog .slider-top .swiper__slide {
+    width: 280px;
+    height: 200px;
   }
 
   .book-a-demo .form__logos-list {
