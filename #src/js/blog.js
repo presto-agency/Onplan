@@ -47,6 +47,13 @@ if (!!blog) {
         });
     })();
 
+    (function changeclassWpSwiper() {
+        let swiper = document.querySelector('.swiper-container');
+        if (swiper) {
+            swiper.className = "swiper";
+        }
+    })();
+
     (function swiperWp() {
         new Swiper('.wp-swiper .swiper', {
             navigation: {
