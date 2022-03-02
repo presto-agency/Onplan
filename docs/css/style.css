@@ -3991,7 +3991,7 @@ h6 {
 .blog .slider-top .swiper__pagination .swiper-pagination-bullet {
   background: #EDF0F2;
   opacity: 1;
-  margin: 5px 20px 5px 0;
+  margin: 5px 10px;
 }
 
 .blog .slider-top .swiper__pagination .swiper-pagination-bullet-active {
@@ -11486,6 +11486,14 @@ h6 {
     display: none;
   }
 
+  .blog .wp-swiper .swiper-button-prev {
+    display: none;
+  }
+
+  .blog .wp-swiper .swiper-button-next {
+    display: none;
+  }
+
   .main-page .simplicity {
     margin: 0 0 64px 0;
   }
@@ -12654,6 +12662,11 @@ h6 {
   }
 
   .blog .slider-top .swiper__slide {
+    width: 335px;
+    height: 230px;
+  }
+
+  .blog .wp-swiper .swiper-slide {
     width: 335px;
     height: 230px;
   }
@@ -14640,6 +14653,11 @@ h6 {
   }
 
   .blog .slider-top .swiper__slide {
+    width: 280px;
+    height: 200px;
+  }
+
+  .blog .wp-swiper .swiper-slide {
     width: 280px;
     height: 200px;
   }

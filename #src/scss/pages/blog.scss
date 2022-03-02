@@ -331,7 +331,7 @@
                 .swiper-pagination-bullet{
                     background: $greycolor;
                     opacity: 1;
-                    margin: 5px 20px 5px 0;
+                    margin: 5px 10px;
                 }
                 .swiper-pagination-bullet-active{
                     background: $purplecolor;
@@ -610,6 +610,14 @@
                 display: none;
             }
         }
+        .wp-swiper{
+            .swiper-button-prev{
+                display: none;
+            }
+            .swiper-button-next{
+                display: none;
+            }
+        }
     }
 }
 @media(max-width: 767px){
@@ -659,6 +667,12 @@
                     width: 335px;
                     height: 230px;
                 }
+            }
+        }
+        .wp-swiper{
+            .swiper-slide{
+                width: 335px;
+                height: 230px;
             }
         }
     }
@@ -768,6 +782,12 @@
                     width: 280px;
                     height: 200px;
                 }
+            }
+        }
+        .wp-swiper{
+            .swiper-slide{
+                width: 280px;
+                height: 200px;
             }
         }
     }
