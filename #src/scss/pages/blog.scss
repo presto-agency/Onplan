@@ -164,6 +164,115 @@
             }
         }
     }
+    .wp-swiper{
+        // overflow: hidden;
+        position: relative;
+        margin: 64px 0;
+        &__slide-content{
+            height: 100%;
+        }
+        .swiper-slide{
+            position: relative;
+            width: 720px;
+            height: 480px;
+            background-color: $whitecolor;
+            padding: 0 0 34px 0;
+            box-sizing: content-box;
+            figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 18px;
+                width: 100%;
+                text-align: center;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba($darkgreycolor, 0.6);
+                background: rgba($whitecolor, 0.6);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .wp-block-image{
+                margin: 0;
+                height: 100%;
+                img{
+                    border-radius: initial;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    overflow: inherit;
+                }
+            }
+        }
+        .swiper-pagination{
+            position: static;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 17px 0 0 0;
+            .swiper-pagination-bullet{
+                background: $greycolor;
+                opacity: 1;
+                margin: 5px 10px;
+            }
+            .swiper-pagination-bullet-active{
+                background: $purplecolor;
+            }
+        }
+        .swiper-button-prev{
+            left: -70px;
+            transform: translateY(-50%);
+            width: initial;
+            &:after{
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid rgba(230, 233, 245, 0.6);
+                background-color: $whitecolor;
+                font-size: 0;
+                background-image: url(../img/arrow-slider.svg);
+                background-size: 7px 9px;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: 300ms ease-in-out;
+            }
+            &:hover{
+                &:after{
+                    background-color: $purplecolor;
+                    background-image: url(../img/arrow-slider-w.svg);
+                }
+            }
+        }
+        .swiper-button-next{
+            right: -70px;
+            transform: translateY(-50%) rotate(180deg);
+            width: initial;
+            &:after{
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid rgba(230, 233, 245, 0.6);
+                background-color: $whitecolor;
+                font-size: 0;
+                background-image: url(../img/arrow-slider.svg);
+                background-size: 7px 9px;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: 300ms ease-in-out;
+            }
+            &:hover{
+                &:after{
+                    background-color: $purplecolor;
+                    background-image: url(../img/arrow-slider-w.svg);
+                }
+            }
+        }
+    }
     .slider-top {
         position: relative;
         margin: 64px 0;

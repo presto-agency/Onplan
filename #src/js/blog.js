@@ -47,6 +47,40 @@ if (!!blog) {
         });
     })();
 
+    (function swiperWp() {
+        new Swiper('.wp-swiper .swiper', {
+            navigation: {
+                nextEl: '.wp-swiper .swiper-button-next',
+                prevEl: '.wp-swiper .swiper-button-prev'
+            },
+            pagination: {
+                el: '.wp-swiper .swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            // effect: "creative",
+            // creativeEffect: {
+            //     prev: {
+            //         translate: ["-120%", 0, -1],
+            //     },
+            //     next: {
+            //         translate: ["120%", 0, 0],
+            //     },
+            // },
+            speed: 500,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            loop: true,
+            spaceBetween: 30,
+            speed: 300,
+            preloadImages: true,
+            lazy: {
+                loadOnTransitionStart: true,
+                loadPrevNext: true,
+            },
+        });
+    })();
+
     (function swiperCard() {
         new Swiper('.popular__slider', {
             slidesPerView: 3,
