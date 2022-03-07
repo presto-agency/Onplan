@@ -10378,6 +10378,11 @@ h6 {
     pointer-events: initial;
   }
 
+  .header__button-header:hover {
+    background: #232F42;
+    color: #fff;
+  }
+
   .header .submenu__item.content-bottom:hover {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 245, 250, 0.4)), to(rgba(242, 245, 250, 0.4)));
     background: -o-linear-gradient(bottom, rgba(242, 245, 250, 0.4), rgba(242, 245, 250, 0.4));
@@ -10431,11 +10436,6 @@ h6 {
 }
 
 @media (min-width: 1440px) {
-  .header__button-header:hover {
-    background: #232F42;
-    color: #fff;
-  }
-
   .quickbooks .content__bottom-link:hover a {
     opacity: 0.5;
   }

@@ -132,7 +132,7 @@
         color: $textcolor;
         border: 2px solid $textcolor;
         transition: 300ms;
-        @media(min-width: 1440px){
+        @media(min-width: 1025px){
             &:hover{
                 background: $textcolor;
                 color: $whitecolor;
