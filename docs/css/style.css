@@ -2880,6 +2880,91 @@ h6 {
   height: 578px;
 }
 
+.help {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  background-color: #89b8fa;
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help__container {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  width: 100%;
+}
+
+.help__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.help__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.help__text span {
+  position: relative;
+  font-weight: 700;
+  margin: 0 3px 0 0;
+  padding: 0 0 0 20px;
+}
+
+.help__text span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 14px;
+  width: 18px;
+  background: url(../img/ukr.png);
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.help__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  height: 40px;
+  background: #f7fa30;
+}
+
+.help__btn a {
+  font-size: 18px;
+  font-weight: 800;
+  color: #232f42;
+  padding: 0 20px;
+}
+
 .integration {
   position: relative;
   padding: 100px 0;
@@ -10734,6 +10819,10 @@ h6 {
     overflow: hidden;
   }
 
+  .help__text p {
+    display: none;
+  }
+
   .blog .editor {
     padding: 0 20px;
   }
@@ -13827,6 +13916,10 @@ h6 {
     text-align: left;
   }
 
+  .help__btn a span {
+    display: none;
+  }
+
   .blog__section-wrapper {
     padding: 64px 0;
   }
@@ -14676,6 +14769,10 @@ h6 {
   .see-apps__description h2 {
     font-size: 30px;
     line-height: 32px;
+  }
+
+  .help__text {
+    font-size: 12px;
   }
 
   .case-studies .models__content h2 {
