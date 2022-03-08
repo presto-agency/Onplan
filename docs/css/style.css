@@ -10284,6 +10284,12 @@ h6 {
   overflow: hidden;
 }
 
+.app-listing .related-content .card__content:before {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(245, 245, 245, 0)), to(#f8f9fc));
+  background: -o-linear-gradient(left, rgba(245, 245, 245, 0) 20%, #f8f9fc);
+  background: linear-gradient(to right, rgba(245, 245, 245, 0) 20%, #f8f9fc);
+}
+
 .apps .resources-blog .blog-cards .card__img img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -10370,12 +10376,6 @@ h6 {
 
   .pricing .platform-plans .table-price .bottom-table:last-child .bottom-table__bottom-block:last-child .bottom-table__link:last-child {
     border-radius: 0 0 24px 0;
-  }
-
-  .knowledge-hub .related-content .card__img:hover img {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
   }
 }
 

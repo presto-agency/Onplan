@@ -270,6 +270,15 @@
             }
 		}
     }
+    .related-content{
+        .card{
+            &__content{
+                &:before{
+                    background: linear-gradient(to right, rgb(245, 245, 245, 0) 20%, rgb($bg-greycolor , 1));
+                }
+            }
+        }
+    }
     @media(max-width: 1199px){
         .slider-app{
             &__next{

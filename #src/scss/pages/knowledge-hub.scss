@@ -470,13 +470,6 @@
                     object-fit: cover;
                     transition: 300ms;
                 }
-                @media(min-width: 1024px){
-                    &:hover{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
             }
 
             &__content{
