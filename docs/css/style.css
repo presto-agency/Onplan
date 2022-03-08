@@ -2447,12 +2447,20 @@ h6 {
   margin: 24px 0;
 }
 
+.editor__content h3 strong {
+  font-weight: 900;
+}
+
 .editor__content h4 {
   font-size: 26px;
   line-height: 29px;
   font-weight: 900;
   color: #232F42;
   margin: 24px 0;
+}
+
+.editor__content h4 strong {
+  font-weight: 900;
 }
 
 .editor__content h5 {
