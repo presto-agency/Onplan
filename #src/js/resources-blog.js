@@ -40,7 +40,7 @@ if (!!resourcesBlog) {
         });
     }());
     (function grabCursorResources() {
-        let containers = document.querySelectorAll('.card__element-wrapper');
+        let containers = document.querySelectorAll('.card__element-wrapper, .content__bottom-links');
         grabCursor(containers)
     }());
 }
