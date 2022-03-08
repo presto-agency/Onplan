@@ -2343,6 +2343,10 @@ h6 {
   margin: 64px 0 24px 0;
 }
 
+.editor__content h2 strong {
+  font-weight: 900;
+}
+
 .editor__content h2:first-child {
   margin: 0 0 24px 0;
 }
