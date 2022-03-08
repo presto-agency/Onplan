@@ -148,6 +148,10 @@ h6 {
   padding: 82px 0 0 0;
 }
 
+.root.root-help {
+  padding: 142px 0 0 0;
+}
+
 .root-book {
   padding: 48px 0 0 0;
 }
@@ -166,6 +170,10 @@ h6 {
   background: #fff;
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+.header.header-mob {
+  top: 60px;
 }
 
 .header__content {
@@ -7756,6 +7764,8 @@ h6 {
 }
 
 .open-roles .vacancies {
+  position: relative;
+  z-index: 2;
   padding: 0 20px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -10370,6 +10380,14 @@ h6 {
 }
 
 @media (min-width: 1025px) {
+  .header.header-mob .header__link:hover.arrow .submenu {
+    top: 142px;
+  }
+
+  .header.header-mob .submenu {
+    top: 102px;
+  }
+
   .header__link:hover .header__link-title {
     color: #707EFF;
   }
@@ -10766,8 +10784,16 @@ h6 {
     padding: 68px 0 0 0;
   }
 
+  .root.root-help {
+    padding: 128px 0 0 0;
+  }
+
   a {
     cursor: default;
+  }
+
+  .header.header-mob .submenu {
+    top: 60px;
   }
 
   .header:after {

@@ -6,6 +6,32 @@
     width: 100%;
     background: $whitecolor;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    &.header-mob{
+        top: 60px;
+        .header{
+            &__link{
+                @media(min-width: 1025px){
+                    &:hover{
+                        &.arrow{
+                            .submenu{
+                                top: 142px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media(min-width: 1025px){
+            .submenu{
+                top: 102px;
+            }
+        }
+        @media (max-width: 1024px) {
+            .submenu{
+                top: 60px;
+            }
+        }
+    }
     &__content {
         position: relative;
         display: flex;
