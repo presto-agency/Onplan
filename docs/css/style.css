@@ -2642,6 +2642,53 @@ h6 {
   font-weight: 400;
 }
 
+.editor__content .wp-block-quote {
+  position: relative;
+  z-index: 2;
+  color: #606A80;
+  background-color: #F8F9FC;
+  padding: 52px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.editor__content .wp-block-quote p {
+  margin: 48px 0 0 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.editor__content .wp-block-quote p:first-child {
+  margin: 0;
+}
+
+.editor__content .wp-block-quote cite {
+  position: relative;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 800;
+  font-style: normal;
+  color: #232F42;
+  margin: 32px 0 0 0;
+  padding: 0 0 0 25px;
+}
+
+.editor__content .wp-block-quote cite:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 1px;
+  background-color: #232F42;
+}
+
 .editor__content .financial-planning {
   background: #F8F9FC;
   border-radius: 16px;
@@ -12564,6 +12611,22 @@ h6 {
 
   .editor__content .wp-block-pullquote:before {
     left: 0;
+  }
+
+  .editor__content .wp-block-quote {
+    padding: 52px 0;
+    background-color: inherit;
+  }
+
+  .editor__content .wp-block-quote:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -20px;
+    top: 0;
+    width: calc(100% + 40px);
+    height: 100%;
+    background-color: #F8F9FC;
   }
 
   .see-apps {

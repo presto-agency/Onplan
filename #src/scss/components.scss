@@ -2075,6 +2075,60 @@
                 }
             }
         }
+        .wp-block-quote{
+            position: relative;
+            z-index: 2;
+            color: $darkgreycolor;
+            background-color: $bg-greycolor;
+            padding: 52px;
+            border-radius: 20px;
+            margin: 40px 0;
+            p{
+                margin: 48px 0 0 0;
+                font-size: 20px;
+                line-height: 32px;
+                font-weight: 400;
+                &:first-child{
+                    margin: 0;
+                }
+            }
+            cite{
+                position: relative;
+                display: block;
+                text-align: left;
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 800;
+                font-style: normal;
+                color: $textcolor;
+                margin: 32px 0 0 0;
+                padding: 0 0 0 25px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        width: 20px;
+                        height: 1px;
+                        background-color: $textcolor;
+                    }
+            }
+            @media(max-width: 767px){
+                padding: 52px 0;
+                background-color: inherit;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    left: -20px;
+                    top: 0;
+                    width: calc(100% + 40px);
+                    height: 100%;
+                    background-color:$bg-greycolor;
+                }
+            }
+        }
         .financial-planning {
             background: $bg-greycolor;
             border-radius: 16px;
