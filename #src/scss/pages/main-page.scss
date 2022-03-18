@@ -580,11 +580,12 @@
                     margin: 54px 0 0 0;
                     &:after{
                         content: '';
-                        width: 837px;
+                        width: 640px;
                     }
                 }
                 &__item{
-                    padding: 0 27px 16px 0;
+                    margin: 0 27px 0 0;
+                    padding: 0 0 16px 0;
                 }
                 &__body{
                     margin: 52px 0 0 0;
