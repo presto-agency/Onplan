@@ -858,7 +858,10 @@ h6 {
 
 .button.arrow-svg svg {
   position: absolute;
-  top: 17px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 29px;
   width: 18px;
   height: 12px;
@@ -901,7 +904,7 @@ h6 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 42px;
+  right: 35px;
   height: 10px;
   width: 9px;
   fill: #fff;
@@ -1018,6 +1021,10 @@ h6 {
      object-fit: contain;
 }
 
+.quickbooks__button {
+  font-size: 24px;
+}
+
 .quickbooks .content {
   position: relative;
   z-index: 2;
@@ -1036,6 +1043,10 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.quickbooks .content__button {
+  font-size: 24px;
 }
 
 .quickbooks .content__img {
@@ -1256,7 +1267,6 @@ h6 {
 }
 
 .best.variant-2 .best__button svg {
-  top: 27px;
   right: 40px;
 }
 
@@ -1338,6 +1348,7 @@ h6 {
   margin: 64px 0 0 0;
   max-width: 248px;
   height: 62px;
+  font-size: 24px;
 }
 
 .solution {
@@ -1396,7 +1407,7 @@ h6 {
 .solution__button {
   height: 62px;
   max-width: 248px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .solution__right-side {
@@ -2156,6 +2167,7 @@ h6 {
 }
 
 .purple-solution__button {
+  font-size: 24px;
   margin: 26px auto;
   max-width: 248px;
   height: 62px;
@@ -2722,6 +2734,7 @@ h6 {
 }
 
 .editor__content .financial-planning__button {
+  font-size: 24px;
   color: #fff;
   margin: 0 auto;
   max-width: 248px;
@@ -4865,7 +4878,7 @@ h6 {
   z-index: 2;
   max-width: 248px;
   height: 62px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .main-page .simplicity__title {
@@ -4931,6 +4944,7 @@ h6 {
 .main-page .quickbooks__button {
   max-width: 197px;
   height: 48px;
+  font-size: 18px;
 }
 
 .main-page .quickbooks .content {
@@ -6903,10 +6917,13 @@ h6 {
   width: 100%;
   line-height: 48px;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 32px;
   color: #fff;
   background-color: #232F42;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .template-page .form__text {
@@ -6987,7 +7004,6 @@ h6 {
 }
 
 .career .quickbooks .content__button svg {
-  top: 25px;
   right: 40px;
 }
 
@@ -7590,6 +7606,7 @@ h6 {
 }
 
 .pricing .platform-plans .table-price__button {
+  font-size: 24px;
   max-width: 218px;
   height: 52px;
 }
@@ -7881,7 +7898,7 @@ h6 {
   width: 100%;
   line-height: 48px;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 24px;
   border-radius: 32px;
   color: rgba(96, 106, 128, 0.5);
   background-color: rgba(35, 47, 66, 0.1);
@@ -9011,6 +9028,7 @@ h6 {
 }
 
 .feature-template .top-heading.temporarily .top-heading__button {
+  font-size: 24px;
   margin: 64px auto 0;
 }
 
@@ -9918,6 +9936,7 @@ h6 {
 }
 
 .scenario-planning .career .quickbooks .content__button {
+  font-size: 24px;
   max-width: 248px;
   margin: 64px auto 0;
 }
@@ -10160,6 +10179,7 @@ h6 {
   margin: 0 15px;
   max-width: 224px;
   height: 62px;
+  font-size: 24px;
 }
 
 .app-listing .quickbooks__bg {
@@ -10513,7 +10533,7 @@ h6 {
 
 @media (min-width: 1024px) {
   .button.button-dark:hover {
-    background: #606A80;
+    background: #3D4859;
   }
 
   .button.arrow-svg:hover svg {
@@ -10532,6 +10552,10 @@ h6 {
 
   .resources-blog .blog-cards .card__content h3:hover a {
     color: rgba(35, 47, 66, 0.5);
+  }
+
+  .template-page .form__button:hover {
+    background: #3D4859;
   }
 
   .pricing .platform-plans .table-price .bottom-table:last-child .bottom-table__bottom-block:last-child .bottom-table__bottom-title {
@@ -10912,6 +10936,10 @@ h6 {
 
   .blog .editor__content {
     padding: 0;
+  }
+
+  .pricing .platform-plans .table-price__button {
+    font-size: 18px;
   }
 
   .open-roles-v .form-job {
@@ -11362,6 +11390,14 @@ h6 {
     width: calc((100% - 40px) / 2);
   }
 
+  .quickbooks__button {
+    font-size: 18px;
+  }
+
+  .quickbooks .content__button {
+    font-size: 18px;
+  }
+
   .quickbooks__bg {
     display: none;
   }
@@ -11406,6 +11442,10 @@ h6 {
     right: 52px;
   }
 
+  .best__button {
+    font-size: 18px;
+  }
+
   .best.variant-2 .container {
     padding: 0 20px;
   }
@@ -11442,6 +11482,10 @@ h6 {
 
   .best__button {
     max-width: 224px;
+  }
+
+  .solution__button {
+    font-size: 18px;
   }
 
   .solution__content {
@@ -11572,6 +11616,10 @@ h6 {
     width: calc((100% - 40px) / 2);
   }
 
+  .purple-solution__button {
+    font-size: 18px;
+  }
+
   .comments__img {
     width: 286px;
     height: 286px;
@@ -11596,6 +11644,10 @@ h6 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+
+  .editor__content .financial-planning__button {
+    font-size: 18px;
   }
 
   .see-apps__description h2 {
@@ -11698,6 +11750,10 @@ h6 {
 
   .blog .wp-swiper .swiper-button-next {
     display: none;
+  }
+
+  .main-page .simplicity__button {
+    font-size: 18px;
   }
 
   .main-page .simplicity {
@@ -12178,6 +12234,10 @@ h6 {
     margin: 24px auto;
   }
 
+  .open-roles-v .form-job .form__button {
+    font-size: 18px;
+  }
+
   .open-roles .vacancies__link {
     width: calc((100% - 48px) / 3);
   }
@@ -12203,6 +12263,10 @@ h6 {
 
   .compare-competition .user-experience__link {
     width: calc((100% - 40px) / 2);
+  }
+
+  .feature-template .top-heading.temporarily .top-heading__button {
+    font-size: 18px;
   }
 
   .feature-template .top-heading {
@@ -12309,6 +12373,10 @@ h6 {
     width: calc((100% - 128px) / 2);
   }
 
+  .scenario-planning .career .quickbooks .content__button {
+    font-size: 18px;
+  }
+
   .scenario-planning .career .quickbooks {
     margin: 60px 0 80px 0;
   }
@@ -12328,6 +12396,10 @@ h6 {
 
   .scenario-planning .frequently__bg {
     display: none;
+  }
+
+  .app-listing .quickbooks .content__button:last-child {
+    font-size: 18px;
   }
 
   .app-listing .slider-app__video iframe {

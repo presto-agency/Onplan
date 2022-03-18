@@ -49,15 +49,7 @@ if (!!headerMenu) {
             el: ".swiper-integration__pagination",
             clickable: true
         },
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-                translate: ["-120%", 0, -1],
-            },
-            next: {
-                translate: ["120%", 0, 0],
-            },
-        },
+        effect: "fade",
         speed: 500,
         grabCursor: true,
         spaceBetween: 30,

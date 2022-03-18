@@ -26,6 +26,10 @@
                     }
                 }
                 &__button{
+                    font-size: 24px;
+                    @media(max-width: 1023px){
+                        font-size: 18px;
+                    }
                     margin: 64px auto 0;
                 }
             }
