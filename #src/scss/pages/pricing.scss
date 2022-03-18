@@ -53,6 +53,14 @@
             font-weight: 800;
             padding: 13px 40px;
             border-right: 1px solid $greycolor;
+            &.mob{
+                display: none;
+                padding: 0;
+                border-top: 1px solid $greycolor;
+                @media(max-width: 1023px){
+                    display: block;
+                }
+            }
             &:last-child{
                 border-right: none;
             }
@@ -66,8 +74,22 @@
                 color: $greencolor;
             }
 		}
-        &__relative-link-mob{
-            display: none;
+        &__mob-title{
+            display: flex;
+        }
+        &__mob-link{
+            flex: 0 1 33.3%;
+            margin: 0 0 0 20px;
+            font-size: 12px;
+            &.blue {
+                color: $bluecolor;
+            }
+            &.purple {
+                color: $purplecolor;
+            }
+            &.green {
+                color: $greencolor;
+            }
         }
     }
 

@@ -7153,6 +7153,12 @@ h6 {
   border-right: 1px solid #EDF0F2;
 }
 
+.pricing .pricing__relative-link.mob {
+  display: none;
+  padding: 0;
+  border-top: 1px solid #EDF0F2;
+}
+
 .pricing .pricing__relative-link:last-child {
   border-right: none;
 }
@@ -7169,8 +7175,30 @@ h6 {
   color: #47CCAB;
 }
 
-.pricing .pricing__relative-link-mob {
-  display: none;
+.pricing .pricing__mob-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricing .pricing__mob-link {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.3%;
+          flex: 0 1 33.3%;
+  margin: 0 0 0 20px;
+  font-size: 12px;
+}
+
+.pricing .pricing__mob-link.blue {
+  color: #89B8FA;
+}
+
+.pricing .pricing__mob-link.purple {
+  color: #707EFF;
+}
+
+.pricing .pricing__mob-link.green {
+  color: #47CCAB;
 }
 
 .pricing .platform-plans {
@@ -11957,6 +11985,10 @@ h6 {
     color: #606A80;
     padding: 12px 20px;
     text-transform: uppercase;
+  }
+
+  .pricing .pricing__relative-link.mob {
+    display: block;
   }
 
   .pricing .platform-plans__title {
