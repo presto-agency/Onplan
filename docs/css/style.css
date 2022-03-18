@@ -1178,11 +1178,6 @@ h6 {
   transition: 300ms;
 }
 
-.quickbooks .content__bottom-link a.active-color {
-  background: #707EFF;
-  color: #fff;
-}
-
 .bread-crumbs {
   position: relative;
   z-index: 2;
