@@ -404,7 +404,7 @@
         }
         @media(min-width: 1025px){
             &:hover{
-                opacity: .5;
+                opacity: .7;
             }
         }
     }
@@ -1023,7 +1023,9 @@
             width: 56px;
             height: 56px;
             border-radius: 50%;
+            overflow: hidden;
             img{
+                border-radius: 50%;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -1306,6 +1308,9 @@
             margin: 17px 0 52px 0;
             font-size: 20px;
             line-height: 32px;
+        }
+        h3{
+            color: $textcolor;
         }
         &:before{
             content: '';

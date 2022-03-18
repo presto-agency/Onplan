@@ -151,6 +151,12 @@
         font-size: 16px;
         font-weight: 800;
         color: $textcolor;
+        transition: 300ms;
+        @media(min-width: 1025px){
+            &:hover{
+                color: $darkgreycolor;
+            }
+        }
     }
     &__button-header {
         max-width: 169px;
@@ -374,7 +380,7 @@
                             @media(min-width: 1025px){
                                 &:hover{
                                     a{
-                                        color: $purplecolor;
+                                        color: $darkgreycolor;
                                     }
                                 }
                             }
@@ -408,7 +414,7 @@
         &__connect{
             a{
                 white-space: nowrap;
-                margin: 0 10px 0 0;
+                margin: 0 15px 0 0;
             }
         }
     }
