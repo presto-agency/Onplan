@@ -144,6 +144,7 @@
         }
 
         .square {
+            position: relative;
             margin:12px;
             color: $whitecolor;
             width: calc((100% - ( 12px * 4))/2);
@@ -194,7 +195,9 @@
             }
     
             &__button {
-                margin: 52px 0 0 0;
+                position: absolute;
+                bottom: 64px;
+                left: 52px;
             }
         }
     }
@@ -625,6 +628,9 @@
                     margin: 0 0 24px 0;
                 }
                 &__button{
+                    position: relative;
+                    left: initial;
+                    bottom: initial;
                     margin: 32px 0 0 0;
                 }
             }

@@ -5019,6 +5019,7 @@ h6 {
 }
 
 .main-page .much-more .square {
+  position: relative;
   margin: 12px;
   color: #fff;
   width: calc((100% - 48px) / 2);
@@ -5084,7 +5085,9 @@ h6 {
 }
 
 .main-page .much-more .square__button {
-  margin: 52px 0 0 0;
+  position: absolute;
+  bottom: 64px;
+  left: 52px;
 }
 
 .main-page .logos {
@@ -7164,6 +7167,10 @@ h6 {
 
 .pricing .pricing__relative-link.green {
   color: #47CCAB;
+}
+
+.pricing .pricing__relative-link-mob {
+  display: none;
 }
 
 .pricing .platform-plans {
@@ -12045,7 +12052,6 @@ h6 {
     -webkit-transform: initial;
         -ms-transform: initial;
             transform: initial;
-    margin: 4px 0 0 0;
     width: 18px;
     height: 18px;
     background-size: 18px 18px;
@@ -14115,6 +14121,9 @@ h6 {
   }
 
   .main-page .much-more .square__button {
+    position: relative;
+    left: initial;
+    bottom: initial;
     margin: 32px 0 0 0;
   }
 

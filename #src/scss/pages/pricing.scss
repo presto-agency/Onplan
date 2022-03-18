@@ -66,6 +66,9 @@
                 color: $greencolor;
             }
 		}
+        &__relative-link-mob{
+            display: none;
+        }
     }
 
     .platform-plans {
@@ -554,7 +557,7 @@
                                 top: initial;
                                 left: initial;
                                 transform: initial;
-                                margin: 4px 0 0 0;
+                                // margin: 4px 0 0 0;
                                 width: 18px;
                                 height: 18px;
                                 background-size: 18px 18px;
