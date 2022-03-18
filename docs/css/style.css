@@ -9033,7 +9033,7 @@ h6 {
 }
 
 .feature-template .top-heading.temporarily .top-heading__button {
-  font-size: 24px;
+  font-size: 18px;
   margin: 64px auto 0;
 }
 
@@ -9220,7 +9220,7 @@ h6 {
   line-height: 17px;
   font-weight: 700;
   color: #232F42;
-  margin: 6px 0;
+  padding: 12px 16px;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -9234,7 +9234,6 @@ h6 {
   padding: 12px 16px;
   background: rgba(110, 122, 255, 0.1);
   border-radius: 8px;
-  margin: 12px 0 16px 0;
 }
 
 .knowledge-hub {
@@ -12274,10 +12273,6 @@ h6 {
     width: calc((100% - 40px) / 2);
   }
 
-  .feature-template .top-heading.temporarily .top-heading__button {
-    font-size: 18px;
-  }
-
   .feature-template .top-heading {
     margin: 0 0 32px 0;
   }
@@ -12338,7 +12333,10 @@ h6 {
   .feature-template .editor .right-relative-block a:before {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 0;
     height: 7px;
     width: 4px;
@@ -13589,6 +13587,10 @@ h6 {
         -ms-transform: initial;
             transform: initial;
     left: 20px;
+  }
+
+  .feature-template .top-heading.temporarily .top-heading__button {
+    font-size: 14px;
   }
 
   .feature-template .top-heading {
