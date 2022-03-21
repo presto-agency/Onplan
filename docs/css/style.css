@@ -2254,7 +2254,7 @@ h6 {
   max-width: 590px;
   width: 100%;
   padding: 44px 0 0 0;
-  margin: 44px 0 0 0;
+  margin: auto 0;
   position: relative;
 }
 
@@ -2293,7 +2293,7 @@ h6 {
 }
 
 .comments__person {
-  max-width: 180px;
+  max-width: 400px;
 }
 
 .comments__person p {
@@ -2314,7 +2314,7 @@ h6 {
   padding: 0 24px 0 0;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  border-right: 1px solid #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
   max-width: 200px;
   max-height: 30px;
 }
@@ -3729,6 +3729,10 @@ h6 {
   line-height: 100%;
   height: 18px;
   width: 11px;
+}
+
+.case-studies .models .table__content p strong {
+  font-weight: 700;
 }
 
 .case-studies .models .table__content.purple p span {
@@ -5634,11 +5638,17 @@ h6 {
   line-height: 26px;
   color: #232F42;
   margin: 0 0 12px 0;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .all-integrtation .accounting-system .block-integration__card-wrapper p {
   font-size: 16px;
   line-height: 19px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .all-integrtation .accounting-system .block-integration__img {
@@ -10648,6 +10658,14 @@ h6 {
     -webkit-filter: grayscale(0%);
   }
 
+  .all-integrtation .accounting-system .block-integration__card:hover .block-integration__card-wrapper h5 {
+    opacity: 0.7;
+  }
+
+  .all-integrtation .accounting-system .block-integration__card:hover .block-integration__card-wrapper p {
+    opacity: 0.7;
+  }
+
   .open-roles .vacancies__link:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -10711,10 +10729,6 @@ h6 {
 
   .obj-pict__right-side {
     max-width: 400px;
-  }
-
-  .comments__right-side {
-    margin: 0;
   }
 
   .all-cases .catalog__bottom-content {

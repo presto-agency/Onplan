@@ -1652,7 +1652,7 @@
         max-width: 590px;
         width: 100%;
         padding: 44px 0 0 0;
-        margin: 44px 0 0 0;
+        margin: auto 0;
         position: relative;
         &:before{
             content: '';
@@ -1684,7 +1684,7 @@
     }
 
     &__person {
-        max-width: 180px;
+        max-width: 400px;
         p{
             opacity: 0.6;
             font-size: 16px;
@@ -1699,7 +1699,7 @@
         span{
             padding: 0 24px 0 0;
             box-sizing: content-box;
-            border-right: 1px solid $whitecolor;
+            border-right: 1px solid rgba($whitecolor, 0.2);
             max-width: 200px;
             max-height: 30px;
             img{
@@ -1723,11 +1723,6 @@
         }
         &.desktop{
             padding: 15px 0 0 0;
-        }
-    }
-    @media(max-width: 1439px){
-        &__right-side{
-            margin: 0;
         }
     }
     @media(max-width: 1023px){
