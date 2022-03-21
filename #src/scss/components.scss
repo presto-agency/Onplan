@@ -435,7 +435,7 @@
                 max-width: 580px;
                 margin: 0 auto;
                 padding: 100px 0 148px 0;
-                h2{
+                b{
                     line-height: 70px;
                     margin: 0 0 24px 0;
                 }
@@ -470,7 +470,7 @@
                 &__content{
                     padding: 285px 0 100px 0;
                     align-items: flex-start;
-                    h2{
+                    b{
                         margin: 0 0 17px 0;
                         text-align: left;
                     }
@@ -501,7 +501,7 @@
             }
             @media(max-width: 735px){
                 &__content{
-                    h2{
+                    b{
                         font-size: 46px;
                         line-height: 53px;
                     }
@@ -517,7 +517,8 @@
         align-items: center;
         justify-content: center;
         padding: 152px 0;
-        h2{
+        b{
+            color: $textcolor;
             text-align: center;
             font-size: 70px;
             font-weight: 900;
@@ -573,7 +574,7 @@
         }
         &__content{
             padding: 219px 0 153px 0;
-            h2{
+            b{
                 margin: 0 0 10px 0;
             }
             p{
@@ -599,9 +600,9 @@
             max-width: 224px;
         }
     }
-    @media(max-width: 424px){
+    @media(max-width: 735px){
         &__content{
-            h2{
+            b{
                 font-size: 46px;
             }
             p{

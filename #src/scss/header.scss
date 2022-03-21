@@ -266,8 +266,12 @@
                 max-width: 256px;
                 padding: 0 38px 0 0;
                 box-sizing: content-box;
-                h3{
+                b{
+                    display: block;
                     margin: 16px 0 0 0;
+                    color: $textcolor;
+                    font-size: 32px;
+                    font-weight: 900;
                 }
                 p{
                     margin: 17px 0 0 0;
@@ -314,7 +318,7 @@
                             object-fit: contain;
                         }
                     }
-                    h3{
+                    b{
                         font-weight: 800;
                         font-size: 18px;
                         line-height: 120%;
@@ -339,7 +343,7 @@
                             &:before{
                                 display: none;
                             }
-                            h3{
+                            b{
                                 color: $darkgreycolor;
                             }
                             background: linear-gradient(0deg, rgba(242, 245, 250, 0.4), rgba(242, 245, 250, 0.4));
@@ -355,7 +359,7 @@
                     padding: 20px 30px;
                     position: relative;
                     z-index: 2;
-                    h3{
+                    b{
                         font-size: 14px;
                         font-weight: 700;
                         line-height: 17px;
@@ -522,7 +526,7 @@
                 p{
                     display: none;
                 }
-                h3{
+                b{
                     font-weight: 700;
                     font-size: 14px;
                     line-height: 17px;
@@ -569,7 +573,7 @@
                     flex-wrap: wrap;
                     align-items: center;
                     padding: 11px 0;
-                    h3{
+                    b{
                         margin: 0 0 0 12px;
                     }
                     p{
@@ -579,7 +583,7 @@
                 &.submenu-bottom{
                     padding: 0;
                     margin: 18px 0 0 0;
-                    h3{
+                    b{
                         font-weight: 700;
                         font-size: 12px;
                         line-height: 120%;
