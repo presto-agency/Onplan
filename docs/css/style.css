@@ -1595,7 +1595,23 @@ h6 {
 }
 
 .person__info p span:last-child {
-  margin: 0 0 0 15px;
+  position: relative;
+  padding: 0 0 0 15px;
+}
+
+.person__info p span:last-child:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #606A80;
+  opacity: 0.7;
 }
 
 .swiper-integration {
@@ -1801,8 +1817,8 @@ h6 {
 }
 
 .swiper-integration .swiper .slider-arrow svg {
-  width: 7px;
-  height: 9px;
+  width: 11px;
+  height: 14px;
   -webkit-transition: 300ms ease-in-out;
   -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
@@ -4355,6 +4371,10 @@ h6 {
 
 .blog .popular__title {
   margin: 0 0 64px 0;
+}
+
+.blog .popular__title h3 {
+  color: #232F42;
 }
 
 .blog .popular .slider__card {
@@ -10772,14 +10792,6 @@ h6 {
     width: 160px;
   }
 
-  .main-page .simplicity__img {
-    opacity: 0.3;
-  }
-
-  .main-page .much-more__bg {
-    display: none;
-  }
-
   .all-integrtation .accounting-system__content {
     padding: 15px 50px;
   }
@@ -10956,6 +10968,14 @@ h6 {
 
   .blog .editor__content {
     padding: 0;
+  }
+
+  .main-page .simplicity__img {
+    opacity: 0.3;
+  }
+
+  .main-page .much-more__bg {
+    display: none;
   }
 
   .pricing .platform-plans .table-price__button {

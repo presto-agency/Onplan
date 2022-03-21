@@ -473,6 +473,9 @@
         margin: 0 0 100px 0;
         &__title{
             margin: 0 0 64px 0;
+            h3{
+                color: $textcolor;
+            }
         }
 
         .slider {
