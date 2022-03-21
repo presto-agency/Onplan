@@ -413,7 +413,15 @@ if (!!resourcesBlog) {
             slidesPerView: 1,
             slidesPerGroup: 1,
             grabCursor: true,
-            effect: "fade",
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    translate: ["-120%", 0, -1],
+                },
+                next: {
+                    translate: ["120%", 0, 0],
+                },
+            },
             speed: 500,
             spaceBetween: 30,
             preloadImages: true,
