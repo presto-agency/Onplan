@@ -246,12 +246,8 @@
                 }
 
                 &__bottom-links {
-                    max-width: 100%;
-                    white-space: nowrap;
-                    overflow: auto;
-                    &::-webkit-scrollbar {
-                        display: none;
-                    }
+                    display: flex;
+                    flex-wrap: wrap;
                 }
     
                 &__text-integration{
@@ -268,9 +264,9 @@
                 }
                 
                 &__bottom-link {
-                    display: inline-block;
                     box-sizing: border-box;
                     margin: 0 16px 0 0;
+                    padding: 5px 0;
                     &.active{
                         a{
                             background:$purplecolor ;
@@ -297,6 +293,22 @@
                                 opacity: 0.5;
                             }
                         }
+                    }
+                }
+                @media(max-width: 1024px){
+                    &__bottom-links {
+                        display: block;
+                        max-width: 100%;
+                        white-space: nowrap;
+                        overflow: auto;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                    }
+                    
+                    &__bottom-link {
+                        display: inline-block;
+                        padding: 0;
                     }
                 }
         }

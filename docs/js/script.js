@@ -444,7 +444,7 @@ if (!!resourcesBlog) {
         });
     }());
     (function grabCursorResources() {
-        let containers = document.querySelectorAll('.card__element-wrapper, .content__bottom-links');
+        let containers = document.querySelectorAll('.card__element-wrapper');
         grabCursor(containers)
     }());
 }
