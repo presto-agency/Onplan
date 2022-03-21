@@ -83,15 +83,21 @@
 		&__slide {
             margin: auto 0;
             img{
+                border: 6px solid rgba($color: $whitecolor, $alpha: 0.2);
+                border-radius: 12px;
+                overflow: hidden;
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
             }
 		}
         &__video{
             display: flex;
             flex-direction: column;
             iframe{
+                border: 6px solid rgba($color: $whitecolor, $alpha: 0.2);
+                border-radius: 12px;
+                overflow: hidden;
                 width: 100%;
                 height: 626px;
                 object-fit: cover;

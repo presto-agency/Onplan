@@ -186,17 +186,17 @@
                     font-size: 18px;
                     line-height: 29px;
                     color: $darkgreycolor;
-                    padding: 0 0 0 18px;
-                    &:before{
-                        content: '';
-                        position: absolute;
-                        top: 12px;
-                        left: 0;
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 50%;
-                        background: $textcolor;
-                    }
+                    // padding: 0 0 0 18px;
+                    // &:before{
+                    //     content: '';
+                    //     position: absolute;
+                    //     top: 12px;
+                    //     left: 0;
+                    //     width: 6px;
+                    //     height: 6px;
+                    //     border-radius: 50%;
+                    //     background: $textcolor;
+                    // }
                     margin: 0 0 4px 0;
                     &:last-child{
                         margin: 0;
