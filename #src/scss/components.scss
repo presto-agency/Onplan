@@ -2288,6 +2288,99 @@
                 }
             }
         }
+        .wp-block-group {
+        background:$bg-greycolor ;
+        padding: 64px;
+        border-radius: 16px;
+        margin: 64px 0;
+                &__inner-container {
+                    p{
+                        &:last-child{
+                            margin: 52px 0 0 0;
+                        }
+                        .btn{
+                            display: inline-block;
+                            border: 1px solid $textcolor;
+                            font-size: 18px;
+                            line-height: 22px;
+                            font-weight: 900;
+                            transition: 300ms;
+                            border-radius: 32px;
+                            white-space: nowrap;
+                            &:last-child{
+                                margin: 0 0 0 24px;
+                            }
+                            &.book{
+                                max-width: 100%;
+                                color: $whitecolor;
+                                padding: 20px 42px;
+                                background: $textcolor;
+                                &:hover{
+                                    color: $textcolor;
+                                    background: transparent;
+                                }
+                            }
+                            &.download{
+                                max-width: 100%;
+                                position: relative;
+                                color: $textcolor;
+                                padding: 20px 30px 20px 54px;
+                                &:before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    left: 30px;
+                                    width: 12px;
+                                    height: 18px;
+                                    background: url(../img/download.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 12px 18px;
+                                    background-position: center;
+                                    transition: 300ms;
+                                }
+                                &:hover{
+                                    background: $textcolor;
+                                    color: $whitecolor;
+                                    &:before{
+                                        background: url(../img/download-w.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 767px) {
+                    padding: 32px 24px;
+                    margin: 40px 0;
+                    &__inner-container{
+                        p{
+                            &:last-child{
+                                margin: 40px 0 0 0;
+                            }
+                            .btn{
+                                display: block;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 19px;
+                                white-space: initial;
+                                &:last-child{
+                                    margin: 16px 0 0 0;
+                                }
+                                &.book{
+                                    padding: 16px 24px;
+                                }
+                                &.download{
+                                    padding: 16px 24px;
+                                    &:before{
+                                        left: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
     }
 }
 

@@ -2769,6 +2769,81 @@ h6 {
   display: none;
 }
 
+.editor__content .wp-block-group {
+  background: #F8F9FC;
+  padding: 64px;
+  border-radius: 16px;
+  margin: 64px 0;
+}
+
+.editor__content .wp-block-group__inner-container p:last-child {
+  margin: 52px 0 0 0;
+}
+
+.editor__content .wp-block-group__inner-container p .btn {
+  display: inline-block;
+  border: 1px solid #232F42;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 900;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  border-radius: 32px;
+  white-space: nowrap;
+}
+
+.editor__content .wp-block-group__inner-container p .btn:last-child {
+  margin: 0 0 0 24px;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.book {
+  max-width: 100%;
+  color: #fff;
+  padding: 20px 42px;
+  background: #232F42;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.book:hover {
+  color: #232F42;
+  background: transparent;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.download {
+  max-width: 100%;
+  position: relative;
+  color: #232F42;
+  padding: 20px 30px 20px 54px;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.download:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30px;
+  width: 12px;
+  height: 18px;
+  background: url(../img/download.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 18px;
+  background-position: center;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.download:hover {
+  background: #232F42;
+  color: #fff;
+}
+
+.editor__content .wp-block-group__inner-container p .btn.download:hover:before {
+  background: url(../img/download-w.svg);
+}
+
 .see-apps {
   background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
   background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
@@ -12792,6 +12867,39 @@ h6 {
     width: calc(100% + 40px);
     height: 100%;
     background-color: #F8F9FC;
+  }
+
+  .editor__content .wp-block-group {
+    padding: 32px 24px;
+    margin: 40px 0;
+  }
+
+  .editor__content .wp-block-group__inner-container p:last-child {
+    margin: 40px 0 0 0;
+  }
+
+  .editor__content .wp-block-group__inner-container p .btn {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    white-space: initial;
+  }
+
+  .editor__content .wp-block-group__inner-container p .btn:last-child {
+    margin: 16px 0 0 0;
+  }
+
+  .editor__content .wp-block-group__inner-container p .btn.book {
+    padding: 16px 24px;
+  }
+
+  .editor__content .wp-block-group__inner-container p .btn.download {
+    padding: 16px 24px;
+  }
+
+  .editor__content .wp-block-group__inner-container p .btn.download:before {
+    left: 12px;
   }
 
   .see-apps {
