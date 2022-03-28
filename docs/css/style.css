@@ -2564,6 +2564,15 @@ h6 {
   overflow: hidden;
 }
 
+.editor__content .wp-block-image figcaption {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 17px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  color: #606A80;
+}
+
 .editor__content .wp-block-table {
   overflow: auto;
   margin: 0 0 35px 0;

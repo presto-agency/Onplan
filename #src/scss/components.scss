@@ -1996,6 +1996,14 @@
                 object-fit: contain;
                 overflow: hidden;
             }
+            figcaption{
+                font-size: 20px;
+                line-height: 32px;
+                margin: 17px 0 0 0;
+                font-size: 18px;
+                text-align: center;
+                color: $darkgreycolor;
+            }
         }
         .wp-block-table{
             overflow: auto;
