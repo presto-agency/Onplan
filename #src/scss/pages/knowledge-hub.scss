@@ -326,13 +326,13 @@
                         font-size: 22px;
                         line-height: 24px;
                         margin: 0 0 12px 0;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;
-                        overflow: hidden;
                         a{
                             color: $textcolor;
                             transition: 300ms;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
                             &:hover{
                                 opacity: 0.7;
                             }
