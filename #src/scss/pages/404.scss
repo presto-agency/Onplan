@@ -20,6 +20,16 @@
       &__container{
         max-width: 695px;
       }
+      &__description{
+        .bread-crumbs{
+          ul{
+            li{
+                color: $whitecolor;
+              opacity: .7;
+            }
+          }
+        }
+      }
     }
   }
 }

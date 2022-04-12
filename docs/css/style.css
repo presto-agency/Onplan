@@ -10664,6 +10664,11 @@ h6 {
   max-width: 695px;
 }
 
+.feature-template.error-page .top-heading__description .bread-crumbs ul li {
+  color: #fff;
+  opacity: 0.7;
+}
+
 @media (min-width: 768px) {
   .compare-competition .compare-table .table-price .bottom-table:last-child .bottom-table__row:last-child {
     border-radius: 0 0 24px 24px;
