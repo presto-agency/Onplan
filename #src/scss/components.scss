@@ -923,7 +923,7 @@
                 margin: 0;
                 font-size: 14px;
             }
-            h3{
+            h3, strong{
                 font-size: 18px;
             }
         }
@@ -1685,7 +1685,7 @@
             font-weight: 400;
             font-size: 20px;
         }
-        h3{
+        h3, strong{
             color: $whitecolor;
         }
     }

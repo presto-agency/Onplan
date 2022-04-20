@@ -438,7 +438,8 @@
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
             }
-            h3{
+            h3, strong{
+                display: block;
                 font-weight: 900;
                 font-size: 30px;
                 line-height: 120%;
@@ -635,7 +636,7 @@
             }
             &__content-side{
                 padding: 30px 0 0 0;
-                h3{
+                h3, strong{
                     font-size: 24px;
                     margin: 18px 0 8px 0;
                 }
