@@ -3853,6 +3853,11 @@ h6 {
   color: #47CCAB;
 }
 
+.case-studies .comments__person h3,
+.case-studies .comments__person strong {
+  color: #fff;
+}
+
 .blog {
   background-color: #fff;
   padding: 52px 0 0 0;
@@ -3988,6 +3993,10 @@ h6 {
   color: #232F42;
   position: relative;
   border-bottom: 1px solid #232F42;
+}
+
+.blog .guide .person__info strong {
+  color: #232F42;
 }
 
 .blog .editor {

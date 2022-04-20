@@ -323,6 +323,13 @@
         }
     }
 }
+    .comments{
+        &__person{
+            h3, strong{
+                color: $whitecolor;
+            }
+        }
+    }
 
     @media(max-width: 1439px){
         .quickbooks{

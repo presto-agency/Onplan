@@ -103,6 +103,14 @@
                     border-bottom: 1px solid $textcolor;
                 }
             }
+
+            .person{
+                &__info{
+                    strong{
+                        color: $textcolor;
+                    }
+                }
+            }
     }
     .editor{
         display: flex;
