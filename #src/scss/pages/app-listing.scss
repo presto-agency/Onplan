@@ -94,7 +94,7 @@
         &__video{
             display: flex;
             flex-direction: column;
-            iframe{
+            iframe, video{
                 border: 6px solid rgba($color: $whitecolor, $alpha: 0.2);
                 border-radius: 12px;
                 overflow: hidden;

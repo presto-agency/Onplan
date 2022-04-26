@@ -10389,7 +10389,8 @@ h6 {
           flex-direction: column;
 }
 
-.app-listing .slider-app__video iframe {
+.app-listing .slider-app__video iframe,
+.app-listing .slider-app__video video {
   border: 6px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   overflow: hidden;
@@ -12590,7 +12591,8 @@ h6 {
     font-size: 18px;
   }
 
-  .app-listing .slider-app__video iframe {
+  .app-listing .slider-app__video iframe,
+  .app-listing .slider-app__video video {
     height: 500px;
   }
 
@@ -13955,7 +13957,8 @@ h6 {
     line-height: 23px;
   }
 
-  .app-listing .slider-app__video iframe {
+  .app-listing .slider-app__video iframe,
+  .app-listing .slider-app__video video {
     height: 400px;
   }
 
@@ -14569,7 +14572,8 @@ h6 {
     margin: 40px -10px;
   }
 
-  .app-listing .slider-app__video iframe {
+  .app-listing .slider-app__video iframe,
+  .app-listing .slider-app__video video {
     height: 300px;
   }
 
