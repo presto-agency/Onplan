@@ -2789,6 +2789,41 @@ h6 {
   margin: 64px 0;
 }
 
+.editor__content .wp-block-group.purple-group-block {
+  position: relative;
+  background: -o-linear-gradient(2.76deg, #96B2F7 4.6%, #838AF5 95.4%);
+  background: linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%);
+}
+
+.editor__content .wp-block-group.purple-group-block:before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  background-image: url(../img/blog/purple-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.editor__content .wp-block-group.purple-group-block .wp-block-group__inner-container {
+  position: relative;
+  z-index: 2;
+}
+
+.editor__content .wp-block-group.purple-group-block .wp-block-group__inner-container h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.editor__content .wp-block-group.purple-group-block .wp-block-group__inner-container p {
+  text-align: center;
+  color: #fff;
+}
+
 .editor__content .wp-block-group__inner-container p:last-child {
   margin: 52px 0 0 0;
 }
@@ -2804,10 +2839,6 @@ h6 {
   transition: 300ms;
   border-radius: 32px;
   white-space: nowrap;
-}
-
-.editor__content .wp-block-group__inner-container p .btn:last-child {
-  margin: 0 0 0 24px;
 }
 
 .editor__content .wp-block-group__inner-container p .btn.book {
@@ -2855,6 +2886,10 @@ h6 {
 
 .editor__content .wp-block-group__inner-container p .btn.download:hover:before {
   background: url(../img/download-w.svg);
+}
+
+.editor__content .wp-block-group__inner-container .book + .download {
+  margin: 0 0 0 24px;
 }
 
 .see-apps {

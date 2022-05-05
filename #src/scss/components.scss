@@ -2300,7 +2300,38 @@
         padding: 64px;
         border-radius: 16px;
         margin: 64px 0;
-                &__inner-container {
+            &.purple-group-block{
+                position: relative;
+                background: linear-gradient(87.24deg, #96B2F7 4.6%, #838AF5 95.4%);
+                &:before{
+                    content: '';
+                    opacity: 0.5;
+                    position: absolute;
+                    bottom: 100px;
+                    left: 0;
+                    width: 100%;
+                    height: 240px;
+                    background-image: url(../img/blog/purple-bg.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size:  cover;
+                }
+                .wp-block-group{
+                    &__inner-container{
+                        position: relative;
+                        z-index: 2;
+                        h2{
+                            text-align: center;
+                            color: $whitecolor;
+                        }
+                       p{
+                           text-align: center;
+                           color: $whitecolor;
+                       }
+                    }
+                }
+            }
+            &__inner-container {
                     p{
                         &:last-child{
                             margin: 52px 0 0 0;
@@ -2314,9 +2345,6 @@
                             transition: 300ms;
                             border-radius: 32px;
                             white-space: nowrap;
-                            &:last-child{
-                                margin: 0 0 0 24px;
-                            }
                             &.book{
                                 max-width: 100%;
                                 color: $whitecolor;
@@ -2355,6 +2383,9 @@
                                 }
                             }
                         }
+                    }
+                    .book + .download{
+                        margin: 0 0 0 24px;
                     }
                 }
                 @media (max-width: 767px) {
