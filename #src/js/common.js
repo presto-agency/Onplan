@@ -1,4 +1,5 @@
 const headerMenu = document.querySelector('.header');
+const scenarioPlanning = document.querySelector('.frequently');
 if (!!headerMenu) {
     (function burgerAnimation() {
         const burger = document.querySelector('.header__burger');
@@ -37,6 +38,20 @@ if (!!headerMenu) {
             menu.classList.remove('active-sub');
         }))
     })();
+}
+if (scenarioPlanning) {
+    (function turnCross() {
+        let crosses = document.querySelectorAll('.open-menu');
+        crosses.forEach(cross => {
+            cross.onclick = () => {
+                let activeBtn = document.querySelector('.frequently__content> .active')
+                cross.classList.toggle('active')
+                if (activeBtn) {
+                    activeBtn.classList.remove('active')
+                }
+            }
+        })
+    }());
 }
 
 (function swiperComments() {
