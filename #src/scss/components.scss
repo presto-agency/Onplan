@@ -2674,13 +2674,14 @@
                 content: "";
                 position: absolute;
                 left: 0;
-                top: 0;
+                top: 50%;
+                transform: translateY(-50%);
                 height: 14px;
-                width: 18px;
-                background: url(../img/ukr.png);
-                background-size: 18px 14px;
-                background-repeat: no-repeat;
-                background-position: center
+                width: 14px;
+                border-radius: 50%;
+                background: linear-gradient(180deg, rgba(14,14,168,1) 50%, rgba(255,226,0,1) 50%);
+                background-size: 14px 14px;
+                background-position: center;
             }
         }
     }
