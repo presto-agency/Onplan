@@ -210,3 +210,16 @@ function scrollName(elementsPage) {
     }
 };
 
+(function mobilePict() {
+    if (window.screen.width < 1024) {
+        let elements = document.querySelectorAll('[data-img]');
+        if(elements.length > 0){
+            elements.forEach(element => {
+                let attr = element.getAttribute('data-img');
+                element.setAttribute('src', `${attr}`);
+            })
+        }
+    }
+}())
+
+
