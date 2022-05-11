@@ -2545,7 +2545,8 @@ h6 {
   height: 100%;
 }
 
-.editor__content .is-type-video div iframe {
+.editor__content .is-type-video div iframe,
+.editor__content .is-type-video div video {
   position: absolute;
   width: 100%;
   height: 100%;
