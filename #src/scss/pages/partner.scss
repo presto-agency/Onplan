@@ -1,0 +1,145 @@
+.partner{
+  .quickbooks{
+    &:before{
+      top: 300px;
+      left: 268px;
+    }
+    &__bg-l{
+      position: absolute;
+      top: -51px;
+      left: -23px;
+      width: 432px;
+      height: 562px;
+    }
+    .content{
+      padding: 48px 0 0 0;
+      &__button{
+        margin: 70px 0 0 0;
+        font-size: 18px;
+      }
+      &__description{
+        h1{
+          margin: 22px 0;
+          sup{
+            font-size: 32px;
+            font-weight: 900;
+          }
+        }
+        p{
+          font-size: 28px;
+        }
+      }
+      &__top-text{
+        margin: 123px 0 325px 0;
+        flex: 0 1 530px;
+      }
+      .studies{
+        position: relative;
+        flex: 0 1 710px;
+        &__img{
+          position: absolute;
+          border-radius: 40px;
+          padding: 0;
+          top: 53px;
+          left: 94px;
+          width: 714px;
+          height: 524px;          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+  .about-onplan{
+    padding: 0;
+    margin: -160px 0 -197px 0;
+  }
+  .case-studies{
+    padding: 0;
+  }
+  .solution{
+    &__content{
+      padding: 220px 0 75px 0;
+    }
+  }
+  @media(max-width: 1439px){
+    .case-studies{
+      .quickbooks{
+        &:before{
+          top: 300px;
+          left: 268px;
+        }
+        .content{
+          .studies{
+            &__img{
+              width: 714px;
+              max-height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 1023px){
+    .case-studies{
+      .quickbooks{
+        padding: 0 0 156px 0;
+        .content{
+          align-items: flex-start;
+          &__top-text{
+            margin: 60px 0;
+            flex: 0 1 100%;
+            max-width: 100%;
+          }
+          .studies{
+            flex: 1 1 310px;
+            width: 100%;
+            &__img{
+              top: 0;
+              left: 0;
+              max-width: initial;
+              height: 310px;
+              width: 520px;
+            }
+          }
+        }
+        &__bg-l{
+          display: none;
+        }
+      }
+      .about-onplan{
+        margin: 0;
+      }
+    }
+  }
+  @media(max-width: 474px){
+    .case-studies{
+      .quickbooks{
+        .content{
+          &__top-text{
+            margin: 51px 0 68px 0;
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 424px){
+    .case-studies{
+      .quickbooks{
+        .content{
+          &__top-text{
+            max-width: 80%;
+          }
+          &__description{
+            h1{
+              margin: 13px 0 18px 0;
+            }
+          }
+          &__button{
+            max-width: 225px;
+            font-size: 16px;
+            margin: 42px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
