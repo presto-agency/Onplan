@@ -63,7 +63,6 @@
         height: calc(100% - 297px);
       }
       .comments{
-        margin: -50px 0 0 0;
         &__left-side{
           flex: 0 1 40%;
           p{
@@ -89,9 +88,11 @@
       }
       .for-who{
         margin: 100px auto 0;
+        max-width: 1240px;
         &__content{
           position: relative;
           z-index: 2;
+          margin: 0;
         }
         &__bg{
           position: absolute;
@@ -268,6 +269,9 @@
     .case-studies{
       .quickbooks{
         padding: 0 0 156px 0;
+        &:after{
+          height: 406px;
+        }
         .content{
           align-items: flex-start;
           &__top-text{
@@ -296,7 +300,95 @@
         .wrapper-sections{
           &:before{
             top: 0;
-            height: 100%;
+            height: calc(100% - 200px);
+          }
+        }
+      }
+    }
+    .about-onplan{
+      .wrapper-sections{
+        .comments{
+          top: -114px;
+        }
+        .for-who{
+          margin: 0;
+          &__content{
+            margin: -62px 0 0 0;
+          }
+        }
+      }
+    }
+    .solution{
+      margin: -200px 0 0 0;
+      &__left-side{
+        width: 100%;
+        margin: 0 0 64px 0;
+      }
+      &__content{
+        padding: 123px 0 62px 0;
+      }
+      &__description{
+        p{
+          font-size: 20px;
+          line-height: 28px;
+        }
+        h2{
+          margin: 48px 0 18px 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .about-onplan{
+      .wrapper-sections{
+        .comments{
+          &__content{
+            padding: 40px 32px;
+            flex-direction: column;
+          }
+          &__left-side{
+            display: initial;
+            margin: 0 0 20px 0;
+            p{
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+        .for-who{
+          &__column{
+            p{
+              margin: 13px 0 0 0;
+            }
+            &:first-child{
+              margin: 0 0 52px 0;
+            }
+          }
+        }
+        .benefits{
+          &__content{
+            padding: 59px 0 120px 0;
+          }
+          &__top-content{
+            text-align: left;
+            &.h2{
+              h2{
+                font-size: 32px;
+                line-height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .case-studies{
+      .quickbooks{
+        .content{
+          padding: 0;
+          &__description{
+            p{
+              font-size: 22px;
+            }
           }
         }
       }
@@ -331,6 +423,33 @@
             margin: 42px 0 0 0;
           }
         }
+      }
+    }
+    .benefits{
+      &__card{
+        padding: 34px 15px 15px 15px;
+        min-height: 210px;
+      }
+      .container{
+        padding: 0;
+      }
+    }
+    .solution{
+      &__description{
+        margin: 0 0 59px 0;
+        h2{
+          text-align: left;
+        }
+        p{
+          text-align: left;
+        }
+      }
+      &__left-side{
+        margin: 0;
+      }
+      &__button{
+        max-width: 262px;
+        margin: 0;
       }
     }
   }

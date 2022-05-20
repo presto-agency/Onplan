@@ -10825,10 +10825,6 @@ h6 {
   height: calc(100% - 297px);
 }
 
-.partner .about-onplan .wrapper-sections .comments {
-  margin: -50px 0 0 0;
-}
-
 .partner .about-onplan .wrapper-sections .comments__left-side {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40%;
@@ -10858,11 +10854,13 @@ h6 {
 
 .partner .about-onplan .wrapper-sections .for-who {
   margin: 100px auto 0;
+  max-width: 1240px;
 }
 
 .partner .about-onplan .wrapper-sections .for-who__content {
   position: relative;
   z-index: 2;
+  margin: 0;
 }
 
 .partner .about-onplan .wrapper-sections .for-who__bg {
@@ -13031,6 +13029,10 @@ h6 {
     padding: 0 0 156px 0;
   }
 
+  .partner .case-studies .quickbooks:after {
+    height: 406px;
+  }
+
   .partner .case-studies .quickbooks .content {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -13070,7 +13072,41 @@ h6 {
 
   .partner .case-studies .about-onplan .wrapper-sections:before {
     top: 0;
-    height: 100%;
+    height: calc(100% - 200px);
+  }
+
+  .partner .about-onplan .wrapper-sections .comments {
+    top: -114px;
+  }
+
+  .partner .about-onplan .wrapper-sections .for-who {
+    margin: 0;
+  }
+
+  .partner .about-onplan .wrapper-sections .for-who__content {
+    margin: -62px 0 0 0;
+  }
+
+  .partner .solution {
+    margin: -200px 0 0 0;
+  }
+
+  .partner .solution__left-side {
+    width: 100%;
+    margin: 0 0 64px 0;
+  }
+
+  .partner .solution__content {
+    padding: 123px 0 62px 0;
+  }
+
+  .partner .solution__description p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .partner .solution__description h2 {
+    margin: 48px 0 18px 0;
   }
 }
 
@@ -14409,6 +14445,53 @@ h6 {
   .feature-template.error-page .top-heading__bg-top {
     display: block;
   }
+
+  .partner .about-onplan .wrapper-sections .comments__content {
+    padding: 40px 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .partner .about-onplan .wrapper-sections .comments__left-side {
+    display: initial;
+    margin: 0 0 20px 0;
+  }
+
+  .partner .about-onplan .wrapper-sections .comments__left-side p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .partner .about-onplan .wrapper-sections .for-who__column p {
+    margin: 13px 0 0 0;
+  }
+
+  .partner .about-onplan .wrapper-sections .for-who__column:first-child {
+    margin: 0 0 52px 0;
+  }
+
+  .partner .about-onplan .wrapper-sections .benefits__content {
+    padding: 59px 0 120px 0;
+  }
+
+  .partner .about-onplan .wrapper-sections .benefits__top-content {
+    text-align: left;
+  }
+
+  .partner .about-onplan .wrapper-sections .benefits__top-content.h2 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .partner .case-studies .quickbooks .content {
+    padding: 0;
+  }
+
+  .partner .case-studies .quickbooks .content__description p {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 735px) {
@@ -15614,6 +15697,36 @@ h6 {
     max-width: 225px;
     font-size: 16px;
     margin: 42px 0 0 0;
+  }
+
+  .partner .benefits__card {
+    padding: 34px 15px 15px 15px;
+    min-height: 210px;
+  }
+
+  .partner .benefits .container {
+    padding: 0;
+  }
+
+  .partner .solution__description {
+    margin: 0 0 59px 0;
+  }
+
+  .partner .solution__description h2 {
+    text-align: left;
+  }
+
+  .partner .solution__description p {
+    text-align: left;
+  }
+
+  .partner .solution__left-side {
+    margin: 0;
+  }
+
+  .partner .solution__button {
+    max-width: 262px;
+    margin: 0;
   }
 }
 
