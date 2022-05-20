@@ -10994,10 +10994,11 @@ h6 {
 
 .partner .solution__description ul li {
   position: relative;
+  display: inline-block;
   color: #fff;
   font-size: 20px;
   line-height: 32px;
-  padding: 0 0 0 20px;
+  padding: 0 25px 0 20px;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -11025,6 +11026,22 @@ h6 {
   -o-transition: 300ms;
   transition: 300ms;
   opacity: 0.7;
+}
+
+.partner .solution__description ul li:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 15px;
+  height: 10px;
+  background: url("../img/arrow.svg");
+  background-size: 15px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .partner .solution__description ul li:hover {
