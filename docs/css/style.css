@@ -11526,10 +11526,6 @@ h6 {
     display: none;
   }
 
-  .summary .dashboard__frame {
-    height: 400px;
-  }
-
   .pricing .platform-plans .table-price__button {
     font-size: 18px;
   }
@@ -14003,6 +13999,10 @@ h6 {
   .all-integrtation .accounting-system__content {
     border-radius: 0;
     padding: 39px 20px 64px;
+  }
+
+  .summary .dashboard.frame-block {
+    display: none;
   }
 
   .summary .dashboard:after {
