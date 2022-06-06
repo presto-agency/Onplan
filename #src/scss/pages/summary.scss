@@ -39,6 +39,23 @@
     }
     .dashboard {
         position: relative;
+        &.frame-block{
+            .dashboard{
+                &__description{
+                    max-width: 1040px;
+                    margin: 0 auto;
+                }
+                &__container{
+                    max-width: 1600px;
+                    padding: 0 20px;
+                    box-sizing: content-box;
+                }
+                &__frame{
+                    margin: 50px 0 0 0;
+                    height: 100vh;
+                }
+            }
+        }
         &:after{
             content: '';
             position: absolute;

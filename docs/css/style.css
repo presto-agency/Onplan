@@ -6801,6 +6801,23 @@ h6 {
   position: relative;
 }
 
+.summary .dashboard.frame-block .dashboard__description {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.summary .dashboard.frame-block .dashboard__container {
+  max-width: 1600px;
+  padding: 0 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.summary .dashboard.frame-block .dashboard__frame {
+  margin: 50px 0 0 0;
+  height: 100vh;
+}
+
 .summary .dashboard:after {
   content: "";
   position: absolute;
