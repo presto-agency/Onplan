@@ -40,6 +40,9 @@
     .dashboard {
         position: relative;
         &.frame-block{
+            &:after{
+                max-height: 80vh;
+            }
             .dashboard{
                 &__description{
                     max-width: 1040px;
@@ -52,7 +55,7 @@
                 }
                 &__frame{
                     margin: 50px 0 0 0;
-                    height: 100vh;
+                    height: 80vh;
                 }
             }
         }

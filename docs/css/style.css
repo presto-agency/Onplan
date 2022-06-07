@@ -6801,6 +6801,10 @@ h6 {
   position: relative;
 }
 
+.summary .dashboard.frame-block:after {
+  max-height: 80vh;
+}
+
 .summary .dashboard.frame-block .dashboard__description {
   max-width: 1040px;
   margin: 0 auto;
@@ -6815,7 +6819,7 @@ h6 {
 
 .summary .dashboard.frame-block .dashboard__frame {
   margin: 50px 0 0 0;
-  height: 100vh;
+  height: 80vh;
 }
 
 .summary .dashboard:after {
