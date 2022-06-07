@@ -6802,7 +6802,8 @@ h6 {
 }
 
 .summary .dashboard.frame-block:after {
-  max-height: 80vh;
+  max-height: 90vh;
+  bottom: -5vh;
 }
 
 .summary .dashboard.frame-block .dashboard__description {
@@ -12495,6 +12496,10 @@ h6 {
 
   .all-integrtation .exports__item {
     width: 50%;
+  }
+
+  .summary .dashboard.frame-block:after {
+    display: none;
   }
 
   .summary .dashboard:after {

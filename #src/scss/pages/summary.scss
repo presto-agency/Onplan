@@ -41,7 +41,11 @@
         position: relative;
         &.frame-block{
             &:after{
-                max-height: 80vh;
+                max-height: 90vh;
+                bottom: -5vh;
+                @media (max-width: 1023px) {
+                    display: none;
+                }
             }
             .dashboard{
                 &__description{
