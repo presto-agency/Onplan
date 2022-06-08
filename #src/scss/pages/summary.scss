@@ -41,11 +41,7 @@
         position: relative;
         &.frame-block{
             &:after{
-                max-height: 90vh;
-                bottom: -5vh;
-                @media (max-width: 1023px) {
-                    display: none;
-                }
+                display: none;
             }
             .dashboard{
                 &__description{
@@ -58,8 +54,27 @@
                     box-sizing: content-box;
                 }
                 &__frame{
+                    position: relative;
                     margin: 50px 0 0 0;
                     height: 80vh;
+                    @media (max-width: 1023px) {
+                        margin: 0 0 50px 0;
+                    }
+                    iframe{
+                        position: relative;
+                        z-index: 2;
+                        border-radius: 30px;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        top: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100vw;
+                        background: $purplegradient;
+                    }
                 }
             }
         }
