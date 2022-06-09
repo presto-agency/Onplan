@@ -6820,20 +6820,29 @@ h6 {
 
 .summary .dashboard.frame-block .dashboard__frame {
   position: relative;
+  text-align: center;
   margin: 50px 0 0 0;
-  height: 80vh;
+  height: 100%;
+}
+
+.summary .dashboard.frame-block .dashboard__frame h3,
+.summary .dashboard.frame-block .dashboard__frame p {
+  color: #fff;
 }
 
 .summary .dashboard.frame-block .dashboard__frame iframe {
   position: relative;
   z-index: 2;
+  height: 80vh !important;
   border-radius: 30px;
+  margin: 30px 0 0 0;
 }
 
 .summary .dashboard.frame-block .dashboard__frame:after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  z-index: -1;
+  bottom: 100px;
   top: -10px;
   left: 50%;
   -webkit-transform: translateX(-50%);

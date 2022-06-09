@@ -56,20 +56,27 @@
                 }
                 &__frame{
                     position: relative;
+                    text-align: center;
                     margin: 50px 0 0 0;
-                    height: 80vh;
+                    height: 100%;
+                    h3, p{
+                        color: $whitecolor;
+                    }
                     @media (max-width: 1023px) {
                         margin: 0 0 50px 0;
                     }
                     iframe{
                         position: relative;
                         z-index: 2;
+                        height: 80vh!important;
                         border-radius: 30px;
+                        margin: 30px 0 0 0;
                     }
                     &:after{
                         content: '';
                         position: absolute;
-                        bottom: -10px;
+                        z-index: -1;
+                        bottom: 100px;
                         top: -10px;
                         left: 50%;
                         transform: translateX(-50%);
