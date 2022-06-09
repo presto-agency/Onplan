@@ -6828,6 +6828,7 @@ h6 {
 .summary .dashboard.frame-block .dashboard__frame h3,
 .summary .dashboard.frame-block .dashboard__frame p {
   color: #fff;
+  margin: 0 0 10px 0;
 }
 
 .summary .dashboard.frame-block .dashboard__frame iframe {
