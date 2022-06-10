@@ -6821,7 +6821,7 @@ h6 {
 .summary .dashboard.frame-block .dashboard__frame {
   position: relative;
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 100px 0 0 0;
   padding: 40px 0 0 0;
   height: 100%;
 }
@@ -6829,7 +6829,11 @@ h6 {
 .summary .dashboard.frame-block .dashboard__frame h3,
 .summary .dashboard.frame-block .dashboard__frame p {
   color: #fff;
-  margin: 0 0 10px 0;
+}
+
+.summary .dashboard.frame-block .dashboard__frame p {
+  text-align: left;
+  font-style: italic;
 }
 
 .summary .dashboard.frame-block .dashboard__frame iframe {
@@ -7125,6 +7129,12 @@ h6 {
   height: 280px;
   border-radius: 16px;
   overflow: hidden;
+}
+
+.resources-blog .blog-cards .card__img a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .resources-blog .blog-cards .card__img img {
