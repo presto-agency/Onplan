@@ -37,115 +37,6 @@
                 }
         }
     }
-    .dashboard {
-        position: relative;
-        &.frame-block{
-            &:after{
-                display: none;
-            }
-            .dashboard{
-                &__description{
-                    max-width: 1040px;
-                    margin: 0 auto;
-                }
-                &__container{
-                    max-width: 1360px;
-                    padding: 0 15px;
-                    margin: 0 auto;
-                    box-sizing: content-box;
-                }
-                &__frame{
-                    position: relative;
-                    text-align: center;
-                    margin: 100px 0 0 0;
-                    padding: 40px 0 0 0;
-                    height: 100%;
-                    h3, p{
-                        color: $whitecolor;
-                    }
-                    p{
-                       text-align: left;
-                        font-style: italic;
-                    }
-                    @media (max-width: 1023px) {
-                        margin: 0 0 50px 0;
-                    }
-                    iframe{
-                        position: relative;
-                        z-index: 2;
-                        height: 80vh!important;
-                        border-radius: 30px;
-                        margin: 30px 0 0 0;
-                    }
-                    &:after{
-                        content: '';
-                        position: absolute;
-                        z-index: -1;
-                        bottom: 100px;
-                        top: -10px;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 100vw;
-                        background: $purplegradient;
-                    }
-                }
-            }
-        }
-        &:after{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 100%;
-            max-height: 600px;
-            width: 100%;
-            background: $purplegradient;
-        }
-        &__description{
-            display: flex;
-            justify-content: space-between;
-            margin: 0 0 80px 0;
-            padding: 0 20px;
-            h3{
-                max-width: 360px;
-            }
-            p{
-                font-size: 20px;
-                line-height: 32px;
-                max-width: 540px;
-            }
-        }
-
-		&__container {
-            position: relative;
-            z-index: 2;
-            max-width: 1040px;
-            margin: 0 auto;
-            padding: 0 0 100px 0;
-		}
-
-		&__img {
-            height: 100%;
-            max-height: 620px;
-            width: 100%;
-            position: relative;
-            margin: 0 auto;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-		}
-        &__frame{
-            height: 620px;
-             iframe{
-                width: 100% !important;
-                height: 100% !important;
-                 transform: initial!important;
-            }
-        }
-    }
     .benefits{
         &__card{
             padding: 52px 32px 0;
@@ -164,39 +55,8 @@
         padding: 120px 0 80px 0;
     }
 @media(max-width: 1023px){
-    .dashboard{
-        &:after{
-            bottom: inherit;
-            top: 71px;
-            height: 400px;
-        }
-        &__container{
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-        }
-        &__description{
-            order: 2;
-            flex-direction: column;
-            justify-content: inherit;
-            margin: 32px 0 0 0;
-            p{
-                margin: 12px 0 0 0;
-            }
-        }
-    }
     .clients{
         padding: 80px 0 52px 0;
-    }
-}
-@media(max-width: 767px){
-    .dashboard{
-        &.frame-block{
-            display: none;
-        }
-        &:after{
-            height: 176px;
-        }
     }
 }
 @media(max-width: 735px){
@@ -234,13 +94,6 @@
             ul{
                 justify-content: flex-start;
             }
-        }
-    }
-}
-@media(max-width: 374px){
-    .dashboard{
-        &:after{
-            height: 136px;
         }
     }
 }
