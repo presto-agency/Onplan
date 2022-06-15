@@ -3654,6 +3654,18 @@
 .dashboard {
     position: relative;
     &.frame-block{
+        &.blog{
+            width: 100vw;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            @media(max-width: 1439px){
+                left: calc(50% + 50px);
+            }
+            @media(max-width: 1199px){
+                left: 50%;
+            }
+        }
         &:after{
             display: none;
         }

@@ -4009,6 +4009,15 @@ h6 {
   position: relative;
 }
 
+.dashboard.frame-block.blog {
+  width: 100vw;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .dashboard.frame-block:after {
   display: none;
 }
@@ -11344,6 +11353,10 @@ h6 {
     max-width: 400px;
   }
 
+  .dashboard.frame-block.blog {
+    left: calc(50% + 50px);
+  }
+
   .all-cases .catalog__bottom-content {
     margin: -16px;
   }
@@ -11571,6 +11584,10 @@ h6 {
 
   .slider-app .slider-arrow {
     display: none;
+  }
+
+  .dashboard.frame-block.blog {
+    left: 50%;
   }
 
   .blog .editor {
