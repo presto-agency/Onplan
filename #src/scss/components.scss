@@ -2415,6 +2415,15 @@
                     }
                 }
         }
+        .dashboard{
+            &.frame-block{
+                &.blog{
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+        }
     }
 }
 
