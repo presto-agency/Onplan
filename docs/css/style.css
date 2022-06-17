@@ -2892,6 +2892,10 @@ h6 {
   margin: 0;
 }
 
+.editor__content .dashboard.frame-block.blog h3 {
+  margin: 0;
+}
+
 .see-apps {
   background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
   background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
@@ -4045,6 +4049,10 @@ h6 {
   margin: 100px 0 0 0;
   padding: 40px 0 0 0;
   height: 100%;
+}
+
+.dashboard.frame-block .dashboard__frame h3 {
+  margin: 0 0 30px 0;
 }
 
 .dashboard.frame-block .dashboard__frame h3,
