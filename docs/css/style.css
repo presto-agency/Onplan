@@ -4052,7 +4052,7 @@ h6 {
 }
 
 .dashboard.frame-block .dashboard__frame h3 {
-  margin: 0 0 30px 0 !important;
+  margin: 0 0 20px 0 !important;
 }
 
 .dashboard.frame-block .dashboard__frame h3,
@@ -4070,7 +4070,7 @@ h6 {
   z-index: 2;
   height: 80vh !important;
   border-radius: 30px;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .dashboard.frame-block .dashboard__frame:after {
