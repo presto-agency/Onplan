@@ -3,31 +3,9 @@
         margin: 100px 0 150px 0;
         padding: 0;
         .content{
-            &__buttons-wrapper{
-                display: flex;
-                justify-content: center;
-                max-width: 540px;
-                margin: 64px auto 0;
-            }
             &__description{
                 h1{
                     margin: 32px 0 24px 0;
-                }
-            }
-            &__button{
-                &:first-child{
-                    margin: 0 15px;
-                    max-width: 282px;
-                    height: 62px;
-                }
-                &:last-child{
-                    margin: 0 15px;
-                    max-width: 224px;
-                    height: 62px;
-                    font-size: 24px;
-                    @media(max-width: 1023px){
-                        font-size: 18px;
-                    }
                 }
             }
         }
@@ -186,22 +164,6 @@
                 &__description{
                     h1{
                         margin: 24px 0 30px 0;
-                    }
-                }
-                &__buttons-wrapper{
-                    flex-direction: column;
-                    justify-content: initial;
-                    align-items: center;
-                    margin: 30px auto 0;
-                }
-                &__button{
-                    &:first-child{
-                        max-width: 224px;
-                        height: 58px;
-                    }
-                    &:last-child{
-                        height: 58px;
-                        margin: 15px 0 0 0  ;
                     }
                 }
             }

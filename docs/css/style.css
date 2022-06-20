@@ -1184,6 +1184,30 @@ h6 {
   transition: 300ms;
 }
 
+.quickbooks .content__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 540px;
+  margin: 64px auto 0;
+}
+
+.quickbooks .content__buttons-wrapper .content__button:first-child {
+  margin: 0 15px;
+  max-width: 282px;
+  height: 62px;
+}
+
+.quickbooks .content__buttons-wrapper .content__button:last-child {
+  margin: 0 15px;
+  max-width: 224px;
+  height: 62px;
+  font-size: 24px;
+}
+
 .bread-crumbs {
   position: relative;
   z-index: 2;
@@ -10618,32 +10642,8 @@ h6 {
   padding: 0;
 }
 
-.app-listing .quickbooks .content__buttons-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 540px;
-  margin: 64px auto 0;
-}
-
 .app-listing .quickbooks .content__description h1 {
   margin: 32px 0 24px 0;
-}
-
-.app-listing .quickbooks .content__button:first-child {
-  margin: 0 15px;
-  max-width: 282px;
-  height: 62px;
-}
-
-.app-listing .quickbooks .content__button:last-child {
-  margin: 0 15px;
-  max-width: 224px;
-  height: 62px;
-  font-size: 24px;
 }
 
 .app-listing .quickbooks__bg {
@@ -12090,6 +12090,10 @@ h6 {
     font-size: 18px;
   }
 
+  .quickbooks .content__buttons-wrapper .content__button:last-child {
+    font-size: 18px;
+  }
+
   .quickbooks__bg {
     display: none;
   }
@@ -13094,10 +13098,6 @@ h6 {
     height: 52px;
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .app-listing .quickbooks .content__button:last-child {
-    font-size: 18px;
   }
 
   .app-listing .quickbooks .bread-crumbs ul {
@@ -14929,6 +14929,30 @@ h6 {
 }
 
 @media (max-width: 567px) {
+  .quickbooks .content__buttons-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px auto 0;
+  }
+
+  .quickbooks .content__buttons-wrapper .content__button:first-child {
+    max-width: 224px;
+    height: 58px;
+  }
+
+  .quickbooks .content__buttons-wrapper .content__button:last-child {
+    height: 58px;
+    margin: 15px 0 0 0;
+  }
+
   .person {
     width: 100%;
     padding: 0 0 24px 0;
@@ -15218,30 +15242,6 @@ h6 {
 
   .app-listing .quickbooks .content__description h1 {
     margin: 24px 0 30px 0;
-  }
-
-  .app-listing .quickbooks .content__buttons-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 30px auto 0;
-  }
-
-  .app-listing .quickbooks .content__button:first-child {
-    max-width: 224px;
-    height: 58px;
-  }
-
-  .app-listing .quickbooks .content__button:last-child {
-    height: 58px;
-    margin: 15px 0 0 0;
   }
 
   .app-listing .features-app__link {
