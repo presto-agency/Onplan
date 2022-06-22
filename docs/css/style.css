@@ -4096,7 +4096,7 @@ h6 {
 .dashboard.frame-block .dashboard__frame iframe {
   position: relative;
   z-index: 2;
-  height: 80vh !important;
+  height: calc(100vh - 82px) !important;
   border-radius: 30px;
   margin: 20px 0 0 0;
 }

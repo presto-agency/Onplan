@@ -9,6 +9,7 @@
 @@include('feature-template.js')
 @@include('knowledge-hub.js')
 @@include('app-listing.js')
+@@include('summary.js')
 
 
 
