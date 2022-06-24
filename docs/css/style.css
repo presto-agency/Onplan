@@ -13641,6 +13641,16 @@ h6 {
     height: 400px;
   }
 
+  .slider-app__video video + .slider-app__description {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .slider-app__video video + .slider-app__description p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
   .slider-app {
     margin: 80px 0;
   }
