@@ -3596,8 +3596,9 @@ h6 {
 }
 
 .slider-app .slider-arrow svg {
-  width: 7px;
-  height: 9px;
+  position: absolute;
+  width: 11px;
+  height: 14px;
   -webkit-transition: 300ms ease-in-out;
   -o-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;

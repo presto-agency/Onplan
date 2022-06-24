@@ -3134,8 +3134,9 @@
         align-items: center;
         transition: 300ms ease-in-out;
         svg{
-            width: 7px;
-            height: 9px;
+            position: absolute;
+            width: 11px;
+            height: 14px;
             transition: 300ms ease-in-out;
             fill: $whitecolor;
         }
