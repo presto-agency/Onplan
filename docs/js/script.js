@@ -440,10 +440,12 @@ if (!!blog) {
     if (window.screen.width > 1023) {
         (function featureBannerBlock() {
             const menu = document.querySelector('.right-banner-block');
-            const editor = document.querySelector('.editor');
-            let topValue = 182;
-            let bottomValue = 0;
-            showMenu(menu, editor, topValue, bottomValue)
+            if(menu){
+                const editor = document.querySelector('.editor');
+                let topValue = 182;
+                let bottomValue = 0;
+                showMenu(menu, editor, topValue, bottomValue)
+            }
         }());
     }
 }
