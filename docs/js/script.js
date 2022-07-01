@@ -358,15 +358,6 @@ if (!!blog) {
                 clickable: true
             },
             grabCursor: true,
-            // effect: "creative",
-            // creativeEffect: {
-            //     prev: {
-            //         translate: ["-120%", 0, -1],
-            //     },
-            //     next: {
-            //         translate: ["120%", 0, 0],
-            //     },
-            // },
             speed: 500,
             slidesPerView: 1,
             slidesPerGroup: 1,
@@ -445,6 +436,16 @@ if (!!blog) {
             }
         });
     })();
+
+    if (window.screen.width > 1023) {
+        (function featureBannerBlock() {
+            const menu = document.querySelector('.right-banner-block');
+            const editor = document.querySelector('.editor');
+            let topValue = 182;
+            let bottomValue = 0;
+            showMenu(menu, editor, topValue, bottomValue)
+        }());
+    }
 }
 
 const mainPage = document.querySelector('.main-page');

@@ -2924,6 +2924,94 @@ h6 {
   margin: 0;
 }
 
+.editor__right-banner-block_content {
+  margin: 0 0 94px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.editor__right-banner-block_img {
+  position: absolute;
+  left: -98px;
+  bottom: 82px;
+  width: 199px;
+  height: 161px;
+}
+
+.editor__right-banner-block_bg {
+  position: absolute;
+  width: 267px;
+  height: 471px;
+  bottom: -20px;
+  right: 1px;
+  opacity: 0.7;
+}
+
+.editor .right-banner-block {
+  position: fixed;
+  overflow: hidden;
+  top: -100%;
+  right: 50%;
+  -webkit-transform: translateX(680px);
+      -ms-transform: translateX(680px);
+          transform: translateX(680px);
+  width: 264px;
+  max-height: 100%;
+  -webkit-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  background: #F8F9FC;
+  padding: 24px 32px 32px;
+  border-radius: 12px;
+}
+
+.editor .right-banner-block h5 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 900;
+  color: #707EFF;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid #EDF0F2;
+}
+
+.editor .right-banner-block li {
+  position: relative;
+  font-size: 14px;
+  line-height: 22px;
+  color: #606A80;
+  padding: 0 0 0 24px;
+  margin: 0 0 16px 0;
+}
+
+.editor .right-banner-block li:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #707EFF;
+  border-radius: 2px;
+}
+
+.editor .right-banner-block li:first-child {
+  margin: 24px 0 16px 0;
+}
+
+.editor .right-banner-block li:last-child {
+  margin: 0;
+}
+
+.editor .right-banner-block .button {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.editor .right-banner-block.active {
+  top: 92px;
+}
+
 .see-apps {
   background: -o-linear-gradient(327.88deg, #9BDEDC 0%, #7ACCAE 90.36%);
   background: linear-gradient(122.12deg, #9BDEDC 0%, #7ACCAE 90.36%);
@@ -11421,6 +11509,14 @@ h6 {
     max-width: 400px;
   }
 
+  .editor .right-banner-block {
+    right: 10px;
+    -webkit-transform: initial;
+        -ms-transform: initial;
+            transform: initial;
+    width: 230px;
+  }
+
   .dashboard.frame-block.blog {
     left: calc(50% + 50px);
   }
@@ -11636,6 +11732,10 @@ h6 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+  }
+
+  .editor .right-banner-block {
+    display: none;
   }
 
   .help__text p {

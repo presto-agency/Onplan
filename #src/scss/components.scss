@@ -2475,6 +2475,89 @@
             }
         }
     }
+    &__right-banner-block{
+        &_content{
+            margin: 0 0 94px 0;
+            position: relative;
+            z-index: 2;
+        }
+        &_img{
+            position: absolute;
+            left: -98px;
+            bottom: 82px;
+            width: 199px;
+            height: 161px;
+        }
+        &_bg{
+            position: absolute;
+            width: 267px;
+            height: 471px;
+            bottom: -20px;
+            right: 1px;
+            opacity: 0.7;
+        }
+    }
+    .right-banner-block{
+        position: fixed;
+        overflow: hidden;
+        top: -100%;
+        right: 50%;
+        transform: translateX(680px);
+        width: 264px;
+        max-height: 100%;
+        transition: 300ms ease-in-out;
+        background: $bg-greycolor;
+        padding: 24px 32px 32px;
+        border-radius: 12px;
+        h5{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 900;
+            color: $purplecolor;
+            padding: 0 0 16px 0;
+            border-bottom: 1px solid $greycolor;
+        }
+        li{
+            position: relative;
+            font-size: 14px;
+            line-height: 22px;
+            color: $darkgreycolor;
+            padding: 0 0 0 24px;
+            margin: 0 0 16px 0;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                background: $purplecolor;
+                border-radius: 2px;
+            }
+            &:first-child{
+                margin: 24px 0 16px 0;
+            }
+            &:last-child{
+                margin: 0;
+            }
+        }
+        .button{
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+        }
+        &.active{
+            top: 92px;
+        }
+        @media (max-width: 1439px) {
+            right: 10px;
+            transform: initial;
+            width: 230px;
+        }
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
 }
 
 .see-apps {
