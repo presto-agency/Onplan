@@ -244,6 +244,8 @@
                 margin: 30px -8px 12px -8px;
                 min-height: 48px;
                 cursor: grab;
+                //mozzila scroll
+                scrollbar-width: none;
                 &::-webkit-scrollbar {
                     display: none;
                 }

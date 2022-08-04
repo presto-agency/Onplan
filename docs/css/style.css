@@ -7452,6 +7452,7 @@ h6 {
   min-height: 48px;
   cursor: -webkit-grab;
   cursor: grab;
+  scrollbar-width: none;
 }
 
 .resources-blog .blog-cards .card__element-wrapper::-webkit-scrollbar {
