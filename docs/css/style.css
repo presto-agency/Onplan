@@ -251,10 +251,10 @@ h6 {
 .header__link.arrow svg {
   display: block;
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 0;
   width: 10px;
-  height: 6px;
+  height: 10px;
   fill: #606A80;
   -webkit-transition: 300ms;
   -o-transition: 300ms;
@@ -11378,8 +11378,9 @@ h6 {
 
   .header__link:hover.arrow svg {
     fill: #707EFF;
-    -webkit-transform: rotateX(180deg);
-            transform: rotateX(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 
   .header__link:hover.arrow .submenu {
