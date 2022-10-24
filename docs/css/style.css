@@ -3291,6 +3291,7 @@ h6 {
 }
 
 .help__btn a {
+  white-space: nowrap;
   font-size: 18px;
   font-weight: 800;
   color: #232f42;
@@ -13738,6 +13739,10 @@ h6 {
 
   .see-apps .form__inputs-wrapper {
     margin: 24px 0 16px 0;
+  }
+
+  .help__text span {
+    display: none;
   }
 
   .slider-app__video iframe,
