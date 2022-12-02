@@ -340,6 +340,10 @@
                     transition: 300ms ease-in-out;
                     background-color: $whitecolor;
                     svg{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
                         width: 7px;
                         height: 9px;
                         transition: 300ms ease-in-out;

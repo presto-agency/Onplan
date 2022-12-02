@@ -7563,6 +7563,12 @@ h6 {
 }
 
 .resources-blog .resources-block .slider-resources .slider-arrow svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   width: 7px;
   height: 9px;
   -webkit-transition: 300ms ease-in-out;
