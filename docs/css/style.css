@@ -184,9 +184,6 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 1360px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -239,10 +236,6 @@ h6 {
   display: none;
 }
 
-.header__link:hover:before {
-  display: none;
-}
-
 .header__link.arrow {
   cursor: pointer;
   padding: 0 16px 32px 0;
@@ -260,20 +253,6 @@ h6 {
   -o-transition: 300ms;
   transition: 300ms;
   border-radius: 32px;
-}
-
-.header__link:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 3px;
-  border-radius: 32px;
-  background: #707EFF;
-  -webkit-transition: 300ms;
-  -o-transition: 300ms;
-  transition: 300ms;
 }
 
 .header__link a {
