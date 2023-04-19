@@ -4,7 +4,6 @@
   "description": "сборка gulp",
   "main": "index.html",
   "scripts": {
-    "build": "gulp build",
     "start": "gulp"
   },
   "author": "anton-k",
