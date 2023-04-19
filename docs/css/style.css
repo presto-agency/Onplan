@@ -6550,6 +6550,7 @@ h6 {
 }
 
 .main-page .logos .slider-logo__description {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6580,21 +6581,17 @@ h6 {
   height: 100%;
   width: 100%;
   max-width: 404px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 10px 35px;
   border: 1px solid #EDF0F2;
   border-radius: 16px;
   background-color: #fff;
   margin: 0 16px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .main-page .logos .slider-logo__slide:last-child {
@@ -6603,7 +6600,9 @@ h6 {
 
 .main-page .logos .slider-logo__img {
   height: 48px;
-  max-width: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
   margin: 0 25px 0 0;
 }
 
@@ -14168,6 +14167,9 @@ h6 {
   }
 
   .main-page .logos .slider-logo__img {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
     height: 52px;
     margin: 0 0 24px 0;
   }
