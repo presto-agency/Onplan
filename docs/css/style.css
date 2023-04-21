@@ -6268,6 +6268,10 @@ h6 {
   color: #8DBCFE;
 }
 
+.main-page .simplicity__title img {
+  vertical-align: initial !important;
+}
+
 .main-page .simplicity__trusted-by {
   position: relative;
   z-index: 2;
